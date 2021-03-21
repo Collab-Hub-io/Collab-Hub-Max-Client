@@ -160,16 +160,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-105",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 666.0, 518.5, 120.0, 37.0 ],
+					"patching_rect" : [ 666.0, 518.5, 130.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 256.0, 178.0, 120.0, 37.0 ],
+					"presentation_rect" : [ 256.0, 176.896848137535869, 123.0, 33.0 ],
 					"style" : "velvet",
 					"text" : "Select event to clear from server:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -189,7 +189,7 @@
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-106",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -197,9 +197,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 666.0, 555.5, 125.0, 24.0 ],
+					"patching_rect" : [ 666.0, 555.5, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 256.0, 215.0, 125.0, 24.0 ],
+					"presentation_rect" : [ 256.0, 209.896848137535869, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -207,14 +207,14 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-103",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 666.0, 369.5, 117.0, 22.0 ],
+					"patching_rect" : [ 666.0, 369.5, 128.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 256.0, 29.0, 117.0, 22.0 ],
+					"presentation_rect" : [ 256.0, 29.896848137535819, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "My events",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -230,7 +230,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 666.0, 391.5, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 256.0, 51.0, 125.0, 125.0 ],
+					"presentation_rect" : [ 256.0, 49.896848137535819, 125.0, 125.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -239,16 +239,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-34",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 518.5, 119.0, 37.0 ],
+					"patching_rect" : [ 539.0, 518.5, 127.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 129.0, 178.0, 119.0, 37.0 ],
+					"presentation_rect" : [ 129.0, 176.896848137535869, 125.0, 33.0 ],
 					"style" : "velvet",
 					"text" : "Select event to stop observing:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -257,16 +257,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-33",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 219.5, 389.5, 119.0, 37.0 ],
+					"patching_rect" : [ 219.5, 389.5, 128.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 2.0, 178.0, 119.0, 37.0 ],
+					"presentation_rect" : [ 2.0, 176.896848137535869, 125.0, 33.0 ],
 					"style" : "velvet",
 					"text" : "Select event to observe:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -286,7 +286,7 @@
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-30",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -294,9 +294,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 539.0, 555.5, 125.0, 24.0 ],
+					"patching_rect" : [ 539.0, 555.5, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 215.0, 125.0, 24.0 ],
+					"presentation_rect" : [ 129.0, 209.896848137535869, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -315,7 +315,7 @@
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-29",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -323,9 +323,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 219.5, 429.0, 125.0, 24.0 ],
+					"patching_rect" : [ 219.5, 429.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 215.0, 125.0, 24.0 ],
+					"presentation_rect" : [ 2.0, 209.896848137535869, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -333,14 +333,14 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 369.5, 119.0, 22.0 ],
+					"patching_rect" : [ 539.0, 369.5, 128.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 29.0, 119.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 29.896848137535819, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Observing events",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -356,7 +356,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 539.0, 391.5, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 51.0, 125.0, 125.0 ],
+					"presentation_rect" : [ 129.0, 49.896848137535819, 125.0, 125.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -365,14 +365,14 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-22",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.5, 383.0, 118.0, 22.0 ],
+					"patching_rect" : [ 27.5, 383.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 29.0, 118.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 29.896848137535819, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "All events",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -388,7 +388,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 27.5, 405.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 51.0, 125.0, 125.0 ],
+					"presentation_rect" : [ 2.0, 49.896848137535819, 125.0, 125.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -406,28 +406,26 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 339.0, 4.0, 40.0, 35.084745762711862 ],
-					"pic" : "CH.Logo.png",
+					"pic" : "Macintosh HD:/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Logo.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 339.0, 4.0, 40.0, 35.084745762711862 ]
+					"presentation_rect" : [ 341.0, 4.0, 40.0, 35.084745762711862 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"autofit" : 1,
 					"background" : 1,
-					"fontface" : 0,
-					"fontname" : "Source Sans Pro",
-					"fontsize" : 16.0,
-					"id" : "obj-46",
-					"maxclass" : "comment",
+					"forceaspect" : 1,
+					"id" : "obj-5",
+					"maxclass" : "fpic",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2.0, 0.0, 151.0, 27.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 4.0, 4.0, 100.0, 16.045845272206304 ],
+					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Events-Title.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 0.0, 151.0, 27.0 ],
-					"style" : "velvet",
-					"text" : "CH.Events",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+					"presentation_rect" : [ 4.0, 4.0, 124.0, 19.896848137535819 ]
 				}
 
 			}
@@ -443,7 +441,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 383.0, 241.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 383.0, 241.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 383.0, 234.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -547,9 +545,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "CH.Logo.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : ".",
+				"name" : "CH-Events-Title.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Logo.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./img",
 				"type" : "PNG",
 				"implicit" : 1
 			}

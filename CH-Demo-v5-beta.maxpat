@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 775.0, 215.0, 214.0, 22.0 ]
+					"patching_rect" : [ 796.0, 215.0, 214.0, 22.0 ]
 				}
 
 			}
@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 775.0, 184.0, 214.0, 22.0 ]
+					"patching_rect" : [ 796.0, 184.0, 214.0, 22.0 ]
 				}
 
 			}
@@ -67,7 +67,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 775.0, 153.0, 214.0, 22.0 ]
+					"patching_rect" : [ 796.0, 153.0, 214.0, 22.0 ]
 				}
 
 			}
@@ -78,7 +78,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 669.5, 113.0, 319.5, 22.0 ],
+					"patching_rect" : [ 690.5, 113.0, 319.5, 22.0 ],
 					"text" : "route Eric Nick"
 				}
 
@@ -201,12 +201,12 @@
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "_CH.Events.maxpat",
+					"name" : "CH-Events.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 401.0, 346.0, 383.0, 241.0 ],
+					"patching_rect" : [ 401.0, 346.0, 383.0, 234.0 ],
 					"prototypename" : "CH.Events",
 					"viewvisibility" : 1
 				}
@@ -222,12 +222,12 @@
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "_CH.Controls.maxpat",
+					"name" : "CH-Controls.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 9.0, 346.0, 383.0, 241.0 ],
+					"patching_rect" : [ 9.0, 346.0, 383.0, 234.0 ],
 					"prototypename" : "CH.Controls",
 					"viewvisibility" : 1
 				}
@@ -243,12 +243,12 @@
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "CH.Chat.maxpat",
+					"name" : "CH-Chat.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 525.0, 113.0, 129.0, 217.0 ],
+					"patching_rect" : [ 525.0, 113.0, 147.0, 213.0 ],
 					"prototypename" : "CH.CHAT",
 					"viewvisibility" : 1
 				}
@@ -264,12 +264,12 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "CH.Rooms.maxpat",
+					"name" : "CH-Rooms.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 267.0, 113.0, 256.0, 226.0 ],
+					"patching_rect" : [ 267.0, 113.0, 256.0, 221.0 ],
 					"prototypename" : "CH.ROOMS",
 					"viewvisibility" : 1
 				}
@@ -285,12 +285,12 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "CH.Client.maxpat",
+					"name" : "CH-Client.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 9.0, 113.0, 256.0, 178.0 ],
+					"patching_rect" : [ 9.0, 113.0, 256.0, 177.0 ],
 					"prototypename" : "CH.CLIENT",
 					"viewvisibility" : 1
 				}
@@ -299,43 +299,8 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -374,90 +339,110 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"midpoints" : [ 534.5, 340.0, 663.25, 340.0, 663.25, 95.0, 679.0, 95.0 ],
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "CH.Client.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"name" : "CH-Client.maxpat",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH.Logo.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./bpatchers-beta/img",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH.ClientScriptv4.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max",
-				"patcherrelativepath" : ".",
+				"name" : "CH-Logo.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./bpatchers-beta/img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientScript-v5.js",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "controlHandler.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "eventHandler.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "chatHandler.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH.Rooms.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"name" : "CH-Rooms.maxpat",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH.Chat.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"name" : "CH-Rooms-Title.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./bpatchers-beta/img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Chat.maxpat",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "_CH.Controls.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"name" : "CH-Chat-Title.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./bpatchers-beta/img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Controls.maxpat",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "_CH.Events.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"name" : "CH-Controls-Title.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./bpatchers-beta/img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Events.maxpat",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"patcherrelativepath" : "./bpatchers-beta",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Events-Title.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./bpatchers-beta/img",
+				"type" : "PNG",
 				"implicit" : 1
 			}
  ],

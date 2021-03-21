@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------
 // This is the javascript required for interactive data retrieval from
-// the Max-based SocketIO (client).
+// the Max-based Collab-Hub (client).
 // Authors: Nick Hwang, Tony T Marasco, Eric Sheffield
 // Contact: nickthwang@gmail.com
 // --------------------------------------------------------------------------

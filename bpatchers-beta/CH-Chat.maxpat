@@ -89,14 +89,14 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-50",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 448.0, 191.084745999999996, 118.0, 22.0 ],
+					"patching_rect" : [ 448.0, 191.084745999999996, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 169.084745999999996, 118.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 169.084745999999996, 127.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Chat with all users",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -259,7 +259,7 @@
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"hidden" : 1,
 					"id" : "obj-30",
 					"items" : "<empty>",
@@ -268,9 +268,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 775.0, 229.084745999999996, 125.0, 24.0 ],
+					"patching_rect" : [ 775.0, 229.084745999999996, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 191.084745999999996, 125.0, 24.0 ],
+					"presentation_rect" : [ 2.0, 189.084745999999996, 143.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -383,15 +383,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"hidden" : 1,
 					"id" : "obj-64",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 328.0, 191.084745999999996, 118.0, 22.0 ],
+					"patching_rect" : [ 328.0, 191.084745999999996, 126.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 169.084745762711862, 118.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 169.084745762711862, 126.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Select user/room:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -411,7 +411,7 @@
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"hidden" : 1,
 					"id" : "obj-63",
 					"items" : "<empty>",
@@ -420,9 +420,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 604.0, 229.084745999999996, 125.0, 24.0 ],
+					"patching_rect" : [ 604.0, 229.084745999999996, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 191.084745762711862, 125.0, 24.0 ],
+					"presentation_rect" : [ 2.0, 189.084745999999996, 143.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -432,7 +432,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"bordercolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-62",
 					"keymode" : 1,
 					"maxclass" : "textedit",
@@ -440,9 +440,9 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 146.0, 113.084745999999996, 125.0, 100.0 ],
+					"patching_rect" : [ 146.0, 113.084745999999996, 133.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 67.084745999999996, 125.0, 100.0 ],
+					"presentation_rect" : [ 2.0, 67.084745999999996, 143.0, 100.0 ],
 					"rounded" : 0.0,
 					"style" : "velvet",
 					"tabmode" : 0,
@@ -453,7 +453,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"htabcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-61",
 					"margin" : 0,
@@ -464,7 +464,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 287.0, 67.084745999999996, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 43.084745762711862, 125.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 41.084745762711862, 143.0, 22.0 ],
 					"rounded" : 0.0,
 					"segmented" : 1,
 					"style" : "velvet",
@@ -686,27 +686,26 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 87.0, 4.0, 40.0, 35.084745762711862 ],
-					"pic" : "CH.Logo.png",
+					"pic" : "Macintosh HD:/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Logo.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 87.0, 4.0, 40.0, 35.084745762711862 ]
+					"presentation_rect" : [ 105.0, 4.0, 40.0, 35.084745762711862 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"autofit" : 1,
 					"background" : 1,
-					"fontface" : 0,
-					"fontname" : "Source Sans Pro",
-					"fontsize" : 16.0,
-					"id" : "obj-66",
-					"maxclass" : "comment",
+					"forceaspect" : 1,
+					"id" : "obj-4",
+					"maxclass" : "fpic",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2.0, 0.0, 96.0, 27.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 239.0, 252.0, 100.0, 21.052631578947366 ],
+					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Chat-Title.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 0.0, 96.0, 27.0 ],
-					"style" : "velvet",
-					"text" : "CH.Chat"
+					"presentation_rect" : [ 4.0, 4.0, 95.0, 20.0 ]
 				}
 
 			}
@@ -722,7 +721,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 129.0, 217.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 129.0, 217.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 147.0, 213.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -987,9 +986,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "CH.Logo.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : ".",
+				"name" : "CH-Chat-Title.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Logo.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./img",
 				"type" : "PNG",
 				"implicit" : 1
 			}

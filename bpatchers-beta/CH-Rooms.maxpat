@@ -11,7 +11,7 @@
 ,
 		"classnamespace" : "box",
 		"rect" : [ 145.0, 62.0, 636.0, 804.0 ],
-		"bglocked" : 0,
+		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -51,7 +51,7 @@
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-9",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -59,9 +59,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 504.0, 363.0, 125.0, 24.0 ],
+					"patching_rect" : [ 504.0, 363.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 200.0, 125.0, 24.0 ],
+					"presentation_rect" : [ 129.0, 196.865921787709567, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -283,7 +283,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-58",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -292,7 +292,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 273.0, 12.75, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 154.0, 80.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 152.865921787709567, 80.0, 22.0 ],
 					"rounded" : 8.0,
 					"style" : "velvet",
 					"text" : "Create Room",
@@ -302,15 +302,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-49",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 504.0, 341.0, 119.0, 22.0 ],
+					"patching_rect" : [ 504.0, 341.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 178.0, 118.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 176.865921787709567, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Select room to leave:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -319,15 +319,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-50",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 290.0, 341.0, 121.0, 22.0 ],
+					"patching_rect" : [ 290.0, 341.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 178.0, 120.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 176.865921787709567, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Select room to join:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -347,7 +347,7 @@
 					"bgfillcolor_type" : "gradient",
 					"color" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"id" : "obj-52",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -355,9 +355,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 290.0, 363.0, 125.0, 24.0 ],
+					"patching_rect" : [ 290.0, 363.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 200.0, 125.0, 24.0 ],
+					"presentation_rect" : [ 2.0, 196.865921787709567, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -365,15 +365,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-53",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.0, 341.0, 115.0, 22.0 ],
+					"patching_rect" : [ 153.0, 341.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 29.0, 114.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 29.865921787709496, 126.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "My Rooms",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -389,7 +389,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 153.0, 363.0, 125.0, 101.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 51.0, 125.0, 101.0 ],
+					"presentation_rect" : [ 129.0, 49.865921787709496, 125.0, 101.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -398,15 +398,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Source Sans Pro",
+					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-55",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 341.0, 116.0, 22.0 ],
+					"patching_rect" : [ 16.0, 341.0, 126.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 29.0, 116.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 29.865921787709496, 126.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "All Rooms",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -422,29 +422,10 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 16.0, 363.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 51.0, 125.0, 125.0 ],
+					"presentation_rect" : [ 2.0, 49.865921787709496, 125.0, 125.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"fontface" : 0,
-					"fontname" : "Source Sans Pro",
-					"fontsize" : 16.0,
-					"id" : "obj-57",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2.0, 0.0, 148.0, 27.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 0.0, 148.0, 27.0 ],
-					"style" : "velvet",
-					"text" : "CH.Rooms",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -459,9 +440,26 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 216.0, 4.0, 40.0, 35.084745762711862 ],
-					"pic" : "CH.Logo.png",
+					"pic" : "Macintosh HD:/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Logo.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 214.0, 4.0, 40.0, 35.084745762711862 ]
+					"presentation_rect" : [ 213.0, 4.0, 40.0, 35.084745762711862 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autofit" : 1,
+					"background" : 1,
+					"forceaspect" : 1,
+					"id" : "obj-13",
+					"maxclass" : "fpic",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 168.0, 350.0, 100.0, 15.64245810055866 ],
+					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Rooms-Title.png",
+					"presentation" : 1,
+					"presentation_rect" : [ 4.0, 4.0, 127.0, 19.865921787709496 ]
 				}
 
 			}
@@ -477,7 +475,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 256.0, 226.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 256.0, 226.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 256.0, 221.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -660,9 +658,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "CH.Logo.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-NH/max/bpatchers",
-				"patcherrelativepath" : ".",
+				"name" : "CH-Rooms-Title.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Logo.png",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
+				"patcherrelativepath" : "./img",
 				"type" : "PNG",
 				"implicit" : 1
 			}
