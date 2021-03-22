@@ -100,11 +100,16 @@ max.addHandler('observeControl', (header) => {
     }
   ));
 });
-/*
+
 max.addHandler('unobserveControl', (header) => {
-  socket.emit('unobserveControl', header);
+  socket.emit('unobserveControl', (
+    {
+      header: header
+    }
+  ));
 });
 
+/*
 max.addHandler('observeAllControl', (bool) => {
   if(typeof bool === 'number'){
     if(bool == 1){
