@@ -229,20 +229,42 @@ socket.on('allRooms', data => {
   max.outlet('allRoomsUmenu', allRoomsUmenu);
 });
 
+socket.on('availableRooms', data => {
+  let availableRoomsView = {
+    AvailableRooms: data
+  }
+  let availableRoomsUmenu = {
+    items: data
+  }
+  max.outlet('availableRoomsView', availableRoomsView);
+  max.outlet('avalableRoomsUmenu', availableRoomsUmenu);
+});
+
 socket.on('allRoomDetails', data => {
   max.outlet('allRoomDetailsView', data);
   max.outlet('allRoomDetailsUmenu', data);
 });
 
-socket.on('users', data => {
-  let usersView = {
+socket.on('allUsers', data => {
+  let allUsersView = {
     Users: data
   }
-  let usersUmenu = {
+  let allUsersUmenu = {
     items: data
   }
-  max.outlet('usersView', usersView);
-  max.outlet('usersUmenu', usersUmenu);
+  max.outlet('allUsersView', allUsersView);
+  max.outlet('allUsersUmenu', allUsersUmenu);
+});
+
+socket.on('otherUsers', data => {
+  let allUsersView = {
+    Users: data
+  }
+  let allUsersUmenu = {
+    items: data
+  }
+  max.outlet('otherUsersView', allUsersView);
+  max.outlet('otherUsersUmenu', allUsersUmenu);
 });
 
 socket.on('events', data => {

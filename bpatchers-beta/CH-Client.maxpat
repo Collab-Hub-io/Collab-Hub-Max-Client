@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 742.0, 394.5, 98.0, 22.0 ],
+					"patching_rect" : [ 747.5, 391.5, 98.0, 22.0 ],
 					"text" : "s fromCH.Server"
 				}
 
@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 847.0, 314.5, 97.0, 22.0 ],
+					"patching_rect" : [ 852.5, 311.5, 97.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "chatHandler.js",
 						"parameter_enable" : 0
@@ -72,7 +72,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 847.0, 338.5, 58.0, 22.0 ],
+					"patching_rect" : [ 852.5, 335.5, 58.0, 22.0 ],
 					"text" : "print chat"
 				}
 
@@ -85,7 +85,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.5, 358.5, 30.0, 30.0 ]
+					"patching_rect" : [ 635.5, 355.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -109,7 +109,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 808.0, 245.5, 62.0, 22.0 ],
+					"patching_rect" : [ 813.5, 242.5, 62.0, 22.0 ],
 					"text" : "sender $1"
 				}
 
@@ -121,7 +121,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 742.0, 314.5, 103.0, 22.0 ],
+					"patching_rect" : [ 747.5, 311.5, 103.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "eventHandler.js",
 						"parameter_enable" : 0
@@ -138,7 +138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 628.5, 314.5, 110.0, 22.0 ],
+					"patching_rect" : [ 635.5, 311.5, 110.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "controlHandler.js",
 						"parameter_enable" : 0
@@ -154,7 +154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 575.666666666666629, 394.5, 117.0, 22.0 ],
+					"patching_rect" : [ 580.333333333333371, 394.5, 117.0, 22.0 ],
 					"text" : "print serverMessage"
 				}
 
@@ -437,8 +437,8 @@
 					"numinlets" : 7,
 					"numoutlets" : 7,
 					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 470.0, 245.5, 336.0, 22.0 ],
-					"text" : "route usersView connected serverMessage control event chat"
+					"patching_rect" : [ 470.0, 245.5, 350.0, 22.0 ],
+					"text" : "route allUsersView connected serverMessage control event chat"
 				}
 
 			}
@@ -488,8 +488,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -504,7 +502,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 760.0, 221.5, 41.0, 20.0 ],
+					"patching_rect" : [ 765.5, 218.5, 41.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 195.0, 53.960396039603964, 41.0, 20.0 ],
 					"style" : "velvet",
@@ -575,7 +573,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 808.0, 221.5, 20.0, 20.0 ],
+					"patching_rect" : [ 813.5, 218.5, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 234.0, 53.960396039603964, 20.0, 20.0 ],
 					"style" : "velvet",
@@ -631,7 +629,7 @@
 					"oncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 522.833333333333371, 394.5, 22.0, 22.0 ],
+					"patching_rect" : [ 525.166666666666629, 394.5, 22.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 59.0, 29.96039603960396, 22.0, 22.0 ],
 					"style" : "velvet"

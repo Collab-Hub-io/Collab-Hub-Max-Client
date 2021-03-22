@@ -283,8 +283,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 604.0, 67.084745999999996, 203.0, 22.0 ],
-					"text" : "route usersUmenu myRoomsUmenu"
+					"patching_rect" : [ 604.0, 67.084745999999996, 233.0, 22.0 ],
+					"text" : "route otherUsersUmenu myRoomsUmenu"
 				}
 
 			}

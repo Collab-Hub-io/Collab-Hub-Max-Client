@@ -264,7 +264,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 16.0, 310.0, 567.0, 22.0 ],
-					"text" : "route allRoomsView myRoomsView allRoomsUmenu myRoomsUmenu"
+					"text" : "route availableRoomsView myRoomsView availableRoomsUmenu myRoomsUmenu"
 				}
 
 			}
