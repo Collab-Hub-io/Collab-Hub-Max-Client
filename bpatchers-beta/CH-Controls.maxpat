@@ -422,7 +422,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 293.0, 367.0, 100.0, 14.470284237726098 ],
+					"patching_rect" : [ 4.0, 4.0, 138.0, 19.968992248062015 ],
 					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Controls-Title.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 4.0, 138.0, 19.968992248062015 ]

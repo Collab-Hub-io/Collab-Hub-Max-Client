@@ -12,9 +12,8 @@ const max = require('max-api'),
   // Initial username functionality still needs to be added on server end. 
   namespace = process.argv[2],
   username = process.argv[3],
+  socket = io.connect(`http://192.168.0.200:3000/${namespace}`, {query: {username: username} });
   // socket = io.connect(`https://collab-hub-v2.herokuapp.com/${namespace}`, {query: {username: username} });
-  socket = io.connect('http://192.168.0.200:3000/hub');
-  // socket = io.connect('https://collab-hub-v2.herokuapp.com/grid');
 
 // Handling connect/disconnect
 socket.on('connect', () => {
@@ -33,28 +32,16 @@ socket.on('disconnect', () => {
 
 // General
 
-max.addHandler('addUsername', newName => {
+max.addHandler('addUsername', username => {
   socket.emit('addUsername', (
     {
-        username: newName
+        username: username
     }
   ));
 });
 
 max.addHandler('getUsers', () => {
   socket.emit('getUsers');
-});
-
-max.addHandler('setConsoleDisplay', (bool) => {
-  if(typeof bool === 'number'){
-    if(bool == 1){
-      bool = 'true';
-    }
-    if(bool == 0){
-      bool = 'false';
-    }
-  }
-  socket.emit('setConsoleDisplay', bool);
 });
 
 
@@ -107,9 +94,13 @@ max.addHandler('chat', (...args) => {
 // Control management
 
 max.addHandler('observeControl', (header) => {
-  socket.emit('observeControl', header);
+  socket.emit('observeControl', (
+    {
+      header: header
+    }
+  ));
 });
-
+/*
 max.addHandler('unobserveControl', (header) => {
   socket.emit('unobserveControl', header);
 });
@@ -186,7 +177,7 @@ max.addHandler('allRoomDetails', () => {
 
 
 // --------------------
-
+*/
 
 
 // --------------------
@@ -194,14 +185,14 @@ max.addHandler('allRoomDetails', () => {
 
 
 // Used to confirm username (not implemented yet)
-socket.on('username', (...incoming) => {
-  max.outlet('username', incoming);
-});
+//socket.on('username', (...incoming) => {
+//  max.outlet('username', incoming);
+//});
 
 
 // Generic messages from server
-socket.on('serverMessage', (...incoming) => {
-  max.outlet('serverMessage', ...incoming);
+socket.on('serverMessage', (incoming) => {
+  max.outlet('serverMessage', incoming.message);
 });
 
 

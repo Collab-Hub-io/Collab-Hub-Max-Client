@@ -405,7 +405,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 339.0, 4.0, 40.0, 35.084745762711862 ],
+					"patching_rect" : [ 341.0, 4.0, 40.0, 35.084745762711862 ],
 					"pic" : "Macintosh HD:/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Logo.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 341.0, 4.0, 40.0, 35.084745762711862 ]
@@ -422,7 +422,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 4.0, 4.0, 100.0, 16.045845272206304 ],
+					"patching_rect" : [ 4.0, 4.0, 124.0, 19.896848137535819 ],
 					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Events-Title.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 4.0, 124.0, 19.896848137535819 ]
