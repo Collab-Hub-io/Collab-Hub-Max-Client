@@ -33,15 +33,8 @@ socket.on('disconnect', () => {
 // General
 
 max.addHandler('addUsername', username => {
-  socket.emit('addUsername', (
-    {
-        username: username
-    }
-  ));
-});
-
-max.addHandler('getUsers', () => {
-  socket.emit('getUsers');
+  let outgoing = { username: username };
+  socket.emit('addUsername', outgoing);
 });
 
 
@@ -63,9 +56,7 @@ max.addHandler('publish', (...args) => {
 });
 
 max.addHandler('push', (...args) => {
-  let outgoing = {
-      mode: 'push',
-  };
+  let outgoing = { mode: 'push' };
   if (args.length > 2) {
       outgoing.target = args[0],
       outgoing.header = args[1],
@@ -93,68 +84,17 @@ max.addHandler('chat', (...args) => {
 
 // Control management
 
-max.addHandler('observeControl', (header) => {
-  socket.emit('observeControl', (
-    {
-      header: header
-    }
-  ));
-});
-
-max.addHandler('unobserveControl', (header) => {
-  socket.emit('unobserveControl', (
-    {
-      header: header
-    }
-  ));
-});
-
-/*
-max.addHandler('observeAllControl', (bool) => {
-  if(typeof bool === 'number'){
-    if(bool == 1){
-      bool = 'true';
-    }
-    if(bool == 0){
-      bool = 'false';
-    }
-  }
-  socket.emit('observeAllControl', bool);
-});
-
-max.addHandler('getControls', () => {
-  socket.emit('getControls');
-});
-
-max.addHandler('clearControls', () => {
-  socket.emit('clearControls');
+max.addHandler('observeControl', header => {
+  let outgoing = { header: header };
+  socket.emit('observeControl', outgoing);
 });
 
 
 // Event management
 
-max.addHandler('observeEvent', (header) => {
-  socket.emit('observeEvent', header);
-});
-
-max.addHandler('unobserveEvent', (header) => {
-  socket.emit('unobserveEvent', header);
-});
-
-max.addHandler('observeAllEvents', (bool) => {
-  if(typeof bool === 'number'){
-    if(bool == 1){
-      bool = 'true';
-    }
-    if(bool == 0){
-      bool = 'false';
-    }
-  }
-  socket.emit('observeAllEvents', bool);
-});
-
-max.addHandler('clearEvents', () => {
-  socket.emit('clearEvents');
+max.addHandler('observeControl', header => {
+  let outgoing = { header: header };
+  socket.emit('observeControl', outgoing);
 });
 
 
@@ -168,31 +108,12 @@ max.addHandler('leaveRoom', room => {
   socket.emit('leaveRoom', room);
 });
 
-max.addHandler('myRooms', () => {
-  socket.emit('myRooms');
-});
-
-max.addHandler('allRooms', () => {
-  socket.emit('allRooms');
-});
-
-max.addHandler('allRoomDetails', () => {
-  socket.emit('allRoomDetails');
-});
-
-
 // --------------------
-*/
+
 
 
 // --------------------
 // Incoming from server
-
-
-// Used to confirm username (not implemented yet)
-//socket.on('username', (...incoming) => {
-//  max.outlet('username', incoming);
-//});
 
 
 // Generic messages from server
@@ -203,9 +124,53 @@ socket.on('serverMessage', (incoming) => {
 
 // Other info from server
 
+socket.on('allUsers', data => {
+  let allUsersView = {
+    Users: data.users
+  }
+  let allUsersUmenu = {
+    items: data.users
+  }
+  max.outlet('allUsersView', allUsersView);
+  max.outlet('allUsersUmenu', allUsersUmenu);
+});
+
+socket.on('otherUsers', data => {
+  let otherUsersView = {
+    Users: data.users
+  }
+  let otherUsersUmenu = {
+    items: data.users
+  }
+  max.outlet('otherUsersView', otherUsersView);
+  max.outlet('otherUsersUmenu', otherUsersUmenu);
+});
+
+socket.on('controlDump', data => {
+  let controlDumpView = {
+    Controls: data
+  }
+  let controlDumpUmenu = {
+    items: data
+  }
+  max.outlet('controlDumpView', controlDumpView);
+  max.outlet('controlDumpUmenu', controlDumpUmenu);
+});
+
+socket.on('availableRooms', data => {
+  let availableRoomsView = {
+    Rooms: data
+  }
+  let availableRoomsUmenu = {
+    items: data
+  }
+  max.outlet('availableRoomsView', availableRoomsView);
+  max.outlet('availableRoomsUmenu', availableRoomsUmenu);
+});
+
 socket.on('myRooms', data => {
   let myRoomsView = {
-    MyRooms: data
+    Rooms: data
   }
   let myRoomsUmenu = {
     items: data
@@ -214,77 +179,14 @@ socket.on('myRooms', data => {
   max.outlet('myRoomsUmenu', myRoomsUmenu);
 });
 
-socket.on('allRooms', data => {
-  let allRoomsView = {
-    AllRooms: data
-  }
-  let allRoomsUmenu = {
-    items: data
-  }
-  max.outlet('allRoomsView', allRoomsView);
-  max.outlet('allRoomsUmenu', allRoomsUmenu);
-});
-
-socket.on('availableRooms', data => {
-  let availableRoomsView = {
-    AvailableRooms: data
-  }
-  let availableRoomsUmenu = {
-    items: data
-  }
-  max.outlet('availableRoomsView', availableRoomsView);
-  max.outlet('avalableRoomsUmenu', availableRoomsUmenu);
-});
-
-socket.on('allRoomDetails', data => {
-  max.outlet('allRoomDetailsView', data);
-  max.outlet('allRoomDetailsUmenu', data);
-});
-
-socket.on('allUsers', data => {
-  let allUsersView = {
-    Users: data
-  }
-  let allUsersUmenu = {
-    items: data
-  }
-  max.outlet('allUsersView', allUsersView);
-  max.outlet('allUsersUmenu', allUsersUmenu);
-});
-
-socket.on('otherUsers', data => {
-  let allUsersView = {
-    Users: data
-  }
-  let allUsersUmenu = {
-    items: data
-  }
-  max.outlet('otherUsersView', allUsersView);
-  max.outlet('otherUsersUmenu', allUsersUmenu);
-});
-
-socket.on('events', data => {
-  max.outlet('eventsView', data);
-  max.outlet('eventsUmenu', data);
-});
-
-socket.on('controlDump', data => {
-  max.outlet('controlsView', data);
-  max.outlet('controlsUmenu', data);
-});
-
 
 // Data from server
-socket.on('control', (...incoming) => {
-  max.outlet('control', incoming);
-});
-
-socket.on('event', incoming => {
-  max.outlet('event', incoming);
-});
 
 socket.on('chat', incoming => {
-  max.outlet('chat', incoming);
+  let sender = incoming.id;
+  let message = incoming.chat;
+  max.outlet('chat', `${sender}: ${message}`);
 });
+
 
 // --------------------

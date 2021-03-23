@@ -141,8 +141,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 27.5, 343.0, 178.0, 22.0 ],
-					"text" : "route eventsView eventsUmenu"
+					"patching_rect" : [ 27.5, 343.0, 242.0, 22.0 ],
+					"text" : "route eventsDumpView eventsDumpUmenu"
 				}
 
 			}
@@ -374,7 +374,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 29.896848137535819, 125.0, 20.0 ],
 					"style" : "velvet",
-					"text" : "All events",
+					"text" : "Available events",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 

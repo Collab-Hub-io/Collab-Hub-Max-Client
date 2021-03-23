@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1004.0, 804.0 ],
+		"rect" : [ 66.0, 62.0, 1004.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -90,6 +90,7 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
+					"hidden" : 1,
 					"id" : "obj-50",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -329,8 +330,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 300.0, 229.084745999999996, 63.0, 22.0 ],
-					"text" : "set Global"
+					"patching_rect" : [ 300.0, 229.084745999999996, 40.0, 22.0 ],
+					"text" : "set all"
 				}
 
 			}
@@ -384,7 +385,6 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"hidden" : 1,
 					"id" : "obj-64",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -412,9 +412,8 @@
 					"color" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"fontname" : "Arial",
-					"hidden" : 1,
 					"id" : "obj-63",
-					"items" : "<empty>",
+					"items" : "Nick",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,

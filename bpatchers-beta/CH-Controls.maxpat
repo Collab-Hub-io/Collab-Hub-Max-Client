@@ -141,8 +141,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 27.5, 343.0, 191.0, 22.0 ],
-					"text" : "route controlsView controlsUmenu"
+					"patching_rect" : [ 27.5, 343.0, 255.0, 22.0 ],
+					"text" : "route controlsDumpView controlsDumpUmenu"
 				}
 
 			}
@@ -374,7 +374,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 29.968992248062015, 122.0, 20.0 ],
 					"style" : "velvet",
-					"text" : "All controls",
+					"text" : "Available controls",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 145.0, 62.0, 636.0, 804.0 ],
+		"rect" : [ 518.0, 68.0, 636.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -408,7 +408,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 29.865921787709496, 126.0, 20.0 ],
 					"style" : "velvet",
-					"text" : "All Rooms",
+					"text" : "Available Rooms",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 

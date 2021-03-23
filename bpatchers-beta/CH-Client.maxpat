@@ -40,39 +40,11 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 747.5, 391.5, 98.0, 22.0 ],
-					"text" : "s fromCH.Server"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 852.5, 311.5, 97.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "chatHandler.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js chatHandler.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 852.5, 335.5, 58.0, 22.0 ],
+					"patching_rect" : [ 718.5, 291.5, 58.0, 22.0 ],
 					"text" : "print chat"
 				}
 
@@ -85,7 +57,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 635.5, 355.5, 30.0, 30.0 ]
+					"patching_rect" : [ 371.0, 148.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -109,42 +81,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 813.5, 242.5, 62.0, 22.0 ],
+					"patching_rect" : [ 822.0, 245.5, 62.0, 22.0 ],
 					"text" : "sender $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 747.5, 311.5, 103.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "eventHandler.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js eventHandler.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 635.5, 311.5, 110.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "controlHandler.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js controlHandler.js"
 				}
 
 			}
@@ -154,7 +92,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 580.333333333333371, 394.5, 117.0, 22.0 ],
+					"patching_rect" : [ 599.5, 291.5, 117.0, 22.0 ],
 					"text" : "print serverMessage"
 				}
 
@@ -166,8 +104,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 320.0, 375.5, 117.0, 22.0 ],
-					"text" : "prepend chat Global"
+					"patching_rect" : [ 320.0, 375.5, 94.0, 22.0 ],
+					"text" : "prepend chat all"
 				}
 
 			}
@@ -434,11 +372,11 @@
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
-					"numinlets" : 7,
-					"numoutlets" : 7,
-					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 470.0, 245.5, 350.0, 22.0 ],
-					"text" : "route allUsersView connected serverMessage control event chat"
+					"numinlets" : 5,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 470.0, 245.5, 278.0, 22.0 ],
+					"text" : "route allUsersView connected serverMessage chat"
 				}
 
 			}
@@ -502,7 +440,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 765.5, 218.5, 41.0, 20.0 ],
+					"patching_rect" : [ 776.0, 221.5, 41.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 195.0, 53.960396039603964, 41.0, 20.0 ],
 					"style" : "velvet",
@@ -554,7 +492,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 470.0, 418.5, 125.0, 100.0 ],
+					"patching_rect" : [ 470.0, 352.5, 125.0, 100.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 74.960396039603964, 125.0, 100.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
@@ -573,7 +511,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 813.5, 218.5, 20.0, 20.0 ],
+					"patching_rect" : [ 822.0, 221.5, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 234.0, 53.960396039603964, 20.0, 20.0 ],
 					"style" : "velvet",
@@ -629,7 +567,7 @@
 					"oncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 525.166666666666629, 394.5, 22.0, 22.0 ],
+					"patching_rect" : [ 534.75, 291.5, 22.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 59.0, 29.96039603960396, 22.0, 22.0 ],
 					"style" : "velvet"
@@ -732,38 +670,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"order" : 1,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"order" : 0,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"order" : 1,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"order" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -773,29 +679,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"order" : 1,
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"order" : 0,
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -822,15 +705,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-26", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-26", 4 ]
 				}
 
 			}
@@ -838,13 +714,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-26", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-26", 5 ]
 				}
 
 			}
@@ -900,6 +769,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -942,27 +820,6 @@
 			}
 , 			{
 				"name" : "CH-ClientScript-v5.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "controlHandler.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "eventHandler.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "chatHandler.js",
 				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
