@@ -141,8 +141,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 27.5, 343.0, 255.0, 22.0 ],
-					"text" : "route controlsDumpView controlsDumpUmenu"
+					"patching_rect" : [ 27.5, 343.0, 243.0, 22.0 ],
+					"text" : "route controlDumpView controlDumpUmenu"
 				}
 
 			}

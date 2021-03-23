@@ -125,56 +125,49 @@ socket.on('serverMessage', (incoming) => {
 // Other info from server
 
 socket.on('allUsers', data => {
-  let allUsersView = {
-    Users: data.users
-  }
-  let allUsersUmenu = {
-    items: data.users
-  }
+  let allUsers = data.users;
+  let allUsersView = { Users: allUsers };
+  let allUsersUmenu = { items: allUsers };
   max.outlet('allUsersView', allUsersView);
   max.outlet('allUsersUmenu', allUsersUmenu);
 });
 
 socket.on('otherUsers', data => {
-  let otherUsersView = {
-    Users: data.users
-  }
-  let otherUsersUmenu = {
-    items: data.users
-  }
+  let otherUsers = data.users;
+  let otherUsersView = { Users: otherUsers };
+  let otherUsersUmenu = { items: otherUsers };
   max.outlet('otherUsersView', otherUsersView);
   max.outlet('otherUsersUmenu', otherUsersUmenu);
 });
 
 socket.on('controlDump', data => {
-  let controlDumpView = {
-    Controls: data
-  }
-  let controlDumpUmenu = {
-    items: data
-  }
+  let headers = data.controls;
+  let controlDumpView = { Controls: headers };
+  let controlDumpUmenu = { items: headers };
   max.outlet('controlDumpView', controlDumpView);
   max.outlet('controlDumpUmenu', controlDumpUmenu);
 });
 
+socket.on('events', data => {
+  let headers = data.data;
+  let eventDumpView = { Events: headers };
+  let eventDumpUmenu = { items: headers };
+  max.outlet('eventDumpView', eventDumpView);
+  max.outlet('eventDumpUmenu', eventDumpUmenu);
+});
+
 socket.on('availableRooms', data => {
-  let availableRoomsView = {
-    Rooms: data
-  }
-  let availableRoomsUmenu = {
-    items: data
-  }
+  let availableRooms = data;
+  let availableRoomsView = { Rooms: availableRooms };
+  let availableRoomsUmenu = { items: availableRooms };
   max.outlet('availableRoomsView', availableRoomsView);
   max.outlet('availableRoomsUmenu', availableRoomsUmenu);
 });
 
 socket.on('myRooms', data => {
-  let myRoomsView = {
-    Rooms: data
-  }
-  let myRoomsUmenu = {
-    items: data
-  }
+  let myRooms = data;
+  let myRoomsView = { Rooms: myRooms };
+  let myRoomsUmenu = { items: myRooms };
   max.outlet('myRoomsView', myRoomsView);
   max.outlet('myRoomsUmenu', myRoomsUmenu);
 });
