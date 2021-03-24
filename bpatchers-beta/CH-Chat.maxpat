@@ -145,8 +145,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 670.0, 409.334745999999996, 84.0, 22.0 ],
-					"text" : "s toCH.Server"
+					"patching_rect" : [ 670.0, 409.334745999999996, 85.0, 22.0 ],
+					"text" : "s toCH-Server"
 				}
 
 			}
@@ -307,8 +307,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 617.0, 35.084745999999996, 96.0, 22.0 ],
-					"text" : "r fromCH.Server"
+					"patching_rect" : [ 617.0, 35.084745999999996, 97.0, 22.0 ],
+					"text" : "r fromCH-Server"
 				}
 
 			}

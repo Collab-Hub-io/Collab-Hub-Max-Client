@@ -316,8 +316,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 271.0, 45.0, 82.0, 22.0 ],
-					"text" : "r toCH.Server"
+					"patching_rect" : [ 271.0, 45.0, 83.0, 22.0 ],
+					"text" : "r toCH-Server"
 				}
 
 			}
@@ -327,8 +327,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.5, 412.25, 84.0, 22.0 ],
-					"text" : "s toCH.Server"
+					"patching_rect" : [ 12.5, 412.25, 85.0, 22.0 ],
+					"text" : "s toCH-Server"
 				}
 
 			}
@@ -387,8 +387,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 470.0, 221.5, 96.0, 22.0 ],
-					"text" : "r fromCH.Server"
+					"patching_rect" : [ 470.0, 221.5, 97.0, 22.0 ],
+					"text" : "r fromCH-Server"
 				}
 
 			}
@@ -410,8 +410,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.0, 148.0, 98.0, 22.0 ],
-					"text" : "s fromCH.Server"
+					"patching_rect" : [ 271.0, 148.0, 99.0, 22.0 ],
+					"text" : "s fromCH-Server"
 				}
 
 			}
@@ -426,6 +426,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -440,7 +442,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 776.0, 221.5, 41.0, 20.0 ],
+					"patching_rect" : [ 313.0, 21.0, 41.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 195.0, 53.960396039603964, 41.0, 20.0 ],
 					"style" : "velvet",

@@ -94,18 +94,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 659.0, 310.0, 151.0, 47.0 ],
-					"text" : "it would be nice to be able to remove items in myRoom from allRooms..."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -204,8 +192,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 343.0, 554.0, 84.0, 22.0 ],
-					"text" : "s toCH.Server"
+					"patching_rect" : [ 343.0, 554.0, 85.0, 22.0 ],
+					"text" : "s toCH-Server"
 				}
 
 			}
@@ -215,8 +203,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 273.0, 195.0, 84.0, 22.0 ],
-					"text" : "s toCH.Server"
+					"patching_rect" : [ 273.0, 195.0, 85.0, 22.0 ],
+					"text" : "s toCH-Server"
 				}
 
 			}
@@ -275,8 +263,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 230.0, 96.0, 22.0 ],
-					"text" : "r fromCH.Server"
+					"patching_rect" : [ 16.0, 230.0, 97.0, 22.0 ],
+					"text" : "r fromCH-Server"
 				}
 
 			}
