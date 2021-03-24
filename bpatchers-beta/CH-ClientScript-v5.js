@@ -15,6 +15,8 @@ const max = require('max-api'),
   socket = io.connect(`http://192.168.0.200:3000/${namespace}`, {query: {username: username} });
   // socket = io.connect(`https://collab-hub-v2.herokuapp.com/${namespace}`, {query: {username: username} });
 
+let senderFlag = false;
+
 // Handling connect/disconnect
 socket.on('connect', () => {
     max.outlet('connected', 1);
@@ -37,6 +39,9 @@ max.addHandler('addUsername', username => {
   socket.emit('addUsername', outgoing);
 });
 
+max.addHandler('sender', bool => {
+  senderFlag = bool;
+});
 
 // Event & control broadcast
 
@@ -89,12 +94,22 @@ max.addHandler('observeControl', header => {
   socket.emit('observeControl', outgoing);
 });
 
+max.addHandler('unobserveControl', header => {
+  let outgoing = { header: header };
+  socket.emit('unobserveControl', outgoing);
+});
+
 
 // Event management
 
-max.addHandler('observeControl', header => {
+max.addHandler('observeEvent', header => {
   let outgoing = { header: header };
-  socket.emit('observeControl', outgoing);
+  socket.emit('observeEvent', outgoing);
+});
+
+max.addHandler('unobserveEvent', header => {
+  let outgoing = { header: header };
+  socket.emit('unobserveEvent', outgoing);
 });
 
 
@@ -141,7 +156,7 @@ socket.on('otherUsers', data => {
 });
 
 socket.on('controlDump', data => {
-  let headers = data.controls;
+  let headers = data.controls.map(h => h.header);
   let controlDumpView = { Controls: headers };
   let controlDumpUmenu = { items: headers };
   max.outlet('controlDumpView', controlDumpView);
@@ -149,7 +164,7 @@ socket.on('controlDump', data => {
 });
 
 socket.on('events', data => {
-  let headers = data.data;
+  let headers = data.data.map(h => h.header);
   let eventDumpView = { Events: headers };
   let eventDumpUmenu = { items: headers };
   max.outlet('eventDumpView', eventDumpView);
@@ -174,6 +189,21 @@ socket.on('myRooms', data => {
 
 
 // Data from server
+
+socket.on('control', incoming => {
+  let sender = incoming.from;
+  let header = incoming.header;
+  let values = incoming.values;
+  if (senderFlag) {max.outlet(sender, header, ...values)} 
+  else max.outlet(header, ...values);
+});
+
+socket.on('event', incoming => {
+  let sender = incoming.from;
+  let header = incoming.header;
+  if (senderFlag) {max.outlet(sender, header)} 
+  else max.outlet(header);
+});
 
 socket.on('chat', incoming => {
   let sender = incoming.id;
