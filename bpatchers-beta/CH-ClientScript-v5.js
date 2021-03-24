@@ -17,6 +17,7 @@ const max = require('max-api'),
 
 let senderFlag = false;
 
+
 // Handling connect/disconnect
 socket.on('connect', () => {
     max.outlet('connected', 1);
@@ -42,6 +43,7 @@ max.addHandler('addUsername', username => {
 max.addHandler('sender', bool => {
   senderFlag = bool;
 });
+
 
 // Event & control broadcast
 
