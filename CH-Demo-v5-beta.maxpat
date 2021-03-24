@@ -116,8 +116,8 @@
 					"numinlets" : 7,
 					"numoutlets" : 7,
 					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 365.0, 531.0, 333.0, 22.0 ],
-					"text" : "route value list leBang pushvalue1 pushvalue2 pushbang"
+					"patching_rect" : [ 365.0, 531.0, 333.000000000000227, 22.0 ],
+					"text" : "route value lister leBang pushvalue1 pushvalue2 pushbang"
 				}
 
 			}
@@ -248,7 +248,7 @@
 					"numoutlets" : 7,
 					"outlettype" : [ "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 11.0, 481.0, 333.0, 22.0 ],
-					"text" : "route value list leBang pushvalue1 pushvalue2 pushbang"
+					"text" : "route value lister leBang pushvalue1 pushvalue2 pushbang"
 				}
 
 			}
@@ -426,7 +426,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 29.0, 126.0, 33.0 ],
+					"patching_rect" : [ 127.0, 29.0, 126.0, 33.0 ],
 					"text" : "Publish a control\n(array/list)"
 				}
 
@@ -451,7 +451,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 226.0, 64.0, 50.0, 22.0 ]
+					"patching_rect" : [ 231.0, 64.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -463,7 +463,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 174.0, 64.0, 50.0, 22.0 ]
+					"patching_rect" : [ 179.0, 64.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -475,7 +475,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 122.0, 64.0, 50.0, 22.0 ]
+					"patching_rect" : [ 127.0, 64.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -486,7 +486,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 122.0, 88.0, 46.0, 22.0 ],
+					"patching_rect" : [ 127.0, 88.0, 46.0, 22.0 ],
 					"text" : "pak i i i"
 				}
 
@@ -498,8 +498,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 122.0, 112.0, 115.0, 22.0 ],
-					"text" : "publish list $1 $2 $3"
+					"patching_rect" : [ 127.0, 112.0, 125.0, 22.0 ],
+					"text" : "publish lister $1 $2 $3"
 				}
 
 			}
@@ -522,8 +522,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.0, 88.0, 95.0, 22.0 ],
-					"text" : "publish value $1"
+					"patching_rect" : [ 11.0, 88.0, 112.0, 22.0 ],
+					"text" : "publish value $1 $1"
 				}
 
 			}
