@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 518.0, 68.0, 636.0, 804.0 ],
+		"rect" : [ 460.0, 62.0, 636.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -61,7 +61,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 504.0, 363.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 196.865921787709567, 125.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 232.0, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -280,7 +280,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 273.0, 12.75, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 152.865921787709567, 80.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 188.0, 80.0, 22.0 ],
 					"rounded" : 8.0,
 					"style" : "velvet",
 					"text" : "Create Room",
@@ -298,7 +298,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 504.0, 341.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 176.865921787709567, 125.0, 20.0 ],
+					"presentation_rect" : [ 129.0, 212.0, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Select room to leave:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -315,7 +315,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 290.0, 341.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 176.865921787709567, 125.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 212.0, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Select room to join:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -345,7 +345,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 290.0, 363.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 196.865921787709567, 125.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 232.0, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -361,7 +361,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 153.0, 341.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 29.865921787709496, 126.0, 20.0 ],
+					"presentation_rect" : [ 129.0, 42.0, 117.333332999999996, 20.0 ],
 					"style" : "velvet",
 					"text" : "My Rooms",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -377,7 +377,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 153.0, 363.0, 125.0, 101.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 49.865921787709496, 125.0, 101.0 ],
+					"presentation_rect" : [ 129.0, 62.0, 125.0, 125.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -394,7 +394,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 16.0, 341.0, 126.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 29.865921787709496, 126.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 42.0, 118.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Available Rooms",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -410,7 +410,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 16.0, 363.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 49.865921787709496, 125.0, 125.0 ],
+					"presentation_rect" : [ 2.0, 62.0, 125.0, 148.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -448,10 +448,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 4.0, 4.0, 127.0, 19.865921787709496 ],
+					"patching_rect" : [ 2.0, 4.0, 154.0, 24.089385474860336 ],
 					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Rooms-Title.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 4.0, 127.0, 19.865921787709496 ]
+					"presentation_rect" : [ 2.0, 4.0, 154.0, 24.089385474860336 ]
 				}
 
 			}
@@ -465,9 +465,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 256.0, 221.0 ],
+					"patching_rect" : [ 0.0, 0.0, 256.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 256.0, 221.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 256.0, 256.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}

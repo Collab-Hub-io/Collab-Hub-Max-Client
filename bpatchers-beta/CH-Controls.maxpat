@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1004.0, 804.0 ],
+		"rect" : [ 182.0, 62.0, 495.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,45 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 81.75, 592.0, 75.5, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 235.5, 6.0, 75.5, 20.0 ],
+					"text" : "Detail mode:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 154.5, 614.0, 92.0, 22.0 ],
+					"text" : "controlDetail $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 154.5, 588.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 311.0, 4.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "message",
@@ -228,7 +267,7 @@
 					"patching_rect" : [ 1011.0, 532.0, 102.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 256.0, 176.968992367271312, 123.0, 33.0 ],
+					"presentation_rect" : [ 257.0, 199.00000011920929, 123.0, 33.0 ],
 					"style" : "velvet",
 					"text" : "Select control to clear from server:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -258,7 +297,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1011.0, 569.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 256.0, 209.968992248062023, 125.0, 22.0 ],
+					"presentation_rect" : [ 257.0, 232.0, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -273,7 +312,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1011.0, 383.0, 125.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 256.0, 29.968992248062015, 125.0, 20.0 ],
+					"presentation_rect" : [ 257.0, 42.0, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "My controls",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -289,7 +328,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1011.0, 405.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 256.0, 49.968992248062015, 125.0, 125.0 ],
+					"presentation_rect" : [ 257.0, 62.0, 125.0, 135.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -307,7 +346,7 @@
 					"patching_rect" : [ 677.0, 389.5, 99.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 129.0, 176.968992367271312, 125.0, 33.0 ],
+					"presentation_rect" : [ 129.5, 199.00000011920929, 125.0, 33.0 ],
 					"style" : "velvet",
 					"text" : "Select control to stop observing:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -325,7 +364,7 @@
 					"patching_rect" : [ 219.5, 389.5, 126.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 2.0, 176.968992248062023, 125.0, 33.0 ],
+					"presentation_rect" : [ 2.0, 199.0, 125.0, 33.0 ],
 					"style" : "velvet",
 					"text" : "Select control to observe:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -355,7 +394,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 677.0, 426.5, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 209.968992248062023, 125.0, 22.0 ],
+					"presentation_rect" : [ 129.5, 232.0, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -384,7 +423,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 219.5, 429.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 209.968992248062023, 125.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 232.0, 125.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -399,7 +438,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 540.0, 383.0, 126.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 29.968992248062015, 126.0, 20.0 ],
+					"presentation_rect" : [ 129.5, 42.0, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Observing controls",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -415,7 +454,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 540.0, 405.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 49.968992248062015, 125.0, 125.0 ],
+					"presentation_rect" : [ 129.5, 62.0, 125.0, 135.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -431,7 +470,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 27.5, 383.0, 122.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 29.968992248062015, 122.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 42.0, 125.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Available controls",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -447,7 +486,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 27.5, 405.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 49.968992248062015, 125.0, 125.0 ],
+					"presentation_rect" : [ 2.0, 62.0, 125.0, 135.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -488,7 +527,7 @@
 					"patching_rect" : [ 4.0, 4.0, 138.0, 19.968992248062015 ],
 					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Controls-Title.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 4.0, 138.0, 19.968992248062015 ]
+					"presentation_rect" : [ 2.0, 4.0, 166.0, 24.020671834625322 ]
 				}
 
 			}
@@ -502,9 +541,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 383.0, 241.0 ],
+					"patching_rect" : [ 0.0, 0.0, 384.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 383.0, 234.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 384.0, 256.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -548,6 +587,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
@@ -581,6 +627,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}

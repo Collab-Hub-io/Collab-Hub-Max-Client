@@ -108,7 +108,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 461.0, 191.084745999999996, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 169.084745999999996, 127.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 212.0, 127.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Chat with all users",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -282,7 +282,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 788.0, 229.084745999999996, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 189.084745999999996, 143.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 232.0, 252.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -403,7 +403,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 341.0, 191.084745999999996, 126.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 169.084745762711862, 126.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 211.999999762711866, 126.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Select user/room:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -434,7 +434,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 617.0, 229.084745999999996, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 189.084745999999996, 143.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 232.0, 252.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -454,7 +454,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 159.0, 113.084745999999996, 133.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 67.084745999999996, 143.0, 100.0 ],
+					"presentation_rect" : [ 2.0, 66.0, 252.0, 144.0 ],
 					"rounded" : 0.0,
 					"style" : "velvet",
 					"tabmode" : 0,
@@ -476,7 +476,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 300.0, 67.084745999999996, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 41.084745762711862, 143.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 42.0, 252.0, 22.0 ],
 					"rounded" : 0.0,
 					"segmented" : 1,
 					"style" : "velvet",
@@ -700,7 +700,7 @@
 					"patching_rect" : [ 105.0, 4.0, 40.0, 35.084745762711862 ],
 					"pic" : "Macintosh HD:/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Logo.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 105.0, 4.0, 40.0, 35.084745762711862 ]
+					"presentation_rect" : [ 214.0, 4.0, 40.0, 35.084745762711862 ]
 				}
 
 			}
@@ -719,7 +719,7 @@
 					"patching_rect" : [ 4.0, 4.0, 95.0, 20.0 ],
 					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Chat-Title.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 4.0, 95.0, 20.0 ]
+					"presentation_rect" : [ 2.0, 4.0, 114.0, 24.0 ]
 				}
 
 			}
@@ -733,9 +733,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 147.0, 213.0 ],
+					"patching_rect" : [ 0.0, 0.0, 256.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 147.0, 213.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 256.0, 256.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}

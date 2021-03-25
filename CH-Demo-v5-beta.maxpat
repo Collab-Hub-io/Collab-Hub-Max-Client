@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 163.0, 143.0, 940.0, 625.0 ],
+		"rect" : [ 113.0, 81.0, 799.0, 742.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 37.0, 139.0, 57.0, 22.0 ],
+					"text" : "error test"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 626.666666666666742, 567.0, 24.0, 24.0 ]
+					"patching_rect" : [ 626.666666666666742, 602.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -58,7 +70,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 574.333333333333371, 567.0, 50.0, 22.0 ]
+					"patching_rect" : [ 574.333333333333371, 602.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -70,7 +82,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 522.0, 567.0, 50.0, 22.0 ]
+					"patching_rect" : [ 522.0, 602.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -82,7 +94,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 365.0, 567.0, 50.0, 22.0 ]
+					"patching_rect" : [ 365.0, 602.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -93,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 396.333333333333371, 596.0, 71.333333333333343, 22.0 ]
+					"patching_rect" : [ 396.333333333333371, 631.0, 71.333333333333343, 22.0 ]
 				}
 
 			}
@@ -105,7 +117,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 469.666666666666686, 567.0, 24.0, 24.0 ]
+					"patching_rect" : [ 469.666666666666686, 602.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -116,7 +128,7 @@
 					"numinlets" : 7,
 					"numoutlets" : 7,
 					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 365.0, 531.0, 333.000000000000227, 22.0 ],
+					"patching_rect" : [ 365.0, 566.0, 333.000000000000227, 22.0 ],
 					"text" : "route value lister leBang pushvalue1 pushvalue2 pushbang"
 				}
 
@@ -128,7 +140,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 464.0, 481.0, 483.0, 20.0 ],
+					"patching_rect" : [ 464.0, 516.0, 483.0, 20.0 ],
 					"text" : "Incoming data can be sorted by sender if \"Flags\" is enabled in the client module"
 				}
 
@@ -140,7 +152,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.5, 446.0, 483.0, 20.0 ],
+					"patching_rect" : [ 141.5, 481.0, 483.0, 20.0 ],
 					"text" : "Incoming data comes from any module inlet OR a [r fromCH-Server] object"
 				}
 
@@ -153,7 +165,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 272.666666666666686, 517.0, 24.0, 24.0 ]
+					"patching_rect" : [ 272.666666666666686, 552.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -165,7 +177,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 220.333333333333343, 517.0, 50.0, 22.0 ]
+					"patching_rect" : [ 220.333333333333343, 552.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -177,7 +189,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 168.0, 517.0, 50.0, 22.0 ]
+					"patching_rect" : [ 168.0, 552.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -188,7 +200,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 365.0, 505.0, 93.0, 22.0 ],
+					"patching_rect" : [ 365.0, 540.0, 93.0, 22.0 ],
 					"text" : "route username"
 				}
 
@@ -200,7 +212,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 365.0, 481.0, 97.0, 22.0 ],
+					"patching_rect" : [ 365.0, 516.0, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -213,7 +225,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 11.0, 517.0, 50.0, 22.0 ]
+					"patching_rect" : [ 11.0, 552.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -224,7 +236,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 42.333333333333343, 546.0, 71.333333333333343, 22.0 ]
+					"patching_rect" : [ 42.333333333333343, 581.0, 71.333333333333343, 22.0 ]
 				}
 
 			}
@@ -236,7 +248,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.666666666666671, 517.0, 24.0, 24.0 ]
+					"patching_rect" : [ 115.666666666666671, 552.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -247,7 +259,7 @@
 					"numinlets" : 7,
 					"numoutlets" : 7,
 					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 11.0, 481.0, 333.0, 22.0 ],
+					"patching_rect" : [ 11.0, 516.0, 333.0, 22.0 ],
 					"text" : "route value lister leBang pushvalue1 pushvalue2 pushbang"
 				}
 
@@ -566,7 +578,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 396.0, 676.0, 383.0, 234.0 ],
+					"patching_rect" : [ 399.000000000000114, 663.0, 384.0, 256.0 ],
 					"prototypename" : "CH-EVENTS",
 					"viewvisibility" : 1
 				}
@@ -587,7 +599,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.0, 676.0, 383.0, 234.0 ],
+					"patching_rect" : [ 11.0, 663.0, 384.0, 256.0 ],
 					"prototypename" : "CH-CONTROLS",
 					"viewvisibility" : 1
 				}
@@ -608,7 +620,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 525.5, 214.0, 147.0, 213.0 ],
+					"patching_rect" : [ 527.0, 214.0, 256.0, 256.0 ],
 					"prototypename" : "CH-CHAT",
 					"viewvisibility" : 1
 				}
@@ -629,7 +641,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 267.5, 214.0, 256.0, 221.0 ],
+					"patching_rect" : [ 269.0, 214.0, 256.0, 256.0 ],
 					"prototypename" : "CH-ROOMS",
 					"viewvisibility" : 1
 				}
@@ -650,7 +662,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.0, 214.0, 256.0, 177.0 ],
+					"patching_rect" : [ 11.0, 214.0, 256.0, 256.0 ],
 					"prototypename" : "CH-CLIENT",
 					"viewvisibility" : 1
 				}
@@ -864,6 +876,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-83", 0 ],
 					"source" : [ "obj-84", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}

@@ -16,117 +16,134 @@ const max = require('max-api'),
   // socket = io.connect(`https://collab-hub-v2.herokuapp.com/${namespace}`, {query: {username: username} });
 
 let senderFlag = false;
+let controlDetail = false;
+let eventDetail = false;
 
+const maxHandlers = {
+
+  // General
+
+  addUsername: username => {
+    let outgoing = { username: username };
+    socket.emit('addUsername', outgoing);
+  },
+
+  sender: bool => {
+    senderFlag = bool;
+  },
+  
+  controlDetail: bool => {
+    controlDetail = bool;
+  },
+  
+  eventDetail: bool => {
+    eventDetail = bool;
+  },
+
+
+  // Event & control broadcast
+
+  publish: (...args) => {
+    let outgoing = {
+        mode: 'publish',
+    };
+    if (args.length > 1) {
+        outgoing.header = args[0],
+        outgoing.values = args.slice(1),
+        socket.emit('control', outgoing);
+    } 
+    else {
+        outgoing.header = args[0]
+        socket.emit('event', outgoing);
+    };
+  },
+
+  push: (...args) => {
+    let outgoing = { mode: 'push' };
+    if (args.length > 2) {
+        outgoing.target = args[0],
+        outgoing.header = args[1],
+        outgoing.values = args.slice(2),
+        socket.emit('control', outgoing);
+    } 
+    else {
+        outgoing.target = args[0],
+        outgoing.header = args[1],
+        socket.emit('event', outgoing);
+    };
+  },
+
+
+  // Chat broadcast
+
+  chat: (...args) => {
+    let outgoing = {
+        target: args[0],
+        chat: args.slice(1)
+    };
+    socket.emit('chat', outgoing);
+  },
+
+
+  // Control management
+
+  observeControl: header => {
+    let outgoing = { header: header };
+    socket.emit('observeControl', outgoing);
+  },
+
+  unobserveControl: header => {
+    let outgoing = { header: header };
+    socket.emit('unobserveControl', outgoing);
+  },
+
+
+  // Event management
+
+  observeEvent: header => {
+    let outgoing = { header: header };
+    socket.emit('observeEvent', outgoing);
+  },
+
+  unobserveEvent: header => {
+    let outgoing = { header: header };
+    socket.emit('unobserveEvent', outgoing);
+  },
+
+
+  // Room management
+
+  joinRoom: room => {
+    socket.emit('joinRoom', room);
+  },
+
+  leaveRoom: room => {
+    socket.emit('leaveRoom', room);
+  },
+
+  
+  // Error
+  [max.MESSAGE_TYPES.ALL]: (handled) => {
+    if (!handled) { max.outlet('error', 'Invalid message format!' + '\n' +
+    '~ Controls and events should be preceded by \'publish\' or \'push.\'' + '\n' +
+    '~ Manual chat messages should be preceded by \'chat\' and followed by user/room name or \'all.\'' + '\n' +
+    '~ Other data retrieval options include: getUsers, observeControl, joinRoom, etc.' ) };
+  }
+
+};
+// --------------------
+
+max.addHandlers(maxHandlers);
 
 // Handling connect/disconnect
 socket.on('connect', () => {
-    max.outlet('connected', 1);
-  });
-  
+  max.outlet('connected', 1);
+});
+
 // This function is only useful if the disconnect comes from the server
 socket.on('disconnect', () => {
-    max.outlet('connected', 0);
+  max.outlet('connected', 0);
 });
-
-
-// --------------------
-// Outgoing
-
-
-// General
-
-max.addHandler('addUsername', username => {
-  let outgoing = { username: username };
-  socket.emit('addUsername', outgoing);
-});
-
-max.addHandler('sender', bool => {
-  senderFlag = bool;
-});
-
-
-// Event & control broadcast
-
-max.addHandler('publish', (...args) => {
-  let outgoing = {
-      mode: 'publish',
-  };
-  if (args.length > 1) {
-      outgoing.header = args[0],
-      outgoing.values = args.slice(1),
-      socket.emit('control', outgoing);
-  } 
-  else {
-      outgoing.header = args[0]
-      socket.emit('event', outgoing);
-  };
-});
-
-max.addHandler('push', (...args) => {
-  let outgoing = { mode: 'push' };
-  if (args.length > 2) {
-      outgoing.target = args[0],
-      outgoing.header = args[1],
-      outgoing.values = args.slice(2),
-      socket.emit('control', outgoing);
-  } 
-  else {
-      outgoing.target = args[0],
-      outgoing.header = args[1],
-      socket.emit('event', outgoing);
-  };
-});
-
-
-// Chat broadcast
-
-max.addHandler('chat', (...args) => {
-  let outgoing = {
-      target: args[0],
-      chat: args.slice(1)
-  };
-  socket.emit('chat', outgoing);
-});
-
-
-// Control management
-
-max.addHandler('observeControl', header => {
-  let outgoing = { header: header };
-  socket.emit('observeControl', outgoing);
-});
-
-max.addHandler('unobserveControl', header => {
-  let outgoing = { header: header };
-  socket.emit('unobserveControl', outgoing);
-});
-
-
-// Event management
-
-max.addHandler('observeEvent', header => {
-  let outgoing = { header: header };
-  socket.emit('observeEvent', outgoing);
-});
-
-max.addHandler('unobserveEvent', header => {
-  let outgoing = { header: header };
-  socket.emit('unobserveEvent', outgoing);
-});
-
-
-// Room management
-
-max.addHandler('joinRoom', room => {
-  socket.emit('joinRoom', room);
-});
-
-max.addHandler('leaveRoom', room => {
-  socket.emit('leaveRoom', room);
-});
-
-// --------------------
-
 
 
 // --------------------
@@ -158,18 +175,24 @@ socket.on('otherUsers', data => {
 });
 
 socket.on('controlDump', data => {
-  let headers = data.controls.map(h => h.header);
-  let controlDumpView = { Controls: headers };
+  let details = data.controls;
+  let headers = details.map(h => h.header);
+  let controlDumpView;
+  if (controlDetail) { controlDumpView = { Controls: details } }
+    else controlDumpView = { Controls: headers };
   let controlDumpUmenu = { items: headers };
   max.outlet('controlDumpView', controlDumpView);
   max.outlet('controlDumpUmenu', controlDumpUmenu);
 });
 
 socket.on('events', data => {
-  let headers = data.data.map(h => h.header);
-  let eventDumpView = { Events: headers };
+  let details = data.data;
+  let headers = details.map(h => h.header);
+  let eventDumpView;
+  if (eventDetail) { eventDumpView = { Events: details } }
+    else eventDumpView = { Events: headers };
   let eventDumpUmenu = { items: headers };
-  max.outlet('eventDumpView', eventDumpView);
+    max.outlet('eventDumpView', eventDumpView);
   max.outlet('eventDumpUmenu', eventDumpUmenu);
 });
 
