@@ -9,15 +9,19 @@ const max = require('max-api'),
   io = require('socket.io-client'),
   
   // With script start message to node.script, 3rd string is namespace, optional 4th is initial username.
-  // Initial username functionality still needs to be added on server end. 
   namespace = process.argv[2],
   username = process.argv[3],
-  socket = io.connect(`http://192.168.0.200:3000/${namespace}`, {query: {username: username} });
-  // socket = io.connect(`https://collab-hub-v2.herokuapp.com/${namespace}`, {query: {username: username} });
+  socket = (() => {
+    if (username != undefined)
+      return io.connect(`http://192.168.0.200:3000/${namespace}`, {query: {username: username} } );
+    else
+      return io.connect(`http://192.168.0.200:3000/${namespace}`);
+  })();
 
-let senderFlag = false;
-let controlDetail = false;
-let eventDetail = false;
+let senderFlag = false,
+  controlDetail = false,
+  eventDetail = false;
+
 
 const maxHandlers = {
 

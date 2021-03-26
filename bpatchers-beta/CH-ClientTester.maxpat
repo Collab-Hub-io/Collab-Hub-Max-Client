@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 78.0, 156.0, 850.0, 521.0 ],
+		"rect" : [ 78.0, 156.0, 953.0, 521.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,24 +40,21 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"fontname" : "Arial",
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-33",
-					"maxclass" : "textbutton",
-					"mode" : 1,
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "n4m.monitor.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 355.0, 17.084745762711862, 110.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 191.333333075046539, 81.822033898305079, 64.0, 22.0 ],
-					"rounded" : 8.0,
-					"style" : "velvet",
-					"text" : "Flags",
-					"textcolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
-					"texton" : "Flags",
-					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 510.0, 8.0, 400.0, 220.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -192,7 +189,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 101.5, 263.5, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 33.822033898305079, 125.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 41.084745762711862, 125.0, 22.0 ],
 					"rounded" : 8.0,
 					"style" : "velvet",
 					"text" : "Disconnect",
@@ -212,7 +209,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 233.0, 263.5, 110.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 57.822033898305072, 125.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 65.084745762711862, 125.0, 22.0 ],
 					"rounded" : 8.0,
 					"style" : "velvet",
 					"text" : "Custom Connect",
@@ -608,10 +605,28 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
 					"text" : "node.script CH-ClientScript-v5.js"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"id" : "obj-19",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 313.0, 21.0, 41.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 197.0, 91.084745762711862, 41.0, 20.0 ],
+					"style" : "velvet",
+					"text" : "Flags:",
+					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -629,7 +644,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 643.0, 263.5, 125.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 106.0, 125.0, 148.0 ],
+					"presentation_rect" : [ 2.0, 111.0, 125.0, 142.0 ],
 					"rounded" : 0.0,
 					"style" : "velvet",
 					"tabmode" : 0
@@ -638,15 +653,14 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 1,
 					"fontname" : "Arial",
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 804.0, 239.5, 133.0, 20.0 ],
+					"patching_rect" : [ 804.0, 239.5, 126.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 86.0, 60.333333075046539, 20.0 ],
+					"presentation_rect" : [ 129.0, 91.084745762711862, 65.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Users",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -659,9 +673,9 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 804.0, 392.5, 125.0, 128.0 ],
+					"patching_rect" : [ 804.0, 392.5, 192.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 106.0, 125.0, 148.0 ],
+					"presentation_rect" : [ 129.0, 111.0, 125.0, 141.833333730697632 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "default",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -670,15 +684,32 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 1,
+					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"checkedcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"id" : "obj-8",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 355.0, 21.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 234.0, 89.084745762711862, 20.0, 20.0 ],
+					"style" : "velvet",
+					"uncheckedcolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-6",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 643.0, 239.5, 133.0, 20.0 ],
+					"patching_rect" : [ 643.0, 239.5, 126.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 86.0, 112.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 91.084745762711862, 105.333332717418671, 20.0 ],
 					"style" : "velvet",
 					"text" : "Simple Chat",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -697,7 +728,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 435.0, 263.5, 110.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 57.822033898305072, 125.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 65.084745762711862, 125.0, 22.0 ],
 					"rounded" : 8.0,
 					"style" : "velvet",
 					"text" : "Change Username",
@@ -719,7 +750,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 861.600000000000023, 324.5, 22.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 105.0, 33.822033898305079, 22.0, 22.0 ],
+					"presentation_rect" : [ 105.0, 41.084745762711862, 22.0, 22.0 ],
 					"style" : "velvet"
 				}
 
@@ -736,7 +767,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 12.5, 263.5, 55.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 33.822033898305079, 101.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 41.084745762711862, 101.0, 22.0 ],
 					"rounded" : 8.0,
 					"style" : "velvet",
 					"text" : "Connect",
@@ -756,10 +787,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 214.0, 2.0, 40.0, 35.084745762711862 ],
+					"patching_rect" : [ 214.0, 4.0, 40.0, 35.084745762711862 ],
 					"pic" : "Macintosh HD:/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Logo.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 220.0, 2.0, 34.0, 29.822033898305083 ]
+					"presentation_rect" : [ 214.0, 4.0, 40.0, 35.084745762711862 ]
 				}
 
 			}
@@ -775,10 +806,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 2.0, 2.0, 108.0, 19.96039603960396 ],
+					"patching_rect" : [ 4.0, 4.0, 108.0, 19.96039603960396 ],
 					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Client-Title.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 4.0, 108.0, 19.96039603960396 ]
+					"presentation_rect" : [ 2.0, 4.0, 130.0, 24.026402640264024 ]
 				}
 
 			}
@@ -943,13 +974,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
@@ -1017,7 +1041,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
+					"order" : 0,
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -1085,6 +1118,13 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
@@ -1104,6 +1144,24 @@
 				"name" : "CH-ClientScript-v5.js",
 				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
 				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "n4m.monitor.maxpat",
+				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resize_n4m_monitor_patcher.js",
+				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fit_jweb_to_bounds.js",
+				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

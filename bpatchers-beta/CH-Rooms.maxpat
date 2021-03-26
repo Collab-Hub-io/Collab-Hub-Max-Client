@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 460.0, 62.0, 636.0, 804.0 ],
+		"rect" : [ 216.0, 165.0, 565.0, 506.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgoncolor" : [ 0.054901960784314, 0.050980392156863, 0.054901960784314, 1.0 ],
+					"fontname" : "Arial",
+					"id" : "obj-24",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 420.0, 2.0, 80.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 110.0, 33.822033898305079, 80.0, 22.0 ],
+					"rounded" : 8.0,
+					"style" : "velvet",
+					"text" : "Details",
+					"textcolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
+					"texton" : "Details",
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgfillcolor_angle" : 269.577713564497685,
 					"bgfillcolor_autogradient" : 0.0,
 					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -59,9 +83,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 504.0, 363.0, 125.0, 22.0 ],
+					"patching_rect" : [ 694.0, 332.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 232.0, 125.0, 22.0 ],
+					"presentation_rect" : [ 80.0, 360.0, 110.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -75,7 +99,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 271.0, 30.0, 30.0 ]
+					"patching_rect" : [ 239.0, 240.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -88,7 +112,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 317.0, 130.0, 30.0, 30.0 ]
+					"patching_rect" : [ 250.0, 119.25, 30.0, 30.0 ]
 				}
 
 			}
@@ -99,7 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 557.0, 472.0, 50.0, 22.0 ]
+					"patching_rect" : [ 747.0, 441.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -110,7 +134,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 557.0, 496.0, 117.0, 22.0 ],
+					"patching_rect" : [ 747.0, 465.0, 117.0, 22.0 ],
 					"text" : "prepend leaveRoom"
 				}
 
@@ -122,7 +146,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 557.0, 424.0, 94.0, 22.0 ],
+					"patching_rect" : [ 747.0, 393.0, 94.0, 22.0 ],
 					"text" : "prepend symbol"
 				}
 
@@ -134,7 +158,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 557.0, 448.0, 216.0, 22.0 ],
+					"patching_rect" : [ 747.0, 417.0, 216.0, 22.0 ],
 					"text" : "dialog @mode 2 @label Leaving room:"
 				}
 
@@ -146,7 +170,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.0, 472.0, 50.0, 22.0 ]
+					"patching_rect" : [ 533.0, 441.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -157,7 +181,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.0, 496.0, 107.0, 22.0 ],
+					"patching_rect" : [ 533.0, 465.0, 107.0, 22.0 ],
 					"text" : "prepend joinRoom"
 				}
 
@@ -169,7 +193,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.0, 424.0, 94.0, 22.0 ],
+					"patching_rect" : [ 533.0, 393.0, 94.0, 22.0 ],
 					"text" : "prepend symbol"
 				}
 
@@ -181,7 +205,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 343.0, 448.0, 212.0, 22.0 ],
+					"patching_rect" : [ 533.0, 417.0, 212.0, 22.0 ],
 					"text" : "dialog @mode 2 @label Joining room:"
 				}
 
@@ -192,7 +216,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 343.0, 554.0, 85.0, 22.0 ],
+					"patching_rect" : [ 533.0, 523.0, 85.0, 22.0 ],
 					"text" : "s toCH-Server"
 				}
 
@@ -203,7 +227,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 273.0, 195.0, 85.0, 22.0 ],
+					"patching_rect" : [ 206.0, 160.25, 85.0, 22.0 ],
 					"text" : "s toCH-Server"
 				}
 
@@ -215,7 +239,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 273.0, 84.75, 107.0, 22.0 ],
+					"patching_rect" : [ 206.0, 74.0, 107.0, 22.0 ],
 					"text" : "prepend joinRoom"
 				}
 
@@ -227,7 +251,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 273.0, 36.75, 32.0, 22.0 ],
+					"patching_rect" : [ 206.0, 26.0, 32.0, 22.0 ],
 					"text" : "t b 1"
 				}
 
@@ -239,7 +263,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 273.0, 60.75, 203.0, 22.0 ],
+					"patching_rect" : [ 206.0, 50.0, 203.0, 22.0 ],
 					"text" : "dialog Enter room name (no spaces)"
 				}
 
@@ -251,7 +275,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 16.0, 310.0, 567.0, 22.0 ],
+					"patching_rect" : [ 206.0, 279.0, 567.0, 22.0 ],
 					"text" : "route availableRoomsView myRoomsView availableRoomsUmenu myRoomsUmenu"
 				}
 
@@ -263,7 +287,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 230.0, 97.0, 22.0 ],
+					"patching_rect" : [ 206.0, 199.0, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -278,9 +302,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 273.0, 12.75, 80.0, 22.0 ],
+					"patching_rect" : [ 206.0, 2.0, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 188.0, 80.0, 22.0 ],
+					"presentation_rect" : [ 110.0, 210.084745999999996, 80.0, 22.0 ],
 					"rounded" : 8.0,
 					"style" : "velvet",
 					"text" : "Create Room",
@@ -296,11 +320,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 504.0, 341.0, 127.0, 20.0 ],
+					"patching_rect" : [ 694.0, 310.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 212.0, 125.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 360.0, 76.0, 20.0 ],
 					"style" : "velvet",
-					"text" : "Select room to leave:",
+					"text" : "Leave room:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -313,11 +337,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 290.0, 341.0, 127.0, 20.0 ],
+					"patching_rect" : [ 480.0, 310.0, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 212.0, 125.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 186.084745999999996, 65.0, 20.0 ],
 					"style" : "velvet",
-					"text" : "Select room to join:",
+					"text" : "Join room:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -343,9 +367,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 290.0, 363.0, 125.0, 22.0 ],
+					"patching_rect" : [ 480.0, 332.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 232.0, 125.0, 22.0 ],
+					"presentation_rect" : [ 69.0, 186.084745999999996, 121.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -353,15 +377,16 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-53",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.0, 341.0, 127.0, 20.0 ],
+					"patching_rect" : [ 343.0, 310.0, 133.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 42.0, 117.333332999999996, 20.0 ],
+					"presentation_rect" : [ 2.0, 212.084745999999996, 123.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "My Rooms",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -375,9 +400,9 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.0, 363.0, 125.0, 101.0 ],
+					"patching_rect" : [ 343.0, 332.0, 125.0, 101.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 62.0, 125.0, 125.0 ],
+					"presentation_rect" : [ 2.0, 234.0, 188.0, 124.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -386,15 +411,16 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-55",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 341.0, 126.0, 20.0 ],
+					"patching_rect" : [ 206.0, 310.0, 136.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 42.0, 118.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 37.822033898305079, 115.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Available Rooms",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -408,9 +434,9 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 363.0, 125.0, 125.0 ],
+					"patching_rect" : [ 206.0, 332.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 62.0, 125.0, 148.0 ],
+					"presentation_rect" : [ 2.0, 57.822034000000002, 188.0, 124.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -429,10 +455,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 213.0, 4.0, 40.0, 35.084745762711862 ],
+					"patching_rect" : [ 156.0, 2.0, 34.0, 29.822033898305083 ],
 					"pic" : "Macintosh HD:/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Logo.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 213.0, 4.0, 40.0, 35.084745762711862 ]
+					"presentation_rect" : [ 156.0, 2.0, 34.0, 29.822033898305083 ]
 				}
 
 			}
@@ -448,10 +474,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 2.0, 4.0, 154.0, 24.089385474860336 ],
+					"patching_rect" : [ 2.0, 4.0, 127.333333999999994, 19.918063418994414 ],
 					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Rooms-Title.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 4.0, 154.0, 24.089385474860336 ]
+					"presentation_rect" : [ 2.0, 4.0, 127.3333340883255, 19.918063432810694 ]
 				}
 
 			}
@@ -465,9 +491,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 256.0, 256.0 ],
+					"patching_rect" : [ 0.0, 0.0, 192.0, 384.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 256.0, 256.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 192.0, 384.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}

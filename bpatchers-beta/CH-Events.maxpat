@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1004.0, 804.0 ],
+		"rect" : [ 34.0, 62.0, 538.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,14 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "comment",
+					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgoncolor" : [ 0.054901960784314, 0.050980392156863, 0.054901960784314, 1.0 ],
+					"fontname" : "Arial",
+					"id" : "obj-17",
+					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 81.75, 592.0, 76.0, 20.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 131.0, 352.0, 80.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 235.5, 6.0, 76.0, 20.0 ],
-					"text" : "Detail mode:"
+					"presentation_rect" : [ 174.000000002464276, 36.0, 80.0, 22.0 ],
+					"rounded" : 8.0,
+					"style" : "velvet",
+					"text" : "Details",
+					"textcolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
+					"texton" : "Details",
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -58,22 +69,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 154.5, 614.0, 85.0, 22.0 ],
+					"patching_rect" : [ 131.0, 389.0, 85.0, 22.0 ],
 					"text" : "eventDetail $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 154.5, 588.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 311.0, 4.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -84,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 737.0, 518.5, 50.0, 22.0 ]
+					"patching_rect" : [ 713.5, 293.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -95,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 737.0, 470.5, 94.0, 22.0 ],
+					"patching_rect" : [ 713.5, 245.5, 94.0, 22.0 ],
 					"text" : "prepend symbol"
 				}
 
@@ -107,7 +104,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 737.0, 494.5, 224.0, 22.0 ],
+					"patching_rect" : [ 713.5, 269.5, 224.0, 22.0 ],
 					"text" : "dialog @mode 2 @label Stop observing:"
 				}
 
@@ -119,7 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 737.0, 543.0, 143.0, 22.0 ],
+					"patching_rect" : [ 713.5, 318.0, 143.0, 22.0 ],
 					"text" : "prepend unobserveEvent"
 				}
 
@@ -131,7 +128,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 538.0, 343.0, 230.0, 22.0 ],
+					"patching_rect" : [ 514.5, 118.0, 230.0, 22.0 ],
 					"text" : "route eventDumpView eventDumpUmenu"
 				}
 
@@ -144,7 +141,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 46.0, 304.0, 30.0, 30.0 ]
+					"patching_rect" : [ 22.5, 79.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -157,7 +154,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.5, 494.5, 30.0, 30.0 ]
+					"patching_rect" : [ 217.0, 269.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -167,7 +164,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 272.5, 667.0, 85.0, 22.0 ],
+					"patching_rect" : [ 249.0, 442.0, 85.0, 22.0 ],
 					"text" : "s toCH-Server"
 				}
 
@@ -179,7 +176,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 272.5, 494.5, 105.0, 22.0 ],
+					"patching_rect" : [ 249.0, 269.5, 105.0, 22.0 ],
 					"text" : "observeAllEvent 1"
 				}
 
@@ -191,7 +188,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 272.5, 456.5, 39.0, 22.0 ],
+					"patching_rect" : [ 249.0, 231.5, 39.0, 22.0 ],
 					"text" : "sel all"
 				}
 
@@ -203,7 +200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 154.5, 405.0, 22.0, 22.0 ],
+					"patching_rect" : [ 131.0, 180.0, 22.0, 22.0 ],
 					"text" : "t b"
 				}
 
@@ -215,7 +212,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 154.5, 429.0, 64.0, 22.0 ],
+					"patching_rect" : [ 131.0, 204.0, 64.0, 22.0 ],
 					"text" : "append all"
 				}
 
@@ -227,7 +224,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.5, 494.5, 129.0, 22.0 ],
+					"patching_rect" : [ 364.0, 269.5, 129.0, 22.0 ],
 					"text" : "prepend observeEvent"
 				}
 
@@ -239,7 +236,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 27.5, 343.0, 230.0, 22.0 ],
+					"patching_rect" : [ 4.0, 118.0, 230.0, 22.0 ],
 					"text" : "route eventDumpView eventDumpUmenu"
 				}
 
@@ -251,7 +248,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.5, 272.0, 97.0, 22.0 ],
+					"patching_rect" : [ 4.0, 47.0, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -260,16 +257,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-105",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 532.0, 130.0, 33.0 ],
+					"patching_rect" : [ 956.5, 307.0, 130.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 257.0, 199.0, 123.0, 33.0 ],
+					"presentation_rect" : [ 2.0, 488.0, 105.0, 20.0 ],
 					"style" : "velvet",
-					"text" : "Select event to clear from server:",
+					"text" : "Clear from server:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -295,9 +290,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 980.0, 569.0, 125.0, 22.0 ],
+					"patching_rect" : [ 956.5, 344.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 257.0, 232.0, 125.0, 22.0 ],
+					"presentation_rect" : [ 109.0, 488.0, 145.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -305,14 +300,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"fontname" : "Arial",
 					"id" : "obj-103",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 383.0, 128.0, 20.0 ],
+					"patching_rect" : [ 956.5, 158.0, 137.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 257.0, 42.0, 125.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 356.0, 145.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "My events",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -326,9 +322,9 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 405.0, 125.0, 125.0 ],
+					"patching_rect" : [ 956.5, 180.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 257.0, 62.0, 125.0, 134.999999999999886 ],
+					"presentation_rect" : [ 2.0, 376.0, 252.0, 110.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -339,16 +335,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-34",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 684.0, 389.5, 127.0, 33.0 ],
+					"patching_rect" : [ 660.5, 164.5, 127.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 129.5, 199.0, 125.0, 33.0 ],
+					"presentation_rect" : [ 2.0, 331.0, 92.0, 20.0 ],
 					"style" : "velvet",
-					"text" : "Select event to stop observing:",
+					"text" : "Stop observing:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -357,16 +351,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"id" : "obj-33",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 219.5, 389.5, 128.0, 33.0 ],
+					"patching_rect" : [ 196.0, 164.5, 128.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 2.0, 199.0, 125.0, 33.0 ],
+					"presentation_rect" : [ 2.0, 173.0, 90.0, 20.0 ],
 					"style" : "velvet",
-					"text" : "Select event to observe:",
+					"text" : "Observe event:",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
@@ -392,9 +384,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 684.0, 426.5, 125.0, 22.0 ],
+					"patching_rect" : [ 660.5, 201.5, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.5, 232.0, 125.0, 22.0 ],
+					"presentation_rect" : [ 96.0, 330.0, 158.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -421,9 +413,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 219.5, 429.0, 125.0, 22.0 ],
+					"patching_rect" : [ 196.0, 204.0, 125.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 232.0, 125.0, 22.0 ],
+					"presentation_rect" : [ 94.0, 172.0, 160.0, 22.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -431,14 +423,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"fontname" : "Arial",
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 538.0, 383.0, 128.0, 20.0 ],
+					"patching_rect" : [ 514.5, 158.0, 137.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.5, 42.0, 125.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 198.0, 147.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Observing events",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -452,9 +445,9 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 538.0, 405.0, 125.0, 125.0 ],
+					"patching_rect" : [ 514.5, 180.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.5, 62.0, 125.0, 134.999999999999886 ],
+					"presentation_rect" : [ 2.0, 218.0, 252.0, 110.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -463,14 +456,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"fontname" : "Arial",
 					"id" : "obj-22",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.5, 383.0, 127.0, 20.0 ],
+					"patching_rect" : [ 4.0, 158.0, 136.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 42.0, 125.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 40.0, 146.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Available events",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -484,9 +478,9 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.5, 405.0, 125.0, 125.0 ],
+					"patching_rect" : [ 4.0, 180.0, 125.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 62.0, 125.0, 134.999999999999886 ],
+					"presentation_rect" : [ 2.0, 60.0, 252.0, 110.0 ],
 					"stripecolor" : [ 0.4, 0.403921568627451, 0.4, 1.0 ],
 					"style" : "velvet",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -505,10 +499,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 341.0, 4.0, 40.0, 35.084745762711862 ],
+					"patching_rect" : [ 220.0, 2.0, 34.0, 29.822033898305083 ],
 					"pic" : "Macintosh HD:/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Logo.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 341.0, 4.0, 40.0, 35.084745762711862 ]
+					"presentation_rect" : [ 220.0, 2.0, 34.0, 29.822033898305083 ]
 				}
 
 			}
@@ -527,7 +521,7 @@
 					"patching_rect" : [ 4.0, 4.0, 124.0, 19.896848137535819 ],
 					"pic" : "/Users/ersheff/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img/CH-Events-Title.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 4.0, 150.0, 24.068767908309457 ]
+					"presentation_rect" : [ 2.0, 4.0, 124.0, 19.896848137535819 ]
 				}
 
 			}
@@ -541,9 +535,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 384.0, 256.0 ],
+					"patching_rect" : [ 0.0, 0.0, 256.0, 512.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 384.0, 256.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 256.0, 512.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
