@@ -38,10 +38,12 @@ const maxHandlers = {
   
   controlDetail: bool => {
     controlDetail = bool;
+    socket.emit('getControl', { header: 'dump' } );
   },
   
   eventDetail: bool => {
     eventDetail = bool;
+    socket.emit('getEvents');
   },
 
 
@@ -52,12 +54,12 @@ const maxHandlers = {
         mode: 'publish',
     };
     if (args.length > 1) {
-        outgoing.header = args[0],
-        outgoing.values = args.slice(1),
+        outgoing.header = args[0];
+        outgoing.values = args.slice(1);
         socket.emit('control', outgoing);
     } 
     else {
-        outgoing.header = args[0]
+        outgoing.header = args[0];
         socket.emit('event', outgoing);
     };
   },
@@ -65,14 +67,14 @@ const maxHandlers = {
   push: (...args) => {
     let outgoing = { mode: 'push' };
     if (args.length > 2) {
-        outgoing.target = args[0],
-        outgoing.header = args[1],
+        outgoing.target = args[0];
+        outgoing.header = args[1];
         outgoing.values = args.slice(2),
         socket.emit('control', outgoing);
     } 
     else {
-        outgoing.target = args[0],
-        outgoing.header = args[1],
+        outgoing.target = args[0];
+        outgoing.header = args[1];
         socket.emit('event', outgoing);
     };
   },

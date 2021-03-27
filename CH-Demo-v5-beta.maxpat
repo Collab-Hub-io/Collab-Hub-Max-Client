@@ -535,7 +535,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 11.0, 88.0, 112.0, 22.0 ],
-					"text" : "publish value $1 $1"
+					"text" : "publish value $1"
 				}
 
 			}
