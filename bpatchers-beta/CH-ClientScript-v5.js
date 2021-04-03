@@ -119,12 +119,14 @@ const maxHandlers = {
 
   // Room management
 
-  joinRoom: room => {
-    socket.emit('joinRoom', room);
+  joinRoom: roomName => {
+    let outgoing = { room: roomName };
+    socket.emit('joinRoom', outgoing);
   },
 
-  leaveRoom: room => {
-    socket.emit('leaveRoom', room);
+  leaveRoom: roomName => {
+    let outgoing = { header: header };
+    socket.emit('leaveRoom', outgoing);
   },
 
   
