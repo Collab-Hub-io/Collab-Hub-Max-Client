@@ -192,7 +192,7 @@ socket.on('controlDump', data => {
 });
 
 socket.on('events', data => {
-  let details = data.data;
+  let details = data.events;
   let headers = details.map(h => h.header);
   let eventDumpView;
   if (eventDetail) { eventDumpView = { Events: details } }
