@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 182.0, 62.0, 652.0, 804.0 ],
+		"rect" : [ 113.0, 109.0, 942.0, 757.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -116,8 +116,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 514.5, 118.0, 243.0, 22.0 ],
-					"text" : "route controlDumpView controlDumpUmenu"
+					"patching_rect" : [ 514.5, 118.0, 228.0, 22.0 ],
+					"text" : "route myControlsView myControlsUmenu"
 				}
 
 			}
@@ -236,8 +236,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 2.0, 118.0, 243.0, 22.0 ],
-					"text" : "route controlDumpView controlDumpUmenu"
+					"patching_rect" : [ 2.0, 118.0, 291.0, 22.0 ],
+					"text" : "route availableControlsView availableControlsUmenu"
 				}
 
 			}

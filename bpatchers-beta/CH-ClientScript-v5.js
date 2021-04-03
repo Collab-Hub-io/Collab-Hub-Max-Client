@@ -183,15 +183,26 @@ socket.on('otherUsers', data => {
   max.outlet('otherUsersUmenu', otherUsersUmenu);
 });
 
-socket.on('controlDump', data => {
+socket.on('availableControls', data => {
   let details = data.controls;
   let headers = details.map(h => h.header);
-  let controlDumpView;
-  if (controlDetail) { controlDumpView = { Controls: details } }
-    else controlDumpView = { Controls: headers };
-  let controlDumpUmenu = { items: headers };
-  max.outlet('controlDumpView', controlDumpView);
-  max.outlet('controlDumpUmenu', controlDumpUmenu);
+  let availableControlsView;
+  if (controlDetail) { availableControlsView = { Controls: details } }
+    else availableControlsView = { Controls: headers };
+  let availableControlsUmenu = { items: headers };
+  max.outlet('availableControlsView', availableControlsView);
+  max.outlet('availableControlsUmenu', availableControlsUmenu);
+});
+
+socket.on('myControls', data => {
+  let details = data.controls;
+  let headers = details.map(h => h.header);
+  let myControlsView;
+  if (controlDetail) { myControlsView = { Controls: details } }
+    else myControlsView = { Controls: headers };
+  let myControlsUmenu = { items: headers };
+  max.outlet('myControlsView', myControlsView);
+  max.outlet('myControlsUmenu', myControlsUmenu);
 });
 
 socket.on('events', data => {
