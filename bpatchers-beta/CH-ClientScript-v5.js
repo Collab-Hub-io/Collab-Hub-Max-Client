@@ -52,6 +52,7 @@ const maxHandlers = {
   publish: (...args) => {
     let outgoing = {
         mode: 'publish',
+        target: 'all'
     };
     if (args.length > 1) {
         outgoing.header = args[0];
