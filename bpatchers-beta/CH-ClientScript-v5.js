@@ -125,7 +125,7 @@ const maxHandlers = {
   },
 
   leaveRoom: roomName => {
-    let outgoing = { header: header };
+    let outgoing = { room: roomName };
     socket.emit('leaveRoom', outgoing);
   },
 
@@ -205,7 +205,7 @@ socket.on('events', data => {
 });
 
 socket.on('availableRooms', data => {
-  let availableRooms = data;
+  let availableRooms = data.rooms;
   let availableRoomsView = { Rooms: availableRooms };
   let availableRoomsUmenu = { items: availableRooms };
   max.outlet('availableRoomsView', availableRoomsView);
@@ -213,7 +213,7 @@ socket.on('availableRooms', data => {
 });
 
 socket.on('myRooms', data => {
-  let myRooms = data;
+  let myRooms = data.rooms;
   let myRoomsView = { Rooms: myRooms };
   let myRoomsUmenu = { items: myRooms };
   max.outlet('myRoomsView', myRoomsView);
