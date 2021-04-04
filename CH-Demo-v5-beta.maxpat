@@ -200,8 +200,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 365.0, 540.0, 93.0, 22.0 ],
-					"text" : "route username"
+					"patching_rect" : [ 365.0, 540.0, 63.0, 22.0 ],
+					"text" : "route Nick"
 				}
 
 			}
@@ -534,7 +534,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.0, 88.0, 112.0, 22.0 ],
+					"patching_rect" : [ 11.0, 88.0, 95.0, 22.0 ],
 					"text" : "publish value $1"
 				}
 

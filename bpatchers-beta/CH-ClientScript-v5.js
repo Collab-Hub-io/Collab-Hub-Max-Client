@@ -99,9 +99,9 @@ const maxHandlers = {
     socket.emit('observeControl', outgoing);
   },
 
-  unobserveControl: header => {
-    let outgoing = { header: header };
-    socket.emit('unobserveControl', outgoing);
+  observeAllControl: bool => {
+    let outgoing = { observe: bool };
+    socket.emit('observeAllControl', outgoing);
   },
 
 
@@ -112,9 +112,9 @@ const maxHandlers = {
     socket.emit('observeEvent', outgoing);
   },
 
-  unobserveEvent: header => {
-    let outgoing = { header: header };
-    socket.emit('unobserveEvent', outgoing);
+  observeAllEvents: bool => {
+    let outgoing = { observe: bool };
+    socket.emit('observeAllEvents', outgoing);
   },
 
 
