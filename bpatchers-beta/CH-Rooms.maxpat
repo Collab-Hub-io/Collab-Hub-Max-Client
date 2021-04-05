@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 216.0, 165.0, 565.0, 506.0 ],
+		"rect" : [ 113.0, 109.0, 883.0, 757.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 442.0, 489.0, 83.0, 22.0 ],
+					"text" : "roomDetail $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"bgoncolor" : [ 0.054901960784314, 0.050980392156863, 0.054901960784314, 1.0 ],
 					"fontname" : "Arial",
@@ -50,7 +62,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 420.0, 2.0, 80.0, 22.0 ],
+					"patching_rect" : [ 442.0, 465.0, 80.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 110.0, 34.822034000000002, 80.0, 22.0 ],
 					"rounded" : 8.0,
 					"style" : "velvet",
 					"text" : "Details",
@@ -418,7 +432,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 206.0, 310.0, 136.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 37.822033898305079, 115.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 35.822034000000002, 115.0, 20.0 ],
 					"style" : "velvet",
 					"text" : "Available Rooms",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
@@ -537,6 +551,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -595,6 +616,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
