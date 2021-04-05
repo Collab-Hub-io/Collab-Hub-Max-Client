@@ -106,6 +106,11 @@ const maxHandlers = {
     socket.emit('observeControl', outgoing);
   },
 
+  unobserveControl: header => {
+    let outgoing = { header: header };
+    socket.emit('unobserveControl', outgoing);
+  },
+
   observeAllControl: bool => {
     let outgoing = { observe: bool };
     socket.emit('observeAllControl', outgoing);
@@ -117,6 +122,11 @@ const maxHandlers = {
   observeEvent: header => {
     let outgoing = { header: header };
     socket.emit('observeEvent', outgoing);
+  },
+
+  unobserveEvent: header => {
+    let outgoing = { header: header };
+    socket.emit('unobserveEvent', outgoing);
   },
 
   observeAllEvents: bool => {
@@ -200,7 +210,9 @@ socket.on('availableControls', data => {
   //let availableControlsUmenu = { items: headers };
   //max.outlet('availableControlsView', availableControlsView);
   //max.outlet('availableControlsUmenu', availableControlsUmenu);
-  max.outlet('availableControlsView', data);
+  max.outlet('availableControlsView', { Controls: data.controls });
+  max.outlet('availableControlsUmenu', { items: data.controls } );
+
 
 });
 
@@ -213,7 +225,8 @@ socket.on('myControls', data => {
   //let myControlsUmenu = { items: headers };
   //max.outlet('myControlsView', myControlsView);
   //max.outlet('myControlsUmenu', myControlsUmenu);
-  max.outlet('myControlsView', data);
+  max.outlet('myControlsView', { Controls: data.controls });
+  max.outlet('myControlsUmenu', { items: data.controls });
 });
 
 socket.on('availableEvents', data => {
@@ -227,8 +240,8 @@ socket.on('availableEvents', data => {
   //let availableEventsUmenu = { items: headers };
   //max.outlet('availableEventsView', availableEventsView);
   //max.outlet('availableEventsUmenu', availableEventsUmenu);
-  max.outlet('availableEventsView', data);
-
+  max.outlet('availableEventsView', { Events: data.events } );
+  max.outlet('availableEventsUmenu', { items: data.events } );
 });
 
 socket.on('myEvents', data => {
@@ -242,7 +255,8 @@ socket.on('myEvents', data => {
   //let myEventsUmenu = { items: headers };
   //max.outlet('myEventsView', myEventsView);
   //max.outlet('myEventsUmenu', myEventsUmenu);
-  max.outlet('myEventsView', data);
+  max.outlet('myEventsView', { Events: data.events } );
+  max.outlet('myEventsUmenu', { items: data.events } );
 });
 
 socket.on('availableRooms', data => {
