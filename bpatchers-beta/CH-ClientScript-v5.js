@@ -13,9 +13,9 @@ const max = require('max-api'),
   username = process.argv[3],
   socket = (() => {
     if (username != undefined)
-      return io.connect(`http://192.168.0.200:3000/${namespace}`, {query: {username: username} } );
+      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`, {query: {username: username} } );
     else
-      return io.connect(`http://192.168.0.200:3000/${namespace}`);
+      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`);
   })();
 
 let senderFlag = false,
@@ -201,33 +201,20 @@ socket.on('otherUsers', data => {
 });
 
 socket.on('availableControls', data => {
-  //let details = data;
-  //let headers = details.map(h => h.header);
-  //let availableControlsView;
-  //if (controlDetail) { 
-  //  availableControlsView = { Controls: details }
-  //} else availableControlsView = { Controls: headers };
-  //let availableControlsUmenu = { items: headers };
-  //max.outlet('availableControlsView', availableControlsView);
-  //max.outlet('availableControlsUmenu', availableControlsUmenu);
-  max.outlet('availableControlsView', { Controls: data.controls });
-  max.outlet('availableControlsUmenu', { items: data.controls } );
-
-
+  let details = data.controls;
+  let headers = details.map(h => h.header);
+  let availableControlsView;
+  if (controlDetail) { 
+    availableControlsView = { Controls: details }
+  } else availableControlsView = { Controls: headers };
+  let availableControlsUmenu = { items: headers };
+  max.outlet('availableControlsView', availableControlsView);
+  max.outlet('availableControlsUmenu', availableControlsUmenu);
 });
 
-socket.on('myControls', data => {
-  //let details = data;
-  //let headers = details.map(h => h.header);
-  //let myControlsView;
-  //if (controlDetail) { myControlsView = { Controls: details } }
-  //  else myControlsView = { Controls: headers };
-  //let myControlsUmenu = { items: headers };
-  //max.outlet('myControlsView', myControlsView);
-  //max.outlet('myControlsUmenu', myControlsUmenu);
-  max.outlet('myControlsView', { Controls: data.controls });
-  max.outlet('myControlsUmenu', { items: data.controls });
-});
+
+//---
+
 
 socket.on('availableEvents', data => {
   //let details = data.events;
