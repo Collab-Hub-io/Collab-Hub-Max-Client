@@ -212,38 +212,64 @@ socket.on('availableControls', data => {
   max.outlet('availableControlsUmenu', availableControlsUmenu);
 });
 
+socket.on('observedControls', data => {
+  let details = data.controls;
+  let headers = details.map(h => h.header);
+  let observedControlsView;
+  if (controlDetail) { 
+    observedControlsView = { Controls: details }
+  } else observedControlsView = { Controls: headers };
+  let observedControlsUmenu = { items: headers };
+  max.outlet('observedControlsView', observedControlsView);
+  max.outlet('observedControlsUmenu', observedControlsUmenu);
+});
 
-//---
-
+socket.on('myControls', data => {
+  let details = data.controls;
+  let headers = details.map(h => h.header);
+  let myControlsView;
+  if (controlDetail) { 
+    myControlsView = { Controls: details }
+  } else myControlsView = { Controls: headers };
+  let myControlsUmenu = { items: headers };
+  max.outlet('myControlsView', myControlsView);
+  max.outlet('myControlsUmenu', myControlsUmenu);
+});
 
 socket.on('availableEvents', data => {
-  //let details = data.events;
-  //let headers = details.map(h => h.header);
-  //let headers = data.events; //remove this if details are added back
-  //let eventDumpView;
-  //if (eventDetail) { eventDumpView = { Events: details } }
-  //  else eventDumpView = { Events: headers };
-  //let availableEventsView = { Events: headers }; //remove this if details are added back
-  //let availableEventsUmenu = { items: headers };
-  //max.outlet('availableEventsView', availableEventsView);
-  //max.outlet('availableEventsUmenu', availableEventsUmenu);
-  max.outlet('availableEventsView', { Events: data.events } );
-  max.outlet('availableEventsUmenu', { items: data.events } );
+  let details = data.events;
+  let headers = details.map(h => h.header);
+  let availableEventsView;
+  if (eventDetail) { 
+    availableEventsView = { Events: details }
+  } else availableEventsView = { Events: headers };
+  let availableEventsUmenu = { items: headers };
+  max.outlet('availableEventsView', availableEventsView);
+  max.outlet('availableEventsUmenu', availableEventsUmenu);
+});
+
+socket.on('observedEvents', data => {
+  let details = data.events;
+  let headers = details.map(h => h.header);
+  let observedEventsView;
+  if (eventDetail) { 
+    observedEventsView = { Events: details }
+  } else observedEventsView = { Events: headers };
+  let observedEventsUmenu = { items: headers };
+  max.outlet('observedEventsView', observedEventsView);
+  max.outlet('observedEventsUmenu', observedEventsUmenu);
 });
 
 socket.on('myEvents', data => {
-  //let details = data.events;
-  //let headers = details.map(h => h.header);
-  //let headers = data.events; //remove this if details are added back
-  //let eventDumpView;
-  //if (eventDetail) { eventDumpView = { Events: details } }
-  //  else eventDumpView = { Events: headers };
-  //let myEventsView = { Events: headers }; //remove this if details are added back
-  //let myEventsUmenu = { items: headers };
-  //max.outlet('myEventsView', myEventsView);
-  //max.outlet('myEventsUmenu', myEventsUmenu);
-  max.outlet('myEventsView', { Events: data.events } );
-  max.outlet('myEventsUmenu', { items: data.events } );
+  let details = data.events;
+  let headers = details.map(h => h.header);
+  let myEventsView;
+  if (eventDetail) { 
+    myEventsView = { Events: details }
+  } else myEventsView = { Events: headers };
+  let myEventsUmenu = { items: headers };
+  max.outlet('myEventsView', myEventsView);
+  max.outlet('myEventsUmenu', myEventsUmenu);
 });
 
 socket.on('availableRooms', data => {

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 113.0, 109.0, 827.0, 757.0 ],
+		"rect" : [ 113.0, 81.0, 827.0, 785.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -578,7 +578,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 269.0, 663.0, 256.0, 354.0 ],
+					"patching_rect" : [ 269.0, 663.0, 256.0, 512.0 ],
 					"prototypename" : "CH-EVENTS",
 					"viewvisibility" : 1
 				}
