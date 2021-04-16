@@ -112,9 +112,7 @@ const maxHandlers = {
   },
 
   observeAllControl: bool => {
-    let outgoing = {};
-    if (bool) { outgoing.observe = true }
-    else outgoing.observe = false;
+    let outgoing = { observe: bool };
     socket.emit('observeAllControl', outgoing);
   },
 
