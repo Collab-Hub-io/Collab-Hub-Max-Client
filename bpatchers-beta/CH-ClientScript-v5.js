@@ -13,9 +13,9 @@ const max = require('max-api'),
   username = process.argv[3],
   socket = (() => {
     if (username != undefined)
-      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`, {query: {username: username} } );
+      return io.connect(`http://192.168.0.200:3000/${namespace}`, {query: {username: username} } );
     else
-      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`);
+      return io.connect(`http://192.168.0.200:3000/${namespace}`);
   })();
 
 let senderFlag = false,
@@ -112,7 +112,9 @@ const maxHandlers = {
   },
 
   observeAllControl: bool => {
-    let outgoing = { observe: bool };
+    let outgoing = {};
+    if (bool) { outgoing.observe = true }
+    else outgoing.observe = false;
     socket.emit('observeAllControl', outgoing);
   },
 
