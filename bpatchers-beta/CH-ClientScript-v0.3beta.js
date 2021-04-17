@@ -9,13 +9,13 @@ const max = require('max-api'),
   io = require('socket.io-client'),
   
   // With script start message to node.script, 3rd string is namespace, optional 4th is initial username.
-  namespace = process.argv[2],
+  //namespace = process.argv[2],
   username = process.argv[3],
   socket = (() => {
     if (username != undefined)
-      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`, {query: {username: username} } );
+      return io.connect(`https://ch-testing.herokuapp.com/hub`, {query: {username: username} } );
     else
-      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`);
+      return io.connect(`https://ch-testing.herokuapp.com/hub`);
   })();
 
 let senderFlag = false,
@@ -299,8 +299,14 @@ socket.on('control', incoming => {
   let sender = incoming.from;
   let header = incoming.header;
   let values = incoming.values;
-  if (senderFlag) { max.outlet(sender, header, ...values) } 
-    else max.outlet(header, ...values);
+  if (Array.isArray(values)) {
+    if (senderFlag) { max.outlet(sender, header, ...values) } 
+      else max.outlet(header, ...values);
+  }
+  else {
+    if (senderFlag) { max.outlet(sender, header, values) } 
+    else max.outlet(header, values);  
+  }
 });
 
 socket.on('event', incoming => {
