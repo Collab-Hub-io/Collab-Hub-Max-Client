@@ -205,8 +205,8 @@ socket.on('availableControls', data => {
   let headers = details.map(h => h.header);
   let availableControlsView;
   if (controlDetail) { 
-    availableControlsView = { Controls: details }
-  } else availableControlsView = { Controls: headers };
+    availableControlsView = { AvailableControls: details }
+  } else availableControlsView = { AvailableControls: headers };
   let availableControlsUmenu = { items: headers };
   max.outlet('availableControlsView', availableControlsView);
   max.outlet('availableControlsUmenu', availableControlsUmenu);
@@ -217,8 +217,8 @@ socket.on('observedControls', data => {
   let headers = details.map(h => h.header);
   let observedControlsView;
   if (controlDetail) { 
-    observedControlsView = { Controls: details }
-  } else observedControlsView = { Controls: headers };
+    observedControlsView = { ObservedControls: details }
+  } else observedControlsView = { ObservedControls: headers };
   let observedControlsUmenu = { items: headers };
   max.outlet('observedControlsView', observedControlsView);
   max.outlet('observedControlsUmenu', observedControlsUmenu);
@@ -229,8 +229,8 @@ socket.on('myControls', data => {
   let headers = details.map(h => h.header);
   let myControlsView;
   if (controlDetail) { 
-    myControlsView = { Controls: details }
-  } else myControlsView = { Controls: headers };
+    myControlsView = { MyControls: details }
+  } else myControlsView = { MyControls: headers };
   let myControlsUmenu = { items: headers };
   max.outlet('myControlsView', myControlsView);
   max.outlet('myControlsUmenu', myControlsUmenu);
@@ -241,8 +241,8 @@ socket.on('availableEvents', data => {
   let headers = details.map(h => h.header);
   let availableEventsView;
   if (eventDetail) { 
-    availableEventsView = { Events: details }
-  } else availableEventsView = { Events: headers };
+    availableEventsView = { AvailableEvents: details }
+  } else availableEventsView = { AvailableEvents: headers };
   let availableEventsUmenu = { items: headers };
   max.outlet('availableEventsView', availableEventsView);
   max.outlet('availableEventsUmenu', availableEventsUmenu);
@@ -253,8 +253,8 @@ socket.on('observedEvents', data => {
   let headers = details.map(h => h.header);
   let observedEventsView;
   if (eventDetail) { 
-    observedEventsView = { Events: details }
-  } else observedEventsView = { Events: headers };
+    observedEventsView = { ObservedEvents: details }
+  } else observedEventsView = { ObservedEvents: headers };
   let observedEventsUmenu = { items: headers };
   max.outlet('observedEventsView', observedEventsView);
   max.outlet('observedEventsUmenu', observedEventsUmenu);
@@ -265,8 +265,8 @@ socket.on('myEvents', data => {
   let headers = details.map(h => h.header);
   let myEventsView;
   if (eventDetail) { 
-    myEventsView = { Events: details }
-  } else myEventsView = { Events: headers };
+    myEventsView = { MyEvents: details }
+  } else myEventsView = { MyEvents: headers };
   let myEventsUmenu = { items: headers };
   max.outlet('myEventsView', myEventsView);
   max.outlet('myEventsUmenu', myEventsUmenu);
@@ -275,8 +275,8 @@ socket.on('myEvents', data => {
 socket.on('availableRooms', data => {
   let roomList = Object.keys(data);
   let availableRoomsView;
-  if (roomDetail) { availableRoomsView = { Rooms: data } }
-    else availableRoomsView = { Rooms: roomList };
+  if (roomDetail) { availableRoomsView = { AvailableRooms: data } }
+    else availableRoomsView = { AvailableRooms: roomList };
   let availableRoomsUmenu = { items: roomList };
   max.outlet('availableRoomsView', availableRoomsView);
   max.outlet('availableRoomsUmenu', availableRoomsUmenu);
@@ -285,8 +285,8 @@ socket.on('availableRooms', data => {
 socket.on('myRooms', data => {
   let roomList = Object.keys(data);
   let myRoomsView;
-  if (roomDetail) { myRoomsView = { Rooms: data } }
-    else myRoomsView = { Rooms: roomList };
+  if (roomDetail) { myRoomsView = { MyRooms: data } }
+    else myRoomsView = { MyRooms: roomList };
   let myRoomsUmenu = { items: roomList };
   max.outlet('myRoomsView', myRoomsView);
   max.outlet('myRoomsUmenu', myRoomsUmenu);
