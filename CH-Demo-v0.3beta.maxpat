@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 113.0, 81.0, 1178.0, 739.0 ],
+		"rect" : [ 60.0, 67.0, 1178.0, 739.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -241,6 +241,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-48",
 					"maxclass" : "comment",
@@ -253,6 +254,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-47",
 					"maxclass" : "comment",
