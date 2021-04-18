@@ -62,10 +62,10 @@ For **pushed** controls/events, the target should be a username, room name, or t
 
 ### Incoming data
 Incoming controls/events will be in the format:  
-Control: `header value(s)`  
-Event: `header`
+`header value(s)` or `header`
 
-Optionally, if the *Flags* button is enabled in the **CH-Client** module in the receiver's patch, the sender's username will be prepended to all incoming controls and events: `sender header value(s)` or `sender header`
+Optionally, if the *Flags* button is enabled in the **CH-Client** module in the receiver's patch, the sender's username will be prepended to all incoming controls and events:  
+`sender header value(s)` or `sender header`
 
 This makes it easy in Max to route incoming data (e.g. using the *route* or *select* objects) by header and/or the sender's username.
 
