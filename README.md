@@ -1,5 +1,7 @@
 # Collab-Hub Max Client 0.3
 
+<img src="/img/CH-Title.png" alt="Collab-Hub Logo" height="100"/>
+<img src="/img/Max-Logo.png" alt="Max Logo" height="100"/>
 ![Collab-Hub Logo](/img/CH-Title.png) ![Max Logo](/img/Max-Logo.png)
 
 ## Overview
