@@ -20,8 +20,18 @@ INSERT VIDEO WHEN DONE
 
 ## Modules
 
+Each of the modules is designed to implement a specific function or group of related functions of Collab-Hub. They can be mixed and matched as needed. Each module has an inlet and outlet that can be used to send and receieve messages to/from the server. Alternatively, outgoing messages can be connected to a *send toCH-Server* object, while incoming messages can be intercepted with a *receive fromCH-Server* object.
+
 ### CH-Client
 <img src="/img/for-readme/Client-Cap.jpeg" alt="CH-Client module" height="169"/>
+The CH-Client module is the bare minimum needed to connect to Collab-Hub. It is possible to build a setup using only this module if you do not require the functions of the other modules.
+
+- **Change Username:** Click to change username from the automatically generated username (e.g. User000) to something else.
+- **Connect:** Toggle the Connect button to connect/disconnect from the Collab-Hub server.
+- **Connect Status:** The LED next to the **Connect** button will light up to confirm a successful connection.
+- **Flags:** Toggling the **Flags** button on/off determines whether or not incoming controls and events are prepended with a username flag (e.g. for routing purposes).
+- **Simple Chat:** As the name implies, this is a text box for sending chat messages to all othe users.
+- **Users Display:** This window displays the usernames of all connected users.
 
 ### CH-Chat
 <img src="/img/for-readme/Chat-Cap.jpeg" alt="CH-Chat module" height="169"/>
