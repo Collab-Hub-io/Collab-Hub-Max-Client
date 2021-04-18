@@ -21,15 +21,15 @@ INSERT VIDEO WHEN DONE
 ## Modules
 
 ### CH-Client
-![Client-Cap](/img/for-readme/Client-Cap.jpeg)
+<img src="/img/for-readme/Client-Cap.jpeg" alt="CH-Client module" height="100"/>
 ### CH-Chat
-![Chat-Cap](/img/for-readme/Chat-Cap.jpeg)
+<img src="/img/for-readme/Chat-Cap.jpeg" alt="CH-Chat module" height="100"/>
 ### CH-Rooms
-![Rooms-Cap](/img/for-readme/Rooms-Cap.jpeg)
+<img src="/img/for-readme/Rooms-Cap.jpeg" alt="CH-Rooms module" height="100"/>
 ### CH-Controls
-![Controls-Cap](/img/for-readme/Controls-Cap.jpeg)
+<img src="/img/for-readme/Controls-Cap.jpeg" alt="CH-Controls module" height="100"/>
 ### CH-Events
-![Events-Cap](/img/for-readme/Events-Cap.jpeg)
+<img src="/img/for-readme/Events-Cap.jpeg" alt="CH-Events module" height="100"/>
 
 ## Message Formats
 
