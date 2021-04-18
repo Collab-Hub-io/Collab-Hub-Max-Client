@@ -29,9 +29,13 @@ INSERT VIDEO WHEN DONE
 ## Message Formats
 
 All control and event communications between users on Collab-Hub operate in the following modes:
-- **Publish - Published controls/events are automatically registered to the server but will only be sent to users that choose to "observe" them. Their availablity is advertised in the AvailableControls and AvailableEvents displays in the CH-Controls and CH-Events modules, respectively.
-- **Push - Pushed controls/events are sent directly to the intended targets. They are not advertised in AvailableControls or AvailableEvents.
+- **Publish** - Published controls/events are automatically registered to the server but will only be sent to users that choose to "observe" them. Their availablity is advertised in the AvailableControls and AvailableEvents displays in the CH-Controls and CH-Events modules, respectively.
+- **Push** - Pushed controls/events are sent directly to the intended targets. They are not advertised in AvailableControls or AvailableEvents.
 
-We
+You may decide to use these two modes in the following example scenarios:
+- If you have a Max patch that generates a lot of control data (e.g. using several LFOs) and you want to have an impromptu jam with some friends over the internet, you could **publish** those controls so that other users can selectively receive and map that data *à la minute*.
+- If you are composing a piece with Max for laptop ensemble that has a known set of parameters and/or performers, you probably want to **push** controls and events since they will likely be routed and mapped the same way for each performance.
+
+
 
 ## Other Commands
