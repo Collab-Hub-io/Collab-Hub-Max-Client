@@ -1,6 +1,6 @@
 # Collab-Hub Max Client 0.3
 
-<img src="/img/CH-Title.png" alt="Collab-Hub Logo" height="50"/>    <img src="/img/Max-Logo.png" alt="Max Logo" height="50"/>
+<img src="/img/CH-Title.png" alt="Collab-Hub Logo" height="50"/>        <img src="/img/Max-Logo.png" alt="Max Logo" height="50"/>
 
 ## Overview
 
@@ -49,12 +49,12 @@ While a valid pushed event would look like this:
 For pushed controls/events, the target should be a username, room name, or the word 'all' (sent to everyone).
 
 ### Incoming data
-Incoming controls and events will be in the format:
+Incoming controls and events will be in the format:  
 `header value/s(if control)`
 
-Optionally, if the *Flags* button is enabled in the **CH-Client** module, the sender's username will be prepended to all incoming controls and events:
+Optionally, if the *Flags* button is enabled in the **CH-Client** module in the receiver's patch, the sender's username will be prepended to all incoming controls and events:  
 `sender header value/s(if control)`
 
-This makes it easy in Max to route incoming data (using the route object) by header and/or the sender's username.
+This makes it easy in Max to route incoming data (e.g. using the *route* or *select* objects) by header and/or the sender's username.
 
 ## Other Commands
