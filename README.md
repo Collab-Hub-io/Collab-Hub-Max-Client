@@ -29,9 +29,9 @@ INSERT VIDEO WHEN DONE
 ## Message Formats
 
 All control and event communications between users on Collab-Hub operate in the following modes:
-- Publish - Published controls/events are registered 
-or 
-- Push
+- **Publish - Published controls/events are automatically registered to the server but will only be sent to users that choose to "observe" them. Their availablity is advertised in the AvailableControls and AvailableEvents displays in the CH-Controls and CH-Events modules, respectively.
+- **Push - Pushed controls/events are sent directly to the intended targets. They are not advertised in AvailableControls or AvailableEvents.
 
+We
 
 ## Other Commands
