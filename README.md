@@ -53,8 +53,8 @@ The max client expects to recieve control data in the following format:
 `mode target[if push] header`
 
 For example, a valid published control message would look like this:  
-`publish slider 5`
-...wile a valid pushed event would look like this:  
+`publish slider 5`  
+...while a valid pushed event would look like this:  
 `push all bang`
 
 For **pushed** controls/events, the target should be a username, room name, or the word 'all' (sent to everyone).
