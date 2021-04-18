@@ -24,7 +24,8 @@ Each of the modules is designed to implement a specific function or group of rel
 
 ### CH-Client
 <img src="/img/for-readme/Client-Cap.jpeg" alt="CH-Client module" height="169"/>
-The CH-Client module is the bare minimum needed to connect to Collab-Hub. It is possible to build a setup using only this module if you do not require the functions of the other modules.
+
+The **CH-Client** module is the bare minimum needed to connect to Collab-Hub. It is possible to build a setup using only this module if you do not require the functions of the other modules.
 
 - **Change Username:** Click to change username from the automatically generated username (e.g. User000) to something else.
 - **Connect:** Toggle the Connect button to connect/disconnect from the Collab-Hub server.
@@ -36,8 +37,16 @@ The CH-Client module is the bare minimum needed to connect to Collab-Hub. It is 
 ### CH-Chat
 <img src="/img/for-readme/Chat-Cap.jpeg" alt="CH-Chat module" height="169"/>
 
+The **CH-Chat** module provides extended chat functionality. Incoming chat messages post to the Max console window.
+
+- **all:** Chat messsages are sent to all users.
+- **user:** Chat messages are sent to one specific user (dropdown menu with usernames is provided below the text box).
+- **room:** Chat messages are sent to users in a room (dropdown menu with room names is provided below the text box).
+
 ### CH-Rooms
 <img src="/img/for-readme/Rooms-Cap.jpeg" alt="CH-Rooms module" height="169"/>
+
+The **CH-Rooms** module provides the ability to create, join, and leave rooms on the server. 
 
 ### CH-Controls
 <img src="/img/for-readme/Controls-Cap.jpeg" alt="CH-Controls module" height="169"/>
