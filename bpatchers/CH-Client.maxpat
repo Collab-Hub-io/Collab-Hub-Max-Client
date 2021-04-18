@@ -103,7 +103,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 434.0, 131.0, 74.0, 22.0 ],
+					"patching_rect" : [ 444.0, 135.0, 74.0, 22.0 ],
 					"text" : "connected 0"
 				}
 
@@ -115,7 +115,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 434.0, 107.0, 50.0, 22.0 ],
+					"patching_rect" : [ 444.0, 111.0, 50.0, 22.0 ],
 					"text" : "sel stop"
 				}
 
@@ -606,7 +606,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 271.0, 83.0, 215.0, 22.0 ],
+					"patching_rect" : [ 271.0, 83.0, 192.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -615,7 +615,7 @@
 						"watch" : 0
 					}
 ,
-					"text" : "node.script CH-ClientScript-v0.3beta.js"
+					"text" : "node.script CH-ClientScript-v0.3.js"
 				}
 
 			}
@@ -1064,14 +1064,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
-				"patcherrelativepath" : "./img",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
+				"patcherrelativepath" : "../img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript-v0.3beta.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta",
+				"name" : "CH-ClientScript-v0.3.js",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

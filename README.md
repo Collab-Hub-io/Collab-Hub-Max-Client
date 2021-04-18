@@ -21,10 +21,15 @@ INSERT VIDEO WHEN DONE
 ## Modules
 
 ### CH-Client
+![Client-Cap](/img/for-readme/Client-Cap.jpeg)
 ### CH-Chat
+![Chat-Cap](/img/for-readme/Chat-Cap.jpeg)
 ### CH-Rooms
+![Rooms-Cap](/img/for-readme/Rooms-Cap.jpeg)
 ### CH-Controls
+![Controls-Cap](/img/for-readme/Controls-Cap.jpeg)
 ### CH-Events
+![Events-Cap](/img/for-readme/Events-Cap.jpeg)
 
 ## Message Formats
 
@@ -56,3 +61,6 @@ Optionally, if the *Flags* button is enabled in the **CH-Client** module in the 
 This makes it easy in Max to route incoming data (e.g. using the *route* or *select* objects) by header and/or the sender's username.
 
 ## Other Commands
+
+Much of the functionality below is built into the modules. However, you can also implement them manually in your patch if you prefer.
+
