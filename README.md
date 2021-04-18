@@ -33,9 +33,16 @@ All control and event communications between users on Collab-Hub operate in the 
 - **Push** - Pushed controls/events are sent directly to the intended targets. They are not advertised in AvailableControls or AvailableEvents.
 
 You may decide to use these two modes in the following example scenarios:
-- If you have a Max patch that generates a lot of control data (e.g. using several LFOs) and you want to have an impromptu jam with some friends over the internet, you could **publish** those controls so that other users can selectively receive and map that data *à la minute*.
+- If you have a Max patch that generates a lot of control data (e.g. using several LFOs) and you want to have an impromptu jam with some friends over the internet, you would **publish** those controls so that other users can selectively receive and map that data *à la minute*.
 - If you are composing a piece with Max for laptop ensemble that has a known set of parameters and/or performers, you probably want to **push** controls and events since they will likely be routed and mapped the same way for each performance.
 
+The max client expects to recieve control and event messages in the following format:
+`mode target(if push) header value/s(if control)`
 
+For example, a valid published control message would look like this:
+`publish slider 5`
+
+While a valid pushed event would look like this:
+`push all bang`
 
 ## Other Commands
