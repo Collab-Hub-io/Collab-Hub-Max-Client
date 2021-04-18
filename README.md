@@ -28,7 +28,8 @@ INSERT VIDEO WHEN DONE
 
 ## Message Formats
 
-All control and event communications between users on Collab-Hub operate in the following modes:
+### Outgoing data
+All outgoing control and event communications between users on Collab-Hub operate in the following modes:
 - **Publish** - Published controls/events are automatically registered to the server but will only be sent to users that choose to "observe" them. Their availablity is advertised in the AvailableControls and AvailableEvents displays in the CH-Controls and CH-Events modules, respectively.
 - **Push** - Pushed controls/events are sent directly to the intended targets. They are not advertised in AvailableControls or AvailableEvents.
 
@@ -36,13 +37,24 @@ You may decide to use these two modes in the following example scenarios:
 - If you have a Max patch that generates a lot of control data (e.g. using several LFOs) and you want to have an impromptu jam with some friends over the internet, you would **publish** those controls so that other users can selectively receive and map that data *à la minute*.
 - If you are composing a piece with Max for laptop ensemble that has a known set of parameters and/or performers, you probably want to **push** controls and events since they will likely be routed and mapped the same way for each performance.
 
-The max client expects to recieve control and event messages in the following format:
+The max client expects to recieve control and event messages in the following format:  
 `mode target(if push) header value/s(if control)`
 
-For example, a valid published control message would look like this:
+For example, a valid published control message would look like this:  
 `publish slider 5`
 
-While a valid pushed event would look like this:
+While a valid pushed event would look like this:  
 `push all bang`
+
+For pushed controls/events, the target should be a username, room name, or the word 'all' (sent to everyone).
+
+### Incoming data
+Incoming controls and events will be in the format:
+`header value/s(if control)`
+
+Optionally, if the *Flags* button is enabled in the **CH-Client** module, the sender's username will be prepended to all incoming controls and events:
+`sender header value/s(if control)`
+
+This makes it easy in Max to route incoming data (using the route object) by header and/or the sender's username.
 
 ## Other Commands
