@@ -12,7 +12,7 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 
 ## Getting Started
 
-1. Download the Collab-Hub-Max-Client folder using the green Code button near the top of this page. Either choose "Download ZIP" or, if you're comforatble using git, you can clone the repo.
+1. Download the Collab-Hub-Max-Client folder using the green Code button near the top of this page. Either choose "Download ZIP" or, if you're comfortable using git, you can clone the repo.
 2. Add the Collab-Hub-Max-Client folder as an entry in your [File Preferences](https://docs.cycling74.com/max7/vignettes/file_preferences_window) in Max.
 3. Open the CH-Max-Demo Max patch for a quick introduction and/or watch the Getting Started video below.
 
@@ -37,8 +37,10 @@ You may decide to use these two modes in the following example scenarios:
 - If you have a Max patch that generates a lot of control data (e.g. using several LFOs) and you want to have an impromptu jam with some friends over the internet, you would **publish** those controls so that other users can selectively receive and map that data *à la minute*.
 - If you are composing a piece with Max for laptop ensemble that has a known set of parameters and/or performers, you probably want to **push** controls and events since they will likely be routed and mapped the same way for each performance.
 
-The max client expects to recieve control and event messages in the following format:  
-`mode target(if push) header value/s(if control)`
+The max client expects to recieve control data in the following format:  
+`mode target[if push] header value(s)`  
+And event data in the following format:
+`mode target[if push] header`
 
 For example, a valid published control message would look like this:  
 `publish slider 5`
@@ -46,14 +48,15 @@ For example, a valid published control message would look like this:
 While a valid pushed event would look like this:  
 `push all bang`
 
-For pushed controls/events, the target should be a username, room name, or the word 'all' (sent to everyone).
+For **pushed** controls/events, the target should be a username, room name, or the word 'all' (sent to everyone).
 
 ### Incoming data
-Incoming controls and events will be in the format:  
-`header value/s(if control)`
+Incoming controls/events will be in the format:  
+Control: `header value(s)`
+Event: `header`
 
 Optionally, if the *Flags* button is enabled in the **CH-Client** module in the receiver's patch, the sender's username will be prepended to all incoming controls and events:  
-`sender header value/s(if control)`
+`sender header value(s)` or `sender header`
 
 This makes it easy in Max to route incoming data (e.g. using the *route* or *select* objects) by header and/or the sender's username.
 
