@@ -105,7 +105,6 @@ The max client expects to recieve control data in the following format:
 
     mode target[if push] header
 
-
 For example, a valid published control message would look like this:
     
     publish slider 5
@@ -113,7 +112,6 @@ For example, a valid published control message would look like this:
 ...while a valid pushed event would look like this:
 
     push all bang
-
 
 For **pushed** controls/events, the target should be a username, room name, or the word 'all' (sent to everyone).
 
@@ -126,7 +124,6 @@ or
     
     header
 
-
 Optionally, if the *Flags* button is enabled in the **CH-Client** module in the receiver's patch, the sender's username will be prepended to all incoming controls and events:  
 
     sender header value(s)
@@ -135,16 +132,74 @@ or
 
     sender header
 
-
 This makes it easy in Max to route incoming data (e.g. using the *route* or *select* objects) by header and/or the sender's username.
 
 ---
 
 ## Other Commands
 
-Much of the functionality below is built into the modules. However, you can also implement them manually in your patch if you prefer.
+Much of the functionality below is built into dropdown menus, buttons, and toggles of the modules. However, you can also implement them manually in your patch if you prefer by sending the following commands to any module inlet or a *send toCH-Server* object.
 
-INSERT LIST AND DESCRIPTIONS OF OTHER AVAILABLE COMMANDS e.g. getUsers, addUsername, etc.
+  addUsername 'username'
+
+  sender '0/1'
+  
+  controlDetail '0/1'
+  
+  eventDetail '0/1'
+
+  roomDetail '0/1'
+
+  chat [target] [message]
+
+
+  // Control management
+
+  observeControl: header => {
+    let outgoing = { header: header };
+    socket.emit('observeControl', outgoing);
+  },
+
+  unobserveControl: header => {
+    let outgoing = { header: header };
+    socket.emit('unobserveControl', outgoing);
+  },
+
+  observeAllControl: bool => {
+    let outgoing = { observe: bool };
+    socket.emit('observeAllControl', outgoing);
+  },
+
+
+  // Event management
+
+  observeEvent: header => {
+    let outgoing = { header: header };
+    socket.emit('observeEvent', outgoing);
+  },
+
+  unobserveEvent: header => {
+    let outgoing = { header: header };
+    socket.emit('unobserveEvent', outgoing);
+  },
+
+  observeAllEvents: bool => {
+    let outgoing = { observe: bool };
+    socket.emit('observeAllEvents', outgoing);
+  },
+
+
+  // Room management
+
+  joinRoom: roomName => {
+    let outgoing = { room: roomName };
+    socket.emit('joinRoom', outgoing);
+  },
+
+  leaveRoom: roomName => {
+    let outgoing = { room: roomName };
+    socket.emit('leaveRoom', outgoing);
+  },
 
 ---
 
