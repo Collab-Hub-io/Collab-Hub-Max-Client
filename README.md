@@ -46,14 +46,41 @@ The **CH-Chat** module provides extended chat functionality. Incoming chat messa
 ### CH-Rooms
 <img src="/img/for-readme/Rooms-Cap.jpeg" alt="CH-Rooms module" height="169"/>
 
-The **CH-Rooms** module provides the ability to create, join, and leave rooms on the server. 
+The **CH-Rooms** module provides the ability to create, join, and leave rooms on the server. Rooms are a way to create groups of users that can receive controls, events, or chat messages directed only to them.
+
+- **AvailableRooms:** A display that lists all rooms available to join (rooms you are not already in).
+- **Create Room:** Click to create a new room (you will be prompted to provide a room name).
+- **Details:** A toggle that switches between a minimal view (room names only) and detailed view (room names with all room members listed) in the AvailableRooms and MyRooms displays.
+- **Join:** Select a room name from the dropdown menu to join an existing room that you are not already in.
+- **Leave:** Select a room name from the dropdown menu to leave a room that you are currently in.
+- **MyRooms:** A display that lists all of the rooms that you are currently in.
+
 
 ### CH-Controls
 <img src="/img/for-readme/Controls-Cap.jpeg" alt="CH-Controls module" height="169"/>
 
+The **CH-Controls** module provides a way to see and manage your control headers and choose controls to observe. This module is only really useful when sending/receiving controls using the **publish** mode.
+
+- **AvailableControls:** A display that lists all of the available published controls (ones that you are not already observing).
+- **Clear:** Choose one of your published control headers from the dropdown menu to clear it from the server.
+- **Details:** A toggle that switches between a minimal view (control headers only) and detailed view (control headers with all available info listed, including sender, observers, and format of values) in the AvailableControls, ObservedControls, and MyControls displays.
+- **MyControls:** A display that lists all of the control headers that you have published to the server.
+- **Observe:** Choose an available control header from the dropdown menu to start observing (you will start receiving this control data).
+- **ObservedControls:** A display that lists the controls you are currently observing.
+- **Stop:** Choose an available control header from the dropdown menu to stop observing (you will no longer receive this control data).
+
 ### CH-Events
 <img src="/img/for-readme/Events-Cap.jpeg" alt="CH-Events module" height="169"/>
 
+The **CH-Events** module provides a way to see and manage your event headers and choose events to observe. This module is only really useful when sending/receiving events using the **publish** mode. 
+
+- **AvailableEvents:** A display that lists all of the available published events (ones that you are not already observing).
+- **Clear:** Choose one of your published event headers from the dropdown menu to clear it from the server.
+- **Details:** A toggle that switches between a minimal view (event headers only) and detailed view (event headers with all available info listed, including sender and observers) in the AvailableEvents, ObservedEvents, and MyEvents displays.
+- **MyEvents:** A display that lists all of the event headers that you have published to the server.
+- **Observe:** Choose an available event header from the dropdown menu to start observing (you will start receiving this event).
+- **ObservedEvents:** A display that lists the events you are currently observing.
+- **Stop:** Choose an available event header from the dropdown menu to stop observing (you will no longer receive this event).
 
 ## Message Formats
 
