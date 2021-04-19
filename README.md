@@ -118,3 +118,8 @@ This makes it easy in Max to route incoming data (e.g. using the *route* or *sel
 
 Much of the functionality below is built into the modules. However, you can also implement them manually in your patch if you prefer.
 
+INSERT LIST AND DESCRIPTIONS OF OTHER AVAILABLE COMMANDS e.g. getUsers, addUsername, etc.
+
+## Going Further
+
+INSERT EXPLANATION OF CLIENT SCRIPT AND HOW TO INCORPORATE THE SCRIPT INTO THEIR OWN PATCHES e.g. make a patch without needing our modules.
