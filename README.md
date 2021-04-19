@@ -140,66 +140,61 @@ This makes it easy in Max to route incoming data (e.g. using the *route* or *sel
 
 Much of the functionality below is built into dropdown menus, buttons, and toggles of the modules. However, you can also implement them manually in your patch if you prefer by sending the following commands to any module inlet or a *send toCH-Server* object.
 
-  addUsername 'username'
+Change username:
 
-  sender '0/1'
+    addUsername 'username'
+
+Toggle sender flags (prepends the sender's username to all incoming controls/events):
+
+    sender '0/1'
+
+Toggle detailed view on/off for controls displays:
+
+    controlDetail '0/1'
   
-  controlDetail '0/1'
-  
-  eventDetail '0/1'
+Toggle detailed view on/off for events displays:
 
-  roomDetail '0/1'
+    eventDetail '0/1'
 
-  chat [target] [message]
+Toggle detailed view on/off for room displays:
 
+    roomDetail '0/1'
 
-  // Control management
+Send chat messages (use 'all' for target to send to everyone):
 
-  observeControl: header => {
-    let outgoing = { header: header };
-    socket.emit('observeControl', outgoing);
-  },
+    chat 'target' 'message'
 
-  unobserveControl: header => {
-    let outgoing = { header: header };
-    socket.emit('unobserveControl', outgoing);
-  },
+Start observing a published control:
 
-  observeAllControl: bool => {
-    let outgoing = { observe: bool };
-    socket.emit('observeAllControl', outgoing);
-  },
+    observeControl 'header'
 
+Stop observing a published control:
 
-  // Event management
+    unobserveControl 'header'
 
-  observeEvent: header => {
-    let outgoing = { header: header };
-    socket.emit('observeEvent', outgoing);
-  },
+Start/stop observing all published controls:
 
-  unobserveEvent: header => {
-    let outgoing = { header: header };
-    socket.emit('unobserveEvent', outgoing);
-  },
+    observeAllControl '0/1'
 
-  observeAllEvents: bool => {
-    let outgoing = { observe: bool };
-    socket.emit('observeAllEvents', outgoing);
-  },
+Start observing a published event:
 
+    observeEvent 'header'
 
-  // Room management
+Stop observing a published control:
 
-  joinRoom: roomName => {
-    let outgoing = { room: roomName };
-    socket.emit('joinRoom', outgoing);
-  },
+    unobserveEvent 'header'
 
-  leaveRoom: roomName => {
-    let outgoing = { room: roomName };
-    socket.emit('leaveRoom', outgoing);
-  },
+Start/stop observing all published events:
+
+    observeAllEvents 'header'
+
+Join a room (will create the room if it does not already exist):
+
+    joinRoom 'roomname'
+
+Leave a room:
+
+    leaveRoom 'roomname'
 
 ---
 
