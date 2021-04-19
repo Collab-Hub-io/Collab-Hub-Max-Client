@@ -98,9 +98,12 @@ You may decide to use these two modes in the following example scenarios:
 - If you are composing a piece with Max for laptop ensemble that has a known set of parameters and/or performers, you probably want to **push** controls and events since they will likely be routed and mapped the same way for each performance.
 
 The max client expects to recieve control data in the following format:  
-`mode target[if push] header value(s)`  
+
+    mode target[if push] header value(s)
+
 ...and event data in the following format:  
-`mode target[if push] header`
+
+    mode target[if push] header
 
 For example, a valid published control message would look like this:  
 `publish slider 5`  
