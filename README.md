@@ -18,6 +18,8 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 
 INSERT VIDEO WHEN DONE
 
+---
+
 ## Modules
 
 Each of the modules is designed to implement a specific function or group of related functions of Collab-Hub. They can be mixed and matched as needed. Each module has an inlet and outlet that can be used to send and receieve messages to/from the server. Alternatively, outgoing messages can be connected to a *send toCH-Server* object, while incoming messages can be intercepted with a *receive fromCH-Server* object.
@@ -82,6 +84,8 @@ The **CH-Events** module provides a way to see and manage your event headers and
 - **ObservedEvents:** A display that lists the events you are currently observing.
 - **Stop:** Choose an available event header from the dropdown menu to stop observing (you will no longer receive this event).
 
+---
+
 ## Message Formats
 
 ### Outgoing data
@@ -114,11 +118,15 @@ Optionally, if the *Flags* button is enabled in the **CH-Client** module in the 
 
 This makes it easy in Max to route incoming data (e.g. using the *route* or *select* objects) by header and/or the sender's username.
 
+---
+
 ## Other Commands
 
 Much of the functionality below is built into the modules. However, you can also implement them manually in your patch if you prefer.
 
 INSERT LIST AND DESCRIPTIONS OF OTHER AVAILABLE COMMANDS e.g. getUsers, addUsername, etc.
+
+---
 
 ## Going Further
 
