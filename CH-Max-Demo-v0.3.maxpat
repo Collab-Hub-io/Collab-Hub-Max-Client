@@ -892,85 +892,85 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta",
-				"patcherrelativepath" : "./bpatchers-beta",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta/img",
-				"patcherrelativepath" : "./bpatchers-beta/img",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
+				"patcherrelativepath" : "./img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript-v0.3beta.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta",
-				"patcherrelativepath" : "./bpatchers-beta",
+				"name" : "CH-ClientScript-v0.3.js",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta",
-				"patcherrelativepath" : "./bpatchers-beta",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta/img",
-				"patcherrelativepath" : "./bpatchers-beta/img",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
+				"patcherrelativepath" : "./img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Chat.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta",
-				"patcherrelativepath" : "./bpatchers-beta",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Chat-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta/img",
-				"patcherrelativepath" : "./bpatchers-beta/img",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
+				"patcherrelativepath" : "./img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta",
-				"patcherrelativepath" : "./bpatchers-beta",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta/img",
-				"patcherrelativepath" : "./bpatchers-beta/img",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
+				"patcherrelativepath" : "./img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta",
-				"patcherrelativepath" : "./bpatchers-beta",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta/img",
-				"patcherrelativepath" : "./bpatchers-beta/img",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
+				"patcherrelativepath" : "./img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/bpatchers-beta/img",
-				"patcherrelativepath" : "./bpatchers-beta/img",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img",
+				"patcherrelativepath" : "./img",
 				"type" : "PNG",
 				"implicit" : 1
 			}

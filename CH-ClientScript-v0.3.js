@@ -7,22 +7,20 @@
 
 const max = require('max-api'),
   io = require('socket.io-client'),
-  
-  // With script start message to node.script, 3rd string is namespace, optional 4th is initial username.
-  //namespace = process.argv[2],
-  username = process.argv[3],
+  init = require('./CH-init.json'),
+  namespace = init.namespace,
+  username = init.username,
   socket = (() => {
     if (username != undefined)
-      return io.connect(`https://ch-testing.herokuapp.com/hub`, {query: {username: username} } );
+      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`, {query: {username: username} } );
     else
-      return io.connect(`https://ch-testing.herokuapp.com/hub`);
+      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`); 
   })();
 
 let senderFlag = false,
   controlDetail = false,
   eventDetail = false,
   roomDetail = false;
-
 
 const maxHandlers = {
 
