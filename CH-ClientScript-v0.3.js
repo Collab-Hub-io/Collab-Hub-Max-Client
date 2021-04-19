@@ -7,9 +7,9 @@
 
 const max = require('max-api'),
   io = require('socket.io-client'),
-  init = require('./CH-init.json'),
-  namespace = init.namespace,
-  username = init.username,
+  config = require('./config.json'),
+  namespace = config.namespace,
+  username = config.username,
   socket = (() => {
     if (username != undefined)
       return io.connect(`https://ch-testing.herokuapp.com/${namespace}`, {query: {username: username} } );
