@@ -139,9 +139,9 @@ The file called 'CH-ClientScript-vX.js' is the client script that loads in the *
 
 ### Initialization with config.json
 Users can initialize some settings at the time of connection by changing entries in the 'config.json' file.  
-`{\
-    "namespace": "hub",\
-    "username": ""\
-}`
+`   {\
+        "namespace": "hub",\
+        "username": ""\
+    }`
 - **namespace:** The default Collab-Hub collective namespace is "hub". At this time, this should not be changed unless you are provided with a namespace by the Collab-Hub developers. Contact us if you think you or your group may have a need for your own namespace.
 - **username:** By default, a random username is assigned in the format 'User000' if this entry is empty. You can have your username set to soemthing else at the time of connection by entering it here (assuming that the username is not already in use by someone else). Usernames can always be changed after connection from within Max.
