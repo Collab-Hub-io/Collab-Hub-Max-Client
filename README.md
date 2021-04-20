@@ -2,6 +2,8 @@
 
 <img src="/img/CH-Title.png" alt="Collab-Hub Logo" height="50"/> &nbsp; &nbsp; <img src="/img/Max-Logo.png" alt="Max Logo" height="50"/>
 
+<br/>
+
 ## Overview
 
 The Collab-Hub Max Client is a tool designed to faciliate communication with the Collab-Hub server from within Cycling 74's [Max](https://cycling74.com/products/max). This client will help you send/receive data over the internet between Max and/or other platforms.
@@ -38,6 +40,7 @@ The **CH-Client** module is the bare minimum needed to connect to Collab-Hub. It
 
 <img src="/img/for-readme/Client-Cap.jpeg" alt="CH-Client module" height="169"/>
 
+<br/>
 
 ### CH-Chat
 
@@ -49,6 +52,7 @@ The **CH-Chat** module provides extended chat functionality. Incoming chat messa
 
 <img src="/img/for-readme/Chat-Cap.jpeg" alt="CH-Chat module" height="169"/>
 
+<br/>
 
 ### CH-Rooms
 
@@ -63,6 +67,7 @@ The **CH-Rooms** module provides the ability to create, join, and leave rooms on
 
 <img src="/img/for-readme/Rooms-Cap.jpeg" alt="CH-Rooms module" height="169"/>
 
+<br/>
 
 ### CH-Controls
 
@@ -78,6 +83,7 @@ The **CH-Controls** module provides a way to see and manage your control headers
 
 <img src="/img/for-readme/Controls-Cap.jpeg" alt="CH-Controls module" height="169"/>
 
+<br/>
 
 ### CH-Events
 
@@ -93,6 +99,7 @@ The **CH-Events** module provides a way to see and manage your event headers and
 
 <img src="/img/for-readme/Events-Cap.jpeg" alt="CH-Events module" height="169"/>
 
+<br/>
 
 ---
 
@@ -216,6 +223,7 @@ The file called 'CH-ClientScript-vX.js' is the client script that loads in the *
 
 <img src="/img/for-readme/Script-Cap.png" alt="Node Script" height="113"/>
 
+<br/>
 
 ### Initialization with config.json
 Users can initialize some settings at the time of connection by changing entries in the 'config.json' file.  
