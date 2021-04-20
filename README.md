@@ -16,6 +16,8 @@ The Max Client package consists of a set of modules (built as abstractions that 
 
 The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/nodeformax/api/) and [Socket.IO](https://socket.io). 
 
+<br/>
+
 ---
 
 ## Getting Started
@@ -25,6 +27,8 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 3. Open the CH-Max-Demo Max patch for a quick introduction and/or watch the Getting Started video below.
 
 INSERT VIDEO WHEN DONE
+
+<br/>
 
 ---
 
@@ -112,8 +116,6 @@ The **CH-Events** module provides a way to see and manage your event headers and
 
 ## Message Formats
 
-<br/>
-
 ### Outgoing data
 All outgoing control and event communications between users on Collab-Hub operate in the following modes:
 - **Publish** - Published controls/events are automatically registered to the server but will only be sent to users that choose to "observe" them. Their availablity is advertised in the AvailableControls and AvailableEvents displays in the CH-Controls and CH-Events modules, respectively.
@@ -161,6 +163,8 @@ Optionally, if the *Flags* button is enabled in the **CH-Client** module in the 
     sender header
 
 This makes it easy in Max to route incoming data (e.g. using the *route* or *select* objects) by header and/or the sender's username.
+
+<br/>
 
 ---
 
@@ -224,11 +228,11 @@ Leave a room:
 
     leaveRoom 'roomname'
 
+<br/>
+
 ---
 
 ## Going Further
-
-<br/>
 
 ### The Client Script
 
