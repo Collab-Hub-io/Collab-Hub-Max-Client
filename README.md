@@ -1,8 +1,12 @@
 # Collab-Hub Max Client 0.3
 
+<br/>
+
 <img src="/img/CH-Title.png" alt="Collab-Hub Logo" height="50"/> &nbsp; &nbsp; <img src="/img/Max-Logo.png" alt="Max Logo" height="50"/>
 
 <br/>
+
+---
 
 ## Overview
 
@@ -11,6 +15,8 @@ The Collab-Hub Max Client is a tool designed to faciliate communication with the
 The Max Client package consists of a set of modules (built as abstractions that run inside bpatchers) that can be used in different combinations depending on your needs. 
 
 The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/nodeformax/api/) and [Socket.IO](https://socket.io). 
+
+---
 
 ## Getting Started
 
@@ -26,6 +32,7 @@ INSERT VIDEO WHEN DONE
 
 Each of the modules is designed to implement a specific function or group of related functions of Collab-Hub. They can be mixed and matched as needed. Each module has an inlet and outlet that can be used to send and receieve messages to/from the server. Alternatively, outgoing messages can be connected to a *send toCH-Server* object, while incoming messages can be intercepted with a *receive fromCH-Server* object.
 
+<br/>
 
 ### CH-Client
 
@@ -105,6 +112,8 @@ The **CH-Events** module provides a way to see and manage your event headers and
 
 ## Message Formats
 
+<br/>
+
 ### Outgoing data
 All outgoing control and event communications between users on Collab-Hub operate in the following modes:
 - **Publish** - Published controls/events are automatically registered to the server but will only be sent to users that choose to "observe" them. Their availablity is advertised in the AvailableControls and AvailableEvents displays in the CH-Controls and CH-Events modules, respectively.
@@ -131,6 +140,8 @@ For example, a valid published control message would look like this:
     push all bang
 
 For **pushed** controls/events, the target should be a username, room name, or the word 'all' (sent to everyone).
+
+<br/>
 
 ### Incoming data
 Incoming controls/events will be in this format (for controls):  
@@ -216,6 +227,8 @@ Leave a room:
 ---
 
 ## Going Further
+
+<br/>
 
 ### The Client Script
 
