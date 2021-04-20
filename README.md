@@ -24,8 +24,8 @@ INSERT VIDEO WHEN DONE
 
 Each of the modules is designed to implement a specific function or group of related functions of Collab-Hub. They can be mixed and matched as needed. Each module has an inlet and outlet that can be used to send and receieve messages to/from the server. Alternatively, outgoing messages can be connected to a *send toCH-Server* object, while incoming messages can be intercepted with a *receive fromCH-Server* object.
 
+
 ### CH-Client
-<img src="/img/for-readme/Client-Cap.jpeg" alt="CH-Client module" height="169"/>
 
 The **CH-Client** module is the bare minimum needed to connect to Collab-Hub. It is possible to build a setup using only this module if you do not require the functions of the other modules.
 
@@ -36,8 +36,10 @@ The **CH-Client** module is the bare minimum needed to connect to Collab-Hub. It
 - **Simple Chat:** As the name implies, this is a text box for sending chat messages to all othe users.
 - **Users Display:** This window displays the usernames of all connected users.
 
+<img src="/img/for-readme/Client-Cap.jpeg" alt="CH-Client module" height="169"/>
+
+
 ### CH-Chat
-<img src="/img/for-readme/Chat-Cap.jpeg" alt="CH-Chat module" height="169"/>
 
 The **CH-Chat** module provides extended chat functionality. Incoming chat messages post to the Max console window.
 
@@ -45,8 +47,10 @@ The **CH-Chat** module provides extended chat functionality. Incoming chat messa
 - **user:** Chat messages are sent to one specific user (dropdown menu with usernames is provided below the text box).
 - **room:** Chat messages are sent to users in a room (dropdown menu with room names is provided below the text box).
 
+<img src="/img/for-readme/Chat-Cap.jpeg" alt="CH-Chat module" height="169"/>
+
+
 ### CH-Rooms
-<img src="/img/for-readme/Rooms-Cap.jpeg" alt="CH-Rooms module" height="169"/>
 
 The **CH-Rooms** module provides the ability to create, join, and leave rooms on the server. Rooms are a way to create groups of users that can receive controls, events, or chat messages directed only to them.
 
@@ -57,9 +61,10 @@ The **CH-Rooms** module provides the ability to create, join, and leave rooms on
 - **Leave:** Select a room name from the dropdown menu to leave a room that you are currently in.
 - **MyRooms:** A display that lists all of the rooms that you are currently in.
 
+<img src="/img/for-readme/Rooms-Cap.jpeg" alt="CH-Rooms module" height="169"/>
+
 
 ### CH-Controls
-<img src="/img/for-readme/Controls-Cap.jpeg" alt="CH-Controls module" height="169"/>
 
 The **CH-Controls** module provides a way to see and manage your control headers and choose controls to observe. This module is only really useful when sending/receiving controls using the **publish** mode.
 
@@ -71,8 +76,10 @@ The **CH-Controls** module provides a way to see and manage your control headers
 - **ObservedControls:** A display that lists the controls you are currently observing.
 - **Stop:** Choose an available control header from the dropdown menu to stop observing (you will no longer receive this control data).
 
+<img src="/img/for-readme/Controls-Cap.jpeg" alt="CH-Controls module" height="169"/>
+
+
 ### CH-Events
-<img src="/img/for-readme/Events-Cap.jpeg" alt="CH-Events module" height="169"/>
 
 The **CH-Events** module provides a way to see and manage your event headers and choose events to observe. This module is only really useful when sending/receiving events using the **publish** mode. 
 
@@ -83,6 +90,9 @@ The **CH-Events** module provides a way to see and manage your event headers and
 - **Observe:** Choose an available event header from the dropdown menu to start observing (you will start receiving this event).
 - **ObservedEvents:** A display that lists the events you are currently observing.
 - **Stop:** Choose an available event header from the dropdown menu to stop observing (you will no longer receive this event).
+
+<img src="/img/for-readme/Events-Cap.jpeg" alt="CH-Events module" height="169"/>
+
 
 ---
 
@@ -201,10 +211,10 @@ Leave a room:
 ## Going Further
 
 ### The Client Script
-<img src="/img/for-readme/Script-Cap.png" alt="Node Script" height="113"/>
 
 The file called 'CH-ClientScript-vX.js' is the client script that loads in the *node.script* object inside the CH-Client module. This script is all that is really needed to communicate with the Collab-Hub server from within Max. Experienced users may wish to build their patches around just a *node.script* object running 'CH-ClientScript-vX.js', mitigating the need for the provided modules.
 
+<img src="/img/for-readme/Script-Cap.png" alt="Node Script" height="113"/>
 
 
 ### Initialization with config.json
