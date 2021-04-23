@@ -28,7 +28,7 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 
 DEMO VIDEO COMING SOON
 
-<img src="/img/for-readme/Demo-Cap.png" alt="Demo Patch" height="400"/>
+<img src="/img/for-readme/Demo-Cap.png" alt="Demo Patch" height="500"/>
 
 <br/>
 
