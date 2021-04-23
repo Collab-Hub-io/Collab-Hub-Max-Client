@@ -210,6 +210,10 @@ Start/stop observing all published controls:
 
     observeAllControl '0/1'
 
+Clear a published control header from the server:
+
+    clearControl 'header'
+
 Start observing a published event:
 
     observeEvent 'header'
@@ -221,6 +225,10 @@ Stop observing a published control:
 Start/stop observing all published events:
 
     observeAllEvents 'header'
+
+Clear a published event header from the server:
+
+    clearEvent 'header'
 
 Join a room (will create the room if it does not already exist):
 
