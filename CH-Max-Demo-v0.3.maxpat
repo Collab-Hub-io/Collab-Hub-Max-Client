@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1238.0, 744.0 ],
+		"rect" : [ 34.0, 62.0, 1219.0, 746.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -143,8 +143,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 575.5, 392.5, 151.0, 33.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 575.5, 392.5, 155.0, 33.0 ],
 					"text" : "Incoming chat messages post to the Max Console."
 				}
 
@@ -286,7 +285,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.5, 191.5, 222.0, 60.0 ],
+					"patching_rect" : [ 13.5, 191.5, 225.0, 60.0 ],
 					"text" : "PUBLISH - Published controls/events will be posted for other users to see. They can then choose to \"observe\" them to receive future transmissions."
 				}
 
