@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 113.0, 109.0, 752.0, 711.0 ],
+		"rect" : [ 34.0, 90.0, 1188.0, 512.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 259.0, 201.084745999999996, 78.0, 22.0 ],
+					"text" : "route toggles"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 259.0, 176.0, 64.0, 22.0 ],
+					"text" : "r CH-reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 773.0, 357.084745999999996, 114.0, 22.0 ],
+					"text" : "route viewsUmenus"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 773.0, 331.0, 64.0, 22.0 ],
+					"text" : "r CH-reset"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
@@ -664,8 +712,8 @@
 						"styles" : [ 							{
 								"name" : "newobj001",
 								"default" : 								{
-									"fontname" : [ "Arial Bold" ],
-									"fontsize" : [ 10.0 ]
+									"fontsize" : [ 10.0 ],
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -726,6 +774,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-14", 0 ]
@@ -850,6 +905,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -929,6 +991,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"order" : 1,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"order" : 4,
 					"source" : [ "obj-61", 0 ]
@@ -981,11 +1059,18 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Chat-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Client/bpatchers-beta/img",
-				"patcherrelativepath" : "./img",
+				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
+				"patcherrelativepath" : "../img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -994,8 +1079,8 @@
 		"styles" : [ 			{
 				"name" : "newobj001",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
-					"fontsize" : [ 10.0 ]
+					"fontsize" : [ 10.0 ],
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",

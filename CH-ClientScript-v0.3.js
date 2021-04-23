@@ -12,9 +12,9 @@ const max = require('max-api'),
   username = config.username,
   socket = (() => {
     if (username != undefined)
-      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`, {query: {username: username} } );
+      return io.connect(`https://ch-server.herokuapp.com/${namespace}`, {query: {username: username} } );
     else
-      return io.connect(`https://ch-testing.herokuapp.com/${namespace}`); 
+      return io.connect(`https://ch-server.herokuapp.com/${namespace}`); 
   })();
 
 let senderFlag = false,
@@ -112,6 +112,13 @@ const maxHandlers = {
   observeAllControl: bool => {
     let outgoing = { observe: bool };
     socket.emit('observeAllControl', outgoing);
+    socket.emit('getMyControls');
+  },
+
+  clearControl: header => {
+    let outgoing = { header: header };
+    socket.emit('clearControl', outgoing);
+    socket.emit('getMyControls');
   },
 
 
@@ -130,6 +137,13 @@ const maxHandlers = {
   observeAllEvents: bool => {
     let outgoing = { observe: bool };
     socket.emit('observeAllEvents', outgoing);
+    socket.emit('getMyEvents');
+  },
+  
+  clearEvent: header => {
+    let outgoing = { header: header };
+    socket.emit('clearEvent', outgoing);
+    socket.emit('getMyEvents');
   },
 
 
