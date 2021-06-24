@@ -285,9 +285,9 @@ socket.on('myEvents', data => {
 });
 
 socket.on('availableRooms', data => {
-  let roomList = Object.keys(data);
+  let roomList = Object.keys(data.rooms);
   let availableRoomsView;
-  if (roomDetail) { availableRoomsView = { AvailableRooms: data } }
+  if (roomDetail) { availableRoomsView = { AvailableRooms: data.rooms } }
     else availableRoomsView = { AvailableRooms: roomList };
   let availableRoomsUmenu = { items: roomList };
   max.outlet('availableRoomsView', availableRoomsView);
