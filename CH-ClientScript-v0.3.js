@@ -284,15 +284,15 @@ socket.on('myEvents', data => {
   max.outlet('myEventsUmenu', myEventsUmenu);
 });
 
-socket.on('availableRooms', data => {
-  let roomList = Object.keys(data.rooms);
-  let availableRoomsView;
-  if (roomDetail) { availableRoomsView = { AvailableRooms: data.rooms } }
-    else availableRoomsView = { AvailableRooms: roomList };
-  let availableRoomsUmenu = { items: roomList };
-  max.outlet('availableRoomsView', availableRoomsView);
-  max.outlet('availableRoomsUmenu', availableRoomsUmenu);
-});
+// socket.on('availableRooms', data => {
+//   //let roomList = Object.keys(data.rooms);
+//   //let availableRoomsView;
+//   //if (roomDetail) { availableRoomsView = { AvailableRooms: data.rooms } }
+//   //  else availableRoomsView = { AvailableRooms: roomList };
+//   //let availableRoomsUmenu = { items: roomList };
+//   //max.outlet('availableRoomsView', availableRoomsView);
+//   //max.outlet('availableRoomsUmenu', availableRoomsUmenu);
+// });
 
 socket.on('myRooms', data => {
   let roomList = Object.keys(data);
