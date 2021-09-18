@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 190.0, 92.0, 1018.0, 746.0 ],
+		"rect" : [ 67.0, 98.0, 1789.0, 917.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,6 +41,20 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"autofit" : 1,
+					"forceaspect" : 1,
+					"id" : "obj-3",
+					"maxclass" : "fpic",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 877.0, 11.345338983050851, 63.05797101449275, 55.309322033898304 ],
+					"pic" : "/Users/nickhwang/GitHub/Collab-Hub-Client-SH/img/CH-Small-Logo-NoText.png"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -56,7 +70,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1018.0, 720.0 ],
+						"rect" : [ 0.0, 26.0, 1789.0, 891.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -86,6 +100,20 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"autofit" : 1,
+									"forceaspect" : 1,
+									"id" : "obj-3",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 488.0, 11.345338983050851, 63.05797101449275, 55.309322033898304 ],
+									"pic" : "/Users/nickhwang/GitHub/Collab-Hub-Client-SH/img/CH-Small-Logo-NoText.png"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Lato",
 									"id" : "obj-108",
@@ -3402,11 +3430,12 @@
 					"fontname" : "Lato",
 					"fontsize" : 13.0,
 					"id" : "obj-10",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 196.0, 393.0, 22.0 ],
-					"text" : "Push and Publish. You might find one method more useful as times. "
+					"patching_rect" : [ 11.0, 196.0, 393.0, 38.0 ],
+					"text" : "Push and Publish. \nYou might find one method more useful as times. "
 				}
 
 			}
@@ -3451,7 +3480,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1018.0, 720.0 ],
+						"rect" : [ 0.0, 26.0, 1789.0, 891.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3481,6 +3510,20 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"autofit" : 1,
+									"forceaspect" : 1,
+									"id" : "obj-3",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 131.0, 11.345338983050851, 63.05797101449275, 55.309322033898304 ],
+									"pic" : "/Users/nickhwang/GitHub/Collab-Hub-Client-SH/img/CH-Small-Logo-NoText.png"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Lato",
 									"fontsize" : 48.0,
@@ -8321,6 +8364,13 @@
 				"name" : "CH-Rooms-Title.png",
 				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
 				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Small-Logo-NoText.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/img",
+				"patcherrelativepath" : "../img",
 				"type" : "PNG",
 				"implicit" : 1
 			}
