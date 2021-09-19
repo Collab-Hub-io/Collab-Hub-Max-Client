@@ -553,6 +553,32 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 849.0, 647.0, 125.0, 22.0 ],
+									"text" : "push all synthPitch $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "kslider",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 849.0, 576.0, 336.0, 53.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 7.0, 151.375, 336.0, 53.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Lato",
 									"fontsize" : 10.0,
 									"id" : "obj-44",
@@ -561,7 +587,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1124.000001430511475, 176.199996113777161, 53.799997746944427, 42.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Toggle FIlter On/Off",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -613,7 +638,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 49.19998824596405, 122.599999845027924, 391.599999845027924, 38.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Use route to map Control and Event messages from other users to your instrument's  parameters",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -629,7 +653,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 867.19999760389328, 176.199996113777161, 53.799997746944427, 30.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Filter Cutoff",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -657,7 +680,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 998.0, 407.0, 53.799997746944427, 18.0 ],
+									"patching_rect" : [ 998.0, 388.0, 53.799997746944427, 18.0 ],
 									"text" : "Point Y",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -671,7 +694,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 942.0, 407.0, 53.799997746944427, 18.0 ],
+									"patching_rect" : [ 942.0, 388.0, 53.799997746944427, 18.0 ],
 									"text" : "Point X",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -685,7 +708,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 882.0, 407.0, 53.799997746944427, 18.0 ],
+									"patching_rect" : [ 882.0, 388.0, 53.799997746944427, 18.0 ],
 									"text" : "Env. Point",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -701,7 +724,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 719.300009787082672, 122.599999845027924, 354.799999177455902, 38.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Use these controls to change another user's version of this instrument",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -717,7 +739,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 882.0, 427.0, 50.0, 22.0 ]
+									"patching_rect" : [ 882.0, 408.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -732,7 +754,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 998.0, 427.0, 50.0, 22.0 ]
+									"patching_rect" : [ 998.0, 408.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -746,7 +768,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 942.0, 427.0, 50.0, 22.0 ]
+									"patching_rect" : [ 942.0, 408.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -757,7 +779,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 923.0, 469.0, 71.0, 22.0 ],
+									"patching_rect" : [ 923.0, 450.0, 71.0, 22.0 ],
 									"text" : "pack 1 0. 0."
 								}
 
@@ -769,7 +791,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 916.0, 573.0, 191.0, 22.0 ],
+									"patching_rect" : [ 916.0, 539.0, 191.0, 22.0 ],
 									"text" : "push all adsr 2 557. 0.3"
 								}
 
@@ -781,7 +803,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 923.0, 529.0, 124.0, 22.0 ],
+									"patching_rect" : [ 923.0, 479.0, 124.0, 22.0 ],
 									"text" : "prepend push all adsr"
 								}
 
@@ -873,7 +895,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 823.0, 692.199999988079071, 85.0, 22.0 ],
+									"patching_rect" : [ 823.0, 696.199999988079071, 85.0, 22.0 ],
 									"text" : "s toCH-Server"
 								}
 
@@ -1944,7 +1966,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 1 ],
-									"midpoints" : [ 951.5, 462.0, 958.5, 462.0 ],
+									"midpoints" : [ 951.5, 443.0, 958.5, 443.0 ],
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -1952,7 +1974,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-66", 0 ],
-									"midpoints" : [ 969.5, 390.0, 832.5, 390.0 ],
+									"midpoints" : [ 969.5, 375.0, 832.5, 375.0 ],
 									"source" : [ "obj-19", 0 ]
 								}
 
@@ -1960,7 +1982,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-66", 0 ],
-									"midpoints" : [ 932.5, 561.0, 832.5, 561.0 ],
+									"midpoints" : [ 932.5, 531.0, 832.5, 531.0 ],
 									"order" : 1,
 									"source" : [ "obj-2", 0 ]
 								}
@@ -1969,7 +1991,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 1 ],
-									"midpoints" : [ 932.5, 567.0, 1097.5, 567.0 ],
+									"midpoints" : [ 932.5, 531.0, 1097.5, 531.0 ],
 									"order" : 0,
 									"source" : [ "obj-2", 0 ]
 								}
@@ -1978,16 +2000,30 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 2 ],
-									"midpoints" : [ 1007.5, 465.0, 984.5, 465.0 ],
+									"midpoints" : [ 1007.5, 446.0, 984.5, 446.0 ],
 									"source" : [ "obj-20", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-66", 0 ],
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
-									"midpoints" : [ 891.5, 465.0, 932.5, 465.0 ],
+									"midpoints" : [ 891.5, 446.0, 932.5, 446.0 ],
 									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -2036,7 +2072,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-66", 0 ],
-									"midpoints" : [ 1088.700001776218414, 516.0, 832.5, 516.0 ],
+									"midpoints" : [ 1088.700001776218414, 530.0, 832.5, 530.0 ],
 									"source" : [ "obj-43", 0 ]
 								}
 
@@ -2536,21 +2572,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
 				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "../bpatchers",
+				"patcherrelativepath" : "../Documents/GitHub/Collab-Hub-Max-Client/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client-Title.png",
 				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "../img/for-bpatchers",
+				"patcherrelativepath" : "../Documents/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientScript-v0.3.js",
 				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../Documents/GitHub/Collab-Hub-Max-Client",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
