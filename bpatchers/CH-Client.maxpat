@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 11,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 576.0, 111.5, 78.0, 22.0 ],
+					"text" : "route toggles"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 576.0, 77.0, 63.0, 22.0 ],
+					"text" : "r CH-flags"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-52",
 					"maxclass" : "newobj",
@@ -377,7 +401,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 11,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -669,8 +693,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -735,6 +757,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"fontname" : "Arial",
+					"hidden" : 1,
 					"id" : "obj-3",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -870,6 +893,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -886,6 +916,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"midpoints" : [ 585.5, 135.0, 501.0, 135.0, 501.0, 0.0, 339.0, 0.0, 339.0, 45.0, 361.5, 45.0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1157,14 +1195,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
 				"patcherrelativepath" : "../img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientScript-v0.3.js",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client",
 				"patcherrelativepath" : "..",
 				"type" : "TEXT",
 				"implicit" : 1
