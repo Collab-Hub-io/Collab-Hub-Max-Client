@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 81.0, 1238.0, 861.0 ],
+		"rect" : [ 64.0, 62.0, 1053.0, 861.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -72,8 +72,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -902,14 +902,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1238.0, 835.0 ],
+						"rect" : [ 64.0, 88.0, 1053.0, 835.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -945,7 +945,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 994.0, 195.0, 35.0, 22.0 ],
+									"patching_rect" : [ 1017.0, 510.5, 35.0, 22.0 ],
 									"text" : "clear"
 								}
 
@@ -1275,7 +1275,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 21.0, 279.0, 402.0, 28.0 ],
-									"text" : "Publisher",
+									"text" : "Publish",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1572,8 +1572,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2399,8 +2399,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2772,8 +2772,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 11,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3062,6 +3062,14 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 268.0, 111.5, 192.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"autostart" : 0,
+														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
+														"watch" : 0
+													}
+,
 													"text" : "node.script CH-ClientScript-v0.3.js"
 												}
 
@@ -3948,6 +3956,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
+									"midpoints" : [ 1026.5, 542.732832431793213, 1007.5, 542.732832431793213 ],
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -4319,14 +4335,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1238.0, 835.0 ],
+						"rect" : [ 0.0, 26.0, 1053.0, 835.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4402,7 +4418,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 994.0, 195.0, 35.0, 22.0 ],
+									"patching_rect" : [ 1017.0, 407.5, 35.0, 22.0 ],
 									"text" : "clear"
 								}
 
@@ -4673,8 +4689,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5500,8 +5516,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5873,8 +5889,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 11,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6163,6 +6179,14 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 268.0, 111.5, 192.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"autostart" : 0,
+														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
+														"watch" : 0
+													}
+,
 													"text" : "node.script CH-ClientScript-v0.3.js"
 												}
 
@@ -7126,6 +7150,14 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"midpoints" : [ 1026.5, 438.75, 1007.5, 438.75 ],
+									"source" : [ "obj-88", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -7161,8 +7193,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7534,8 +7566,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7824,6 +7856,14 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 268.0, 111.5, 192.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"autostart" : 0,
+										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
+										"watch" : 0
+									}
+,
 									"text" : "node.script CH-ClientScript-v0.3.js"
 								}
 
@@ -8353,17 +8393,59 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientScript-v0.3.js",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3",
+				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Rooms-Title.png",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Small-Logo-NoText.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/img",
+				"patcherrelativepath" : "../img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "CH-Controls.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "../bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
+				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "CH-Controls-Title.png",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "../bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
+				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Events-Title.png",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"type" : "PNG",
 				"implicit" : 1
 			}
  ],

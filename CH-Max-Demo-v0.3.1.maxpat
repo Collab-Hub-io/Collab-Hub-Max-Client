@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1219.0, 746.0 ],
+		"rect" : [ 55.0, 93.0, 1233.0, 660.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -777,85 +777,85 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "./img/for-bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientScript-v0.3.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "./img/for-bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Chat.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Chat-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "./img/for-bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "./img/for-bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "./bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "./img/for-bpatchers",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/img",
-				"patcherrelativepath" : "./img",
+				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-PD-Client-v0.3/img",
+				"patcherrelativepath" : "../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-PD-Client-v0.3/img",
 				"type" : "PNG",
 				"implicit" : 1
 			}

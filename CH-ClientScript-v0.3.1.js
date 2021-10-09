@@ -8,7 +8,7 @@
 const max = require('max-api'),
   io = require('socket.io-client'),
   config = require('./config.json'),
-  namespace = config.namespace,
+  namespace = "/hub" ||config.namespace,
   username = config.username,
   socket = (() => {
     if (username != undefined)
