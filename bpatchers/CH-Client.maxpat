@@ -689,8 +689,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 268.0, 111.5, 192.0, 22.0 ],
-					"text" : "node.script CH-ClientScript-v0.3.js"
+					"patching_rect" : [ 268.0, 111.5, 202.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"autostart" : 0,
+						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
+						"watch" : 0
+					}
+,
+					"text" : "node.script CH-ClientScript-v0.3.1.js"
 				}
 
 			}
@@ -1187,7 +1195,21 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
+				"patcherrelativepath" : "../../Collab-Hub-Max-Package/media/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientScript-v0.3.1.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH",
+				"patcherrelativepath" : "..",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
