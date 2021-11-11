@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 576.0, 111.5, 78.0, 22.0 ],
+					"patching_rect" : [ 576.0, 81.5, 78.0, 22.0 ],
 					"text" : "route toggles"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 576.0, 77.0, 63.0, 22.0 ],
+					"patching_rect" : [ 576.0, 51.5, 63.0, 22.0 ],
 					"text" : "r CH-flags"
 				}
 
@@ -400,8 +400,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1197,8 +1197,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
-				"patcherrelativepath" : "../../Collab-Hub-Max-Package/media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/img/for-bpatchers",
+				"patcherrelativepath" : "../img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
