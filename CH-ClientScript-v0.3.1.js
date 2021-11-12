@@ -23,16 +23,8 @@ let senderFlag = false,
   eventDetail = false,
   roomDetail = false;
 
-  let test = () => {
-    console.log(config.namespace);
-    max.outlet("config", namespace);
-  }
-
-  test();
-
 const maxHandlers = {
   // General
-
   addUsername: (username) => {
     let outgoing = { username: username };
     socket.emit("addUsername", outgoing);
