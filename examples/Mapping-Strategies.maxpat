@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 131.0, 129.0, 1692.0, 788.0 ],
+		"rect" : [ 34.0, 62.0, 1468.0, 864.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -61,6 +61,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
 					"numinlets" : 1,
@@ -84,13 +85,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1692.0, 762.0 ],
+						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -129,7 +130,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 305.0, 352.0, 126.0, 35.0 ],
+									"patching_rect" : [ 305.0, 352.0, 127.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 463.0, 138.0, 141.0, 22.0 ],
 									"text" : "torque_impulse $1 $1 $1"
@@ -146,7 +147,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 305.0, 329.0, 84.0, 35.0 ],
+									"patching_rect" : [ 305.0, 329.0, 87.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 463.0, 115.0, 100.0, 22.0 ],
 									"text" : "impulse $1 $1 $1"
@@ -161,7 +162,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 478.0, 25.0, 357.0, 78.0 ],
+									"patching_rect" : [ 478.0, 25.0, 359.0, 78.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 3,
 									"presentation_rect" : [ 463.0, 10.0, 501.0, 60.0 ],
@@ -887,13 +888,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1692.0, 762.0 ],
+						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1194,13 +1195,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1692.0, 762.0 ],
+						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1321,6 +1322,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-7",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1341,6 +1343,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-8",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1361,6 +1364,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-9",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1381,6 +1385,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-10",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1401,6 +1406,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-11",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1421,6 +1427,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-6",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1441,6 +1448,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-5",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1461,6 +1469,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-4",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1481,6 +1490,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-3",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1513,6 +1523,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-1",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "lookupTable.maxpat",
 									"numinlets" : 1,
@@ -1652,13 +1663,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1692.0, 762.0 ],
+						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1759,6 +1770,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-34",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "stepSeq.maxpat",
 									"numinlets" : 3,
@@ -1869,7 +1881,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2021,7 +2033,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2456,13 +2468,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1692.0, 762.0 ],
+						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2528,7 +2540,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3204,13 +3216,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1692.0, 762.0 ],
+						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3494,7 +3506,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 41.0, 606.0, 60.0 ],
+					"patching_rect" : [ 14.0, 41.0, 475.0, 60.0 ],
 					"text" : "Mapping Strategies"
 				}
 
@@ -3525,21 +3537,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "simpleSaw.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/examples/resources",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/examples/resources",
 				"patcherrelativepath" : "./resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "simpleFM.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/examples/resources",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/examples/resources",
 				"patcherrelativepath" : "./resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stepSeq.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/examples/resources",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/examples/resources",
 				"patcherrelativepath" : "./resources",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3552,36 +3564,36 @@
 			}
 , 			{
 				"name" : "lookupTable.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/examples/resources",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/examples/resources",
 				"patcherrelativepath" : "./resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "manyOsc.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/examples/resources",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/examples/resources",
 				"patcherrelativepath" : "./resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "../bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "../img/for-bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript-v0.3.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Client",
-				"patcherrelativepath" : "..",
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

@@ -1,45 +1,68 @@
 {
-	"name" : "Collab-Hub",
-	"displayname" : "Collab-Hub",
-	"version" : "0.3.1",
-	"author" : "Nick Hwang, Eric Sheffield, and Anthony T. Marasco",
-	"authors" : ["Nick Hwang", "Eric Sheffield", "Anthony T. Marasco"],
-	"description" : "Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. ",
-	"tags" : [ "networking", "remote collaboration" ],
-	"website" : "https://www.collab-hub.io",
-	"extends" : "",
-	"extensible" : 0,
-	"max_version_min" : "8.0",
-	"max_version_max" : "none",
-	"os" : 	{
-		"macintosh" : 		{
-			"min_version" : "8.0",
-			"platform" : [ "x64", "aarch64" ]
+	"name": "Collab-Hub",
+	"displayname": "Collab-Hub",
+	"version": "0.3.1",
+	"author": "Nick Hwang, Eric Sheffield, and Anthony T. Marasco",
+	"authors": [
+		"Nick Hwang",
+		"Eric Sheffield",
+		"Anthony T. Marasco"
+	],
+	"description": "Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. ",
+	"tags": [
+		"networking",
+		"remote collaboration"
+	],
+	"website": "https://www.collab-hub.io",
+	"extends": "",
+	"extensible": 0,
+	"max_version_min": "8.0",
+	"max_version_max": "none",
+	"os": {
+		"macintosh": {
+			"min_version": "8.0",
+			"platform": [
+				"x64",
+				"aarch64"
+			]
+		},
+		"windows": {
+			"min_version": "8.0",
+			"platform": [
+				"x64"
+			]
 		}
-,
-		"windows" : 		{
-			"min_version" : "8.0",
-			"platform" : [ "x64" ]
-		}
-
-	}
-,
-	"homepatcher" : "Collab-Hub Modules.maxpat",
-	"package_extra" : 	{
-		"reverse_domain" : "io.collab-hub",
-		"copyright" : "Copyright © 2001-2021, Nick Hwang. All rights reserved."
-	}
-,
-	"filelist" : 	{
-		"externals" : [ ],
-		"patchers" : [ "buffer-scrub-demo.maxpat", "gate-comparison.maxpat", "module_demo/g_2voice/g_2voice.model.maxhelp", "module_demo/g_2voice/g_2voice.model.maxpat", "module_demo/g_2voice/g_2voice.model.presets.txt", "module_demo/g_2voice/g_2voice.module.maxpat", "module_demo/g_2voice/g_2voice.view.maxpat", "module_demo/readme.md", "record-comparison.maxpat", "reverb-mix-demo.maxpat", "time-stretch-demo.maxpat" ],
-		"help" : [ "nw.cppan~.maxhelp", "nw.gateplus~.maxhelp", "nw.grainbang~.maxhelp", "nw.grainphase~.maxhelp", "nw.grainpulse~.maxhelp", "nw.grainstream~.maxhelp", "nw.gverb~.maxhelp", "nw.phasorshift~.maxhelp", "nw.pulsesamp~.maxhelp", "nw.recordplus~.maxhelp", "nw.trainshift~.maxhelp" ],
-		"media" : [ "grain_windows/3stage-linear_30.aiff", "grain_windows/3stage-linear_50.aiff", "grain_windows/blackman-harris.aiff", "grain_windows/blackman.aiff", "grain_windows/expodec.aiff", "grain_windows/gauss.aiff", "grain_windows/hamming.aiff", "grain_windows/hanning.aiff", "grain_windows/quasi-gauss_30.aiff", "grain_windows/quasi-gauss_50.aiff", "grain_windows/rexpodec.aiff", "grain_windows/triangle.aiff" ],
-		"docs" : [ "nw.cppan~.maxref.xml", "nw.gateplus~.maxref.xml", "nw.grainbang~.maxref.xml", "nw.grainphase~.maxref.xml", "nw.grainpulse~.maxref.xml", "nw.grainstream~.maxref.xml", "nw.gverb~.maxref.xml", "nw.phasorshift~.maxref.xml", "nw.pulsesamp~.maxref.xml", "nw.recordplus~.maxref.xml", "nw.trainshift~.maxref.xml" ],
-		"javascript" : [ "CH-ClientScript-v0.3.1.js" ],
-		"extras" : [ "Collab-Hub Modules.maxpat" ]
-	}
-,
-	"c74install" : 1,
-	"installdate" : 3716758452
+	},
+	"homepatcher": "Collab-Hub Modules.maxpat",
+	"package_extra": {
+		"reverse_domain": "io.collab-hub",
+		"copyright": "Copyright © 2020-2021, Nick Hwang. All rights reserved."
+	},
+	"filelist": {
+		"externals": [],
+		"patchers": [
+			"CH-Client.maxpat",
+			"CH-ClientTesting.maxpat",
+			"CH-Controls.maxpat",
+			"CH-Events.maxpat",
+			"CH-Rooms.maxpat",
+			"CH-Chat.maxpat"
+		],
+		"help": [
+			"nw.cppan~.maxhelp"
+		],
+		"media": [
+		],
+		"docs": [
+			"nw.cppan~.maxref.xml"
+		],
+		"javascript": [
+			"CH-ClientScript.js"
+		],
+		"extras": [
+			"Collab-Hub Modules.maxpat"
+		]
+	},
+	"c74install": 1,
+	"installdate": 3716758452
 }

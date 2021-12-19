@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -400,8 +400,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -689,16 +689,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 268.0, 111.5, 192.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"autostart" : 0,
-						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
-						"watch" : 0
-					}
-,
-					"text" : "node.script CH-ClientScript-v0.3.js"
+					"patching_rect" : [ 268.0, 111.5, 165.0, 22.0 ],
+					"text" : "node.script CH-ClientScript.js"
 				}
 
 			}
@@ -1197,16 +1189,9 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
-				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-ClientScript-v0.3.js",
-				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3",
-				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],

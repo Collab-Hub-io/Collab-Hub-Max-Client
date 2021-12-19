@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -172,7 +172,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.5, 205.0, 83.0, 33.0 ],
+					"patching_rect" : [ 270.5, 225.0, 83.0, 33.0 ],
 					"text" : "As individual Events"
 				}
 
@@ -220,6 +220,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-128",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
 					"numinlets" : 1,
@@ -578,22 +579,22 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
-				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3/bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
-				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/img/for-bpatchers",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript-v0.3.js",
-				"bootpath" : "~/Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3",
-				"patcherrelativepath" : "../../../Downloads/WAC2021-Collab-Hub-Workshop-main/Collab-Hub-Max-Client-v0.3",
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -620,9 +621,10 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -633,10 +635,9 @@
 						"autogradient" : 0
 					}
 ,
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ]
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
