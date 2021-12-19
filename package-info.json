@@ -1,17 +1,24 @@
 {
 	"name": "Collab-Hub",
 	"displayname": "Collab-Hub",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"author": "Nick Hwang, Eric Sheffield, and Anthony T. Marasco",
 	"authors": [
 		"Nick Hwang",
 		"Eric Sheffield",
 		"Anthony T. Marasco"
 	],
-	"description": "Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. ",
+	"description": "Max Client for Collab-Hub.io-- a server-based collaborative tool meant to connect creative apps including Max, PD, Arduino, Unity, etc. Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. Visit Collab-Hub.io for more information for other clients.",
 	"tags": [
 		"networking",
-		"remote collaboration"
+		"remote collaboration",
+		"collaborative", 
+		"remote", 
+		"socketio", 
+		"nodejs",
+		"PD",
+		"Arduino", 
+		"OSC"
 	],
 	"website": "https://www.collab-hub.io",
 	"extends": "",
@@ -48,14 +55,9 @@
 			"CH-Rooms.maxpat",
 			"CH-Chat.maxpat"
 		],
-		"help": [
-			"nw.cppan~.maxhelp"
-		],
-		"media": [
-		],
-		"docs": [
-			"nw.cppan~.maxref.xml"
-		],
+		"help": [],
+		"media": [],
+		"docs": [],
 		"javascript": [
 			"CH-ClientScript.js"
 		],
