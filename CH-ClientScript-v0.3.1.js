@@ -3,6 +3,7 @@
 // the Max-based Collab-Hub (client).
 // Authors: Nick Hwang, Anthony T Marasco, Eric Sheffield
 // Contact: nickthwang@gmail.com
+// Updated: 12/15/2021
 // --------------------------------------------------------------------------
 
 const max = require("max-api"),

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 95.0, 67.0, 1233.0, 660.0 ],
+		"rect" : [ 34.0, 62.0, 1008.0, 836.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -253,10 +253,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1057.5, 283.0, 63.0, 22.0 ],
+					"patching_rect" : [ 1058.5, 283.0, 93.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1057.5, 283.0, 63.0, 22.0 ],
-					"text" : "route user"
+					"presentation_rect" : [ 1058.5, 283.0, 93.0, 22.0 ],
+					"text" : "route username"
 				}
 
 			}
@@ -572,7 +572,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
+					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Events.maxpat",
 					"numinlets" : 1,
@@ -596,7 +596,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
+					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Controls.maxpat",
 					"numinlets" : 1,
@@ -620,7 +620,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
+					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Chat.maxpat",
 					"numinlets" : 1,
@@ -644,7 +644,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
+					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Rooms.maxpat",
 					"numinlets" : 1,
@@ -668,7 +668,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
+					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
 					"numinlets" : 1,
@@ -878,85 +878,78 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/help",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/help",
+				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript-v0.3.1.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/help",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/help",
+				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Chat.maxpat",
 				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/patchers",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Chat-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/help",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/help",
+				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/help",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/help",
+				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media",
-				"patcherrelativepath" : "../Collab-Hub-Max-Package/media",
+				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
