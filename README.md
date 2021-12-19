@@ -1,4 +1,4 @@
-# Collab-Hub Max Client 0.3.1
+# Collab-Hub Max Client 0.3.2
 
 <br/>
 

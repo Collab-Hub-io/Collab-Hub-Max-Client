@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 90.0, 1188.0, 512.0 ],
+		"rect" : [ 34.0, 90.0, 1494.0, 682.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -690,6 +690,12 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 268.0, 111.5, 165.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"autostart" : 0,
+						"defer" : 0,
+						"watch" : 0
+					}
+,
 					"text" : "node.script CH-ClientScript.js"
 				}
 
@@ -1189,9 +1195,16 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/for-bpatchers",
 				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],

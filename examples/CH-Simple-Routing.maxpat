@@ -47,7 +47,7 @@
 					"patching_rect" : [ 15.5, 574.0, 436.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 375.0, 189.833331882953644, 322.0, 33.0 ],
+					"presentation_rect" : [ 375.0, 279.833331882953644, 322.0, 33.0 ],
 					"text" : "Remove this CH-Client BPatcher if you already have an instance elsewhere"
 				}
 
@@ -62,7 +62,7 @@
 					"patching_rect" : [ 24.5, 111.0, 339.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 18.5, 18.0, 319.0, 33.0 ],
+					"presentation_rect" : [ 18.5, 108.0, 319.0, 33.0 ],
 					"text" : "This is using PUSH routing, so conductees do not need to observe these CONTROL or EVENT names."
 				}
 
@@ -77,7 +77,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 296.166666666666686, 464.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 268.166666666666686, 247.833331882953644, 24.0, 24.0 ]
+					"presentation_rect" : [ 268.166666666666686, 337.833331882953644, 24.0, 24.0 ]
 				}
 
 			}
@@ -91,7 +91,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 249.833333333333314, 464.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 221.833333333333314, 247.833331882953644, 24.0, 24.0 ]
+					"presentation_rect" : [ 221.833333333333314, 337.833331882953644, 24.0, 24.0 ]
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 203.5, 464.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 175.5, 247.833331882953644, 24.0, 24.0 ]
+					"presentation_rect" : [ 175.5, 337.833331882953644, 24.0, 24.0 ]
 				}
 
 			}
@@ -118,7 +118,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 203.5, 386.0, 158.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 175.5, 169.833331882953644, 158.0, 22.0 ],
+					"presentation_rect" : [ 175.5, 259.833331882953644, 158.0, 22.0 ],
 					"text" : "route Event1 Event2 Event3"
 				}
 
@@ -132,7 +132,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 317.5, 153.0, 46.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 292.5, 60.0, 46.0, 22.0 ],
+					"presentation_rect" : [ 292.5, 150.0, 46.0, 22.0 ],
 					"text" : "Event3"
 				}
 
@@ -146,7 +146,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 257.5, 153.0, 46.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 232.5, 60.0, 46.0, 22.0 ],
+					"presentation_rect" : [ 232.5, 150.0, 46.0, 22.0 ],
 					"text" : "Event2"
 				}
 
@@ -160,7 +160,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.5, 153.0, 46.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 172.5, 60.0, 46.0, 22.0 ],
+					"presentation_rect" : [ 172.5, 150.0, 46.0, 22.0 ],
 					"text" : "Event1"
 				}
 
@@ -229,7 +229,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.5, 610.0, 322.0, 169.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 375.0, 12.0, 322.0, 169.0 ],
+					"presentation_rect" : [ 375.0, 102.0, 322.0, 169.0 ],
 					"prototypename" : "CH-CLIENT",
 					"viewvisibility" : 1
 				}
@@ -256,7 +256,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 118.5, 464.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.5, 247.833331882953644, 24.0, 24.0 ]
+					"presentation_rect" : [ 90.5, 337.833331882953644, 24.0, 24.0 ]
 				}
 
 			}
@@ -270,7 +270,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 82.0, 464.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.0, 247.833331882953644, 24.0, 24.0 ]
+					"presentation_rect" : [ 54.0, 337.833331882953644, 24.0, 24.0 ]
 				}
 
 			}
@@ -284,7 +284,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 51.5, 464.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 23.5, 247.833331882953644, 24.0, 24.0 ]
+					"presentation_rect" : [ 23.5, 337.833331882953644, 24.0, 24.0 ]
 				}
 
 			}
@@ -297,7 +297,7 @@
 					"outlettype" : [ "bang", "bang", "bang", "" ],
 					"patching_rect" : [ 51.5, 421.0, 70.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 23.5, 204.833331882953644, 70.0, 22.0 ],
+					"presentation_rect" : [ 23.5, 294.833331882953644, 70.0, 22.0 ],
 					"text" : "select 1 2 3"
 				}
 
@@ -311,7 +311,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 51.5, 386.0, 79.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 23.5, 169.833331882953644, 79.0, 22.0 ],
+					"presentation_rect" : [ 23.5, 259.833331882953644, 79.0, 22.0 ],
 					"text" : "route Section"
 				}
 
@@ -325,7 +325,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 51.5, 348.0, 97.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 23.5, 131.833331882953644, 97.0, 22.0 ],
+					"presentation_rect" : [ 23.5, 221.833331882953644, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -339,7 +339,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 113.5, 153.0, 29.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 107.5, 60.0, 29.5, 22.0 ],
+					"presentation_rect" : [ 107.5, 150.0, 29.5, 22.0 ],
 					"text" : "3"
 				}
 
@@ -353,7 +353,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 69.75, 153.0, 29.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 70.75, 60.0, 29.5, 22.0 ],
+					"presentation_rect" : [ 70.75, 150.0, 29.5, 22.0 ],
 					"text" : "2"
 				}
 
@@ -367,7 +367,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 24.5, 153.0, 29.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.5, 60.0, 29.5, 22.0 ],
+					"presentation_rect" : [ 25.5, 150.0, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -404,6 +404,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.5, 14.0, 382.0, 64.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.5, 14.0, 382.0, 64.0 ],
 					"text" : "Simple Routing"
 				}
 
@@ -420,7 +422,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.5, 329.0, 368.0, 205.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.5, 12.0, 341.0, 102.0 ],
+					"presentation_rect" : [ 10.5, 102.0, 341.0, 102.0 ],
 					"proportion" : 0.5,
 					"rounded" : 5
 				}
@@ -438,7 +440,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.5, 102.0, 368.0, 208.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.5, 121.833331882953644, 341.0, 169.0 ],
+					"presentation_rect" : [ 10.5, 211.833331882953644, 341.0, 169.0 ],
 					"proportion" : 0.5,
 					"rounded" : 5
 				}
@@ -579,21 +581,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/patchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/for-bpatchers",
 				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/javascript",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -621,10 +623,8 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -635,8 +635,10 @@
 						"autogradient" : 0
 					}
 ,
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 				}
 ,
