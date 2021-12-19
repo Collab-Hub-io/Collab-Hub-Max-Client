@@ -56,7 +56,7 @@
 			"CH-Chat.maxpat"
 		],
 		"help": [],
-		"media": [],
+		"media": ["CH-Title.png"],
 		"docs": [],
 		"javascript": [
 			"CH-ClientScript.js"
