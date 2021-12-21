@@ -324,8 +324,8 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.560000092188517, 0, 206.409574468085111, 0.213333425521851, 0, 1137.898936170212664, 1.0, 0, 1989.999999999999091, 0.0, 0 ],
-					"domain" : 1990.0,
+					"addpoints" : [ 0.0, 0.560000092188517, 0, 12.550531914893616, 0.213333425521851, 0, 69.188829787234027, 1.0, 0, 120.999999999999943, 0.0, 0 ],
+					"domain" : 121.0,
 					"id" : "obj-99",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -461,7 +461,7 @@
 					"patching_rect" : [ 1712.583332777023315, 136.0, 436.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 12.249948143959045, 50.666668117046356, 436.0, 20.0 ],
-					"text" : "Remove this CH-Client BPatcher if you already have an instance elsewhere"
+					"text" : "Disable this CH-Client BPatcher if you already have an instance elsewhere"
 				}
 
 			}
@@ -2513,23 +2513,23 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/patchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/media/for-bpatchers",
-				"patcherrelativepath" : "../media/for-bpatchers",
-				"type" : "PNG",
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
 				"implicit" : 1
 			}
  ],
@@ -2555,6 +2555,12 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
+					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2565,13 +2571,7 @@
 						"autogradient" : 0
 					}
 ,
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ]
 				}
 ,
 				"parentstyle" : "",
