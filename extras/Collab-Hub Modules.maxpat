@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 108.0, 99.0, 1333.0, 845.0 ],
+		"rect" : [ 116.0, 73.0, 1346.0, 973.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,13 +41,140 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 893.0, 160.5, 174.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 885.25, 157.5, 174.0, 22.0 ],
+					"text" : "http://ch-server.herokuapp.com"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1167.0, 230.0, 129.0, 35.0 ],
+					"text" : ";\rmax launchbrowser $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
+					"id" : "obj-54",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 688.5, 55.5, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 688.5, 55.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "!",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 13.0,
+					"id" : "obj-53",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 715.0, 61.5, 516.0, 166.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 11,
+					"presentation_rect" : [ 715.0, 61.5, 516.0, 166.0 ],
+					"text" : "1. Enable CH-Client by clicking clicking 'Disabled' which change the state to enabled. \n2. Click 'Connect' -- You'll the button next to 'Connect' light up. An additional confirmation will be in the Max Console Window in the from a 'serverMessage'. If you see that, you're connected to Collab-Hub. \n3. You can now send data and trigger events to other connected clients. \n4. You can change your username by clicking on 'Change Username' on the CH-Client Module. \n5. Open our web test client: \n6. Send a chat message to the browset by typing in the 'Simple Chat' window on CH-Client. Messages on the browser will appear in the upper-right. \nIncoming Chat messages to Max will appear in the Max Console window."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 18.0,
+					"id" : "obj-50",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 714.0, 17.5, 508.5, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 714.0, 17.5, 508.5, 27.0 ],
+					"text" : "Quick Start Version 1: Max to Web"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
+					"id" : "obj-29",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 180.5, 190.5, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.5, 190.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "!",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
+					"id" : "obj-49",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 311.5, 458.5, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 311.5, 458.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "!",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 666.0, 185.0, 24.0, 24.0 ]
+					"patching_rect" : [ 1383.0, 106.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1383.0, 106.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -57,7 +184,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 666.0, 226.5, 73.0, 22.0 ],
+					"patching_rect" : [ 1383.0, 147.5, 73.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1383.0, 147.5, 73.0, 22.0 ],
 					"text" : "s CH-clients"
 				}
 
@@ -69,6 +198,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.5, 859.0, 54.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 9.5, 859.0, 54.0, 22.0 ],
 					"text" : "onecopy"
 				}
 
@@ -90,7 +221,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1333.0, 819.0 ],
+						"rect" : [ 0.0, 26.0, 1346.0, 947.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -442,10 +573,12 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -456,9 +589,7 @@
 										"autogradient" : 0
 									}
 ,
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ]
 								}
 ,
 								"parentstyle" : "",
@@ -468,6 +599,8 @@
 					}
 ,
 					"patching_rect" : [ 1383.0, 61.5, 70.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1383.0, 61.5, 70.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -496,7 +629,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1333.0, 819.0 ],
+						"rect" : [ 0.0, 26.0, 1346.0, 947.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1395,10 +1528,12 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1409,9 +1544,7 @@
 										"autogradient" : 0
 									}
 ,
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1421,6 +1554,8 @@
 					}
 ,
 					"patching_rect" : [ 1382.0, 17.5, 64.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1382.0, 17.5, 64.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1440,7 +1575,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 952.5, 418.0, 50.0, 22.0 ]
+					"patching_rect" : [ 949.0, 421.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 949.0, 421.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1452,7 +1589,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1004.5, 416.0, 24.0, 24.0 ]
+					"patching_rect" : [ 1001.0, 419.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1001.0, 419.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1463,7 +1602,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 952.5, 392.0, 123.0, 22.0 ],
+					"patching_rect" : [ 949.0, 395.0, 123.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 949.0, 395.0, 123.0, 22.0 ],
 					"text" : "route value2 bang2"
 				}
 
@@ -1476,7 +1617,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 827.5, 276.5, 402.5, 20.0 ],
+					"patching_rect" : [ 824.0, 279.5, 402.5, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 824.0, 279.5, 402.5, 20.0 ],
 					"text" : "INCOMING - Incoming data is also available from CH module outlets."
 				}
 
@@ -1489,7 +1632,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1077.5, 418.0, 50.0, 22.0 ]
+					"patching_rect" : [ 1074.0, 421.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1074.0, 421.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1501,7 +1646,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1129.5, 416.0, 24.0, 24.0 ]
+					"patching_rect" : [ 1126.0, 419.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1126.0, 419.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1512,7 +1659,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1077.5, 392.0, 123.0, 22.0 ],
+					"patching_rect" : [ 1074.0, 395.0, 123.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1074.0, 395.0, 123.0, 22.0 ],
 					"text" : "route value2 bang2"
 				}
 
@@ -1525,7 +1674,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 827.5, 418.0, 50.0, 22.0 ]
+					"patching_rect" : [ 824.0, 421.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 824.0, 421.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1538,6 +1689,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 589.5, 480.5, 155.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 589.5, 480.5, 155.0, 33.0 ],
 					"text" : "Incoming chat messages post to the Max Console."
 				}
 
@@ -1549,6 +1703,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.5, 442.5, 85.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.5, 442.5, 85.0, 22.0 ],
 					"text" : "s toCH-Server"
 				}
 
@@ -1562,6 +1718,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.5, 94.5, 637.5, 154.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 11,
+					"presentation_rect" : [ 9.5, 94.5, 637.5, 154.0 ],
 					"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. "
 				}
 
@@ -1576,6 +1735,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.5, 94.5, 637.5, 154.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 9.5, 94.5, 637.5, 154.0 ],
 					"proportion" : 0.5
 				}
 
@@ -1592,7 +1753,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 9.5, 17.5, 463.0, 64.0 ],
-					"pic" : "CH-Title.png"
+					"pic" : "CH-Title.png",
+					"presentation" : 1,
+					"presentation_rect" : [ 9.5, 17.5, 463.0, 64.0 ]
 				}
 
 			}
@@ -1604,7 +1767,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 926.5, 298.5, 303.5, 47.0 ],
+					"patching_rect" : [ 923.0, 301.5, 303.5, 47.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 923.0, 301.5, 303.5, 47.0 ],
 					"text" : "Enabling \"Flags\" in Client module prepends the sender's username to incoming controls/events (for enhanced routing)."
 				}
 
@@ -1616,7 +1782,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1078.5, 368.0, 93.0, 22.0 ],
+					"patching_rect" : [ 1075.0, 371.0, 93.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1075.0, 371.0, 93.0, 22.0 ],
 					"text" : "route username"
 				}
 
@@ -1629,7 +1797,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 879.5, 416.0, 24.0, 24.0 ]
+					"patching_rect" : [ 876.0, 419.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 876.0, 419.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -1640,7 +1810,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 827.5, 392.0, 123.0, 22.0 ],
+					"patching_rect" : [ 824.0, 395.0, 123.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 824.0, 395.0, 123.0, 22.0 ],
 					"text" : "route value1 bang1"
 				}
 
@@ -1652,7 +1824,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 827.5, 298.5, 97.0, 22.0 ],
+					"patching_rect" : [ 824.0, 301.5, 97.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 824.0, 301.5, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -1665,7 +1839,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 350.0, 279.5, 461.5, 20.0 ],
+					"patching_rect" : [ 303.0, 279.5, 461.5, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 303.0, 279.5, 461.5, 20.0 ],
 					"text" : "PUSH - Pushed controls/events are automatically sent to the intended target(s)."
 				}
 
@@ -1680,6 +1856,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.5, 279.5, 225.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 13.5, 279.5, 225.0, 60.0 ],
 					"text" : "PUBLISH - Published controls/events will be posted for other users to see. They can then choose to \"observe\" them to receive future transmissions."
 				}
 
@@ -1692,7 +1871,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 614.0, 340.5, 24.0, 24.0 ]
+					"patching_rect" : [ 567.0, 340.5, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 567.0, 340.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -1703,7 +1884,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 614.0, 305.5, 125.0, 33.0 ],
+					"patching_rect" : [ 567.0, 305.5, 125.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 567.0, 305.5, 125.0, 33.0 ],
 					"text" : "Push an event\nto everyone"
 				}
 
@@ -1715,7 +1899,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 614.0, 366.5, 87.0, 22.0 ],
+					"patching_rect" : [ 567.0, 366.5, 87.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 567.0, 366.5, 87.0, 22.0 ],
 					"text" : "push all bang2"
 				}
 
@@ -1728,7 +1914,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 457.0, 340.5, 50.0, 22.0 ]
+					"patching_rect" : [ 410.0, 340.5, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 410.0, 340.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -1739,7 +1927,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 457.0, 305.5, 125.0, 33.0 ],
+					"patching_rect" : [ 410.0, 305.5, 125.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 410.0, 305.5, 125.0, 33.0 ],
 					"text" : "Push a control\nto a user/room"
 				}
 
@@ -1753,6 +1944,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 445.25, 445.5, 142.25, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 445.25, 445.5, 142.25, 33.0 ],
 					"text" : "Outgoing data can go to any CH module inlet."
 				}
 
@@ -1765,7 +1959,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 350.0, 340.5, 50.0, 22.0 ]
+					"patching_rect" : [ 303.0, 340.5, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 303.0, 340.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -1776,7 +1972,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 350.0, 305.5, 105.0, 33.0 ],
+					"patching_rect" : [ 303.0, 305.5, 105.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 303.0, 305.5, 105.0, 33.0 ],
 					"text" : "Push a control\nto everyone"
 				}
 
@@ -1789,7 +1988,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 117.5, 367.5, 24.0, 24.0 ]
+					"patching_rect" : [ 117.5, 367.5, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 117.5, 367.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -1801,6 +2002,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 117.5, 393.5, 83.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 117.5, 393.5, 83.0, 22.0 ],
 					"text" : "publish bang1"
 				}
 
@@ -1812,6 +2015,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 117.5, 345.5, 99.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 117.5, 345.5, 99.0, 20.0 ],
 					"text" : "Publish an event"
 				}
 
@@ -1823,6 +2028,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.5, 345.5, 102.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.5, 345.5, 102.0, 20.0 ],
 					"text" : "Publish a control"
 				}
 
@@ -1837,7 +2044,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 13.5, 367.5, 50.0, 22.0 ]
+					"patching_rect" : [ 13.5, 367.5, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.5, 367.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -1849,6 +2058,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 13.5, 393.5, 102.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.5, 393.5, 102.0, 22.0 ],
 					"text" : "publish value1 $1"
 				}
 
@@ -1860,7 +2071,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 457.0, 366.5, 155.0, 22.0 ],
+					"patching_rect" : [ 410.0, 366.5, 155.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 410.0, 366.5, 155.0, 22.0 ],
 					"text" : "push (user|room) value2 $1"
 				}
 
@@ -1872,7 +2085,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.0, 366.5, 105.0, 22.0 ],
+					"patching_rect" : [ 303.0, 366.5, 105.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 303.0, 366.5, 105.0, 22.0 ],
 					"text" : "push all value2 $1"
 				}
 
@@ -1894,6 +2109,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 628.0, 662.5, 580.0, 169.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 628.0, 662.5, 580.0, 169.0 ],
 					"prototypename" : "CH-EVENTS",
 					"viewvisibility" : 1
 				}
@@ -1916,6 +2133,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 9.5, 665.5, 580.0, 169.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 9.5, 665.5, 580.0, 169.0 ],
 					"prototypename" : "CH-CONTROLS",
 					"viewvisibility" : 1
 				}
@@ -1938,6 +2157,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 347.5, 480.5, 240.0, 169.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 347.5, 480.5, 240.0, 169.0 ],
 					"prototypename" : "CH-CHAT",
 					"viewvisibility" : 1
 				}
@@ -1960,6 +2181,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 477.5, 388.0, 169.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 820.0, 477.5, 388.0, 169.0 ],
 					"prototypename" : "CH-ROOMS",
 					"viewvisibility" : 1
 				}
@@ -1982,6 +2205,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 9.5, 480.5, 322.0, 169.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 9.5, 480.5, 322.0, 169.0 ],
 					"prototypename" : "CH-CLIENT",
 					"viewvisibility" : 1
 				}
@@ -1996,7 +2221,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 347.5, 275.5, 468.0, 117.0 ],
+					"patching_rect" : [ 300.5, 275.5, 468.0, 117.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 300.5, 275.5, 468.0, 117.0 ],
 					"proportion" : 0.5
 				}
 
@@ -2011,6 +2238,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.5, 275.5, 230.0, 193.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 9.5, 275.5, 230.0, 193.0 ],
 					"proportion" : 0.5
 				}
 
@@ -2024,7 +2253,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 823.5, 272.5, 410.0, 171.0 ],
+					"patching_rect" : [ 820.0, 275.5, 410.0, 171.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 820.0, 275.5, 410.0, 171.0 ],
 					"proportion" : 0.5
 				}
 
@@ -2130,6 +2361,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-56", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -2189,17 +2427,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/for-bpatchers",
-				"patcherrelativepath" : "../media/for-bpatchers",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-ClientScript.js",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -2211,8 +2449,8 @@
 			}
 , 			{
 				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/for-bpatchers",
-				"patcherrelativepath" : "../media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -2225,8 +2463,8 @@
 			}
 , 			{
 				"name" : "CH-Chat-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/for-bpatchers",
-				"patcherrelativepath" : "../media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -2239,8 +2477,8 @@
 			}
 , 			{
 				"name" : "CH-Controls-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/for-bpatchers",
-				"patcherrelativepath" : "../media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -2253,15 +2491,15 @@
 			}
 , 			{
 				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/for-bpatchers",
-				"patcherrelativepath" : "../media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media",
-				"patcherrelativepath" : "../media",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -2298,10 +2536,12 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2312,9 +2552,55 @@
 						"autogradient" : 0
 					}
 ,
-					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "max6box",
+				"default" : 				{
+					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "max6inlet",
+				"default" : 				{
+					"color" : [ 0.423529, 0.372549, 0.27451, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "max6message",
+				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
+						"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "max6box",
+				"multi" : 0
+			}
+, 			{
+				"name" : "max6outlet",
+				"default" : 				{
+					"color" : [ 0.0, 0.454902, 0.498039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
