@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 54.0, 62.0, 1472.0, 984.0 ],
+		"rect" : [ 34.0, 62.0, 1309.0, 984.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -61,10 +61,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1242.0, 186.5, 201.0, 50.0 ],
+					"patching_rect" : [ 1421.0, 567.0, 201.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1239.0, 187.5, 218.0, 50.0 ],
+					"presentation_rect" : [ 1378.0, 305.5, 201.0, 50.0 ],
 					"text" : "Questions: nickthwang@gmail.com"
 				}
 
@@ -84,7 +84,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1368.5, 554.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1353.0, 673.5, 20.0, 20.0 ],
+					"presentation_rect" : [ 1368.5, 554.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "!",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -100,7 +100,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1421.0, 488.0, 218.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1239.0, 157.5, 218.0, 22.0 ],
+					"presentation_rect" : [ 1378.0, 226.5, 218.0, 22.0 ],
 					"text" : "https://discord.com/invite/NANZf5RuRV"
 				}
 
@@ -114,6 +114,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1421.0, 522.0, 129.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 1378.0, 260.5, 129.0, 35.0 ],
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -129,7 +132,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1421.0, 447.0, 201.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1239.0, 124.5, 201.0, 28.0 ],
+					"presentation_rect" : [ 1378.0, 185.5, 201.0, 28.0 ],
 					"text" : "Join Our Discord Server"
 				}
 
@@ -143,7 +146,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1421.0, 361.0, 107.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1239.0, 61.5, 107.0, 22.0 ],
+					"presentation_rect" : [ 1378.0, 99.5, 107.0, 22.0 ],
 					"text" : "http://collab-hub.io"
 				}
 
@@ -157,6 +160,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1421.0, 395.0, 129.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 1378.0, 133.5, 129.0, 35.0 ],
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -172,7 +178,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1421.0, 320.0, 201.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1239.0, 24.5, 201.0, 28.0 ],
+					"presentation_rect" : [ 1378.0, 58.5, 201.0, 28.0 ],
 					"text" : "Visit us on the Web: "
 				}
 
@@ -350,7 +356,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1009.5, 160.5, 198.5, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 988.5, 150.5, 198.5, 24.0 ]
+					"presentation_rect" : [ 1009.5, 160.5, 198.5, 24.0 ]
 				}
 
 			}
@@ -406,8 +412,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1421.0, 200.5, 174.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1239.0, 87.5, 174.0, 22.0 ],
 					"text" : "http://ch-server.herokuapp.com"
 				}
 
@@ -439,7 +443,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 675.5, 69.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 688.5, 55.5, 20.0, 20.0 ],
+					"presentation_rect" : [ 693.0, 66.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "!",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -459,7 +463,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 11,
 					"presentation_rect" : [ 715.0, 61.5, 504.0, 154.0 ],
-					"text" : "1. Enable CH-Client by clicking clicking 'Disabled' which change the state to enabled. \n2. Click 'Connect' -- You'll the button next to 'Connect' light up. An additional confirmation will be in the Max Console Window in the from a 'serverMessage'. If you see that, you're connected to Collab-Hub. \n3. You can now send data and trigger events to other connected clients. \n4. You can change your username by clicking on 'Change Username' on the CH-Client Module. \n5. Open our web test client on an internet browser: http://ch-server.herokuapp.com \n6. Send a chat message to the browser from Max by typing in the 'Simple Chat' window on CH-Client. Messages on the browser will appear in the upper-right. \nIncoming Chat messages to Max will appear in the Max Console window."
+					"text" : "1. Enable CH-Client by clicking clicking 'Disabled' which change the state to enabled. \n2. Click 'Connect' -- You'll see the button next to 'Connect' light up. An additional confirmation will be in the Max Console Window in the from a 'serverMessage'. If you see that, you're connected to Collab-Hub. \n3. You can now send data and trigger events to other connected clients. \n4. You can change your username by clicking on 'Change Username' on the CH-Client Module. \n5. Open our web test client on an internet browser: http://ch-server.herokuapp.com \n6. Send a chat message to the browser from Max by typing in the 'Simple Chat' window on CH-Client. Messages on the browser will appear in the upper-right. \nIncoming Chat messages to Max will appear in the Max Console window."
 				}
 
 			}
@@ -580,7 +584,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1472.0, 958.0 ],
+						"rect" : [ 0.0, 26.0, 1309.0, 958.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1121,10 +1125,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 127.0, 320.0, 637.5, 154.0 ],
+					"patching_rect" : [ 9.5, 95.5, 637.5, 154.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 11,
-					"presentation_rect" : [ 13.5, 106.0, 637.5, 154.0 ],
+					"presentation_rect" : [ 16.5, 106.0, 637.5, 154.0 ],
 					"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. "
 				}
 
@@ -1138,7 +1142,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.5, 106.0, 637.5, 154.0 ],
+					"patching_rect" : [ 9.5, 95.5, 637.5, 154.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.5, 106.0, 637.5, 154.0 ],
 					"proportion" : 0.5
@@ -1679,7 +1683,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 9.5, 471.25, 322.0, 247.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.5, 470.0, 326.0, 258.0 ],
+					"presentation_rect" : [ 9.5, 471.25, 322.0, 247.5 ],
 					"proportion" : 0.5
 				}
 
@@ -1692,7 +1696,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 493.875, 124.0, 150.0, 22.0 ]
+					"patching_rect" : [ 680.0, 234.5, 150.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 493.875, 124.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -1722,13 +1728,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-26", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-95", 0 ],
-					"source" : [ "obj-29", 2 ]
 				}
 
 			}
