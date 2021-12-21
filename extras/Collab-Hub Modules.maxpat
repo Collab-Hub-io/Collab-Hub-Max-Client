@@ -53,18 +53,6 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "hidden",
-					"id" : "obj-94",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 772.875, 229.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Lato",
 					"fontsize" : 18.0,
@@ -1133,10 +1121,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.5, 106.0, 637.5, 154.0 ],
+					"patching_rect" : [ 127.0, 320.0, 637.5, 154.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 11,
-					"presentation_rect" : [ 9.5, 106.0, 637.5, 154.0 ],
+					"presentation_rect" : [ 13.5, 106.0, 637.5, 154.0 ],
 					"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. "
 				}
 
@@ -1144,7 +1132,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.6, 0.8, 0.6, 0.6 ],
+					"bgcolor" : [ 0.72156862745098, 0.850980392156863, 0.694117647058824, 1.0 ],
 					"id" : "obj-24",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -1650,7 +1638,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.6, 0.8, 0.6, 0.6 ],
+					"bgcolor" : [ 0.72156862745098, 0.850980392156863, 0.694117647058824, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -1666,7 +1654,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.6, 0.8, 0.6, 0.6 ],
+					"bgcolor" : [ 0.72156862745098, 0.850980392156863, 0.694117647058824, 1.0 ],
 					"id" : "obj-10",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -1696,6 +1684,18 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"attr" : "hidden",
+					"id" : "obj-94",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 493.875, 124.0, 150.0, 22.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1722,6 +1722,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-26", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"source" : [ "obj-29", 2 ]
 				}
 
 			}
@@ -1990,13 +1997,13 @@
  ],
 		"autosave" : 0,
 		"boxgroups" : [ 			{
-				"boxes" : [ "obj-9", "obj-11", "obj-13", "obj-31", "obj-33", "obj-52", "obj-21", "obj-23", "obj-47" ]
-			}
-, 			{
 				"boxes" : [ "obj-3", "obj-48", "obj-35", "obj-39", "obj-42", "obj-36", "obj-40", "obj-45", "obj-6", "obj-7", "obj-43" ]
 			}
 , 			{
-				"boxes" : [ "obj-10", "obj-26", "obj-22", "obj-20", "obj-34", "obj-46", "obj-44", "obj-41", "obj-37", "obj-84", "obj-62", "obj-25", "obj-27", "obj-18" ]
+				"boxes" : [ "obj-9", "obj-31", "obj-11", "obj-52", "obj-33", "obj-21", "obj-23", "obj-13", "obj-47" ]
+			}
+, 			{
+				"boxes" : [ "obj-10", "obj-22", "obj-20", "obj-34", "obj-26", "obj-46", "obj-44", "obj-41", "obj-37", "obj-84", "obj-62", "obj-25", "obj-18", "obj-27" ]
 			}
  ],
 		"styles" : [ 			{
