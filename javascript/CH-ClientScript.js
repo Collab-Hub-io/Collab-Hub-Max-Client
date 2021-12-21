@@ -15,6 +15,7 @@ const max = require('max-api'),
     if (username != undefined)
       return io.connect(`https://ch-server.herokuapp.com/${namespace}`, {query: {username: username} } );
       // return io.connect(`http://localhost:3000/${namespace}`, {query: {username: username} } );
+      // return io.connect(`http://localhost:8123/`, {query: {username: username} } );
     else
       return io.connect(`https://ch-server.herokuapp.com/${namespace}`); 
       // return io.connect(`http://localhost:3000/${namespace}`);

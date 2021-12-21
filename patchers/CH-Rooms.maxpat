@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -802,8 +802,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "../img/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/for-bpatchers",
+				"patcherrelativepath" : "../media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
