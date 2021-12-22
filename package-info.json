@@ -12,12 +12,12 @@
 	"tags": [
 		"networking",
 		"remote collaboration",
-		"collaborative", 
-		"remote", 
-		"socketio", 
+		"collaborative",
+		"remote",
+		"socketio",
 		"nodejs",
 		"PD",
-		"Arduino", 
+		"Arduino",
 		"OSC"
 	],
 	"website": "https://www.collab-hub.io",
@@ -55,14 +55,48 @@
 			"CH-Rooms.maxpat",
 			"CH-Chat.maxpat"
 		],
-		"help": [],
-		"media": ["CH-Title.png"],
-		"docs": [],
+		"help": [
+			"CH-Client.maxhelp",
+			"CH-ClientTesting.maxhelp",
+			"CH-Controls.maxhelp",
+			"CH-Events.maxhelp",
+			"CH-Rooms.maxhelp",
+			"CH-Chat.maxhelp"
+		],
+		"media": [
+			"img/CH-Title.png",
+			"img/CH-Diagram.png",
+			"img/CH-Diagram-transparent.png",
+			"img/Max-Logo.png",
+			"img/Collab-Hub-Style.jpg",
+			"img/CH-Title.png",
+			"img/CH-Small-Logo-NoText.png"
+		],
+		"docs": [
+			"CH-Client.maxref.xml",
+			"CH-ClientTesting.maxref.xml",
+			"CH-Controls.maxref.xml",
+			"CH-Events.maxref.xml",
+			"CH-Rooms.maxref.xml",
+			"CH-Chat.maxref.xml",
+			"Collab-Hub Modules.maxref.xml",
+			"topics/Collab-Hub_topic.maxvig.xml"
+		],
 		"javascript": [
 			"CH-ClientScript.js"
 		],
 		"extras": [
 			"Collab-Hub Modules.maxpat"
+		],
+		"examples": [
+			"CH-Simple-Routing.maxpat", 
+			"CH-Controls-and-Events.maxpat", 
+			"CH-Drum-Demo.maxpat", 
+			"CH-Push-Publish-Rooms.maxpat",
+			"CH-Sequence-Trader/CH-Sequencer-Trader.maxpat",
+			"Mapping-Strategies.maxpat"
+
+
 		]
 	},
 	"c74install": 1,

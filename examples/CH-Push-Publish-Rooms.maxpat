@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 64.0, 62.0, 754.0, 861.0 ],
+		"rect" : [ 64.0, 62.0, 992.0, 861.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,12 +43,10 @@
 				"box" : 				{
 					"fontname" : "Lato",
 					"id" : "obj-6",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 686.0, 323.0, 50.0 ],
-					"text" : "*** Beware of connecting with more than one instance of the CH-Client, as it will create a new user instance each time. "
+					"patching_rect" : [ 22.0, 604.0, 323.0, 21.0 ]
 				}
 
 			}
@@ -874,7 +872,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 362.0, 501.0, 391.0, 171.0 ],
+					"patching_rect" : [ 400.0, 419.0, 391.0, 171.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -910,7 +908,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 754.0, 835.0 ],
+						"rect" : [ 0.0, 26.0, 992.0, 835.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2396,9 +2394,9 @@
 									"maxclass" : "bpatcher",
 									"name" : "CH-Client.maxpat",
 									"numinlets" : 1,
-									"numoutlets" : 1,
+									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 517.0, 425.0, 323.0, 171.0 ],
 									"viewvisibility" : 1
 								}
@@ -3044,7 +3042,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 466.5, 615.5, 58.0, 22.0 ],
+					"patching_rect" : [ 504.5, 533.5, 58.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3065,7 +3063,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 422.0, 445.0, 116.0, 49.0 ],
+					"patching_rect" : [ 460.0, 363.0, 116.0, 49.0 ],
 					"text" : "observedControlsUmenu dictionary u766000917"
 				}
 
@@ -3078,7 +3076,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 528.0, 367.5, 244.0, 37.0 ],
+					"patching_rect" : [ 566.0, 285.5, 244.0, 37.0 ],
 					"text" : "This send/receive header is built into the CH-modules automatically. "
 				}
 
@@ -3090,7 +3088,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 422.0, 375.0, 97.0, 22.0 ],
+					"patching_rect" : [ 460.0, 293.0, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -3102,7 +3100,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 78.0, 455.0, 238.0, 22.0 ],
+					"patching_rect" : [ 78.0, 373.0, 238.0, 22.0 ],
 					"text" : "publish all maxEvent1"
 				}
 
@@ -3115,7 +3113,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 113.0, 367.5, 244.0, 37.0 ],
+					"patching_rect" : [ 113.0, 285.5, 244.0, 37.0 ],
 					"text" : "messages from the other tabs will be sent here."
 				}
 
@@ -3127,7 +3125,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 22.0, 375.0, 83.0, 22.0 ],
+					"patching_rect" : [ 22.0, 293.0, 83.0, 22.0 ],
 					"text" : "r toCH-Server"
 				}
 
@@ -3166,7 +3164,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 398.5, 648.0, 150.0, 20.0 ],
+					"patching_rect" : [ 436.5, 566.0, 150.0, 20.0 ],
 					"text" : "You're in Patching Mode!"
 				}
 
@@ -3188,7 +3186,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 64.0, 88.0, 754.0, 835.0 ],
+						"rect" : [ 0.0, 26.0, 992.0, 835.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4356,9 +4354,9 @@
 									"maxclass" : "bpatcher",
 									"name" : "CH-Client.maxpat",
 									"numinlets" : 1,
-									"numoutlets" : 1,
+									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 517.0, 327.0, 323.0, 171.0 ],
 									"viewvisibility" : 1
 								}
@@ -4849,7 +4847,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 398.5, 616.5, 54.0, 22.0 ],
+					"patching_rect" : [ 436.5, 534.5, 54.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4874,10 +4872,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 22.0, 501.0, 323.0, 171.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 22.0, 419.0, 323.0, 171.0 ],
 					"viewvisibility" : 1
 				}
 

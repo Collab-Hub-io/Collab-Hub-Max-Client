@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 702.0, 958.0 ],
+						"rect" : [ 34.0, 88.0, 702.0, 958.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -87,6 +87,19 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"fontsize" : 13.0,
+									"id" : "obj-1",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 10.0, 232.0, 550.0, 22.0 ],
+									"text" : "You might use this to disable all clients running in Max."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "toggle",
@@ -207,7 +220,6 @@
 					}
 ,
 					"patching_rect" : [ 76.0, 876.0, 66.0, 23.0 ],
-					"presentation_linecount" : 3,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -236,7 +248,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 702.0, 958.0 ],
+						"rect" : [ 0.0, 26.0, 702.0, 958.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -301,7 +313,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 81.0, 460.5, 24.0, 24.0 ]
+									"patching_rect" : [ 81.0, 469.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -313,7 +325,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 10.0, 460.5, 50.0, 22.0 ]
+									"patching_rect" : [ 10.0, 469.5, 50.0, 22.0 ]
 								}
 
 							}
@@ -324,7 +336,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 10.0, 426.5, 161.0, 22.0 ],
+									"patching_rect" : [ 10.0, 435.5, 161.0, 22.0 ],
 									"text" : "route webSlider3 webEvent3"
 								}
 
@@ -337,7 +349,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 317.0, 460.5, 24.0, 24.0 ]
+									"patching_rect" : [ 317.0, 469.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -445,7 +457,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 246.0, 460.5, 50.0, 22.0 ]
+									"patching_rect" : [ 246.0, 469.5, 50.0, 22.0 ]
 								}
 
 							}
@@ -456,7 +468,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 246.0, 426.5, 161.0, 22.0 ],
+									"patching_rect" : [ 246.0, 435.5, 161.0, 22.0 ],
 									"text" : "route webSlider3 webEvent3"
 								}
 
@@ -468,7 +480,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 246.0, 399.0, 97.0, 22.0 ],
+									"patching_rect" : [ 246.0, 408.0, 97.0, 22.0 ],
 									"text" : "r fromCH-Server"
 								}
 

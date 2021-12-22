@@ -99,7 +99,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 152.0, 746.0, 284.0, 107.0 ],
+									"patching_rect" : [ 663.0, 35.0, 284.0, 107.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 17.5, 696.0, 785.0, 40.0 ],
 									"text" : "Authors: Nick Hwang, Eric Sheffield, Anthony T. Marasco"
@@ -115,7 +115,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 234.0, 740.0, 100.0, 87.711864406779654 ],
+									"patching_rect" : [ 1132.0, 35.0, 100.0, 87.711864406779654 ],
 									"pic" : "CH-Small-Logo-NoText.png",
 									"presentation" : 1,
 									"presentation_rect" : [ 402.0, 290.0, 149.0, 130.690677966101703 ]
@@ -131,7 +131,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 270.0, 761.0, 100.0, 55.939086294416242 ],
+									"patching_rect" : [ 646.0, 241.989847715736005, 628.0, 351.297461928934013 ],
 									"pic" : "CH-Diagram.png",
 									"presentation" : 1,
 									"presentation_rect" : [ 370.0, 271.0, 726.0, 406.117766497461901 ]
@@ -504,7 +504,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 1376.0, 869.0 ],
+						"rect" : [ 0.0, 26.0, 1376.0, 869.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -717,10 +717,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 24.5, 101.0, 682.0, 162.0 ],
+									"patching_rect" : [ 24.5, 101.0, 683.0, 162.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 10,
-									"presentation_rect" : [ 17.5, 101.0, 682.0, 162.0 ],
+									"presentation_rect" : [ 17.5, 101.0, 683.0, 162.0 ],
 									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. "
 								}
 
@@ -767,10 +767,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 837.875, 308.0, 303.5, 50.0 ],
+									"patching_rect" : [ 837.875, 308.0, 307.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 3,
-									"presentation_rect" : [ 838.875, 304.5, 303.5, 50.0 ],
+									"presentation_rect" : [ 838.875, 304.5, 307.0, 50.0 ],
 									"text" : "Enabling \"Flags\" in Client module prepends the sender's username to incoming controls/events (for enhanced routing)."
 								}
 
@@ -855,10 +855,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 17.5, 287.5, 225.0, 64.0 ],
+									"patching_rect" : [ 17.5, 287.5, 227.0, 64.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 4,
-									"presentation_rect" : [ 17.5, 282.5, 225.0, 64.0 ],
+									"presentation_rect" : [ 17.5, 282.5, 227.0, 64.0 ],
 									"text" : "PUBLISH - Published controls/events will be posted for other users to see. They can then choose to \"observe\" them to receive future transmissions."
 								}
 
@@ -1526,7 +1526,6 @@
 						"description" : "",
 						"digest" : "",
 						"fontname" : "Lato",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
 						"tags" : ""
 					}
@@ -1585,6 +1584,39 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"fontsize" : 28.0,
+									"id" : "obj-16",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 930.0, 101.0, 337.0, 84.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 17.5, 368.0, 337.0, 84.0 ],
+									"text" : "Open Documentation",
+									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-17",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 930.0, 209.5, 235.0, 35.0 ],
+									"text" : ";\rmax opendoc collab-hub_topic.maxvig.xml"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-15",
 									"maxclass" : "message",
@@ -1840,6 +1872,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-16", 0 ]
 								}
 
 							}
