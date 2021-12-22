@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 78.0, 106.0, 1212.0, 552.0 ],
+		"rect" : [ 34.0, 62.0, 1178.0, 864.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 1,
+		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -54,7 +54,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 0.0, 0.0, 320.0, 169.0 ],
+					"patching_rect" : [ 10.0, 196.0, 320.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 320.0, 169.0 ],
 					"viewvisibility" : 1
@@ -77,10 +77,26 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 322.0, 0.0, 400.0, 220.0 ],
+					"patching_rect" : [ 332.0, 196.0, 400.0, 220.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 324.0, 0.0, 826.0, 410.0 ],
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"border" : 0,
+					"filename" : "helpdetails.js",
+					"id" : "obj-12",
+					"ignoreclick" : 1,
+					"jsarguments" : [ "CH-ClientTesting" ],
+					"maxclass" : "jsui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 10.0, 10.0, 605.0, 169.0 ]
 				}
 
 			}
@@ -94,6 +110,12 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "helpdetails.js",
+				"bootpath" : "C74:/help/resources",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "n4m.monitor.maxpat",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "JSON",
@@ -114,7 +136,7 @@
 , 			{
 				"name" : "CH-Client.maxpat",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

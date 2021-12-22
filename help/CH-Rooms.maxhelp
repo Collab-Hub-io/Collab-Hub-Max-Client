@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 871.0, 864.0 ],
+		"rect" : [ 34.0, 62.0, 1265.0, 943.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,11 +37,322 @@
 		"tags" : "collab-hub",
 		"style" : "",
 		"subpatcher_template" : "",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"assistshowspatchername" : 0,
 		"globalpatchername" : "CH-Rooms",
 		"title" : "CH-Rooms",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 2,
+							"revision" : 1,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 81.0, 640.0, 786.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 1,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"showontab" : 1,
+						"assistshowspatchername" : 0,
+						"visible" : 1,
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"fontsize" : 24.0,
+									"id" : "obj-25",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 793.0, 246.0, 283.0, 35.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 682.25, 225.0, 283.0, 35.0 ],
+									"text" : "Deeper Concepts",
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 811.0, 528.0, 44.0, 22.0 ],
+									"text" : "sel 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"htabcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
+									"id" : "obj-19",
+									"maxclass" : "tab",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 780.0, 391.0, 262.0, 117.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 692.75, 408.0, 262.0, 117.0 ],
+									"tabs" : [ "Understand Controls and Events", "Understand Push, Publish, and Rooms" ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"id" : "obj-74",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 11.0, 129.5, 641.333347678184509, 47.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 10.0, 189.5, 606.0, 47.0 ],
+									"text" : "Users can create and join any number of rooms. Once a room is created, any one can join or leave. \n\nData and Messages can be directed at Usersnames, Roomnames, or keyword 'all'."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-94",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 1,
+									"maxclass" : "bpatcher",
+									"name" : "CH-Rooms.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 9.0, 489.333330869674683, 388.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 9.0, 473.333330869674683, 388.0, 169.0 ],
+									"prototypename" : "CH-ROOMS",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 793.5, 569.0, 208.0, 22.0 ],
+									"text" : "load CH-Controls-and-Events.maxpat"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 793.5, 641.5, 51.0, 22.0 ],
+									"text" : "pcontrol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 819.0, 610.5, 211.0, 22.0 ],
+									"text" : "load CH-Push-Publish-Rooms.maxpat"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"linecount" : 8,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 757.0, 274.5, 328.0, 127.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 8,
+									"presentation_rect" : [ 659.75, 272.0, 328.0, 127.0 ],
+									"text" : "There are two main modes of sending data to users: Push and Publish. Data messages needed to be formatted in a specific way that account for mode, destination, datatype, and possible value. \n\nSee CH-Push-Publish-Rooms.maxpat and CH-Controls-and-Events.maxpat for more information.\n\n"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 9.0, 282.0, 339.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 9.0, 266.0, 339.0, 20.0 ],
+									"text" : "Disable this CH-Client module when moving to other tabs."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-11",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "CH-Client.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 9.0, 311.5, 320.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 9.0, 295.5, 320.0, 169.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"border" : 0,
+									"filename" : "helpdetails.js",
+									"id" : "obj-12",
+									"ignoreclick" : 1,
+									"jsarguments" : [ "CH-Rooms" ],
+									"maxclass" : "jsui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 12.0, 12.0, 605.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 10.0, 10.0, 605.0, 169.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 0.0, 0.6, 0.2, 0.0 ],
+									"border" : 2,
+									"bordercolor" : [ 0.0, 0.6, 0.2, 1.0 ],
+									"id" : "obj-21",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 742.0, 260.5, 372.0, 417.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 648.5, 207.5, 350.5, 337.0 ],
+									"proportion" : 0.5
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-20", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+ ],
+						"boxgroups" : [ 							{
+								"boxes" : [ "obj-19", "obj-21", "obj-18", "obj-25" ]
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 7.0, 10.0, 48.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p Basic"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
@@ -58,7 +369,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 871.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1265.0, 917.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -174,7 +485,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 427.0, 427.0, 47.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Create a room in the browser and join it or create a room from CH-Rooms module.\n"
 								}
 
@@ -364,9 +674,9 @@
 									"maxclass" : "bpatcher",
 									"name" : "CH-Client.maxpat",
 									"numinlets" : 1,
-									"numoutlets" : 1,
+									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 10.0, 167.0, 320.0, 169.0 ],
 									"viewvisibility" : 1
 								}
@@ -517,7 +827,6 @@
 					}
 ,
 					"patching_rect" : [ 72.0, 861.0, 138.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -531,160 +840,11 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Lato",
-					"fontsize" : 24.0,
-					"id" : "obj-25",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 791.0, 244.0, 283.0, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 682.25, 225.0, 283.0, 35.0 ],
-					"text" : "Deeper Concepts",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 809.0, 526.0, 44.0, 22.0 ],
-					"text" : "sel 0 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"htabcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"id" : "obj-19",
-					"maxclass" : "tab",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 778.0, 389.0, 262.0, 117.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 692.75, 408.0, 262.0, 117.0 ],
-					"tabs" : [ "Understand Controls and Events", "Understand Push, Publish, and Rooms" ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-74",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 127.5, 641.333347678184509, 47.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 10.0, 189.5, 606.0, 47.0 ],
-					"text" : "Users can create and join any number of rooms. Once a room is created, any one can join or leave. \n\nData and Messages can be directed at Usersnames, Roomnames, or keyword 'all'."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-94",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 1,
-					"maxclass" : "bpatcher",
-					"name" : "CH-Rooms.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 7.0, 487.333330869674683, 388.0, 169.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 473.333330869674683, 388.0, 169.0 ],
-					"prototypename" : "CH-ROOMS",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 791.5, 567.0, 208.0, 22.0 ],
-					"text" : "load CH-Controls-and-Events.maxpat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 791.5, 639.5, 51.0, 22.0 ],
-					"text" : "pcontrol"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 817.0, 608.5, 211.0, 22.0 ],
-					"text" : "load CH-Push-Publish-Rooms.maxpat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"linecount" : 8,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 755.0, 272.5, 328.0, 127.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 8,
-					"presentation_rect" : [ 659.75, 272.0, 328.0, 127.0 ],
-					"text" : "There are two main modes of sending data to users: Push and Publish. Data messages needed to be formatted in a specific way that account for mode, destination, datatype, and possible value. \n\nSee CH-Push-Publish-Rooms.maxpat and CH-Controls-and-Events.maxpat for more information.\n\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-4",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 280.0, 339.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 266.0, 339.0, 20.0 ],
-					"text" : "Disable this CH-Client module when moving to other tabs."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 903.0, 54.0, 22.0 ],
+					"patching_rect" : [ 7.0, 861.0, 54.0, 22.0 ],
 					"text" : "onecopy"
 				}
 
@@ -706,7 +866,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 871.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1265.0, 917.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1089,9 +1249,9 @@
 									"maxclass" : "bpatcher",
 									"name" : "CH-Client.maxpat",
 									"numinlets" : 1,
-									"numoutlets" : 1,
+									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 10.0, 193.0, 320.0, 169.0 ],
 									"viewvisibility" : 1
 								}
@@ -1238,104 +1398,10 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-11",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CH-Client.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 7.0, 309.5, 320.0, 169.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 295.5, 320.0, 169.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"border" : 0,
-					"filename" : "helpdetails.js",
-					"id" : "obj-12",
-					"ignoreclick" : 1,
-					"jsarguments" : [ "CH-Rooms" ],
-					"maxclass" : "jsui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 10.0, 10.0, 605.0, 169.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 605.0, 169.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.0, 0.6, 0.2, 0.0 ],
-					"border" : 2,
-					"bordercolor" : [ 0.0, 0.6, 0.2, 1.0 ],
-					"id" : "obj-21",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 740.0, 258.5, 372.0, 417.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 648.5, 207.5, 350.5, 337.0 ],
-					"proportion" : 0.5
-				}
-
-			}
  ],
-		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-20", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
- ],
+		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "helpdetails.js",
+				"name" : "helpname.js",
 				"bootpath" : "C74:/help/resources",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -1362,12 +1428,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "helpname.js",
-				"bootpath" : "C74:/help/resources",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-Rooms.maxpat",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -1381,12 +1441,14 @@
 				"type" : "PNG",
 				"implicit" : 1
 			}
- ],
-		"autosave" : 0,
-		"boxgroups" : [ 			{
-				"boxes" : [ "obj-19", "obj-21", "obj-18", "obj-25" ]
+, 			{
+				"name" : "helpdetails.js",
+				"bootpath" : "C74:/help/resources",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

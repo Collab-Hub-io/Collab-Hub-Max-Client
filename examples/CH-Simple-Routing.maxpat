@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 85.0, 63.0, 1242.0, 883.0 ],
+		"rect" : [ 85.0, 62.0, 854.0, 864.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,29 +40,33 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Lato",
+					"fontsize" : 13.0,
 					"id" : "obj-50",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.5, 574.0, 436.0, 20.0 ],
+					"patching_rect" : [ 15.5, 574.0, 463.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 375.0, 279.833331882953644, 322.0, 33.0 ],
+					"presentation_rect" : [ 375.0, 279.833331882953644, 322.0, 38.0 ],
 					"text" : "Disable this CH-Client BPatcher if you already have an instance elsewhere"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Lato",
+					"fontsize" : 13.0,
 					"id" : "obj-47",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.5, 111.0, 339.0, 33.0 ],
+					"patching_rect" : [ 24.5, 111.0, 345.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 18.5, 108.0, 319.0, 33.0 ],
+					"presentation_rect" : [ 18.5, 108.0, 303.0, 38.0 ],
 					"text" : "This is using PUSH routing, so conductees do not need to observe these CONTROL or EVENT names."
 				}
 
@@ -132,7 +136,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 317.5, 153.0, 46.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 292.5, 150.0, 46.0, 22.0 ],
+					"presentation_rect" : [ 292.5, 160.0, 46.0, 22.0 ],
 					"text" : "Event3"
 				}
 
@@ -146,7 +150,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 257.5, 153.0, 46.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 232.5, 150.0, 46.0, 22.0 ],
+					"presentation_rect" : [ 232.5, 160.0, 46.0, 22.0 ],
 					"text" : "Event2"
 				}
 
@@ -160,19 +164,21 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 197.5, 153.0, 46.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 172.5, 150.0, 46.0, 22.0 ],
+					"presentation_rect" : [ 172.5, 160.0, 46.0, 22.0 ],
 					"text" : "Event1"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Lato",
+					"fontsize" : 13.0,
 					"id" : "obj-32",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 270.5, 225.0, 83.0, 33.0 ],
+					"patching_rect" : [ 270.5, 225.0, 89.0, 38.0 ],
 					"text" : "As individual Events"
 				}
 
@@ -202,11 +208,13 @@
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Lato",
+					"fontsize" : 13.0,
 					"id" : "obj-31",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.0, 238.0, 83.0, 20.0 ],
+					"patching_rect" : [ 62.0, 238.0, 88.0, 22.0 ],
 					"text" : "As a Control"
 				}
 
@@ -224,9 +232,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 15.5, 610.0, 322.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 375.0, 102.0, 322.0, 169.0 ],
@@ -339,7 +347,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 113.5, 153.0, 29.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 107.5, 150.0, 29.5, 22.0 ],
+					"presentation_rect" : [ 107.5, 160.0, 29.5, 22.0 ],
 					"text" : "3"
 				}
 
@@ -353,7 +361,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 69.75, 153.0, 29.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 70.75, 150.0, 29.5, 22.0 ],
+					"presentation_rect" : [ 70.75, 160.0, 29.5, 22.0 ],
 					"text" : "2"
 				}
 
@@ -367,7 +375,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 24.5, 153.0, 29.5, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.5, 150.0, 29.5, 22.0 ],
+					"presentation_rect" : [ 25.5, 160.0, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -623,12 +631,7 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -639,7 +642,12 @@
 						"autogradient" : 0
 					}
 ,
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ]
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

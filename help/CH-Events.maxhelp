@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1104.0, 864.0 ],
+		"rect" : [ 189.0, 63.0, 1104.0, 864.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,156 +37,315 @@
 		"tags" : "collab-hub",
 		"style" : "",
 		"subpatcher_template" : "",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"assistshowspatchername" : 0,
 		"globalpatchername" : "CH-Events",
 		"title" : "CH-Events",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Lato",
-					"fontsize" : 24.0,
-					"id" : "obj-25",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 791.0, 244.0, 283.0, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 682.25, 225.0, 283.0, 35.0 ],
-					"text" : "Deeper Concepts",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
+					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 809.0, 526.0, 44.0, 22.0 ],
-					"text" : "sel 0 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"htabcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
-					"id" : "obj-19",
-					"maxclass" : "tab",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 778.0, 389.0, 262.0, 117.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 692.75, 408.0, 262.0, 117.0 ],
-					"tabs" : [ "Understand Controls and Events", "Understand Push, Publish, and Rooms" ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-74",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 127.5, 641.333347678184509, 87.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 6,
-					"presentation_rect" : [ 10.0, 134.5, 606.0, 87.0 ],
-					"text" : "Events can be considered occurances with no attached data -- like named 'bangs' in Max.\n\nThe CH-Events module shows 'Published' events. \nIn order for you to receive a Published event, you must Observe that event. \n\nIf you do not want to publish or observe controls, you can easily just our 'PUSH' model. "
-				}
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 2,
+							"revision" : 1,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 189.0, 89.0, 1104.0, 838.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"showontab" : 1,
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"fontsize" : 24.0,
+									"id" : "obj-25",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 791.0, 244.0, 283.0, 35.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 682.25, 225.0, 283.0, 35.0 ],
+									"text" : "Deeper Concepts",
+									"textjustification" : 1
+								}
 
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-94",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 1,
-					"maxclass" : "bpatcher",
-					"name" : "CH-Events.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 7.0, 487.333330869674683, 580.0, 169.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 473.333330869674683, 580.0, 169.0 ],
-					"prototypename" : "CH-EVENTS",
-					"viewvisibility" : 1
-				}
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 809.0, 526.0, 44.0, 22.0 ],
+									"text" : "sel 0 1"
+								}
 
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 791.5, 567.0, 208.0, 22.0 ],
-					"text" : "load CH-Controls-and-Events.maxpat"
-				}
+							}
+, 							{
+								"box" : 								{
+									"htabcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
+									"id" : "obj-19",
+									"maxclass" : "tab",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 778.0, 389.0, 262.0, 117.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 692.75, 408.0, 262.0, 117.0 ],
+									"tabs" : [ "Understand Controls and Events", "Understand Push, Publish, and Rooms" ]
+								}
 
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 791.5, 639.5, 51.0, 22.0 ],
-					"text" : "pcontrol"
-				}
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"id" : "obj-74",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 9.0, 127.5, 641.333347678184509, 87.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 6,
+									"presentation_rect" : [ 10.0, 134.5, 606.0, 87.0 ],
+									"text" : "Events can be considered occurances with no attached data -- like named 'bangs' in Max.\n\nThe CH-Events module shows 'Published' events. \nIn order for you to receive a Published event, you must Observe that event. \n\nIf you do not want to publish or observe controls, you can easily just our 'PUSH' model. "
+								}
 
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 817.0, 608.5, 211.0, 22.0 ],
-					"text" : "load CH-Push-Publish-Rooms.maxpat"
-				}
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-94",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 1,
+									"maxclass" : "bpatcher",
+									"name" : "CH-Events.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 7.0, 487.333330869674683, 580.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 9.0, 473.333330869674683, 580.0, 169.0 ],
+									"prototypename" : "CH-EVENTS",
+									"viewvisibility" : 1
+								}
 
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"linecount" : 8,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 755.0, 272.5, 328.0, 127.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 8,
-					"presentation_rect" : [ 659.75, 272.0, 328.0, 127.0 ],
-					"text" : "There are two main modes of sending data to users: Push and Publish. Data messages needed to be formatted in a specific way that account for mode, destination, datatype, and possible value. \n\nSee CH-Push-Publish-Rooms.maxpat and CH-Controls-and-Events.maxpat for more information.\n\n"
-				}
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 791.5, 567.0, 208.0, 22.0 ],
+									"text" : "load CH-Controls-and-Events.maxpat"
+								}
 
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-4",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 280.0, 339.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 266.0, 339.0, 20.0 ],
-					"text" : "Disable this CH-Client module when moving to other tabs."
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 791.5, 639.5, 51.0, 22.0 ],
+									"text" : "pcontrol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 817.0, 608.5, 211.0, 22.0 ],
+									"text" : "load CH-Push-Publish-Rooms.maxpat"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"linecount" : 8,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 755.0, 272.5, 328.0, 127.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 8,
+									"presentation_rect" : [ 659.75, 272.0, 328.0, 127.0 ],
+									"text" : "There are two main modes of sending data to users: Push and Publish. Data messages needed to be formatted in a specific way that account for mode, destination, datatype, and possible value. \n\nSee CH-Push-Publish-Rooms.maxpat and CH-Controls-and-Events.maxpat for more information.\n\n"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 7.0, 280.0, 339.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 9.0, 266.0, 339.0, 20.0 ],
+									"text" : "Disable this CH-Client module when moving to other tabs."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-11",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "CH-Client.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 7.0, 309.5, 320.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 9.0, 295.5, 320.0, 169.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"border" : 0,
+									"filename" : "helpdetails.js",
+									"id" : "obj-12",
+									"ignoreclick" : 1,
+									"jsarguments" : [ "CH-Events" ],
+									"maxclass" : "jsui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 10.0, 10.0, 605.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 10.0, 10.0, 605.0, 169.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 0.0, 0.6, 0.2, 0.0 ],
+									"border" : 2,
+									"bordercolor" : [ 0.0, 0.6, 0.2, 1.0 ],
+									"id" : "obj-21",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 740.0, 258.5, 372.0, 417.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 648.5, 207.5, 350.5, 337.0 ],
+									"proportion" : 0.5
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-20", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 7.0, 10.0, 48.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p Basic"
 				}
 
 			}
@@ -481,9 +640,9 @@
 									"maxclass" : "bpatcher",
 									"name" : "CH-Client.maxpat",
 									"numinlets" : 1,
-									"numoutlets" : 1,
+									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 10.0, 141.0, 320.0, 169.0 ],
 									"viewvisibility" : 1
 								}
@@ -534,6 +693,7 @@
 								"name" : "blues",
 								"default" : 								{
 									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -544,9 +704,8 @@
 										"autogradient" : 0
 									}
 ,
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
@@ -559,8 +718,8 @@
 								"name" : "max6box",
 								"default" : 								{
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
 								}
 ,
 								"parentstyle" : "",
@@ -734,7 +893,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 913.5, 20.0, 20.0 ],
+									"patching_rect" : [ 438.5, 865.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1025,9 +1184,9 @@
 									"maxclass" : "bpatcher",
 									"name" : "CH-Client.maxpat",
 									"numinlets" : 1,
-									"numoutlets" : 1,
+									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 10.0, 193.0, 320.0, 169.0 ],
 									"viewvisibility" : 1
 								}
@@ -1094,6 +1253,7 @@
 								"name" : "blues",
 								"default" : 								{
 									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1104,9 +1264,8 @@
 										"autogradient" : 0
 									}
 ,
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
@@ -1119,8 +1278,8 @@
 								"name" : "max6box",
 								"default" : 								{
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1188,104 +1347,10 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-11",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CH-Client.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 7.0, 309.5, 320.0, 169.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 295.5, 320.0, 169.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"border" : 0,
-					"filename" : "helpdetails.js",
-					"id" : "obj-12",
-					"ignoreclick" : 1,
-					"jsarguments" : [ "CH-Events" ],
-					"maxclass" : "jsui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 10.0, 10.0, 605.0, 169.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 605.0, 169.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.0, 0.6, 0.2, 0.0 ],
-					"border" : 2,
-					"bordercolor" : [ 0.0, 0.6, 0.2, 1.0 ],
-					"id" : "obj-21",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 740.0, 258.5, 372.0, 417.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 648.5, 207.5, 350.5, 337.0 ],
-					"proportion" : 0.5
-				}
-
-			}
  ],
-		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-20", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
- ],
+		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "helpdetails.js",
+				"name" : "helpname.js",
 				"bootpath" : "C74:/help/resources",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -1312,12 +1377,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "helpname.js",
-				"bootpath" : "C74:/help/resources",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-Events.maxpat",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -1331,12 +1390,14 @@
 				"type" : "PNG",
 				"implicit" : 1
 			}
- ],
-		"autosave" : 0,
-		"boxgroups" : [ 			{
-				"boxes" : [ "obj-19", "obj-21", "obj-18", "obj-25" ]
+, 			{
+				"name" : "helpdetails.js",
+				"bootpath" : "C74:/help/resources",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -1359,6 +1420,7 @@
 				"name" : "blues",
 				"default" : 				{
 					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1369,9 +1431,8 @@
 						"autogradient" : 0
 					}
 ,
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
@@ -1384,8 +1445,8 @@
 				"name" : "max6box",
 				"default" : 				{
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
 				}
 ,
 				"parentstyle" : "",

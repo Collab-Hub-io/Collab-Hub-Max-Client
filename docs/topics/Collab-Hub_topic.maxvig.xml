@@ -6,7 +6,6 @@
     <metadata name="tag">Collab-Hub</metadata>
   </metadatalist>
 	
-	
   <h1>Collab-Hub Package</h1>
   <p>
 Collab-Hub is a server-based networking tool for sharing control data and 
@@ -16,7 +15,7 @@ Web, JS libraries, and more.
  These modules are part of the Max client.
   </p>
   <p>
-Other clients for Collab-Hub can be found at <a href="http://www.collab-hub.io">http://www.collab-hub.io</a>.
+    Other clients for Collab-Hub can be found at <a href="http://www.collab-hub.io">http://www.collab-hub.io</a>.
   </p>
   <p>
 	</p>
@@ -28,24 +27,31 @@ Other clients for Collab-Hub can be found at <a href="http://www.collab-hub.io">
     <li><openfilelink filename="CH-Chat.maxhelp">CH-Chat</openfilelink> - Chat with other users.</li>
     <li><openfilelink filename="CH-Events.maxhelp">CH-Events</openfilelink> - Observe Event data.</li>
     <li><openfilelink filename="CH-Controls.maxhelp">CH-Controls</openfilelink> - Observe Control data.</li>
-    <li><openfilelink filename="CH-Rooms.maxhelp">CH-Rooms</openfilelink> - Create, Join, and Leave rooms on the server.</li>
+    <li><openfilelink filename="CH-Rooms.maxhelp">CH-Rooms</openfilelink> - Create, Join, and Leave Rooms on the server.</li>
+    <li><openfilelink filename="CH-ClientTesting.maxhelp">CH-ClientTesting</openfilelink> - Connect to the Collab-Hub Server.</li>
   </ul>
+
+  <h2>Concepts</h2>
+  <cr/>
+  <ul>
+    <li><openfilelink filename="CH-Push-Publish-Rooms.maxpat">Concepts: Push, Publish, Rooms</openfilelink> 			- Understand Push, Publish, and Rooms</li>
+    <li><openfilelink filename="CH-Controls-and-Events.maxpat">Concepts: Controls and Events</openfilelink>       - Understand Controls and Events</li>
+  </ul>
+  <cr/>
 		
 	
   <h2>Example Patches</h2>
   <cr/>
   <ul>
-    <li><openfilelink filename="ease.animation_example.maxpat">ease.animation_example.maxpat</openfilelink> 			- Animated OpenGL geometry and audio synthesis.</li>
-    <li><openfilelink filename="ease.per_multiple_example.maxpat">ease.per_multiple_example.maxpat</openfilelink> - Integration of <o>jit.ease</o>, multiple geometry and <o>jit.gen</o>.</li>
-    <li><openfilelink filename="ease.synth_example.maxpat">ease.synth_example.maxpat</openfilelink> 							- Polyphonic synth with easing applied to envelopes.</li>
-    <li><openfilelink filename="ease.gen.codebox_example.maxpat">ease.gen.codebox_example.maxpat</openfilelink> 	- Demonstrate how to call the easing functions from a codebox in <o>gen~</o>.</li>
-    <li><openfilelink filename="ease.gen.comparison.maxpat">ease.gen.comparison.maxpat</openfilelink> 						- Visual comparison running all easing functions in individual <o>gen~</o> instances.</li>
+    <li><openfilelink filename="CH-Simple-Routing.maxpat">Simple Routing</openfilelink> 			  - Understand Push, Publish, and Rooms</li>
+    <li><openfilelink filename="CH-Drum-Demo.maxpat">Cross Platform Drums</openfilelink>        - Trigger drum synths (in Max and Web)</li>
+    <li><openfilelink filename="CH-Sequencer-Trader.maxpat">Sequencer Trader</openfilelink> 	  - Collaboratively create a drum sequence</li>
+    <li><openfilelink filename="Mapping-Strategies.maxpat">Mapping Mapping-Strategies.maxpat</openfilelink> 	- Examples in creative mapping.</li>
   </ul>
   <cr/>
 		
 	
-  <seealsolist>
-		<!-- <seealso name="timing_events_topic" module="topics" type="vignette" />	-->
+  <!-- <seealsolist>
 		<seealso name="242.lut" />
 		<seealso name="j.ramp~" />
 		<seealso name="curve~" />
@@ -56,6 +62,6 @@ Other clients for Collab-Hub can be found at <a href="http://www.collab-hub.io">
 		<seealso name="jit.ease" />
 		<seealso name="ease.xfade" />
 		<seealso name="ease.xfade~" />
-  </seealsolist>
+  </seealsolist> -->
 	
 </vignette>
