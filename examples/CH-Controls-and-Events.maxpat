@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -75,8 +75,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -227,7 +227,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 597.0, 100.0, 389.0, 45.0 ],
+									"patching_rect" : [ 452.0, 91.0, 389.0, 45.0 ],
 									"text" : "Head to the Collab-Hub Web Interface to see how Event messages appear when received by the server",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -243,7 +243,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 597.0, 169.0, 297.0, 44.0 ],
+									"patching_rect" : [ 452.0, 160.0, 297.0, 44.0 ],
 									"text" : "Click to open Collab-Hub Web Interface"
 								}
 
@@ -256,7 +256,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 597.0, 253.0, 291.0, 35.0 ],
+									"patching_rect" : [ 452.0, 244.0, 291.0, 35.0 ],
 									"text" : ";\rmax launchbrowser https://ch-server.herokuapp.com/"
 								}
 
@@ -515,14 +515,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 51.0, 105.0, 950.0, 745.0 ],
+						"rect" : [ 0.0, 26.0, 950.0, 745.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1033,6 +1033,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-4",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "basic_saw_synth.maxpat",
 									"numinlets" : 5,
@@ -1043,8 +1044,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 8,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2187,8 +2188,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2516,6 +2517,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
 					"numinlets" : 1,
@@ -2571,23 +2573,23 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/bpatchers",
-				"patcherrelativepath" : "../Documents/GitHub/Collab-Hub-Max-Client/bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "../Documents/GitHub/Collab-Hub-Max-Client/img/for-bpatchers",
-				"type" : "PNG",
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript-v0.3.js",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client",
-				"patcherrelativepath" : "../Documents/GitHub/Collab-Hub-Max-Client",
-				"type" : "TEXT",
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
 				"implicit" : 1
 			}
  ],

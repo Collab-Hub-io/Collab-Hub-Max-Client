@@ -64,15 +64,16 @@ const maxHandlers = {
   publish: (...args) => {
     let outgoing = {
         mode: 'publish',
-        target: 'all'
     };
-    if (args.length > 1) {
-        outgoing.header = args[0];
-        outgoing.values = args.slice(1);
+    if (args.length > 2) {
+        outgoing.target = args[0];
+        outgoing.header = args[1];
+        outgoing.values = args.slice(2);
         socket.emit('control', outgoing);
     } 
     else {
-        outgoing.header = args[0];
+        outgoing.target = args[0];
+        outgoing.header = args[1];
         socket.emit('event', outgoing);
     };
   },

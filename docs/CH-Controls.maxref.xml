@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="CH-Events" module="collab-hub" category="Collab-Hub, Networking">
+
+	<digest>
+	Observe Published Controls on the Collab-Hub Server.
+	</digest>
+	
+	<description>
+		One method of sharing data is through Publishing and Observing Controls.
+		When an Control is published and is available, you can observe that Control. You observe Controls in Max with the CH-Control module.
+	</description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Nick Hwang, Eric Sheffield, and Anthony T. Marasco</metadata>
+		<metadata name="tag">Collab-Hub</metadata>
+		<metadata name="tag">Networking</metadata>
+		<metadata name="tag">Client</metadata>
+	</metadatalist>
+	
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="anythin">
+			<digest>All Collab-Hub components have one inlet which can be used to send messages to the Server. Please see CH-Client for available messages.</digest>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="anything">
+			<digest>Incoming data messages.</digest>
+		</outlet>
+	</outletlist>
+	
+	<!--ARGUMENTS-->
+	<!-- <objarglist>
+		<objarg name="pan-position" optional="1" type="float">
+			<digest>Initial panning position, default is 0.</digest>
+		</objarg>
+	</objarglist> -->
+	
+	<!--MESSAGES-->
+	<!-- <methodlist>
+		<method name="push">
+			<arglist>
+				<arg name="destination" optional="0" type="symbol (all, username, roomname)" />
+			</arglist>
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				Numbers can be used instead of signal objects to control pan position. If a <m>signal</m> is also connected to the inlet, <m>float</m> messages will be ignored. Any numbers sent to the left inlet will be ignored.
+			</description>
+		</method>
+		<method name="signal">
+			<arglist />
+			<digest>
+				Function depends on inlet
+			</digest>
+			<description>
+				In left inlet: Monoaural signal to be panned across the two outlets.
+				<br />
+				<br />
+				In right inlet: Specifies the pan position between 0. and 1, with hard left equivalent to 0 and hard right equivalent to 1. Values of 0.5 would represent the signal being equally balanced between the left and right output channels.
+			</description>
+		</method>
+		<method name="getinfo">
+			<arglist />
+			<digest>
+				Post information about object to Max window
+			</digest>
+			<description>
+				Retrieves basic information about the object author and when the object was last updated. Date can be used to identify different versions of the objects in circulation.
+			</description>
+		</method>
+	</methodlist>
+	 -->
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="CH-Client"/>
+		<seealso name="CH-Chat"/>
+		<seealso name="CH-Events"/>
+		<seealso name="CH-Rooms"/>
+	</seealsolist>
+	
+</c74object>

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 77.0, 785.0, 595.0 ],
+		"rect" : [ 100.0, 77.0, 883.0, 672.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -43,6 +43,46 @@
 					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 					"fontname" : "Arial Bold",
 					"hint" : "",
+					"id" : "obj-2",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 465.0, 537.5, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 462.0, 536.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "5",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.0,
+					"bubbleside" : 3,
+					"id" : "obj-1",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 256.666687000000024, 534.5, 173.0, 51.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 256.666687000000024, 536.0, 198.0, 51.0 ],
+					"text" : "Incoming Chat messages will appear in the Max Console Window."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
 					"id" : "obj-27",
 					"ignoreclick" : 1,
 					"legacytextcolor" : 1,
@@ -53,7 +93,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 467.0, 447.5, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 462.0, 434.5, 20.0, 20.0 ],
+					"presentation_rect" : [ 462.0, 495.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "4",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -70,7 +110,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 258.0, 439.0, 191.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 256.666687000000024, 434.5, 198.0, 24.0 ],
+					"presentation_rect" : [ 256.666687000000024, 495.5, 198.0, 24.0 ],
 					"text" : "Type message and hit <return>"
 				}
 
@@ -78,16 +118,17 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
+					"bubblepoint" : 1.0,
 					"id" : "obj-22",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 263.0, 508.0, 186.0, 51.0 ],
+					"patching_rect" : [ 263.0, 508.0, 186.0, 64.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 256.666687000000024, 515.5, 198.0, 51.0 ],
-					"text" : "If sending to a user or room, specific options appear as a umenu."
+					"presentation_rect" : [ 256.666687000000024, 435.0, 198.0, 51.0 ],
+					"text" : "If sending to a user or room, specific options appear as a umenu. (See bottom of module.)"
 				}
 
 			}
@@ -106,7 +147,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 467.0, 508.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 462.0, 531.0, 20.0, 20.0 ],
+					"presentation_rect" : [ 462.0, 450.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "3",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -166,7 +207,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 489.0, 192.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 490.0, 192.0, 20.0, 20.0 ],
+					"presentation_rect" : [ 492.0, 202.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -178,15 +219,15 @@
 					"bubble" : 1,
 					"bubblepoint" : 0.2,
 					"id" : "obj-15",
-					"linecount" : 9,
+					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 337.0, 192.0, 150.0, 131.0 ],
+					"patching_rect" : [ 337.0, 192.0, 150.0, 158.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 9,
-					"presentation_rect" : [ 338.0, 192.0, 150.0, 131.0 ],
-					"text" : "Connect to Server.\n\nOnce connected, Max Console will print \"You're in Namespace...\"\n\nYou can change your Username also. "
+					"presentation_linecount" : 11,
+					"presentation_rect" : [ 337.0, 198.5, 150.0, 158.0 ],
+					"text" : "Enable Client. \n\nConnect to Server.\n\nOnce connected, Max Console will print \"You're in Namespace...\"\n\nYou can change your Username also. "
 				}
 
 			}
@@ -286,36 +327,36 @@
 			}
 , 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/help",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
-				"patcherrelativepath" : "../media/for-bpatchers",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-ClientScript-v0.3.1.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/javascript",
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "CH-Chat.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/patchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Chat-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Max-Package/media/for-bpatchers",
-				"patcherrelativepath" : "../media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
