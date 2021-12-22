@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1150.0, 864.0 ],
+		"rect" : [ 34.0, 62.0, 871.0, 864.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 1150.0, 838.0 ],
+						"rect" : [ 34.0, 88.0, 871.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -89,171 +89,60 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-13",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 129.5, 535.5, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "2",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-1",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 186.5, 684.0, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "4",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-8",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 813.0, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "6",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-9",
-									"linecount" : 2,
+									"bubble" : 1,
+									"id" : "obj-30",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 8.0, 806.5, 439.0, 33.0 ],
-									"text" : "Create your own room and it should appear in the \"MyRooms\" list. Check the webbrowser for this room. ",
-									"textjustification" : 2
+									"patching_rect" : [ 381.5, 762.5, 416.0, 51.0 ],
+									"text" : "Be sure to change <roomname> to name of the room you want to target. \nExample, if the room's name is webRoom1\npush webRoom1 roomEvent"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-7",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
+									"id" : "obj-20",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 204.5, 775.0, 171.0, 22.0 ],
+									"text" : "push <roomname> roomEvent"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "button",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 383.5, 684.0, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "5",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+									"patching_rect" : [ 84.5, 769.0, 57.0, 57.0 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-2",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 772.5, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "5",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "comment",
+									"id" : "obj-15",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 8.0, 772.5, 439.0, 20.0 ],
-									"text" : "Leave a room by selecting it in the umenu next to \"Leave:\".",
-									"textjustification" : 2
+									"patching_rect" : [ 204.5, 804.0, 85.0, 22.0 ],
+									"text" : "s toCH-Server"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 111.0, 425.0, 33.0 ],
-									"text" : "When an Control is published and is available, you can observe that Control. You observe control in Max with the CH-Control."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-34",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 913.5, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "4",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-33",
-									"linecount" : 3,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 120.0, 900.0, 327.0, 47.0 ],
-									"text" : "Go back to the web browser and move the webSlider1 button again. Now that you're observing the Control you should receive all future occurances. ",
-									"textjustification" : 2
+									"patching_rect" : [ 10.0, 111.0, 425.0, 20.0 ],
+									"text" : "Data can have a target of Rooms."
 								}
 
 							}
@@ -270,9 +159,9 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 726.0, 20.0, 20.0 ],
+									"patching_rect" : [ 457.5, 681.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
-									"text" : "4",
+									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
 								}
 
@@ -284,8 +173,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 455.0, 427.0, 33.0 ],
-									"text" : "On the browser, scroll to the bottom and create a room. \nThe roomname should appear in the AvailableRooms list below."
+									"patching_rect" : [ 10.0, 427.0, 427.0, 47.0 ],
+									"presentation_linecount" : 2,
+									"text" : "Create a room in the browser and join it or create a room from CH-Rooms module.\n"
 								}
 
 							}
@@ -302,7 +192,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 379.5, 20.0, 20.0 ],
+									"patching_rect" : [ 456.5, 348.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -325,7 +215,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 8.0, 524.333330869674683, 388.0, 169.0 ],
+									"patching_rect" : [ 10.0, 483.333330869674683, 388.0, 169.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 834.0, 764.5, 388.0, 169.0 ],
 									"prototypename" : "CH-ROOMS",
@@ -339,7 +229,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 341.0, 223.5, 188.0, 20.0 ],
+									"patching_rect" : [ 341.0, 197.5, 188.0, 20.0 ],
 									"text" : "Connect to Server. "
 								}
 
@@ -357,7 +247,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 223.5, 20.0, 20.0 ],
+									"patching_rect" : [ 455.5, 197.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "0",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -371,7 +261,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 171.0, 560.0, 20.0 ],
+									"patching_rect" : [ 10.0, 145.0, 560.0, 20.0 ],
 									"text" : "Disable this CH-Client module when moving to other tabs."
 								}
 
@@ -384,7 +274,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 79.999982476234436, 154.0, 20.0 ],
-									"text" : "Observe Controls"
+									"text" : "Send Data to Rooms"
 								}
 
 							}
@@ -396,7 +286,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 10.0, 414.0, 24.0, 24.0 ]
+									"patching_rect" : [ 10.0, 381.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -408,7 +298,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 49.0, 414.0, 288.0, 35.0 ],
+									"patching_rect" : [ 49.0, 381.0, 288.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 4,
 									"presentation_rect" : [ 1393.0, 148.5, 129.0, 62.0 ],
@@ -423,7 +313,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 83.5, 373.0, 368.0, 33.0 ],
+									"patching_rect" : [ 84.5, 342.0, 368.0, 33.0 ],
 									"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. http://CH-Server.herokuapp.com"
 								}
 
@@ -431,12 +321,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-5",
-									"linecount" : 2,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 8.0, 719.5, 439.0, 33.0 ],
-									"text" : "Join that room with the umenu next to \"Join:\". A confirmation window should appear. That room should appear in the \"MyRooms:\" list after joining.",
+									"patching_rect" : [ 10.0, 674.5, 439.0, 60.0 ],
+									"text" : "Push an event to that room.\nChange the second parameter <roomname> to the room you joined in Step #2.\nSince this is a Push event, the users in the room do no have to 'Observe' the event -- they will just receive it. ",
 									"textjustification" : 2
 								}
 
@@ -454,7 +344,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 461.5, 20.0, 20.0 ],
+									"patching_rect" : [ 455.5, 433.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -477,7 +367,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.0, 193.0, 320.0, 169.0 ],
+									"patching_rect" : [ 10.0, 167.0, 320.0, 169.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -500,6 +390,21 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"midpoints" : [ 94.0, 836.0, 154.0, 836.0, 154.0, 764.0, 214.0, 764.0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-86", 0 ],
 									"source" : [ "obj-28", 0 ]
@@ -801,7 +706,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1150.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 871.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -835,6 +740,46 @@
 									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 									"fontname" : "Arial Bold",
 									"hint" : "",
+									"id" : "obj-13",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 129.5, 535.5, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "2",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
+									"id" : "obj-1",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 186.5, 684.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "4",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
 									"id" : "obj-8",
 									"ignoreclick" : 1,
 									"legacytextcolor" : 1,
@@ -858,8 +803,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 8.0, 806.5, 439.0, 33.0 ],
-									"presentation_linecount" : 2,
-									"text" : "Create your own room and it should appear in the \"MyRooms\" list. Check the webbrowser for this room. "
+									"text" : "Create your own room and it should appear in the \"MyRooms\" list. Check the web browser for this room. ",
+									"textjustification" : 2
 								}
 
 							}
@@ -910,7 +855,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 8.0, 772.5, 439.0, 20.0 ],
-									"text" : "Leave a room by selecting it in the umenu next to \"Leave:\"."
+									"text" : "Leave a room by selecting it in the umenu next to \"Leave:\".",
+									"textjustification" : 2
 								}
 
 							}
@@ -923,58 +869,6 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 111.0, 425.0, 33.0 ],
 									"text" : "When an Control is published and is available, you can observe that Control. You observe control in Max with the CH-Control."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-34",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 913.5, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "4",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-33",
-									"linecount" : 3,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 120.0, 900.0, 327.0, 47.0 ],
-									"text" : "Go back to the web browser and move the webSlider1 button again. Now that you're observing the Control you should receive all future occurances. "
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-									"fontname" : "Arial Bold",
-									"hint" : "",
-									"id" : "obj-26",
-									"ignoreclick" : 1,
-									"legacytextcolor" : 1,
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 132.0, 534.0, 20.0, 20.0 ],
-									"rounded" : 60.0,
-									"text" : "3",
-									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
 								}
 
 							}
@@ -1157,7 +1051,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 8.0, 719.5, 439.0, 33.0 ],
-									"text" : "Join that room with the umenu next to \"Join:\". A confirmation window should appear. That room should appear in the \"MyRooms:\" list after join."
+									"text" : "Join that room with the umenu next to \"Join:\". A confirmation window should appear. That room should appear in the \"MyRooms:\" list after joining.",
+									"textjustification" : 2
 								}
 
 							}
@@ -1174,7 +1069,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 455.0, 20.0, 20.0 ],
+									"patching_rect" : [ 455.5, 461.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
