@@ -97,6 +97,9 @@
 			"Mapping-Strategies.maxpat"
 
 
+		],
+		"templates": [
+			"collab-hub-template.maxpat"
 		]
 	},
 	"c74install": 1,
