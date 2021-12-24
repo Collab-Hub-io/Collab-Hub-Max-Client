@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1054.0, 864.0 ],
+		"rect" : [ 34.0, 62.0, 1455.0, 864.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -123,7 +123,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 1054.0, 838.0 ],
+						"rect" : [ 34.0, 88.0, 1455.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -161,7 +161,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 663.0, 35.0, 284.0, 107.0 ],
+									"patching_rect" : [ 700.0, 70.0, 284.0, 107.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 17.5, 696.0, 785.0, 40.0 ],
 									"text" : "Authors: Nick Hwang, Eric Sheffield, Anthony T. Marasco"
@@ -177,7 +177,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 1132.0, 35.0, 100.0, 87.711864406779654 ],
+									"patching_rect" : [ 1132.0, 70.0, 100.0, 87.711864406779654 ],
 									"pic" : "CH-Small-Logo-NoText.png",
 									"presentation" : 1,
 									"presentation_rect" : [ 402.0, 290.0, 149.0, 130.690677966101703 ]
@@ -461,10 +461,7 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -476,7 +473,10 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 								}
 ,
@@ -566,7 +566,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1054.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1455.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1507,10 +1507,7 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -1522,7 +1519,10 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 								}
 ,
@@ -1616,7 +1616,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1054.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1455.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2008,10 +2008,7 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -2023,7 +2020,10 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 								}
 ,
@@ -2219,10 +2219,7 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -2234,7 +2231,10 @@
 						"autogradient" : 0
 					}
 ,
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 				}
 ,
