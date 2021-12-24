@@ -21,12 +21,14 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 ---
 
 ## Getting Started
-0. This current version is intended as a Max Package.
-1. If you've downloaded this package from Max Package Manager, you can skip all remaining steps. 
-2. If you're NOT downloading this package from the Max Package Manage, we strongly suggest you download take the following steps to manually add this as a Max Package. This will ensure all the available refpages, docs, and templates are available to you.
-3. Download the Collab-Hub-Max-Client folder from GitHub using the green Code button near the top of this page. Either choose "Download ZIP" or, if you're comfortable using git, you can clone the repo.
-4. Move this entire folder into your **~/Documents/Max 8/Packages folder**.
-5. Start learning to use Collab-Hub by opening *Collab-Hub Modules.maxpat* from **Extras > Collab-Hub Modules** from the top menu bar.
+0. This current version is intended as a Max Package. If you've downloaded this package from Max Package Manager, you can skip all remaining steps. 
+1. If you DID NOT download this package from the Max Package Manager, please take the following steps to manually add this as a Max Package. This will ensure all the available refpages, docs, and templates are available to you.
+2. Download the Collab-Hub-Max-Client folder from GitHub using the green Code button near the top of this page. Either choose "Download ZIP" or, if you're comfortable using git, you can clone the repo.
+3. Move this entire folder into your **~/Documents/Max 8/Packages folder**. IF you are using Git to clone this repo, you can create an 'alias' and place that alias folder in the Max Packages folder.
+4. Start using Collab-Hub by opening *Collab-Hub Modules.maxpat* from **Extras > Collab-Hub Modules** from the top menu bar.
+
+``` If you have a previous version of this repository within Max's file structure / file preferences, Max might accidentally open the incorrect / older version of a module. Please remove references to older Collab-Hub Client, as these will be the most up-to-date and stable. ```
+
 
 DEMO VIDEO COMING SOON
 
