@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="CH-Events" module="collab-hub" category="Collab-Hub, Networking">
+<c74object name="CH-Controls">
 
 	<digest>
 	Observe Published Controls on the Collab-Hub Server.
@@ -9,7 +9,7 @@
 	
 	<description>
 		One method of sharing data is through Publishing and Observing Controls.
-		When an Control is published and is available, you can observe that Control. You observe Controls in Max with the CH-Control module.
+		When a Control is published and is available, you can observe that Control. You observe Controls in Max with the CH-Control module.
 	</description>
 	
 	<!--METADATA-->

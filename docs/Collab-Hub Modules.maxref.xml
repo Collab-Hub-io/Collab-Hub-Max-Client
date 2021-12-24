@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="CH-Chat" module="msp" category="Collab-Hub, Networking">
-
+<c74object name="Collab-Hub Modules">
 	<digest>
-		Chat Module for Collab-Hub
+		The Collection of Collab-Hub Modules.
 	</digest>
 	
 	<description>
-	Send chat messages to other clients. All received messages appear in Max Console Window.
 	</description>
 	
 	<!--METADATA-->
@@ -85,6 +83,7 @@
 		<seealso name="CH-Controls"/>
 		<seealso name="CH-Events"/>
 		<seealso name="CH-Rooms"/>
+		<seealso name="CH-Chat"/>
 	</seealsolist>
 	
 </c74object>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="CH-Chat" module="msp" category="Collab-Hub, Networking">
-
+<c74object name="CH-Chat">
 	<digest>
 		Chat Module for Collab-Hub
 	</digest>
@@ -22,17 +21,14 @@
 	<!--INLETS-->
 	<inletlist>
 		<inlet id="0" type="anythin">
-			<digest>All Collab-Hub components have one inlet which can be used to send messages to the Server. Please see CH-Client for available messages.</digest>
+			<digest>All Collab-Hub components have one inlet which can be used to send messages to the Server. Please see <o>CH-Client</o> for available messages.</digest>
 		</inlet>
 	</inletlist>
 
 	<!--OUTLETS-->
 	<outletlist>
 		<outlet id="0" type="signal">
-			<digest>Audio signal: Left channel output.</digest>
-		</outlet>
-		<outlet id="1" type="signal">
-			<digest>Audio signal: Right channel output.</digest>
+			<digest>All Collab-Hub components have one outlet which can be used to route incoming messages from the Server.</digest>
 		</outlet>
 	</outletlist>
 	
@@ -85,6 +81,7 @@
 		<seealso name="CH-Controls"/>
 		<seealso name="CH-Events"/>
 		<seealso name="CH-Rooms"/>
+		<seealso name="CH-Chat"/>
 	</seealsolist>
 	
 </c74object>

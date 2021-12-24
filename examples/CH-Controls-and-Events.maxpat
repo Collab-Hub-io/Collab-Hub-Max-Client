@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 51.0, 79.0, 854.0, 813.0 ],
+		"rect" : [ 51.0, 79.0, 993.0, 813.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,12 +42,27 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Lato",
+					"fontsize" : 13.0,
+					"id" : "obj-6",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 11.0, 206.0, 561.0, 53.0 ],
+					"presentation_linecount" : 3,
+					"text" : "The structure for sending Control and Event message types are consistent: \n\n[mode] [target] [header] [value if Control]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Lato",
 					"fontsize" : 18.0,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 492.0, 216.0, 148.0, 28.0 ],
+					"patching_rect" : [ 492.0, 292.0, 148.0, 28.0 ],
 					"text" : "Event"
 				}
 
@@ -60,7 +75,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 216.0, 148.0, 28.0 ],
+					"patching_rect" : [ 11.0, 292.0, 148.0, 28.0 ],
 					"text" : "Control"
 				}
 
@@ -82,7 +97,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 51.0, 105.0, 854.0, 787.0 ],
+						"rect" : [ 0.0, 26.0, 993.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -367,7 +382,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 469.0, 694.0, 49.0, 22.0 ],
+					"patching_rect" : [ 469.0, 693.0, 49.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -387,7 +402,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 625.0, 336.5, 256.0, 37.0 ],
+					"patching_rect" : [ 625.0, 412.5, 256.0, 37.0 ],
 					"text" : "Event messages contain only a header [must be a symbol]"
 				}
 
@@ -400,7 +415,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 492.0, 268.0, 24.0, 24.0 ]
+					"patching_rect" : [ 492.0, 344.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -411,7 +426,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 492.0, 344.0, 129.0, 22.0 ],
+					"patching_rect" : [ 492.0, 420.0, 129.0, 22.0 ],
 					"text" : "push all exampleEvent"
 				}
 
@@ -424,7 +439,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.5, 332.5, 256.0, 37.0 ],
+					"patching_rect" : [ 179.5, 408.5, 256.0, 37.0 ],
 					"text" : "Control messages require a header followed by corresponding data. "
 				}
 
@@ -437,7 +452,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 109.0, 308.0, 50.0, 22.0 ]
+					"patching_rect" : [ 109.0, 384.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -448,7 +463,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.0, 344.0, 161.0, 22.0 ],
+					"patching_rect" : [ 11.0, 420.0, 161.0, 22.0 ],
 					"text" : "push all exampleControl1 $1"
 				}
 
@@ -461,7 +476,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 11.0, 264.0, 148.0, 33.0 ]
+					"patching_rect" : [ 11.0, 340.0, 148.0, 33.0 ]
 				}
 
 			}
@@ -473,7 +488,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 339.5, 563.0, 256.0, 37.0 ],
+					"patching_rect" : [ 339.5, 562.0, 256.0, 37.0 ],
 					"text" : "Connect to the server using the CH Client module"
 				}
 
@@ -483,12 +498,12 @@
 					"fontname" : "Lato",
 					"fontsize" : 13.0,
 					"id" : "obj-9",
-					"linecount" : 4,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 94.0, 561.0, 69.0 ],
-					"text" : "There are two types of messages sent with Collab-Hub: Control messages and Event messages. Control messages carry values used to manipulate parameters. Event messages contain are used to trigger specific actions/changes/moments.  Both are required to be prepended with headers which are used to tag the accompanying data or performance action with a specific purpose."
+					"patching_rect" : [ 11.0, 94.0, 561.0, 100.0 ],
+					"text" : "There are two types of messages sent with Collab-Hub: Control messages and Event messages. Control messages carry values used to manipulate parameters. \nEvent messages are used to trigger specific actions/changes/moments. \n\nBoth are required to be prepended with headers which are used to tag the accompanying data or performance action with a specific purpose."
 				}
 
 			}
@@ -522,7 +537,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 854.0, 787.0 ],
+						"rect" : [ 0.0, 26.0, 993.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2164,7 +2179,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 533.0, 694.0, 60.0, 22.0 ],
+					"patching_rect" : [ 533.0, 693.0, 60.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2193,7 +2208,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 854.0, 787.0 ],
+						"rect" : [ 0.0, 26.0, 993.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2494,7 +2509,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 396.0, 694.0, 57.0, 22.0 ],
+					"patching_rect" : [ 396.0, 693.0, 57.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2522,7 +2537,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 11.0, 563.0, 324.0, 166.0 ],
+					"patching_rect" : [ 11.0, 562.0, 324.0, 166.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -2539,7 +2554,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"midpoints" : [ 20.5, 304.0, 118.5, 304.0 ],
+					"midpoints" : [ 20.5, 380.0, 118.5, 380.0 ],
 					"order" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
@@ -2548,7 +2563,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 20.5, 369.0, 20.5, 369.0 ],
+					"midpoints" : [ 20.5, 445.0, 20.5, 445.0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -2556,7 +2571,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 501.5, 548.0, 20.5, 548.0 ],
+					"midpoints" : [ 501.5, 483.0, 20.5, 483.0 ],
 					"source" : [ "obj-47", 0 ]
 				}
 

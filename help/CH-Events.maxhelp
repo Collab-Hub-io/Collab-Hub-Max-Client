@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 189.0, 63.0, 1104.0, 864.0 ],
+		"rect" : [ 34.0, 62.0, 1061.0, 864.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -59,9 +59,9 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 189.0, 89.0, 1104.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1061.0, 838.0 ],
 						"bglocked" : 0,
-						"openinpresentation" : 0,
+						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -98,7 +98,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 791.0, 244.0, 283.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 682.25, 225.0, 283.0, 35.0 ],
+									"presentation_rect" : [ 668.25, 198.0, 283.0, 35.0 ],
 									"text" : "Deeper Concepts",
 									"textjustification" : 1
 								}
@@ -127,7 +127,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 778.0, 389.0, 262.0, 117.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 692.75, 408.0, 262.0, 117.0 ],
+									"presentation_rect" : [ 678.75, 381.0, 262.0, 117.0 ],
 									"tabs" : [ "Understand Controls and Events", "Understand Push, Publish, and Rooms" ]
 								}
 
@@ -218,7 +218,7 @@
 									"patching_rect" : [ 755.0, 272.5, 328.0, 127.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 8,
-									"presentation_rect" : [ 659.75, 272.0, 328.0, 127.0 ],
+									"presentation_rect" : [ 645.75, 245.0, 328.0, 127.0 ],
 									"text" : "There are two main modes of sending data to users: Push and Publish. Data messages needed to be formatted in a specific way that account for mode, destination, datatype, and possible value. \n\nSee CH-Push-Publish-Rooms.maxpat and CH-Controls-and-Events.maxpat for more information.\n\n"
 								}
 
@@ -291,7 +291,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 740.0, 258.5, 372.0, 417.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 648.5, 207.5, 350.5, 337.0 ],
+									"presentation_rect" : [ 634.5, 180.5, 350.5, 337.0 ],
 									"proportion" : 0.5
 								}
 
@@ -339,8 +339,6 @@
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
 						"tags" : ""
 					}
@@ -366,7 +364,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1104.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1061.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -397,19 +395,6 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"bubble" : 1,
-									"id" : "obj-8",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 278.0, 532.0, 156.0, 37.0 ],
-									"text" : "Publish an Event\navailable to all users."
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 									"fontname" : "Arial Bold",
 									"hint" : "",
@@ -421,10 +406,23 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 448.5, 532.0, 20.0, 20.0 ],
+									"patching_rect" : [ 290.0, 515.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-8",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 124.5, 523.0, 156.0, 37.0 ],
+									"text" : "Publish an Event\navailable to all users."
 								}
 
 							}
@@ -441,7 +439,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 448.5, 683.5, 20.0, 20.0 ],
+									"patching_rect" : [ 474.5, 652.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -456,7 +454,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 175.0, 532.0, 53.0, 53.0 ]
+									"patching_rect" : [ 60.5, 515.0, 53.0, 53.0 ]
 								}
 
 							}
@@ -467,7 +465,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 175.0, 595.0, 165.0, 22.0 ],
+									"patching_rect" : [ 60.5, 578.0, 165.0, 22.0 ],
 									"text" : "publish all maxEvent42"
 								}
 
@@ -478,7 +476,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 175.0, 632.0, 85.0, 22.0 ],
+									"patching_rect" : [ 60.5, 615.0, 85.0, 22.0 ],
 									"text" : "s toCH-Server"
 								}
 
@@ -489,7 +487,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 335.5, 141.0, 188.0, 20.0 ],
+									"patching_rect" : [ 335.5, 132.0, 188.0, 20.0 ],
 									"text" : "Connect to Server. "
 								}
 
@@ -507,7 +505,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 448.5, 141.0, 20.0, 20.0 ],
+									"patching_rect" : [ 448.5, 132.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "0",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -521,7 +519,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 604.0, 334.333330869674683, 156.0, 33.0 ],
+									"patching_rect" : [ 604.0, 314.333330869674683, 156.0, 33.0 ],
 									"text" : "Events that you publish will appear in the right side list. "
 								}
 
@@ -542,7 +540,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.0, 334.333330869674683, 580.0, 169.0 ],
+									"patching_rect" : [ 10.0, 314.333330869674683, 580.0, 169.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 849.0, 779.5, 580.0, 169.0 ],
 									"prototypename" : "CH-EVENTS",
@@ -598,7 +596,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 10.0, 777.5, 24.0, 24.0 ]
+									"patching_rect" : [ 10.0, 750.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -610,7 +608,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 49.0, 777.5, 288.0, 35.0 ],
+									"patching_rect" : [ 49.0, 750.5, 288.0, 35.0 ],
 									"text" : ";\rmax launchbrowser http://CH-Server.herokuapp.com"
 								}
 
@@ -618,12 +616,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-19",
-									"linecount" : 4,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 697.5, 519.0, 60.0 ],
-									"text" : "Load up our Web Text Page. http://CH-Server.herokuapp.com. \nScroll halfway down the page and find the section labeled 'Published Events'. The published event should listed. Click Observe. Retrigger the Event (Step #1) and check the web browser's 'Incoming Messages'."
+									"patching_rect" : [ 10.0, 660.5, 519.0, 74.0 ],
+									"text" : "Load up our Web Test Page. http://CH-Server.herokuapp.com. \n\nScroll halfway down the page and find the section labeled 'Published Events'. The published event should listed. Click Observe. Retrigger the Event (Step #1) and check the web browser's 'Incoming Messages'."
 								}
 
 							}
@@ -643,7 +641,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 10.0, 141.0, 320.0, 169.0 ],
+									"patching_rect" : [ 10.0, 132.0, 320.0, 169.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -692,8 +690,11 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -705,10 +706,7 @@
 									}
 ,
 									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -718,8 +716,8 @@
 								"name" : "max6box",
 								"default" : 								{
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -815,7 +813,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1104.0, 838.0 ],
+						"rect" : [ 34.0, 88.0, 1061.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -846,6 +844,30 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 654.0, 37.0, 475.0, 20.0 ],
+									"text" : "jweb instance of the webclient: http://CH-Server.herokuapp.com"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "jweb",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 639.0, 64.0, 645.0, 452.0 ],
+									"rendermode" : 1,
+									"url" : "http://CH-Server.herokuapp.com"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-6",
 									"linecount" : 2,
 									"maxclass" : "comment",
@@ -858,24 +880,26 @@
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
 									"id" : "obj-3",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 599.0, 585.333330869674683, 298.0, 33.0 ],
+									"patching_rect" : [ 599.0, 656.333330869674683, 298.0, 37.0 ],
 									"text" : "Stop observing an event by selecting in in the middle umenu below the list of 'ObservedEvents'"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"bubble" : 1,
 									"id" : "obj-2",
-									"linecount" : 3,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 599.0, 524.333330869674683, 298.0, 47.0 ],
+									"patching_rect" : [ 599.0, 585.333330869674683, 298.0, 64.0 ],
 									"text" : "All observable events are listed in the 'AvailableEvents' list. \nToggle 'Details' to see for information on each event. "
 								}
 
@@ -893,7 +917,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 438.5, 865.5, 20.0, 20.0 ],
+									"patching_rect" : [ 455.5, 865.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -907,7 +931,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 117.0, 877.5, 327.0, 47.0 ],
+									"patching_rect" : [ 104.0, 860.5, 327.0, 47.0 ],
 									"text" : "Go back to the web browser and push the webEvent button again. Now that you're observing the event, you should receive all future occurances. "
 								}
 
@@ -1252,8 +1276,11 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1265,10 +1292,7 @@
 									}
 ,
 									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1278,8 +1302,8 @@
 								"name" : "max6box",
 								"default" : 								{
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1419,8 +1443,11 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1432,10 +1459,7 @@
 					}
 ,
 					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1445,8 +1469,8 @@
 				"name" : "max6box",
 				"default" : 				{
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

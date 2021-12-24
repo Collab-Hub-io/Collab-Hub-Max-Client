@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="CH-Chat" module="collab-hub" category="Collab-Hub, Networking">
+<c74object name="CH-Client">
 
 	<digest>
-		Connect to the Collabe Hub Server. Client Module for Collab-Hub.
+		Connect to the Collab-Hub Server. Client Module for Collab-Hub.
 	</digest>
 	
 	<description>
@@ -34,11 +34,11 @@
 	</outletlist>
 	
 	<!--ARGUMENTS-->
-	<!-- <objarglist>
-		<objarg name="pan-position" optional="1" type="float">
-			<digest>Initial panning position, default is 0.</digest>
+	<objarglist>
+		<objarg name="enabled" optional="0" type="int (0/1)">
+			<digest>Enable or disable the Client Module</digest>
 		</objarg>
-	</objarglist> -->
+	</objarglist>
 	
 	<!--MESSAGES-->
 	<!-- <methodlist>

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -255,7 +255,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
 					"patching_rect" : [ 1238.5, 228.322033898305079, 288.0, 22.0 ],
-					"text" : "dialog @mode 2 @label Stop observing all controls?"
+					"text" : "dialog @mode 2 @label Stop observing all events?"
 				}
 
 			}
@@ -1230,8 +1230,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/Documents/GitStuff/Collab-Hub-Max-Client/img/for-bpatchers",
-				"patcherrelativepath" : "../img/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}

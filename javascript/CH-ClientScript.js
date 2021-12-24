@@ -3,25 +3,26 @@
 // the Max-based Collab-Hub (client).
 // Authors: Nick Hwang, Anthony T Marasco, Eric Sheffield
 // Contact: nickthwang@gmail.com
-// Edited: 12/17/2021
+// Edited: 12/23/2021
 // --------------------------------------------------------------------------
 
-const max = require('max-api'),
-  io = require('socket.io-client'),
-  config = require('./config.json'),
+const max = require("max-api"),
+  io = require("socket.io-client"),
+  config = require("./config.json"),
   namespace = config.namespace || "hub",
   username = config.username,
   socket = (() => {
     if (username != undefined)
-      return io.connect(`https://ch-server.herokuapp.com/${namespace}`, {query: {username: username} } );
-      // return io.connect(`http://localhost:3000/${namespace}`, {query: {username: username} } );
-      // return io.connect(`http://localhost:8123/`, {query: {username: username} } );
-    else
-      return io.connect(`https://ch-server.herokuapp.com/${namespace}`); 
-      // return io.connect(`http://localhost:3000/${namespace}`);
+      return io.connect(`https://ch-server.herokuapp.com/${namespace}`, {
+        query: { username: username },
+      });
+    // return io.connect(`http://localhost:3000/${namespace}`, {query: {username: username} } );
+    // return io.connect(`http://localhost:8123/`, {query: {username: username} } );
+    else return io.connect(`https://ch-server.herokuapp.com/${namespace}`);
+    // return io.connect(`http://localhost:3000/${namespace}`);
   })();
 
-  console.log(socket);
+console.log(socket);
 
 let senderFlag = false,
   controlDetail = false,
@@ -29,319 +30,329 @@ let senderFlag = false,
   roomDetail = false;
 
 const maxHandlers = {
-
   // General
 
-  addUsername: username => {
-    console.log(`Username: ${username}`);
-    let outgoing = { username: username };
-    socket.emit('addUsername', outgoing);
+  addUsername: (username) => {
+    if (username === undefined) {
+      maxErrorHandler("Username cannot be undefined.");
+    } else {
+
+      let outgoing = { username: username };
+      socket.emit("addUsername", outgoing);
+    }
   },
 
-  sender: bool => {
-    senderFlag = bool;
+  sender: (bool) => {
+    if (bool === undefined) {
+      maxErrorHandler("Sender flag must include 0 or 1.");
+    } else {
+      senderFlag = bool;
+      max.outlet("senderFlag", "toggles", "set", bool);
+    }
   },
-  
-  controlDetail: bool => {
+
+  controlDetail: (bool) => {
     controlDetail = bool;
-    socket.emit('getMyControls');
+    socket.emit("getMyControls");
   },
-  
-  eventDetail: bool => {
+
+  eventDetail: (bool) => {
     eventDetail = bool;
-    socket.emit('getMyEvents');
+    socket.emit("getMyEvents");
   },
 
-  roomDetail: bool => {
+  roomDetail: (bool) => {
     roomDetail = bool;
-    socket.emit('getAvailableRooms');
-    socket.emit('getMyRooms')
+    socket.emit("getAvailableRooms");
+    socket.emit("getMyRooms");
   },
-
 
   // Event & control broadcast
 
   publish: (...args) => {
     let outgoing = {
-        mode: 'publish',
+      mode: "publish",
     };
     if (args.length > 2) {
-        outgoing.target = args[0];
-        outgoing.header = args[1];
-        outgoing.values = args.slice(2);
-        socket.emit('control', outgoing);
-    } 
-    else {
-        outgoing.target = args[0];
-        outgoing.header = args[1];
-        socket.emit('event', outgoing);
-    };
+      outgoing.target = args[0];
+      outgoing.header = args[1];
+      outgoing.values = args.slice(2);
+      socket.emit("control", outgoing);
+    } else {
+      outgoing.target = args[0];
+      outgoing.header = args[1];
+      socket.emit("event", outgoing);
+    }
   },
 
   push: (...args) => {
-    let outgoing = { mode: 'push' };
+    let outgoing = { mode: "push" };
     if (args.length > 2) {
-        outgoing.target = args[0];
-        outgoing.header = args[1];
-        outgoing.values = args.slice(2),
-        socket.emit('control', outgoing);
-    } 
-    else {
-        outgoing.target = args[0];
-        outgoing.header = args[1];
-        socket.emit('event', outgoing);
-    };
+      outgoing.target = args[0];
+      outgoing.header = args[1];
+      (outgoing.values = args.slice(2)), socket.emit("control", outgoing);
+    } else {
+      outgoing.target = args[0];
+      outgoing.header = args[1];
+      socket.emit("event", outgoing);
+    }
   },
-
 
   // Chat broadcast
 
   chat: (...args) => {
     let outgoing = {
-        target: args[0],
-        chat: args.slice(1)
+      target: args[0],
+      chat: args.slice(1),
     };
-    socket.emit('chat', outgoing);
+    socket.emit("chat", outgoing);
   },
-
 
   // Control management
 
-  observeControl: header => {
+  observeControl: (header) => {
     let outgoing = { header: header };
-    socket.emit('observeControl', outgoing);
+    socket.emit("observeControl", outgoing);
   },
 
-  unobserveControl: header => {
+  unobserveControl: (header) => {
     let outgoing = { header: header };
-    socket.emit('unobserveControl', outgoing);
+    socket.emit("unobserveControl", outgoing);
   },
 
-  observeAllControl: bool => {
+  observeAllControl: (bool) => {
     let outgoing = { observe: bool };
-    socket.emit('observeAllControl', outgoing);
-    socket.emit('getMyControls');
+    socket.emit("observeAllControl", outgoing);
+    socket.emit("getMyControls");
   },
 
-  clearControl: header => {
+  clearControl: (header) => {
     let outgoing = { header: header };
-    socket.emit('clearControl', outgoing);
-    socket.emit('getMyControls');
+    socket.emit("clearControl", outgoing);
+    socket.emit("getMyControls");
   },
-
 
   // Event management
 
-  observeEvent: header => {
+  observeEvent: (header) => {
     let outgoing = { header: header };
-    socket.emit('observeEvent', outgoing);
+    socket.emit("observeEvent", outgoing);
   },
 
-  unobserveEvent: header => {
+  unobserveEvent: (header) => {
     let outgoing = { header: header };
-    socket.emit('unobserveEvent', outgoing);
+    socket.emit("unobserveEvent", outgoing);
   },
 
-  observeAllEvents: bool => {
+  observeAllEvents: (bool) => {
     let outgoing = { observe: bool };
-    socket.emit('observeAllEvents', outgoing);
-    socket.emit('getMyEvents');
-  },
-  
-  clearEvent: header => {
-    let outgoing = { header: header };
-    socket.emit('clearEvent', outgoing);
-    socket.emit('getMyEvents');
+    socket.emit("observeAllEvents", outgoing);
+    socket.emit("getMyEvents");
   },
 
+  clearEvent: (header) => {
+    let outgoing = { header: header };
+    socket.emit("clearEvent", outgoing);
+    socket.emit("getMyEvents");
+  },
 
   // Room management
 
-  joinRoom: roomName => {
+  joinRoom: (roomName) => {
     let outgoing = { room: roomName };
-    socket.emit('joinRoom', outgoing);
+    socket.emit("joinRoom", outgoing);
   },
 
-  leaveRoom: roomName => {
+  leaveRoom: (roomName) => {
     let outgoing = { room: roomName };
-    socket.emit('leaveRoom', outgoing);
+    socket.emit("leaveRoom", outgoing);
   },
 
-  
   // Error
   [max.MESSAGE_TYPES.ALL]: (handled) => {
-    if (!handled) { max.outlet('error', 'Invalid message format!' + '\n' +
-    '~ Controls and events should be preceded by \'publish\' or \'push.\'' + '\n' +
-    '~ Manual chat messages should be preceded by \'chat\' and followed by user/room name or \'all.\'' + '\n' +
-    '~ Other data retrieval options include: getUsers, observeControl, joinRoom, etc.' ) };
-  }
-
+    if (!handled) {
+      maxErrorHandler(
+        "Invalid message format!" +
+          "\n" +
+          "~ Controls and events should be preceded by 'publish' or 'push.'" +
+          "\n" +
+          "~ Manual chat messages should be preceded by 'chat' and followed by user/room name or 'all.'" +
+          "\n" +
+          "~ Other data retrieval options include: getUsers, observeControl, joinRoom, etc."
+      );
+    }
+  },
 };
+// --------------------
+// Max Client Error Handler
+maxErrorHandler = (err) => {
+  console.log(err);
+  max.outlet("error", err);
+};
+
 // --------------------
 
 max.addHandlers(maxHandlers);
 
 // Handling connect/disconnect
-socket.on('connect', () => {
-  max.outlet('connected', 1);
+socket.on("connect", () => {
+  max.outlet("connected", 1);
 });
 
 // This function is only useful if the disconnect comes from the server
-socket.on('disconnect', () => {
-  max.outlet('connected', 0);
+socket.on("disconnect", () => {
+  max.outlet("connected", 0);
 });
-
 
 // --------------------
 // Incoming from server
 
-
 // Generic messages from server
-socket.on('serverMessage', (incoming) => {
-  max.outlet('serverMessage', incoming.message);
+socket.on("serverMessage", (incoming) => {
+  max.outlet("serverMessage", incoming.message);
 });
-
 
 // Other info from server
 
-socket.on('allUsers', data => {
+socket.on("allUsers", (data) => {
   let allUsers = data.users;
   let allUsersView = { Users: allUsers };
   let allUsersUmenu = { items: allUsers };
-  max.outlet('allUsersView', allUsersView);
-  max.outlet('allUsersUmenu', allUsersUmenu);
+  max.outlet("allUsersView", allUsersView);
+  max.outlet("allUsersUmenu", allUsersUmenu);
 });
 
-socket.on('otherUsers', data => {
+socket.on("otherUsers", (data) => {
   let otherUsers = data.users;
   let otherUsersView = { Users: otherUsers };
   let otherUsersUmenu = { items: otherUsers };
-  max.outlet('otherUsersView', otherUsersView);
-  max.outlet('otherUsersUmenu', otherUsersUmenu);
+  max.outlet("otherUsersView", otherUsersView);
+  max.outlet("otherUsersUmenu", otherUsersUmenu);
 });
 
-socket.on('availableControls', data => {
+socket.on("availableControls", (data) => {
   let details = data.controls;
-  let headers = details.map(h => h.header);
+  let headers = details.map((h) => h.header);
   let availableControlsView;
-  if (controlDetail) { 
-    availableControlsView = { AvailableControls: details }
+  if (controlDetail) {
+    availableControlsView = { AvailableControls: details };
   } else availableControlsView = { AvailableControls: headers };
   let availableControlsUmenu = { items: headers };
-  max.outlet('availableControlsView', availableControlsView);
-  max.outlet('availableControlsUmenu', availableControlsUmenu);
+  max.outlet("availableControlsView", availableControlsView);
+  max.outlet("availableControlsUmenu", availableControlsUmenu);
 });
 
-socket.on('observedControls', data => {
+socket.on("observedControls", (data) => {
   let details = data.controls;
-  let headers = details.map(h => h.header);
+  let headers = details.map((h) => h.header);
   let observedControlsView;
-  if (controlDetail) { 
-    observedControlsView = { ObservedControls: details }
+  if (controlDetail) {
+    observedControlsView = { ObservedControls: details };
   } else observedControlsView = { ObservedControls: headers };
   let observedControlsUmenu = { items: headers };
-  max.outlet('observedControlsView', observedControlsView);
-  max.outlet('observedControlsUmenu', observedControlsUmenu);
+  max.outlet("observedControlsView", observedControlsView);
+  max.outlet("observedControlsUmenu", observedControlsUmenu);
 });
 
-socket.on('myControls', data => {
+socket.on("myControls", (data) => {
   let details = data.controls;
-  let headers = details.map(h => h.header);
+  let headers = details.map((h) => h.header);
   let myControlsView;
-  if (controlDetail) { 
-    myControlsView = { MyControls: details }
+  if (controlDetail) {
+    myControlsView = { MyControls: details };
   } else myControlsView = { MyControls: headers };
   let myControlsUmenu = { items: headers };
-  max.outlet('myControlsView', myControlsView);
-  max.outlet('myControlsUmenu', myControlsUmenu);
+  max.outlet("myControlsView", myControlsView);
+  max.outlet("myControlsUmenu", myControlsUmenu);
 });
 
-socket.on('availableEvents', data => {
+socket.on("availableEvents", (data) => {
   let details = data.events;
-  let headers = details.map(h => h.header);
+  let headers = details.map((h) => h.header);
   let availableEventsView;
-  if (eventDetail) { 
-    availableEventsView = { AvailableEvents: details }
+  if (eventDetail) {
+    availableEventsView = { AvailableEvents: details };
   } else availableEventsView = { AvailableEvents: headers };
   let availableEventsUmenu = { items: headers };
-  max.outlet('availableEventsView', availableEventsView);
-  max.outlet('availableEventsUmenu', availableEventsUmenu);
+  max.outlet("availableEventsView", availableEventsView);
+  max.outlet("availableEventsUmenu", availableEventsUmenu);
 });
 
-socket.on('observedEvents', data => {
+socket.on("observedEvents", (data) => {
   let details = data.events;
-  let headers = details.map(h => h.header);
+  let headers = details.map((h) => h.header);
   let observedEventsView;
-  if (eventDetail) { 
-    observedEventsView = { ObservedEvents: details }
+  if (eventDetail) {
+    observedEventsView = { ObservedEvents: details };
   } else observedEventsView = { ObservedEvents: headers };
   let observedEventsUmenu = { items: headers };
-  max.outlet('observedEventsView', observedEventsView);
-  max.outlet('observedEventsUmenu', observedEventsUmenu);
+  max.outlet("observedEventsView", observedEventsView);
+  max.outlet("observedEventsUmenu", observedEventsUmenu);
 });
 
-socket.on('myEvents', data => {
+socket.on("myEvents", (data) => {
   let details = data.events;
-  let headers = details.map(h => h.header);
+  let headers = details.map((h) => h.header);
   let myEventsView;
-  if (eventDetail) { 
-    myEventsView = { MyEvents: details }
+  if (eventDetail) {
+    myEventsView = { MyEvents: details };
   } else myEventsView = { MyEvents: headers };
   let myEventsUmenu = { items: headers };
-  max.outlet('myEventsView', myEventsView);
-  max.outlet('myEventsUmenu', myEventsUmenu);
+  max.outlet("myEventsView", myEventsView);
+  max.outlet("myEventsUmenu", myEventsUmenu);
 });
 
-
-socket.on('availableRooms', data => {
+socket.on("availableRooms", (data) => {
   let roomList = Object.keys(data.rooms);
   let availableRoomsView;
-  if (roomDetail) { availableRoomsView = { AvailableRooms: data.rooms } }
-    else availableRoomsView = { AvailableRooms: roomList };
+  if (roomDetail) {
+    availableRoomsView = { AvailableRooms: data.rooms };
+  } else availableRoomsView = { AvailableRooms: roomList };
   let availableRoomsUmenu = { items: roomList };
-  max.outlet('availableRoomsView', availableRoomsView);
-  max.outlet('availableRoomsUmenu', availableRoomsUmenu);
+  max.outlet("availableRoomsView", availableRoomsView);
+  max.outlet("availableRoomsUmenu", availableRoomsUmenu);
 });
 
-socket.on('myRooms', data => {
+socket.on("myRooms", (data) => {
   let roomList = Object.keys(data.rooms);
   let myRoomsView;
-  if (roomDetail) { myRoomsView = { MyRooms: data.rooms } }
-    else myRoomsView = { MyRooms: roomList };
+  if (roomDetail) {
+    myRoomsView = { MyRooms: data.rooms };
+  } else myRoomsView = { MyRooms: roomList };
   let myRoomsUmenu = { items: roomList };
-  max.outlet('myRoomsView', myRoomsView);
-  max.outlet('myRoomsUmenu', myRoomsUmenu);
+  max.outlet("myRoomsView", myRoomsView);
+  max.outlet("myRoomsUmenu", myRoomsUmenu);
 });
-
 
 // Data from server
 
-socket.on('control', incoming => {
+socket.on("control", (incoming) => {
   let sender = incoming.from;
   let header = incoming.header;
   let values = incoming.values;
   if (Array.isArray(values)) {
-    if (senderFlag) { max.outlet(sender, header, ...values) } 
-      else max.outlet(header, ...values);
-  }
-  else {
-    if (senderFlag) { max.outlet(sender, header, values) } 
-    else max.outlet(header, values);  
+    if (senderFlag) {
+      max.outlet(sender, header, ...values);
+    } else max.outlet(header, ...values);
+  } else {
+    if (senderFlag) {
+      max.outlet(sender, header, values);
+    } else max.outlet(header, values);
   }
 });
 
-socket.on('event', incoming => {
+socket.on("event", (incoming) => {
   let sender = incoming.from;
   let header = incoming.header;
-  if (senderFlag) {max.outlet(sender, header)} 
-    else max.outlet(header);
+  if (senderFlag) {
+    max.outlet(sender, header);
+  } else max.outlet(header);
 });
 
-socket.on('chat', incoming => {
+socket.on("chat", (incoming) => {
   let sender = incoming.id;
   let message = incoming.chat;
-  max.outlet('chat', `${sender}: ${message}`);
+  max.outlet("chat", `${sender}: ${message}`);
 });
-
 
 // --------------------
