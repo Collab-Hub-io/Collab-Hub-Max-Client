@@ -22,10 +22,11 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 
 ## Getting Started
 0. This current version is intended as a Max Package.
-1. If you've downloaded this package from Max Package Manager, skip to step #3.
-2. Download the Collab-Hub-Max-Client folder from GitHub using the green Code button near the top of this page. Either choose "Download ZIP" or, if you're comfortable using git, you can clone the repo.
-3. Add the Collab-Hub-Max-Client folder as an entry in your [File Preferences](https://docs.cycling74.com/max7/vignettes/file_preferences_window) in Max. Make sure that the "Subfolders" checkbox is checked.
-4. Open the CH-Max-Demo Max patch for a quick introduction and/or watch the Getting Started video below.
+1. If you've downloaded this package from Max Package Manager, you can skip all remaining steps. 
+2. If you're NOT downloading this package from the Max Package Manage, we strongly suggest you download take the following steps to manually add this as a Max Package. This will ensure all the available refpages, docs, and templates are available to you.
+3. Download the Collab-Hub-Max-Client folder from GitHub using the green Code button near the top of this page. Either choose "Download ZIP" or, if you're comfortable using git, you can clone the repo.
+4. Move this entire folder into your **~/Documents/Max 8/Packages folder**.
+5. Start learning to use Collab-Hub by opening *Collab-Hub Modules.maxpat* from **Extras > Collab-Hub Modules** from the top menu bar.
 
 DEMO VIDEO COMING SOON
 
