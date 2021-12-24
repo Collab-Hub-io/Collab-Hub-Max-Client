@@ -10,7 +10,7 @@
 
 ## Overview
 
-The Collab-Hub Max Client is a tool designed to faciliate communication with the Collab-Hub server from within Cycling 74's [Max](https://cycling74.com/products/max). This client will help you send/receive data over the internet between Max and/or other platforms.
+The Collab-Hub Max Client is a tool designed to facilitate communication with the Collab-Hub server from within Cycling 74's [Max](https://cycling74.com/products/max). This client will help you send/receive data over the internet between Max and/or other platforms.
 
 The Max Client package consists of a set of modules (built as abstractions that run inside bpatchers) that can be used in different combinations depending on your needs.
 
@@ -21,7 +21,7 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 ---
 
 ## Getting Started
-0. This current version is intended as a Max Package. If you've downloaded this package from Max Package Manager, you can skip all remaining steps. 
+0. This current version is intended as a Max Package. If you've downloaded this package from Max Package Manager, you can skip all remaining steps.
 1. If you DID NOT download this package from the Max Package Manager, please take the following steps to manually add this as a Max Package. This will ensure all the available refpages, docs, and templates are available to you.
 2. Download the Collab-Hub-Max-Client folder from GitHub using the green Code button near the top of this page. Either choose "Download ZIP" or, if you're comfortable using git, you can clone the repo.
 3. Move this entire folder into your **~/Documents/Max 8/Packages folder**. IF you are using Git to clone this repo, you can create an 'alias' and place that alias folder in the Max Packages folder.
@@ -64,7 +64,7 @@ The **CH-Client** module is the bare minimum needed to connect to Collab-Hub. It
 
 The **CH-Chat** module provides extended chat functionality. Incoming chat messages post to the Max console window.
 
-- **all:** Chat messsages are sent to all users.
+- **all:** Chat messages are sent to all users.
 - **user:** Chat messages are sent to one specific user (dropdown menu with usernames is provided below the text box).
 - **room:** Chat messages are sent to users in a room (dropdown menu with room names is provided below the text box).
 
@@ -268,3 +268,22 @@ Users can initialize some settings at the time of connection by changing entries
 
 - **namespace:** The default Collab-Hub collective namespace is "hub". This should not be changed unless you are provided with a namespace by the Collab-Hub developers. Contact us if you think you or your group may have a need for your own namespace.
 - **username:** By default, a random username is assigned in the format 'User000' if this entry is empty. You can have your username set to something else at the time of connection by entering it here (assuming that the username is not already in use by someone else). Usernames can always be changed after connection from within Max.
+
+---
+## Changelog
+- #0.3.2
+  - Implemented Max Package structure including
+    - Max Help XMLs
+    - Max Ref Pages
+    - Max Topic Vignettes
+    - Max Template
+  - Updated CH-Client Module
+    - Can now receive command / attribute changes into inlet. Previously had to use mouse.
+      - Connect 0/1
+      - addUsername <username>
+      - senderFlags 0/1
+    - Module will not receive command / attribute changes unless connected
+      - Can still change username prior to connecting
+  - Publish Mode requires 'target' value when manually sending messageType
+      - Previously, 'all' was default and unchangeable
+      - Users must have a target of 'all', <username>, or <room> to publish and Events and Controls
