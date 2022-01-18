@@ -286,4 +286,4 @@ Users can initialize some settings at the time of connection by changing entries
       - Can still change username prior to connecting
   - Publish Mode requires 'target' value when manually sending messageType
       - Previously, 'all' was default and unchangeable
-      - Users must have a target of 'all', <username>, or <room> to publish and Events and Controls
+      - Push Mode messages must have a target of 'all', username, or roomname to publish and Events and Controls
