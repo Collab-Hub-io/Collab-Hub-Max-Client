@@ -1359,9 +1359,6 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1372,10 +1369,13 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ]
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1384,9 +1384,9 @@
 , 							{
 								"name" : "max6box",
 								"default" : 								{
+									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1404,7 +1404,6 @@
 , 							{
 								"name" : "max6message",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
@@ -1414,7 +1413,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "max6box",
@@ -1775,7 +1775,7 @@
 					"bblend" : 100,
 					"bgcolor" : [ 0.184312760829926, 0.184312760829926, 0.184312760829926, 1.0 ],
 					"coldef" : [ [ 0, 14, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"cols" : 2,
+					"cols" : 1,
 					"colwidth" : 200,
 					"fblend" : 100,
 					"fgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -1792,10 +1792,9 @@
 					"outlettype" : [ "list", "", "", "" ],
 					"patching_rect" : [ 124.0, 1204.0, 332.0, 293.0 ],
 					"precision" : 4,
-					"presentation" : 1,
-					"presentation_rect" : [ 324.0, 0.0, 337.0, 169.0 ],
 					"rowhead" : 1,
 					"rowheight" : 21,
+					"rows" : 1,
 					"savemode" : 1,
 					"sccolor" : [ 0.329411764705882, 0.329411764705882, 0.329411764705882, 1.0 ],
 					"selsync" : 0,
@@ -1891,7 +1890,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 428.0, 694.0, 110.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 178.5, 26.0, 139.5, 18.0 ],
+					"presentation_rect" : [ 163.5, 26.0, 154.5, 18.0 ],
 					"style" : "velvet",
 					"text" : "Username: User010",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -2902,8 +2901,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -3010,7 +3007,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 91.0, 119.0, 50.0, 22.0 ],
-					"text" : "499"
+					"text" : "372"
 				}
 
 			}
@@ -4174,7 +4171,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientInstanceManager",
+				"name" : "CH-ClientInstanceManager.js",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
@@ -4207,9 +4204,6 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -4220,10 +4214,13 @@
 						"autogradient" : 0
 					}
 ,
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ]
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4232,9 +4229,9 @@
 , 			{
 				"name" : "max6box",
 				"default" : 				{
+					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4252,7 +4249,6 @@
 , 			{
 				"name" : "max6message",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
@@ -4262,7 +4258,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "max6box",
