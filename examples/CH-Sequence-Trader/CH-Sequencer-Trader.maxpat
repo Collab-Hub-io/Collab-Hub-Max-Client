@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 48.0, 79.0, 891.0, 787.0 ],
+		"rect" : [ 34.0, 93.0, 1454.0, 805.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,220 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 137.5, 639.0, 86.0, 23.0 ],
+					"text" : "loadmess clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"border" : 0,
+					"filename" : "helpname.js",
+					"id" : "obj-28",
+					"ignoreclick" : 1,
+					"jsarguments" : [ "CH-Demo Sequence Trader" ],
+					"maxclass" : "jsui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
+					"patching_rect" : [ 10.0, 10.0, 581.31201171875, 57.599853515625 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Lato",
+					"fontsize" : 13.0,
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 14.0, 85.0, 417.0, 22.0 ],
+					"presentation_linecount" : 4,
+					"text" : "This demonstrates sending multiple parameter data to collaborators. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 735.0, 541.0, 150.0, 122.0 ],
+					"presentation_linecount" : 8,
+					"text" : "Start your own local sequence, pick the tempo, and beat divisions. \n\nWhen someone sends a sequence, that pattern will play in relation to the current. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
+					"id" : "obj-24",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 699.333359003067017, 541.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "0",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1126.0, 506.5, 226.0, 35.0 ],
+					"presentation_linecount" : 4,
+					"text" : "Create a sequence (rhythm pattern) and send it to the room destination."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
+					"id" : "obj-19",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1099.0, 506.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "4",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"linecount" : 10,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 109.0, 693.5, 147.0, 150.0 ],
+					"presentation_linecount" : 12,
+					"text" : "Select a room to send a sequence to. \nSince Umenus don't automatically output a select, be sure to select an item, so your sequence has a destination.\n\nYou'll create a sequence Step 4."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 411.0, 370.5, 114.0, 122.0 ],
+					"presentation_linecount" : 7,
+					"text" : "Create a Room\n\nThis is will be the destination for your collaborators to send to. You automatically you rooms you create."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 354.0, 184.0, 150.0, 35.0 ],
+					"text" : "Connect to Collab-Hub Server"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
+					"id" : "obj-8",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 411.0, 345.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "2",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
+					"id" : "obj-29",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 354.0, 155.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "1",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"fontname" : "Arial Bold",
+					"hint" : "",
+					"id" : "obj-9",
+					"ignoreclick" : 1,
+					"legacytextcolor" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 84.0, 693.5, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "3",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 662.666696548461914, 100.0, 91.0, 23.0 ],
+					"patching_rect" : [ 555.999997615814209, 116.0, 91.0, 23.0 ],
 					"text" : "route sequence"
 				}
 
@@ -57,7 +265,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 662.666696548461914, 57.0, 97.0, 23.0 ],
+					"patching_rect" : [ 555.999997615814209, 85.0, 97.0, 23.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -165,7 +373,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -361,7 +568,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 202.666673183441162, 590.5, 43.999993443489075, 30.0 ],
+					"patching_rect" : [ 216.666673183441162, 590.5, 43.999993443489075, 30.0 ],
 					"text" : "or:",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -392,32 +599,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 493.75, 10.0, 136.75, 119.945974576271183 ],
+					"patching_rect" : [ 605.75, 4.326939469676901, 78.605072463768124, 68.945974576271198 ],
 					"pic" : "CH-Logo.png"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 26.0,
-					"id" : "obj-30",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 32.0, 404.0, 69.0 ],
-					"text" : "Collab-Hub Max Client Example:\nSequence Trader!",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "panel",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 10.0, 628.0, 118.0 ]
 				}
 
 			}
@@ -428,7 +611,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 275.0, 594.0, 112.0, 23.0 ],
+					"patching_rect" : [ 272.0, 594.0, 112.0, 23.0 ],
 					"text" : "getAvailableRooms"
 				}
 
@@ -444,13 +627,13 @@
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-25",
-					"items" : "nicksroom",
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 9.0, 639.0, 100.0, 23.0 ]
+					"patching_rect" : [ 23.0, 639.0, 100.0, 23.0 ]
 				}
 
 			}
@@ -461,7 +644,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 9.0, 594.0, 163.0, 23.0 ],
+					"patching_rect" : [ 23.0, 594.0, 163.0, 23.0 ],
 					"text" : "route availableRoomsUmenu"
 				}
 
@@ -473,7 +656,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 9.0, 559.0, 97.0, 23.0 ],
+					"patching_rect" : [ 23.0, 559.0, 97.0, 23.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -492,13 +675,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 655.666664958000183, 989.0, 174.0, 37.0 ],
-					"text" : "push nicksroom sequence 1 0 1 0 1 0 1 0"
+					"patching_rect" : [ 638.333359003067017, 989.0, 188.0, 23.0 ],
+					"text" : "push ---- sequence 0 0 0 0 0 0 0 0"
 				}
 
 			}
@@ -706,7 +888,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 10.0,
 									"id" : "obj-9",
-									"items" : "drum3",
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -994,7 +1176,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 10.0,
 									"id" : "obj-52",
-									"items" : "nicksroom",
+									"items" : "asdfa",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1354,9 +1536,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 14.0, 155.0, 322.0, 169.0 ],
 					"prototypename" : "CH-CLIENT",
 					"viewvisibility" : 1
@@ -1388,7 +1570,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 541.0, 391.0, 142.666667103767395 ],
+					"patching_rect" : [ 14.0, 541.0, 391.0, 142.666667103767395 ],
 					"proportion" : 0.39
 				}
 
@@ -1404,7 +1586,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
-					"midpoints" : [ 632.666664958000183, 971.0, 820.166664958000183, 971.0 ],
+					"midpoints" : [ 632.666664958000183, 971.0, 816.833359003067017, 971.0 ],
 					"order" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1452,7 +1634,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 59.0, 885.0, 632.666664958000183, 885.0 ],
+					"midpoints" : [ 73.0, 885.0, 632.666664958000183, 885.0 ],
 					"source" : [ "obj-25", 1 ]
 				}
 
@@ -1460,7 +1642,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 284.5, 1044.0, 632.666664958000183, 1044.0 ],
+					"midpoints" : [ 281.5, 1044.0, 632.666664958000183, 1044.0 ],
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -1551,6 +1733,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"midpoints" : [ 147.0, 672.0, 129.75, 672.0, 129.75, 628.0, 32.5, 628.0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -1575,44 +1765,57 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/patchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
 				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/media/for-bpatchers",
-				"patcherrelativepath" : "../../media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/javascript",
+				"name" : "CH-ClientInstanceManager",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/media/for-bpatchers",
-				"patcherrelativepath" : "../../media/for-bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "local_seq.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/examples/CH-Sequence-Trader/bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/examples/CH-Sequence-Trader/bpatchers",
 				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "send_seq.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Collab-Hub-Client-SH/examples/CH-Sequence-Trader/bpatchers",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/examples/CH-Sequence-Trader/bpatchers",
 				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "helpname.js",
+				"bootpath" : "C74:/help/resources",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],
@@ -1638,10 +1841,9 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1652,9 +1854,68 @@
 						"autogradient" : 0
 					}
 ,
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "max6box",
+				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "max6inlet",
+				"default" : 				{
+					"color" : [ 0.423529, 0.372549, 0.27451, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "max6message",
+				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
+						"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "max6box",
+				"multi" : 0
+			}
+, 			{
+				"name" : "max6outlet",
+				"default" : 				{
+					"color" : [ 0.0, 0.454902, 0.498039, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "newobj001",
+				"default" : 				{
+					"fontsize" : [ 10.0 ],
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",

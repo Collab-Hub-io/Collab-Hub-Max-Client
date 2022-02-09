@@ -7,7 +7,7 @@
 	</digest>
 	
 	<description>
-	Send chat messages to other clients. All received messages appear in Max Console Window.
+	Send chat messages to other clients. Messages can be sent to specific destinations of a username, a roomname, or keyword 'all'. Chat messages will appear in the right-side panel.
 	</description>
 	
 	<!--METADATA-->

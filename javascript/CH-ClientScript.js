@@ -27,17 +27,30 @@ console.log(socket);
 let senderFlag = false,
   controlDetail = false,
   eventDetail = false,
-  roomDetail = false;
+  roomDetail = false, 
+  _username = "", 
+  clients = [];
 
 const maxHandlers = {
   // General
 
+  thisClient: (maxInstance) => {
+    if(!clients.contains(maxInstance)){
+      clients.push(maxInstance);
+      maxoutlet("clients", clients);
+    }
+  },
+
   addUsername: (username) => {
     if (username === undefined) {
       maxErrorHandler("Username cannot be undefined.");
-    } else {
-
-      let outgoing = { username: username };
+    } 
+    else {
+      // var replaceVals = /[^\w\d]/gi;
+      // var replaceVals = /[ ]/gi;
+      var replaceVals = /[^A-Z0-9]+/ig;
+      username = username.replace(replaceVals, '_');
+      var outgoing = { username: username };
       socket.emit("addUsername", outgoing);
     }
   },
@@ -168,6 +181,10 @@ const maxHandlers = {
     socket.emit("leaveRoom", outgoing);
   },
 
+  getAvailableRooms: () => {
+    socket.emit("getAvailableRooms");
+  },
+
   // Error
   [max.MESSAGE_TYPES.ALL]: (handled) => {
     if (!handled) {
@@ -213,6 +230,11 @@ socket.on("serverMessage", (incoming) => {
 });
 
 // Other info from server
+
+socket.on("myUsername", (data) => {
+  _username = data.username;
+  max.outlet("myUsername", _username);
+});
 
 socket.on("allUsers", (data) => {
   let allUsers = data.users;
