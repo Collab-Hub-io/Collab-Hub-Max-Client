@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -54,13 +54,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1066.0, 838.0 ],
+						"rect" : [ 34.0, 88.0, 1066.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -226,6 +226,8 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -236,13 +238,11 @@
 										"autogradient" : 0
 									}
 ,
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ]
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -252,8 +252,8 @@
 								"name" : "max6box",
 								"default" : 								{
 									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -339,7 +339,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -554,8 +554,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 46.0, 417.5, 235.0, 35.0 ],
-									"text" : ";\rmax opendoc collab-hub_topic.maxvig.xml"
+									"patching_rect" : [ 46.0, 417.5, 239.0, 35.0 ],
+									"text" : ";\rmax opendoc Collab-Hub_topic.maxvig.xml"
 								}
 
 							}
@@ -683,6 +683,8 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -693,13 +695,11 @@
 										"autogradient" : 0
 									}
 ,
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ]
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -709,8 +709,8 @@
 								"name" : "max6box",
 								"default" : 								{
 									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -782,13 +782,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 1066.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1066.0, 838.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1742,6 +1742,8 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1752,13 +1754,11 @@
 										"autogradient" : 0
 									}
 ,
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ]
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1768,8 +1768,8 @@
 								"name" : "max6box",
 								"default" : 								{
 									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1845,7 +1845,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2243,6 +2243,8 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2253,13 +2255,11 @@
 										"autogradient" : 0
 									}
 ,
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ]
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2269,8 +2269,8 @@
 								"name" : "max6box",
 								"default" : 								{
 									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2334,49 +2334,7 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "CH-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
-				"patcherrelativepath" : "../media/img",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-ClientInstanceManager.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Rooms-Title.png",
+				"name" : "CH-Chat-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
@@ -2390,7 +2348,35 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Chat-Title.png",
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Client.maxpat",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientInstanceManager.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Controls-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
@@ -2404,7 +2390,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Controls-Title.png",
+				"name" : "CH-Diagram.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"patcherrelativepath" : "../media/img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Events-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
@@ -2418,21 +2411,28 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Events-Title.png",
+				"name" : "CH-Rooms-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Diagram.png",
+				"name" : "CH-Rooms.maxpat",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Small-Logo-NoText.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
 				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Small-Logo-NoText.png",
+				"name" : "CH-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
 				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
@@ -2461,6 +2461,8 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
+					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2471,13 +2473,11 @@
 						"autogradient" : 0
 					}
 ,
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
 					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ]
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2487,8 +2487,8 @@
 				"name" : "max6box",
 				"default" : 				{
 					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

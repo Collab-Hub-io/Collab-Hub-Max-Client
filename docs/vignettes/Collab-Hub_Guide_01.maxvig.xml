@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="_c74_vig.xsl" type="text/xsl"?>
+
+<vignette name="Collab-Hub: Sending and Receiving Data" package="Collab-Hub">
+  <metadatalist>
+    <metadata name="author">Nick Hwang</metadata>
+    <metadata name="tag">Collab-Hub</metadata>
+  </metadatalist>
+
+
+<h1>Sending and Receiving Data</h1>
+
+<h2>Understanding Data Routing</h2>
+<p>Sending and Receiving is the heart of Collab-Hub. There are three main components with routing Collab-Hub messages:  <br />
+<b>messagetype</b>, <b>mode</b> and <b>target</b>.</p>
+
+<h3>Messagetype: The type of message</h3>
+<p>The messagetype is the type of message you are sending. The types of messages are:</p>
+<ul>
+<li>event: an event is a messagetype <b>with just a header and no values</b></li>
+<li>control: a control message is a messagetype <b>with a header and at least one value</b></li>
+<li>chat: a chat message is a messagetype meant for your collaborators to read.</li>
+</ul>
+
+<h3>Mode: How a sender makes their data available to other users. </h3>
+<b>push:</b> data is sent to its <i>target</i>. <br />
+<b>publish:</b> data header is posted as 'available' and other users can <i>observe</i> that data to receive future values.
+
+<techdetail><p> <b>Observing data</b> is an action other users can take to receive 'publish' data. The CH-Controls and CH-Events modules have a <m>observe</m> button which will send a 'observe' message to the server. The server will then send the data to the user. See page [other page] for details on using the CH-Controls and CH-Events modules.</p></techdetail>
+
+<h3>Target: Which users or rooms receive the data (or can see the published data).</h3>
+<b>all:</b> data is sent to all users  <br />
+<b>[roomname]:</b> data is sent to all users in a room  <br />
+<b>[username]:</b> data is sent to a specific user  <br />
+
+<h2>Formatting Data Messages</h2>
+<p>Data messages must be formatted in a specific way.</p>
+<p>For the Max Environment, the CH-Cl
+
+<p>The following is format and example of a <b>event</b> message:</p>
+<p>The Collab-Hub Client Module simplifiers the message formatting. (See the CH-Client module for details.)</p>
+<p>The follow is a template and example of an <b>event</b> message:</p>
+event [mode] [target] [header]
+</p>
+
+<p>The following is an example of a <b>control</b> message:</p>
+<p>
+control [mode] [target] [header] [value(s)]
+</p>
+
+<p>Chat messages, in Max, should be sent using the CH-Chat module. See page [other page] for details on using the CH-Chat module.</p>
+
+
+
+<p>Data messages are formatted as JSON objects. The following is an example of a data message:</p>
+
+
+
+  <seealsolist>
+  </seealsolist>
+	
+</chapter>

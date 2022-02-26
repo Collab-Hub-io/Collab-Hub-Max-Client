@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="_c74_vig.xsl" type="text/xsl"?>
-<vignette name="Collab-Hub Overview" package="Collab-Hub" module="max" >
+<vignette name="Collab-Hub Overview" package="Collab-Hub" module="Collab-Hub" >
   <metadatalist>
     <metadata name="author">Nick Hwang</metadata>
     <metadata name="tag">Collab-Hub</metadata>
   </metadatalist>
 
   <h1>Collab-Hub Package</h1>
-  <p>
-Collab-Hub is a server-based networking tool for sharing control data and 
+  <p> Collab-Hub is a server-based networking tool for sharing control data and 
 events between creative applicationes - built off Node.Js and libraries we’ve 
 written it work with Max, PD, Arduino, 
 Web, JS libraries, and more.
@@ -52,18 +51,5 @@ Web, JS libraries, and more.
   </ul>
   <cr/>
 		
-	
-  <!-- <seealsolist>
-		<seealso name="242.lut" />
-		<seealso name="j.ramp~" />
-		<seealso name="curve~" />
-		<seealso name="line" />
-		<seealso name="ease" />
-		<seealso name="ease~" />
-		<seealso name="list.ease" />
-		<seealso name="jit.ease" />
-		<seealso name="ease.xfade" />
-		<seealso name="ease.xfade~" />
-  </seealsolist> -->
 	
 </vignette>
