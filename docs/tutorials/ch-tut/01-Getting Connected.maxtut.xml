@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<?xml-stylesheet href="./_c74_tut.xsl" type="text/xsl"?>
+
+<chapter name="01: Getting Connected">
+<setdocpatch name="01-Connecting" patch="01-Connecting.maxpat"/>
+<indexinfo category="Basics" title="Hello">Creating objects and connections</indexinfo>
+
+
+<next name="02-Sending and Receiving Data">Sending and Receiving Data</next>
+<parent name="00-ch-index">Collab-Hub Tutorials</parent>
+
+  <metadatalist>
+    <metadata name="author">Nick Hwang</metadata>
+    <metadata name="tag">Collab-Hub</metadata>
+  </metadatalist>
+
+
+
+<h1>Connecting to and disconnecting from the Collab-Hub server</h1>
+<p>The <o>CH-Client</o> is the module which connects you to the server.</p>
+<illustration><img src="images/01a_CH-Client.png" width="50%"/>The Collab-Hub Client Module</illustration>
+<p>Clicking on <m>'Connect'</m> will initiate the connection with the server. </p>
+<p>You should receive feedback when connected...</p>
+<ul>
+<li>the button on the top-right corner of the module will light up. </li>
+<li>the 'Connect' button will change to 'Disconnect'.</li>
+<li>a 'serverMessage' should appear in the Max Console, with version number of the server. </li>
+<li>a 'Username' button with your current username. </li>
+</ul>
+
+<b>You are now connected to the server with your username.</b>
+<br />
+<br />
+
+<illustration><img src="images/01b_CH-Client_Connected.png" width="50%" />The Collab-Hub Client Module showing a connection to the Server, current username, and list of connected users.</illustration>
+
+<h2>Using multiple CH-Client modules</h2>
+<p><b>You can have multiple <o>CH-Client</o> modules in your Max patch, but only one module should be connected to the server.</b></p>
+<p>The modules are aware of each other and will only allow one connection to the server at a time. A pop-up dialog window will warn you if you try to connect to the server while another module is already connected.</p>
+
+<illustration><img src="images/01d_CH-Client_Multiple_Connections.png"  width="40%" />The pop-up dialog warning of multiple connections, offering the option to connect with a different <o>CH-Client</o> module.</illustration>
+<techdetail>Because only one module can connect to the server at a time, we suggest you check your connection and messages using the <a href="http://ch-server.herokuapp.com">Collab-Hub Demo Interface</a>. You will be able see your username on the user list, send and receive messages, and all other acitions. See later tutorials for details.</techdetail>
+
+
+<br />
+<h2>Disconnecting from the server</h2>
+<p>To disconnect from the server, click on the <m>Disconnect</m> button. </p>
+
+<h2>Change your Username</h2>
+<p>You can change your username by clicking on your username -- a dialog window will appear. </p>
+<p>After you have input a new username, click on '<m>OK</m>'.</p>
+<p>A new 'serverMessage' will appear in the Max Console: 'Username updated:...'</p>
+<illustration><img src="images/01c_CH-Client_Change_Username.png"  width="50%" />Dialog for Username input</illustration>
+<br />
+
+<Summary><h2>Summary</h2>
+<p>The Collab-Hub Client Module is the module which connects you to the server. It is the only module which can connect to the server. All other modules receive information from the CH-Client module. After the client module connects, you can change your usernmame and send a 'simple chat' message to all users.</p>
+</Summary>
+
+	
+
+</chapter>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_tut.xsl" type="text/xsl"?>
+
+<chapter name="Collab-Hub Tutorials: Getting Started">
+
+<h1>Collab-Hub: Getting Started</h1>
+
+<p>Collab-Hub is a server-based networking tool for sharing control data and events between creative applicationes - built off Node.Js and libraries we've written it work with Max, PD, Arduino, Web, JS libraries, and more. These modules are part of the Max client.</p>
+
+<p>
+Other clients for Collab-Hub can be found at <a href="https://www.collab-hub.io">http://www.collab-hub.io</a>.
+</p>
+
+<h2>Getting Started with Collab-Hub with Max</h2>
+<p>If you've never used Collab-Hub, please use this tutorial to familiarize yourself with the modules. The following tutorials will guide you through</p>
+<ul>
+<li>connecting to and disconnecting from the Collab-Hub server and changing your username</li>
+<li>sending and receiving data</li>
+<li>observing data</li>
+<li>creating and managing rooms</li>
+<li>interfacing with other environments</li>
+</ul>
+
+<techdetail><p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p></techdetail>
+
+
+<h1>Topics</h1>
+<ul>
+<li><link type="tutorial" module="max" name="01-Getting Connected">Tutorial 01</link>: Getting Connected</li>
+<li><link type="tutorial" module="max" name="02-Sending and Receiving Data">Tutorial 02</link>: Sending and Receiving Data</li>
+
+</ul>
+</chapter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

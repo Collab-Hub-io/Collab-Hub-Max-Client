@@ -80,7 +80,8 @@
 			"CH-Rooms.maxref.xml",
 			"CH-Chat.maxref.xml",
 			"Collab-Hub Modules.maxref.xml",
-			"topics/Collab-Hub_topic.maxvig.xml"
+			"topics/Collab-Hub_topic.maxvig.xml",
+			"tutorials/ch-tut/00-ch-index.maxtut.xml"
 		],
 		"javascript": [
 			"CH-ClientScript.js"

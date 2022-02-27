@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_tut.xsl" type="text/xsl"?>
+
+<chapter name="02: Sending and Receiving Data">
+  <setdocpatch name="02-Sending and Receiving Data" patch="02-Sending and Receiving Data.maxpat"/>
+
+
+<previous name="01-Getting Connected">Getting Connected</previous>
+
+  <parent name="00-ch-index">Collab-Hub Tutorials</parent>
+  <indexinfo category="Basics" title="Hello">Creating objects and connections</indexinfo>
+
+  <metadatalist>
+    <metadata name="author">Nick Hwang</metadata>
+    <metadata name="tag">Collab-Hub</metadata>
+  </metadatalist>
+
+
+  <h1>Sending and Receiving Data</h1>
+
+  <h2>Understanding Data Routing</h2>
+<techdetail><p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p></techdetail>
+
+  <p>Sending and Receiving is the heart of Collab-Hub. There are three main components with routing Collab-Hub messages:</p>
+  <ul>
+    <li>
+      <b>messagetype</b>
+    </li>
+    <li>
+      <b>mode</b>
+    </li>
+    <li>
+      <b>target</b>
+    </li>
+  </ul>
+  <techdetail><p>Based on the message type, the mode, and the target, the message is routed to the correct place. The message type is used to determine messages's purpose. The mode is used to determine the direction of the message. The target is used to determine the destination of the message.</p></techdetail>
+
+  <h2>Messagetype</h2>
+  <p>The messagetype is the type of message you are sending. Depending on the messagetype,  The types of messages are:</p>
+  <ul>
+  Data
+    <ul>
+      <li><b>event</b>: an event is a messagetype <b>with just a header and no values</b>. Consider an Collab-Hub event like a named Max 'bang'. 
+      </li>
+    <li><b>control</b>: a control message is a messagetype <b>with a header and at least one value</b>. Control messages should have one header and one or more values.
+    </li>
+  </ul>
+  Chat 
+  <ul>
+    <li><b>chat</b>: a chat message meant for your collaborators to read. Use <o>CH-Chat</o> module to send chat messages. </li>
+  </ul>
+</ul>
+
+<cr />
+
+<h2>Mode</h2>
+<p>How a sender makes their data available to other users.</p>
+<p> There are two modes for data messages:</p>
+<ul>
+  <li>
+    <b>push:</b> Data is sent to its <i>target</i>. Targets take no actions to receive the data, they just receive the data but must parse the incoming data. See below for receiving data.
+  </li>
+  <li>
+    <b>publish:</b> Data header is posted as 'available' and other users can <i>observe</i> that data to receive future values.
+  </li>
+</ul>
+<techdetail>
+  <p>
+  The <o>CH-Controls</o> and <o>CH-Events</o> modules have a <m>observe</m> button which will send a 'observe' message to the server. The server will then send the data to the user. See page [other page] for details on using the <o>CH-Controls</o> and <o>CH-Events</o> modules.</p>
+  <p>Please see [ link to Publish mode] for more details on the publish mode.</p>
+</techdetail>
+
+<h2>Target</h2>
+<p>Which users or rooms receive the data (or can see the published data).</p>
+<ul>
+<b>all:</b> data is sent to all users  <br />
+<b>[roomname]:</b> data is sent to all users in a room  <br />
+<b>[username]:</b> data is sent to a specific user  <br />
+</ul>
+
+<techdetail>
+  <p>
+  The <o>CH-Rooms</o> module allows you create, join, and leave rooms. </p>
+  <p>See page [other page] for details on using the <o>CH-Rooms</o> module.</p>
+</techdetail>
+
+<h2>Formatting Data Messages</h2>
+<p>Data messages must be formatted in a specific way and then sent to to server. Formatting messages within Max is slightly different than other Collab-Hub client environments -- you do not have to have to use <b>event</b> or <b>control</b> keywords at the start of the messages. See below for details.</p>
+<p>For the Max Environment, the CH-Client can receive data messages into its first inlet.</p>
+
+<p>The following is format and example of a <b>event</b> message: [mode] [target] [header]
+</p>
+
+<illustration><img src="images/02_Event_Targets.png" width="50%"/>Event messages have a mode, target, and header</illustration>
+
+<p>The following is an example of a <b>control</b> message:
+[mode] [target] [header] [value(s)]
+</p>
+
+<illustration><img src="images/02_Control_Value.png" width="50%"/>A Control message with single value</illustration>
+
+<illustration><img src="images/02_Control_XY.png" width="50%" />A Control message two values</illustration>
+
+<h2>Useful Links</h2>
+<p>As you know now, the <o>CH-Client module</o> is the intermediary to the server. The CH-Client module will output messages from the server from its first outlet. The CH-Client module also can receive data messages to be sent to the server through its first inlet.</p>
+
+<illustration><img src="images/02_CH-Client_inlets_outlets.png" width="50%"/>The first inlet and outlet of the CH-Client module can receive and send messages ti and from the Server.</illustration>
+
+<p>The <o>CH-Client</o> module also is sending data messages from the server through the <o>send</o> object with the 'fromServer' argument. The CH-Client module can receive data messages to the server with the <o>receive</o> object with the 'toServer' argument. See the <o>CH-Client</o> module for more details. </p>
+
+<illustration><img src="images/02_to_and_from_Server.png" width="50%"/>The send and receive objects with 'fromServer' and 'toServer' can be useful in complex patches.</illustration>
+
+<techdetail><p>If you have the Max Paackage installed, the pair of send and receives are included as snippets: from <i>Edit Mode</i>, ctrl + click anywhere, and select 'From Snippets' > Collab-Hub Modules > to_from_Server.maxpat.</p></techdetail>
+
+<h2>Try Sending Data to the Server</h2>
+<p>From the tutorial patch, try sending values to the server. Click on the event <m>message boxes</m>, changing the <m>number box</m> value, and moving the XY <o>pictslider</o>. All the values should be sent to the server, and you should be able to see the those messages on the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a>. </p>
+
+<p>You might have noticed that all the modes in the max patch are all 'push' mode. Push mode means that the data is sent to the target, and the target does not need to do anything to receive the data -- this will be simplest way to check if the data is being sent to the right place. In a later tutorial, we will see how to use the 'publish' mode.</p>
+
+<p>You might also noticed that all the targets are all 'all'. 'All' means that the data is sent to all users. In a later tutorial, we will see how to use 'rooms' and use them as targets.</p>
+
+<p>The Web Interface has some some Event and Control message set to 'publish' and with specific roomnames. You will be able to observe and join rooms in the next tutorial to see how to use the 'publish' mode with rooms.</p>
+
+<techdetail><p>From the Max patch, try changing the target of a data message to the username on your Web Interface -- do not wrap usernames with quotation marks. You should see that the data is sent to the user on the Web Interface. </p></techdetail>
+
+
+<h1>Receiving Data</h1>
+
+
+
+
+
+
+<seealsolist>
+</seealsolist>
+
+</chapter>
