@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 64.0, 62.0, 992.0, 861.0 ],
+		"rect" : [ 64.0, 62.0, 1384.0, 861.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -72,7 +72,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -242,7 +242,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 10.0,
 									"id" : "obj-9",
-									"items" : "<empty>",
+									"items" : [ "room3", ",", "newRoom4", ",", "asdf" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -902,13 +902,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 992.0, 835.0 ],
+						"rect" : [ 0.0, 26.0, 1384.0, 835.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -938,6 +938,18 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 1017.0, 475.5, 58.0, 22.0 ],
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-19",
 									"maxclass" : "message",
@@ -1338,8 +1350,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1476.0, 717.0, 251.0, 22.0 ],
-									"text" : "push nickweb maxUserSlider 58"
+									"patching_rect" : [ 1476.0, 717.0, 251.0, 22.0 ]
 								}
 
 							}
@@ -1386,8 +1397,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1376.0, 674.0, 203.0, 22.0 ],
-									"text" : "sprintf push %s maxUserSlider %i"
+									"patching_rect" : [ 1376.0, 674.0, 201.0, 22.0 ],
+									"text" : "sprintf publish %s maxUserSlider %i"
 								}
 
 							}
@@ -1413,7 +1424,7 @@
 									"bgfillcolor_proportion" : 0.5,
 									"bgfillcolor_type" : "color",
 									"id" : "obj-78",
-									"items" : [ "DJ", ",", "DJ" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1430,8 +1441,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1098.0, 717.0, 251.0, 22.0 ],
-									"text" : "push s maxRoomSlider 105"
+									"patching_rect" : [ 1098.0, 717.0, 251.0, 22.0 ]
 								}
 
 							}
@@ -1478,8 +1488,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 998.0, 674.0, 196.0, 22.0 ],
-									"text" : "sprintf push %s maxRoomSlider %i"
+									"patching_rect" : [ 998.0, 674.0, 208.0, 22.0 ],
+									"text" : "sprintf publish %s maxRoomSlider %i"
 								}
 
 							}
@@ -1522,8 +1532,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 998.0, 440.0, 249.0, 22.0 ],
-									"text" : "route availableRoomsUmenu allUsersUmenu"
+									"patching_rect" : [ 998.0, 440.0, 345.0, 22.0 ],
+									"text" : "route myRoomsUmenu allUsersUmenu"
 								}
 
 							}
@@ -1575,7 +1585,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1745,7 +1755,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 10.0,
 													"id" : "obj-9",
-													"items" : "<empty>",
+													"items" : [ "room3", ",", "newRoom4", ",", "asdf" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -2800,6 +2810,16 @@
 								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
 									"midpoints" : [ 1026.5, 542.732832431793213, 1007.5, 542.732832431793213 ],
+									"order" : 1,
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-78", 0 ],
+									"midpoints" : [ 1026.5, 539.75, 1385.5, 539.75 ],
+									"order" : 0,
 									"source" : [ "obj-19", 0 ]
 								}
 
@@ -2814,7 +2834,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-78", 0 ],
-									"midpoints" : [ 1122.5, 469.5, 1385.5, 469.5 ],
+									"midpoints" : [ 1170.5, 469.5, 1385.5, 469.5 ],
 									"source" : [ "obj-20", 1 ]
 								}
 
@@ -2929,6 +2949,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"source" : [ "obj-49", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -3058,13 +3085,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 460.0, 363.0, 116.0, 49.0 ],
-					"text" : "observedControlsUmenu dictionary u766000917"
+					"patching_rect" : [ 460.0, 363.0, 116.0, 22.0 ]
 				}
 
 			}
@@ -3100,8 +3125,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 78.0, 373.0, 238.0, 22.0 ],
-					"text" : "publish all maxEvent1"
+					"patching_rect" : [ 78.0, 373.0, 238.0, 22.0 ]
 				}
 
 			}
@@ -3180,13 +3204,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 992.0, 835.0 ],
+						"rect" : [ 0.0, 26.0, 1384.0, 835.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3216,6 +3240,18 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 1074.0, 376.5, 58.0, 22.0 ],
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"autofit" : 1,
 									"forceaspect" : 1,
@@ -3250,7 +3286,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 998.0, 671.0, 692.0, 21.0 ],
+									"patching_rect" : [ 994.0, 670.0, 692.0, 21.0 ],
 									"text" : "*** When the umenu receives a new list, it does not auto-output an item by default. User selection is needed to output an item."
 								}
 
@@ -3262,7 +3298,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1017.0, 407.5, 35.0, 22.0 ],
+									"patching_rect" : [ 1023.0, 376.5, 35.0, 22.0 ],
 									"text" : "clear"
 								}
 
@@ -3299,7 +3335,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1476.0, 619.0, 251.0, 22.0 ],
-									"text" : "push nickweb maxUserSlider 58"
+									"text" : "push User007 maxUserSlider 46"
 								}
 
 							}
@@ -3373,7 +3409,7 @@
 									"bgfillcolor_proportion" : 0.5,
 									"bgfillcolor_type" : "color",
 									"id" : "obj-78",
-									"items" : [ "DJ", ",", "DJ" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3391,7 +3427,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1098.0, 619.0, 251.0, 22.0 ],
-									"text" : "push nickwebroom maxRoomSlider 87"
+									"text" : "push asdf maxRoomSlider 31"
 								}
 
 							}
@@ -3482,8 +3518,8 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 998.0, 342.0, 249.0, 22.0 ],
-									"text" : "route availableRoomsUmenu allUsersUmenu"
+									"patching_rect" : [ 998.0, 342.0, 345.0, 22.0 ],
+									"text" : "route myRoomsUmenu allUsersUmenu"
 								}
 
 							}
@@ -3535,7 +3571,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3705,7 +3741,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 10.0,
 													"id" : "obj-9",
-													"items" : "<empty>",
+													"items" : [ "room3", ",", "newRoom4", ",", "asdf" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -3747,13 +3783,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-16",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 859.0, 475.0, 50.0, 35.0 ],
-													"text" : "nickwebroom"
+													"patching_rect" : [ 859.0, 475.0, 50.0, 22.0 ],
+													"text" : "dfdgdf"
 												}
 
 											}
@@ -3801,7 +3836,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 645.0, 475.0, 50.0, 22.0 ],
-													"text" : "drum3"
+													"text" : "asdf"
 												}
 
 											}
@@ -4422,7 +4457,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 118.5, 594.5, 298.0, 37.0 ],
-									"text" : "Follows the construct: \n<distribution> <destination> <header>"
+									"text" : "Follows the construct: \n<mode> <destination> <header>"
 								}
 
 							}
@@ -4433,8 +4468,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.5, 652.0, 155.0, 22.0 ],
-									"text" : "push all maxEvent1"
+									"patching_rect" : [ 149.5, 657.0, 155.0, 22.0 ]
 								}
 
 							}
@@ -4485,7 +4519,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 21.0, 174.0, 402.0, 38.0 ],
-									"text" : "Construct of messages from Max to the server: \n<distribution> <destination> <header> [<value>]",
+									"text" : "Construct of messages from Max to the server: \n<mode> <target> <header> [<value>]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -4510,8 +4544,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.5, 411.0, 155.0, 22.0 ],
-									"text" : "push all maxSliderDemo 19"
+									"patching_rect" : [ 149.5, 411.0, 155.0, 22.0 ]
 								}
 
 							}
@@ -4695,6 +4728,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-88", 0 ],
+									"midpoints" : [ 1083.5, 408.5, 1070.0, 408.5, 1070.0, 365.5, 1032.5, 365.5 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
 									"source" : [ "obj-20", 0 ]
 								}
@@ -4703,7 +4744,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-78", 0 ],
-									"midpoints" : [ 1122.5, 371.5, 1385.5, 371.5 ],
+									"midpoints" : [ 1170.5, 371.5, 1385.5, 371.5 ],
 									"source" : [ "obj-20", 1 ]
 								}
 
@@ -4839,7 +4880,17 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
-									"midpoints" : [ 1026.5, 438.75, 1007.5, 438.75 ],
+									"midpoints" : [ 1032.5, 438.75, 1007.5, 438.75 ],
+									"order" : 1,
+									"source" : [ "obj-88", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-78", 0 ],
+									"midpoints" : [ 1032.5, 436.75, 1385.5, 436.75 ],
+									"order" : 0,
 									"source" : [ "obj-88", 0 ]
 								}
 
@@ -4920,10 +4971,24 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "CH-Client.maxpat",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientInstanceManager.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -4934,14 +4999,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Rooms-Title.png",
+				"name" : "CH-Controls-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
@@ -4955,7 +5013,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Controls-Title.png",
+				"name" : "CH-Events-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
@@ -4969,7 +5027,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Events-Title.png",
+				"name" : "CH-Rooms-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
