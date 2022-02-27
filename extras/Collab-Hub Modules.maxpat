@@ -116,7 +116,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 46.0, 433.0, 337.0, 84.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 17.5, 350.0, 337.0, 65.0 ],
+									"presentation_rect" : [ 17.5, 350.0, 337.0, 70.690677966101703 ],
 									"text" : "Open Getting Started Tutorials",
 									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ],
 									"truncate" : 0
@@ -269,7 +269,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 46.0, 587.0, 337.0, 84.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 17.5, 432.0, 337.0, 65.0 ],
+									"presentation_rect" : [ 17.5, 434.0, 337.0, 65.0 ],
 									"text" : "Visit http://collab-hub.io",
 									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ]
 								}
