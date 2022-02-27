@@ -87,7 +87,6 @@
 
 <h2>Formatting Data Messages</h2>
 <p>Data messages must be formatted in a specific way and then sent to to server. Formatting messages within Max is slightly different than other Collab-Hub client environments -- you do not have to have to use <b>event</b> or <b>control</b> keywords at the start of the messages. See below for details.</p>
-<p>For the Max Environment, the CH-Client can receive data messages into its first inlet.</p>
 
 <p>The following is format and example of a <b>event</b> message: [mode] [target] [header]
 </p>
