@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 123.0, 162.0, 1378.0, 728.0 ],
+		"rect" : [ 34.0, 70.0, 1575.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,128 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-74",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 981.0, 1109.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-73",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 912.0, 1109.0, 50.0, 49.0 ],
+					"text" : "sender User009"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1053.0, 694.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-166",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1554.0, 730.0, 50.0, 62.0 ],
+					"text" : "symbol \"User000: oh yeah\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-164",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1451.799999999999955, 620.5, 39.0, 22.0 ],
+					"text" : "dump"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-163",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1494.0, 763.0, 48.0, 22.0 ],
+					"text" : "chat $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-162",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 902.0, 728.0, 48.0, 22.0 ],
+					"text" : "chat $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-161",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1081.0, 763.0, 151.0, 22.0 ],
+					"text" : "value \"nic: you don't know\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-149",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1053.0, 728.0, 140.0, 22.0 ],
+					"text" : "readfile CH-Chat-UI.html"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-146",
+					"maxclass" : "jweb",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 902.0, 830.0, 702.0, 255.0 ],
+					"rendermode" : 0,
+					"url" : "file://CH-Chat-UI.html"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "newobj",
@@ -634,7 +756,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 217.0, 4.0, 79.0, 18.0 ],
 					"style" : "velvet",
-					"text" : "Connect",
+					"text" : "Disconnect",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "Disconnect",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -749,7 +871,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -1498,7 +1619,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1432.0, 551.5, 35.0, 22.0 ],
+					"patching_rect" : [ 1497.799999999999955, 620.5, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -1748,7 +1869,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1479.0, 551.5, 65.0, 22.0 ],
+					"patching_rect" : [ 1544.799999999999955, 620.5, 65.0, 22.0 ],
 					"text" : "insert 0 $1"
 				}
 
@@ -1760,7 +1881,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1479.0, 602.5, 68.0, 22.0 ],
+					"patching_rect" : [ 1544.799999999999955, 671.5, 68.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
@@ -1775,7 +1896,7 @@
 					"bblend" : 100,
 					"bgcolor" : [ 0.184312760829926, 0.184312760829926, 0.184312760829926, 1.0 ],
 					"coldef" : [ [ 0, 14, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"cols" : 1,
+					"cols" : 2,
 					"colwidth" : 200,
 					"fblend" : 100,
 					"fgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -1794,7 +1915,7 @@
 					"precision" : 4,
 					"rowhead" : 1,
 					"rowheight" : 21,
-					"rows" : 1,
+					"rows" : 12,
 					"savemode" : 1,
 					"sccolor" : [ 0.329411764705882, 0.329411764705882, 0.329411764705882, 1.0 ],
 					"selsync" : 0,
@@ -1879,7 +2000,6 @@
 					"annotation" : "",
 					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"fontname" : "Arial",
-					"hidden" : 1,
 					"hint" : "Click to Change Username",
 					"id" : "obj-63",
 					"maxclass" : "textbutton",
@@ -1892,7 +2012,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 163.5, 26.0, 154.5, 18.0 ],
 					"style" : "velvet",
-					"text" : "Username: User010",
+					"text" : "Username: User012",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -2578,7 +2698,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 777.0, 895.0, 94.0, 22.0 ],
+					"patching_rect" : [ 777.0, 830.0, 94.0, 22.0 ],
 					"text" : "prepend chat all"
 				}
 
@@ -2590,7 +2710,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 777.0, 815.0, 57.0, 22.0 ],
+					"patching_rect" : [ 777.0, 797.0, 57.0, 22.0 ],
 					"style" : "velvet",
 					"text" : "tosymbol"
 				}
@@ -3009,7 +3129,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 91.0, 119.0, 50.0, 22.0 ],
-					"text" : "499"
+					"text" : "481"
 				}
 
 			}
@@ -3235,6 +3355,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-118", 0 ],
+					"order" : 0,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-162", 0 ],
+					"order" : 1,
 					"source" : [ "obj-117", 0 ]
 				}
 
@@ -3389,6 +3518,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-73", 1 ],
+					"order" : 1,
+					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"order" : 0,
+					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-76", 1 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -3440,6 +3592,34 @@
 				"patchline" : 				{
 					"destination" : [ "obj-195", 0 ],
 					"source" : [ "obj-160", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"source" : [ "obj-161", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"source" : [ "obj-162", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"source" : [ "obj-163", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-164", 0 ]
 				}
 
 			}
@@ -3598,6 +3778,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-163", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-166", 1 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"midpoints" : [ 786.5, 972.875, 264.0, 972.875 ],
 					"source" : [ "obj-31", 0 ]
@@ -3667,6 +3863,13 @@
 					"destination" : [ "obj-17", 0 ],
 					"midpoints" : [ 775.5, 795.0, 757.0, 795.0, 757.0, 605.0, 775.5, 605.0 ],
 					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}

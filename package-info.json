@@ -1,7 +1,7 @@
 {
 	"name": "Collab-Hub",
 	"displayname": "Collab-Hub Max Client",
-	"version": "0.3.2",
+	"version": "0.3.3",
 	"author": "Nick Hwang, Eric Sheffield, and Anthony T. Marasco",
 	"authors": [
 		"Nick Hwang",
@@ -43,7 +43,7 @@
 	"homepatcher": "Collab-Hub Modules.maxpat",
 	"package_extra": {
 		"reverse_domain": "io.collab-hub",
-		"copyright": "Copyright © 2020-2021, Nick Hwang. All rights reserved."
+		"copyright": "Copyright © 2020-2022, Nick Hwang. All rights reserved."
 	},
 	"filelist": {
 		"externals": [],
@@ -84,7 +84,9 @@
 			"tutorials/ch-tut/00-ch-index.maxtut.xml"
 		],
 		"javascript": [
-			"CH-ClientScript.js"
+			"CH-ClientScript.js", 
+			"CH-ClientInstanceManager.js",
+			"CH-Chat-JS.js"
 		],
 		"extras": [
 			"Collab-Hub Modules.maxpat"
@@ -96,11 +98,12 @@
 			"CH-Push-Publish-Rooms.maxpat",
 			"CH-Sequence-Trader/CH-Sequencer-Trader.maxpat",
 			"Mapping-Strategies.maxpat"
-
-
 		],
 		"templates": [
 			"collab-hub-template.maxpat"
+		], 
+		"clippings": [
+			"to_from_Server.maxpat"
 		]
 	},
 	"c74install": 1,

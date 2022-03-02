@@ -1,4 +1,4 @@
-# Collab-Hub Max Client 0.3.2
+# Collab-Hub Max Client 0.3.3
 
 <br/>
 
@@ -27,7 +27,7 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 3. Move this entire folder into your **~/Documents/Max 8/Packages folder**. IF you are using Git to clone this repo, you can create an 'alias' and place that alias folder in the Max Packages folder.
 4. Start using Collab-Hub by opening *Collab-Hub Modules.maxpat* from **Extras > Collab-Hub Modules** from the top menu bar.
 
-``` If you have a previous version of this repository within Max's file structure / file preferences, Max might accidentally open the incorrect / older version of a module. Please remove references to older Collab-Hub Client, as these will be the most up-to-date and stable. ```
+   ``` If you have a previous version of this repository within Max's file structure / file preferences, Max might accidentally open the incorrect / older version of a module. Please remove references to older Collab-Hub Client, as these will be the most up-to-date and stable. ```
 
 
 DEMO VIDEO COMING SOON
@@ -68,7 +68,7 @@ The **CH-Chat** module provides extended chat functionality. Incoming chat messa
 - **user:** Chat messages are sent to one specific user (dropdown menu with usernames is provided below the text box).
 - **room:** Chat messages are sent to users in a room (dropdown menu with room names is provided below the text box).
 
-<img src="./media/img/for-readme/Chat-Cap.jpeg" alt="CH-Chat module" height="169"/>
+<img src="./media/img/for-readme/Chat-Cap.png" alt="CH-Chat module" height="169"/>
 
 <br/>
 
@@ -271,6 +271,18 @@ Users can initialize some settings at the time of connection by changing entries
 
 ---
 ## Changelog
+- #0.3.3
+  - Added more Max Package files
+    - Add Max Topic Vignettes
+    - Max Tutorials (Getting Started)
+    - Max Clippings
+  - Updated CH-Client Module
+    - Only one connection to server is allowed; a warning dialog popup will let user decide what to do
+    - Client's username shows on the module
+  - Updated the Chat-Module
+    - Still can send messages to all, users, and rooms
+    - Chat all arrive in Chat module Window
+
 - #0.3.2
   - Implemented Max Package structure including
     - Max Help XMLs

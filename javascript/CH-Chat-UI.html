@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+        --gray-1: #373737;
+        --gray-2: #606060;
+        --text-white: #dedede;
+      }
+
+      html,
+      body {
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        background-color: #333333;
+        overflow-y: scroll; 
+        display: block;
+      }
+      ul {
+        list-style-type: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        background-color: #333333;
+      }
+      li {
+        line-height: 1.8em;
+        color: var(--text-white);
+        list-style-type: none;
+        padding-left: 12px;
+        padding-right: 20px;
+      }
+
+      li:nth-child(even) {
+        background: var(--gray-1);
+      }
+      li:nth-child(odd) {
+        background: var(--gray-2);
+      }
+
+      .sender {
+        font-weight: bolder;
+      }
+
+      .chat {
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chat-main">
+      <ul>
+        <!-- <li>hello?</li>
+        <li>
+          { "boxes" : [ { "box" : { "maxclass" : "newobj", "text" : "s
+          dim_command", "numoutlets" : 0, "id" : "obj-41", "fontsize" : 13.0,
+          "patching_rect" : [ 392.0, 410.0, 107.0, 23.0 ], "fontname" : "Arial",
+          "numinlets" : 1 } } , { "box" : { "maxclass" : "newobj", "text" : "-
+          1", "numoutlets" : 1, "id" : "obj-43", "outlettype" : [ "int" ],
+          "fontsize" : 13.0, "patching_rect" : [ 506.0, 353.5, 30.0, 23.0 ],
+          "fontname" : "Arial", "numinlets" : 2 } } , { "box" : { "maxclass" :
+          "umenu", "fontface" : 0, "numoutlets" : 3, "parameter_enable" : 0,
+          "id" : "obj-47", "outlettype" : [ "int", "", "" ], "fontsize" : 13.0,
+          "patching_rect" : [ 506.0, 327.5, 80.0, 23.0 ], "labelclick" : 1,
+          "fontname" : "Arial", "numinlets" : 1, "items" : [ "default", ",",
+          "left", ",", "center", ",", "right" ] } } , { "box" : { "maxclass" :
+          "number", "numoutlets" : 2, "parameter_enable" : 0, "id" : "obj-48",
+          "outlettype" : [ "", "bang" ], "fontsize" : 13.0, "patching_rect" : [
+          444.0, 327.5, 37.0, 23.0 ], "triscale" : 0.9, "fontname" : "Arial",
+          "minimum" : 0, "maximum" : 4, "numinlets" : 1 } } , { "box" : {
+          "maxclass" : "umenu", "fontface" : 0, "numoutlets" : 3,
+          "parameter_enable" : 0, "id" : "obj-49", "outlettype" : [ "int", "",
+          "" ], "fontsize" : 13.0, "patching_rect" : [ 372.0, 327.5, 59.0, 23.0
+          ], "labelclick" : 1, "fontname" : "Arial", "numinlets" : 1, "items" :
+          [ "col", ",", "row" ] } } , { "box" : { "maxclass" : "newobj", "text"
+          : "pak col 0 just 0", "numoutlets" : 1, "id" : "obj-50", "outlettype"
+          : [ "" ], "fontsize" : 13.0, "patching_rect" : [ 392.0, 382.0, 133.0,
+          23.0 ], "fontname" : "Arial", "numinlets" : 4 } } ], "lines" : [ {
+          "patchline" : { "source" : [ "obj-50", 0 ], "destination" : [
+          "obj-41", 0 ] } } , { "patchline" : { "source" : [ "obj-49", 1 ],
+          "destination" : [ "obj-50", 0 ] } } , { "patchline" : { "source" : [
+          "obj-48", 0 ], "destination" : [ "obj-50", 1 ] } } , { "patchline" : {
+          "source" : [ "obj-47", 0 ], "destination" : [ "obj-43", 0 ] } } , {
+          "patchline" : { "source" : [ "obj-43", 0 ], "destination" : [
+          "obj-50", 3 ] } } ], "appversion" : { "major" : 8, "minor" : 2,
+          "revision" : 2, "architecture" : "x64", "modernui" : 1 } ,
+          "classnamespace" : "box" } Trigger an event
+        </li> -->
+      </ul>
+    </div>
+
+    <script src="./CH-Chat-JS.js" async defer></script>
+    <script>
+      (function () {
+        // max.outlet("yes", "yes");
+      })();
+    </script>
+  </body>
+</html>
