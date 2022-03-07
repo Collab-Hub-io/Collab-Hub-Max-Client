@@ -24,6 +24,7 @@ Other clients for Collab-Hub can be found at <a href="https://www.collab-hub.io"
 
 <techdetail><p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p></techdetail>
 
+<techdetail><p>Further Questions? Feel free to email us at info@collab-hub.io. Or visit our Discord at <a href="https://discord.com/invite/NANZf5RuRV">https://discord.com/invite/NANZf5RuRV</a>.</p></techdetail>
 
 <h2>Topics</h2>
 <ul>

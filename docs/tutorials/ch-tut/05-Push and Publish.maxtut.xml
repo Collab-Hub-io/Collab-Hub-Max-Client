@@ -7,7 +7,7 @@
 
 
   <previous name="04-Rooms">Receiving Data</previous>
-  <!-- <next name="04-Rooms">Rooms</next> -->
+
   <parent name="00-ch-index">Collab-Hub Tutorials</parent>
   <indexinfo category="Basics" title="Hello">Push and Publish Modes</indexinfo>
 
@@ -83,5 +83,8 @@ See the users in each room.</illustration>
 
 <h2>More Info</h2>
 <p>Please look at the Rooms tab in our <openfilelink filename="CH-Push-Publish-Rooms.maxpat">Concepts: Push, Publish, Rooms</openfilelink> patcher for more information.</p>
+
+<techdetail><p>Further Questions? Feel free to email us at info@collab-hub.io. Or visit our Discord at <a href="https://discord.com/invite/NANZf5RuRV">https://discord.com/invite/NANZf5RuRV</a>.</p></techdetail>
+
 
 </chapter>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="_c74_vig.xsl" type="text/xsl"?>
-<vignette name="Collab-Hub Overview" package="Collab-Hub" module="Collab-Hub" >
+<vignette name="Collab-Hub Overview" package="Collab-Hub" module="Collab-Hub">
   <metadatalist>
     <metadata name="author">Nick Hwang</metadata>
     <metadata name="tag">Collab-Hub</metadata>
@@ -17,39 +17,68 @@ Web, JS libraries, and more.
     Other clients for Collab-Hub can be found at <a href="http://www.collab-hub.io">http://www.collab-hub.io</a>.
   </p>
 
-	<h2>Collab-Hub Max Modules</h2>
+  <h2>Collab-Hub Max Modules</h2>
   <ul>
-    <li><openfilelink filename="CH-Client.maxhelp">CH-Client</openfilelink> - Connect to the Collab-Hub Server.</li>
-    <li><openfilelink filename="CH-Chat.maxhelp">CH-Chat</openfilelink> - Chat with other users.</li>
-    <li><openfilelink filename="CH-Events.maxhelp">CH-Events</openfilelink> - Observe Event data.</li>
-    <li><openfilelink filename="CH-Controls.maxhelp">CH-Controls</openfilelink> - Observe Control data.</li>
-    <li><openfilelink filename="CH-Rooms.maxhelp">CH-Rooms</openfilelink> - Create, Join, and Leave Rooms on the server.</li>
-    <li><openfilelink filename="CH-ClientTesting.maxhelp">CH-ClientTesting</openfilelink> - Connect to the Collab-Hub Server.</li>
+    <li>
+      <openfilelink filename="CH-Client.maxhelp">CH-Client</openfilelink> - Connect to the Collab-Hub Server.</li>
+    <li>
+      <openfilelink filename="CH-Chat.maxhelp">CH-Chat</openfilelink> - Chat with other users.</li>
+    <li>
+      <openfilelink filename="CH-Events.maxhelp">CH-Events</openfilelink> - Observe Event data.</li>
+    <li>
+      <openfilelink filename="CH-Controls.maxhelp">CH-Controls</openfilelink> - Observe Control data.</li>
+    <li>
+      <openfilelink filename="CH-Rooms.maxhelp">CH-Rooms</openfilelink> - Create, Join, and Leave Rooms on the server.</li>
+    <li>
+      <openfilelink filename="CH-ClientTesting.maxhelp">CH-ClientTesting</openfilelink> - Connect to the Collab-Hub Server.</li>
   </ul>
-  
+
   <h2>Web Interface</h2>
   <ul>
-  <li><a>http://CH-Server.heroku.com</a> - Collab-Hub Web Interface</li>
+    <li>
+      <a>http://CH-Server.heroku.com</a> - Collab-Hub Web Interface</li>
+  </ul>
+
+  <h2>Tutorials</h2>
+  <ul>
+      <li>
+      <link type="tutorial" module="max" name="00-ch-index">Tutorial Index</link>: Collab-Hub: Getting Started</li>
+    <li>
+      <link type="tutorial" module="max" name="01-Getting Connected">Tutorial 01</link>: Getting Connected</li>
+    <li>
+      <link type="tutorial" module="max" name="02-Sending Data">Tutorial 02</link>: Sending Data</li>
+    <li>
+      <link type="tutorial" module="max" name="03-Receiving Data">Tutorial 03</link>: Receiving Data</li>
+    <li>
+      <link type="tutorial" module="max" name="04-Rooms">Tutorial 04</link>: Rooms</li>
+    <li>
+      <link type="tutorial" module="max" name="05-Push and Publish">Tutorial 04</link>: Push and Publish</li>
   </ul>
 
   <h2>Concepts</h2>
   <cr/>
   <ul>
-    <li><openfilelink filename="CH-Push-Publish-Rooms.maxpat">Concepts: Push, Publish, Rooms</openfilelink> 			- Understand Push, Publish, and Rooms</li>
-    <li><openfilelink filename="CH-Controls-and-Events.maxpat">Concepts: Controls and Events</openfilelink>       - Understand Controls and Events</li>
+    <li>
+      <openfilelink filename="CH-Push-Publish-Rooms.maxpat">Concepts: Push, Publish, Rooms</openfilelink> 			- Understand Push, Publish, and Rooms</li>
+    <li>
+      <openfilelink filename="CH-Controls-and-Events.maxpat">Concepts: Controls and Events</openfilelink>       - Understand Controls and Events</li>
   </ul>
   <cr/>
-		
-	
+
+
   <h2>Example Patches</h2>
   <cr/>
   <ul>
-    <li><openfilelink filename="CH-Simple-Routing.maxpat">Simple Routing</openfilelink> 			  - Understand Push, Publish, and Rooms</li>
-    <li><openfilelink filename="CH-Drum-Demo.maxpat">Cross Platform Drums</openfilelink>        - Trigger drum synths (in Max and Web)</li>
-    <li><openfilelink filename="CH-Sequencer-Trader.maxpat">Sequencer Trader</openfilelink> 	  - Collaboratively create a drum sequence</li>
-    <li><openfilelink filename="Mapping-Strategies.maxpat">Mapping Mapping-Strategies.maxpat</openfilelink> 	- Examples in creative mapping.</li>
+    <li>
+      <openfilelink filename="CH-Simple-Routing.maxpat">Simple Routing</openfilelink> 			  - Understand Push, Publish, and Rooms</li>
+    <li>
+      <openfilelink filename="CH-Drum-Demo.maxpat">Cross Platform Drums</openfilelink>        - Trigger drum synths (in Max and Web)</li>
+    <li>
+      <openfilelink filename="CH-Sequencer-Trader.maxpat">Sequencer Trader</openfilelink> 	  - Collaboratively create a drum sequence</li>
+    <li>
+      <openfilelink filename="Mapping-Strategies.maxpat">Mapping Mapping-Strategies.maxpat</openfilelink> 	- Examples in creative mapping.</li>
   </ul>
   <cr/>
-		
-	
+
+
 </vignette>
