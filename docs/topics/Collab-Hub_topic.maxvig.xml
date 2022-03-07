@@ -70,7 +70,7 @@ Web, JS libraries, and more.
   <cr/>
   <ul>
     <li>
-      <openfilelink filename="CH-Simple-Routing.maxpat">Simple Routing</openfilelink> 			  - Understand Push, Publish, and Rooms</li>
+      <openfilelink filename="CH-Simple-Routing.maxpat">Simple Routing</openfilelink> 			  - Example patch for routing</li>
     <li>
       <openfilelink filename="CH-Drum-Demo.maxpat">Cross Platform Drums</openfilelink>        - Trigger drum synths (in Max and Web)</li>
     <li>

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1468.0, 864.0 ],
+		"rect" : [ 34.0, 62.0, 1136.0, 795.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -60,7 +60,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1136.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -508,7 +508,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
+						"rect" : [ 34.0, 88.0, 1136.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -538,6 +538,59 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 210.0, 929.0, 54.0, 22.0 ],
+									"text" : "onecopy"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"handoff" : "",
+									"id" : "obj-18",
+									"maxclass" : "ubutton",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 847.0, 739.0, 373.0, 121.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 874.0, 16.5, 219.0, 71.606382978723403 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 847.0, 882.0, 217.0, 22.0 ],
+									"text" : "https://www.patreon.com/collab_hub_io"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autofit" : 1,
+									"id" : "obj-11",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 852.0, 739.0, 364.0, 114.0 ],
+									"pic" : "become-a-patron-button.png",
+									"presentation" : 1,
+									"presentation_rect" : [ 874.0, 16.5, 219.0, 70.106382978723403 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontface" : 0,
 									"fontsize" : 12.0,
@@ -576,14 +629,14 @@
 									"fontname" : "Lato",
 									"fontsize" : 28.0,
 									"id" : "obj-5",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 700.0, 70.0, 284.0, 74.0 ],
+									"patching_rect" : [ 700.0, 70.0, 284.0, 107.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 17.5, 696.0, 512.0, 40.0 ],
-									"text" : "Authors: Nick Hwang, Eric Sheffield"
+									"presentation_rect" : [ 17.5, 696.0, 715.0, 40.0 ],
+									"text" : "Authors: Nick Hwang, Eric Sheffield, Anthony T. Marasco"
 								}
 
 							}
@@ -832,6 +885,21 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"midpoints" : [ 856.5, 909.5, 55.5, 909.5 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
 									"source" : [ "obj-2", 0 ]
 								}
@@ -992,7 +1060,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1468.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1136.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2096,7 +2164,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 1468.0, 838.0 ],
+						"rect" : [ 0.0, 26.0, 1136.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2719,6 +2787,13 @@
 			}
 , 			{
 				"name" : "CH-Title.png",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"patcherrelativepath" : "../media/img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "become-a-patron-button.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
 				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
