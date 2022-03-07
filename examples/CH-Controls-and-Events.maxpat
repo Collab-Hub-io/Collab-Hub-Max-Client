@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 51.0, 79.0, 1470.0, 813.0 ],
+		"rect" : [ 378.0, 72.0, 1470.0, 813.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -341,13 +341,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1470.0, 787.0 ],
+						"rect" : [ 378.0, 98.0, 1470.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -536,7 +536,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 11.0, 91.0, 373.0, 35.0 ],
-									"text" : "Construct of Event messages from Max to the server: \n<distribution> <destination> <header> ",
+									"text" : "Construct of Event messages from Max to the server: \n<mode> <target> <header> ",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -655,7 +655,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1182,7 +1182,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2326,7 +2326,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2648,20 +2648,6 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-Client-Title.png",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
@@ -2669,7 +2655,21 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "CH-Client.maxpat",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "CH-ClientInstanceManager.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientScript.js",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_tut.xsl" type="text/xsl"?>
+
+<chapter name="05: Push and Publish Modes">
+  <setdocpatch name="CH-Push-Publish-Rooms" patch="CH-Push-Publish-Rooms.maxpat"/>
+
+
+  <previous name="04-Rooms">Receiving Data</previous>
+  <!-- <next name="04-Rooms">Rooms</next> -->
+  <parent name="00-ch-index">Collab-Hub Tutorials</parent>
+  <indexinfo category="Basics" title="Hello">Push and Publish Modes</indexinfo>
+
+  <metadatalist>
+    <metadata name="author">Nick Hwang</metadata>
+    <metadata name="tag">Collab-Hub</metadata>
+  </metadatalist>
+
+
+  <h1>Push and Publish Modes</h1>
+
+  <h2>Push vs Publish</h2>
+  <techdetail>
+    <p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p>
+  </techdetail>
+
+  <p>Push and Publish modes are the two ways to send your data messages with Collab-Hub. <ol><b>Push</b> sends the data message to the <b>target</b> (a user, a room, or all). The target user does not need to extra actions other than 'route' for those incoming messages.</ol> 
+
+  <p>To send data with <b>Push</b>, use keycode <b>push</b> at the start of your data message:</p>
+  <code>
+      push [target] [header] (value) (value) (value) ...
+    </code>
+
+      <illustration>
+    <img src="images/05-Push Max Example.png" width="70%"/>Example of Push message formatting, see tutorial patch for a working version.</illustration>
+
+
+  <ol><b>Publish</b> mode alerts their targets (users or rooms) that the message is available to be observed. Think about this as a <i>publish-subscribe model</i>. The sender <i>publishes</i> their data, and other users can observe it. User who observes a message will receive the new value updates. The user who is observing has to take the action of observing, and the incoming observed messages with arrive in the exact same as a 'push' message.</ol></p>
+
+    <p>To send data with <b>Publish</b>, use keycode <b>publish</b> at the start of your data message:</p>
+  <code>
+      publish [target] [header] (value) (value) (value) ...
+    </code>
+
+          <illustration>
+    <img src="images/05-Publish Max Example.png" width="70%"/>Example of Publish message formatting, see tutorial patch for a working version.</illustration>
+
+<h2>The CH-Controls and CH-Events modules are for Publish Mode</h2>
+
+<p>The <o>CH-Controls</o> and <o>CH-Events</o> modules behavior the same way. They show published controls or events, the controls or events that you are observing, and your controls or events that you are publishing. Use the <o>Umenu</o> at the bottom of each list to perform the actions of 'observe', 'stop observing', or 'clearing' your own published controls.</p>
+
+  <illustration>
+    <img src="images/05-CH-Controls module.png" width="70%"/>
+Observe controls and see your list of published controls in the <o>CH-Controls</o> module.</illustration>
+
+  <illustration>
+    <img src="images/05-CH-Events module.png" width="70%"/>
+Observe controls and see your list of published controls in the <o>CH-Controls</o> module.</illustration>
+
+  <techdetail>
+    <h2>Details Option in the Modules</h2>
+    <p>The <m>Details</m> button on each module will display the sender and the other observing users of each message.</p>
+  </techdetail>
+
+  <illustration>
+    <img src="images/05-CH-Controls details.png" width="70%"/>
+See the users in each room.</illustration>
+
+  <illustration>
+    <img src="images/05-CH-Events details.png" width="70%"/>
+See the users in each room.</illustration>
+
+<techdetail><h2>Complexity with Publish and Room Routing</h2>
+<p>When using Publish mode in combination with a specific target, for example <b>publish room123 controlSlider [value]'</b>, only the users in 'room123' will see the message available to observe. This is more complicated than using <b>push</b> mode with target 'all', but allows for more complex routing and constrained/scoped access to data if you so choose.</p></techdetail>
+
+
+<h2>Try Observing Data</h2>
+<p>From the Max try to Publish a control message and event message. They should appear in the Web Interface in the rows "Published Event" and "Published Controls". From the web interface, you should be able "Observe" those messages and receive those messages at the top of the page.</p>
+
+<p>Try to publish a control and event from the Web Interface. At the time of writing this tutorial, webSlider1 and webEvent1 are publish mode and target of all, so you if you trigger those messages, they should appear with in the Max CH-Controls and CH-Events modules, where you can 'observe'. After you've selected to observe, set up your route to receive those messages. </p>
+
+<p>Also, from added complexity, the Web Interfaces's webSlider2 and webEvent2 are publish mode and target of room 123, so you if you trigger those messages, they should appear with in the Max CH-Controls and CH-Events modules, where you can 'observe' if you are in room '123'. After you've selected to observe, set up your route to receive those messages. </p>
+
+<h2>More Info</h2>
+<p>Please look at the Rooms tab in our <openfilelink filename="CH-Push-Publish-Rooms.maxpat">Concepts: Push, Publish, Rooms</openfilelink> patcher for more information.</p>
+
+</chapter>

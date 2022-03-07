@@ -3,6 +3,7 @@
 <?xml-stylesheet href="./_c74_tut.xsl" type="text/xsl"?>
 
 <chapter name="Collab-Hub Tutorials: Getting Started">
+<next name="01-Getting Connected">Getting Connected</next>
 
 <h1>Collab-Hub: Getting Started</h1>
 
@@ -19,16 +20,18 @@ Other clients for Collab-Hub can be found at <a href="https://www.collab-hub.io"
 <li>sending and receiving data</li>
 <li>observing data</li>
 <li>creating and managing rooms</li>
-<li>interfacing with other environments</li>
 </ul>
 
 <techdetail><p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p></techdetail>
 
 
-<h1>Topics</h1>
+<h2>Topics</h2>
 <ul>
 <li><link type="tutorial" module="max" name="01-Getting Connected">Tutorial 01</link>: Getting Connected</li>
-<li><link type="tutorial" module="max" name="02-Sending and Receiving Data">Tutorial 02</link>: Sending and Receiving Data</li>
+<li><link type="tutorial" module="max" name="02-Sending Data">Tutorial 02</link>: Sending Data</li>
+<li><link type="tutorial" module="max" name="03-Receiving Data">Tutorial 03</link>: Receiving Data</li>
+<li><link type="tutorial" module="max" name="04-Rooms">Tutorial 04</link>: Rooms</li>
+<li><link type="tutorial" module="max" name="05-Push and Publish">Tutorial 04</link>: Push and Publish</li>
 
 </ul>
 </chapter>

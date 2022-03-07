@@ -1,21 +1,24 @@
 // --------------------------------------------------------------------------
 // This is the javascript required for interactive data retrieval from
 // the Max-based Collab-Hub (client).
-// Authors: Nick Hwang, Anthony T Marasco, Eric Sheffield
+// Authors: Nick Hwang, Eric Sheffield
 // Contact: nickthwang@gmail.com
-// Edited: 12/23/2021
+// Edited: 03/02/2022 by Nick Hwang
 // --------------------------------------------------------------------------
 
 const max = require("max-api"),
   io = require("socket.io-client"),
   config = require("./config.json"),
   namespace = config.namespace || "hub",
+  server = config.server || "https://ch-server.herokuapp.com",
   username = config.username,
   socket = (() => {
-    if (username != undefined)
-      return io.connect(`https://ch-server.herokuapp.com/${namespace}`, {
+    if (username != undefined) {
+      // maxoutlet("serveradd", `${server}/${namespace}`);
+      return io.connect(`${server}/${namespace}`, {
         query: { username: username },
       });
+    }
     // return io.connect(`http://localhost:3000/${namespace}`, {query: {username: username} } );
     // return io.connect(`http://localhost:8123/`, {query: {username: username} } );
     else return io.connect(`https://ch-server.herokuapp.com/${namespace}`);

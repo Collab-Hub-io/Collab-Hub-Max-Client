@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_tut.xsl" type="text/xsl"?>
+
+<chapter name="04: Rooms">
+  <setdocpatch name="CH-Rooms" patch="CH-Rooms.maxhelp"/>
+
+
+  <previous name="03-Receiving Data">Receiving Data</previous>
+  <next name="05-Push and Publish">Push and Publish</next>
+  <parent name="00-ch-index">Collab-Hub Tutorials</parent>
+  <indexinfo category="Basics" title="Hello">Rooms</indexinfo>
+
+  <metadatalist>
+    <metadata name="author">Nick Hwang</metadata>
+    <metadata name="tag">Collab-Hub</metadata>
+  </metadatalist>
+
+
+  <h1>Rooms</h1>
+
+  <h2>Rooms for Routing</h2>
+  <techdetail>
+    <p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p>
+  </techdetail>
+
+  <p>Rooms are feature of Collab-Hub that allows for users to route messages to users with them. You can send messages to users within in rooms whether you are also in the room or not. Through our Max Package, you are able to create, join, and leave rooms.</p>
+  <p>All messagetypes (Control, Event, and Chat) can be routed to rooms.</p>
+  <p>When you create a room, you are automatically joined to the room. If you are last to leave the room, the room is deleted.</p>
+
+  <illustration>
+    <img src="images/04-Rooms.png" width="70%"/>
+Create, Join, and Leave rooms with the <o>CH-Rooms</o> module.</illustration>
+
+  <techdetail>
+    <h2>Details on Rooms</h2>
+    <p>You can see the others users within in a room by clicking on the the <m>Details</m> button in the CH-Rooms module</p>
+  </techdetail>
+
+  <illustration>
+    <img src="images/04-Rooms_Details.png" width="70%"/>
+See the users in each room.</illustration>
+
+  <h2>Sending data to Rooms</h2>
+  <p>Previously, we were setting the 'target' component of our messages to 'all'. If you are using rooms with collaborators, you can send messages by naming the room as the second item in the message list: <br/>
+  <code>[mode] [roomname] [header] [values]</code>
+</p>
+
+<h2>Try Sending Data to a Room</h2>
+<p>Try creating a room and joining from the CH-Room module. Then send a message to the room from the Web Interface:<cr />
+
+At the time of writing this tutorial, webSlider4 and webEvent4 send to the room '123'. In Max, you can create and join a room '123', and you should be able to send webSlider4 and webEvent4 messages to Max -- make sure to set up your route object for those particular headers.</p>
+<p>The web interface will push the message to the room. If you're in that room, you'll receive that message.</p>
+
+<p>You can also try sending to a room from the Max module. In the Max module, you can send messages to the room by setting the target to the roomname.</p>
+
+<h2>More Info</h2>
+<p>Please look at the Rooms tab in our <openfilelink filename="CH-Push-Publish-Rooms.maxpat">Concepts: Push, Publish, Rooms</openfilelink> patcher for more information on Rooms.</p>
+<p>We have included a 'clipping' of how you might use a <o>Umenu</o> to populate room options. This could be useful if you want to dynamically send messages to users in different rooms.</p>
+
+
+</chapter>

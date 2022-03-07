@@ -2,12 +2,12 @@
 
 <?xml-stylesheet href="./_c74_tut.xsl" type="text/xsl"?>
 
-<chapter name="02: Sending and Receiving Data">
-  <setdocpatch name="02-Sending and Receiving Data" patch="02-Sending and Receiving Data.maxpat"/>
+<chapter name="02: Sending Data">
+  <setdocpatch name="02-Sending Data" patch="02-Sending Data.maxpat"/>
 
 
 <previous name="01-Getting Connected">Getting Connected</previous>
-
+<next name="03-Receiving Data">Receiving Data</next>
   <parent name="00-ch-index">Collab-Hub Tutorials</parent>
   <indexinfo category="Basics" title="Hello">Creating objects and connections</indexinfo>
 
@@ -110,7 +110,7 @@
 
 <illustration><img src="images/02_to_and_from_Server.png" width="50%"/>The send and receive objects with 'fromServer' and 'toServer' can be useful in complex patches.</illustration>
 
-<techdetail><p>If you have the Max Paackage installed, the pair of send and receives are included as snippets: from <i>Edit Mode</i>, ctrl + click anywhere, and select 'From Snippets' > Collab-Hub Modules > to_from_Server.maxpat.</p></techdetail>
+<techdetail><p>If you have the Max Paackage installed, the pair of send and receives are included as a 'clipping': from <i>Edit Mode</i>, ctrl + click anywhere, and select 'Paste From' > Collab-Hub Modules > to_from_Server.maxpat.</p></techdetail>
 
 <h2>Try Sending Data to the Server</h2>
 <p>From the tutorial patch, try sending values to the server. Click on the event <m>message boxes</m>, changing the <m>number box</m> value, and moving the XY <o>pictslider</o>. All the values should be sent to the server, and you should be able to see the those messages on the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a>. </p>
@@ -124,14 +124,7 @@
 <techdetail><p>From the Max patch, try changing the target of a data message to the username on your Web Interface -- do not wrap usernames with quotation marks. You should see that the data is sent to the user on the Web Interface. </p></techdetail>
 
 
-<h1>Receiving Data</h1>
+<summary><h2>Summary</h2>There are two main data messages types: event and control. Depending on the data message type, you need to use the correct keywords in the message which include <b>mode, target, header, (and values)</b></summary>.
 
-
-
-
-
-
-<seealsolist>
-</seealsolist>
 
 </chapter>

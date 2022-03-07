@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 388.0, 248.0, 1372.0, 909.0 ],
+		"rect" : [ 388.0, 248.0, 1153.0, 909.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1198.0, 17.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1228.0, 12.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -206,7 +206,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 681.5, 81.084745999999996, 30.0, 30.0 ]
+					"patching_rect" : [ 681.5, 36.084745999999996, 30.0, 30.0 ]
 				}
 
 			}
@@ -250,7 +250,6 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"hidden" : 1,
 					"id" : "obj-50",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -445,7 +444,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 713.5, 81.084745999999996, 259.0, 22.0 ],
+					"patching_rect" : [ 713.5, 36.084745999999996, 259.0, 22.0 ],
 					"text" : "route otherUsersUmenu myRoomsUmenu chat"
 				}
 
@@ -457,7 +456,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 713.5, 49.084745999999996, 97.0, 22.0 ],
+					"patching_rect" : [ 713.5, 4.084745999999996, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -513,6 +512,7 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
+					"hidden" : 1,
 					"id" : "obj-64",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -541,6 +541,7 @@
 					"elementcolor" : [ 0.6, 0.8, 0.6, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
+					"hidden" : 1,
 					"id" : "obj-63",
 					"items" : [ "User007", ",", "Simon" ],
 					"maxclass" : "umenu",
