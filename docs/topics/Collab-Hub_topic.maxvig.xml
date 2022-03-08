@@ -8,7 +8,7 @@
 
   <h1>Collab-Hub Package</h1>
   <p> Collab-Hub is a server-based networking tool for sharing control data and 
-events between creative applicationes - built off Node.Js and libraries we’ve 
+events between creative applications - built off Node.Js and libraries we’ve 
 written it work with Max, PD, Arduino, 
 Web, JS libraries, and more.
  These modules are part of the Max client.
@@ -31,6 +31,8 @@ Web, JS libraries, and more.
       <openfilelink filename="CH-Rooms.maxhelp">CH-Rooms</openfilelink> - Create, Join, and Leave Rooms on the server.</li>
     <li>
       <openfilelink filename="CH-ClientTesting.maxhelp">CH-ClientTesting</openfilelink> - Connect to the Collab-Hub Server.</li>
+    <li>
+      <openfilelink filename="Collab-Hub Modules.maxpat">Collab-Hub Modules All Together</openfilelink></li>
   </ul>
 
   <h2>Web Interface</h2>
@@ -41,7 +43,7 @@ Web, JS libraries, and more.
 
   <h2>Tutorials</h2>
   <ul>
-      <li>
+    <li>
       <link type="tutorial" module="max" name="00-ch-index">Tutorial Index</link>: Collab-Hub: Getting Started</li>
     <li>
       <link type="tutorial" module="max" name="01-Getting Connected">Tutorial 01</link>: Getting Connected</li>
