@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1979.0, 246.0, 1015.0, 795.0 ],
+		"rect" : [ 1979.0, 246.0, 1176.0, 795.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -60,7 +60,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1015.0, 769.0 ],
+						"rect" : [ 0.0, 26.0, 1176.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -508,7 +508,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1979.0, 272.0, 1015.0, 769.0 ],
+						"rect" : [ 1979.0, 272.0, 1176.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -539,6 +539,19 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 840.0, 144.0, 150.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 905.0, 81.106382978723389, 150.0, 20.0 ],
+									"text" : "Help Support our Servers"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-20",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -559,7 +572,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 847.0, 739.0, 373.0, 121.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 874.0, 16.5, 219.0, 71.606382978723403 ]
+									"presentation_rect" : [ 874.0, 16.5, 219.0, 93.606382978723403 ]
 								}
 
 							}
@@ -1060,7 +1073,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1015.0, 769.0 ],
+						"rect" : [ 0.0, 26.0, 1176.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2164,7 +2177,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1015.0, 769.0 ],
+						"rect" : [ 0.0, 26.0, 1176.0, 769.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
