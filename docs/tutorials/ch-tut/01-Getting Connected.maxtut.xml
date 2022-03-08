@@ -18,7 +18,7 @@
 
 
 <h1>Connecting to and disconnecting from the Collab-Hub server</h1>
-<p>The <o>CH-Client</o> is the module which connects you to the server.</p>
+<p>The <o>CH-Client</o> is the module that connects you to the server.</p>
 <illustration><img src="images/01a_CH-Client.png" width="50%"/>The Collab-Hub Client Module</illustration>
 <p>Clicking on <m>'Connect'</m> will initiate the connection with the server. </p>
 <p>You should receive feedback when connected...</p>
@@ -40,7 +40,7 @@
 <p>The modules are aware of each other and will only allow one connection to the server at a time. A pop-up dialog window will warn you if you try to connect to the server while another module is already connected.</p>
 
 <illustration><img src="images/01d_CH-Client_Multiple_Connections.png"  width="40%" />The pop-up dialog warning of multiple connections, offering the option to connect with a different <o>CH-Client</o> module.</illustration>
-<techdetail>Because only one module can connect to the server at a time, we suggest you check your connection and messages using the <a href="http://ch-server.herokuapp.com">Collab-Hub Demo Interface</a>. You will be able see your username on the user list, send and receive messages, and all other acitions. See later tutorials for details.</techdetail>
+<techdetail>Because only one module can connect to the server at a time, we suggest you check your connection and messages using the <a href="http://ch-server.herokuapp.com">Collab-Hub Demo Interface</a>. You will be able to see your username on the user list, send and receive messages, and all other actions. See later tutorials for details.</techdetail>
 
 
 <br />
@@ -55,9 +55,8 @@
 <br />
 
 <Summary><h2>Summary</h2>
-<p>The Collab-Hub Client Module is the module which connects you to the server. It is the only module which can connect to the server. All other modules receive information from the CH-Client module. After the client module connects, you can change your usernmame and send a 'simple chat' message to all users.</p>
+<p>The Collab-Hub Client Module is the module that connects you to the server. It is the only module which can connect to the server. All other modules receive information from the CH-Client module. After the client module connects, you can change your username and send a 'simple chat' message to all users.</p>
 </Summary>
 
-	
 
 </chapter>

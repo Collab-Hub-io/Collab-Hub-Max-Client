@@ -22,7 +22,7 @@
   <h2>Headers, Values, and Senders, Oh My</h2>
 <techdetail><p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p></techdetail>
 
-  <p>An incoming data message (from other clients) will have important components of which you can use to filter and map. </p>
+  <p>An incoming data message (from other clients) will have essential components that you can use to filter and map. </p>
   <ul>
     <li>
       <b>header</b>
@@ -54,7 +54,7 @@
   <illustration><img src="images/03_Route_by_Header.png" width="100%"/>Route incoming messages by Header</illustration>
 
   <techdetail><h2>How do you know what headers to route?</h2>
-  <p>Depending on how you're using Collab-Hub, you might not know what types of messages and the message headers you would be receiving. You could use chat, if you have human collaborators. See information on the <o>CH-Chat</o> Module.</p></techdetail>
+  <p>Depending on how you're using Collab-Hub, you might not know what types of messages and the message headers you would be receiving. You could use chat if you have human collaborators. See information on the <o>CH-Chat</o> Module.</p></techdetail>
 
   <h2>Route by Username</h2>
   <p>By default, incoming messages do not include the sender's username, but you can activate it by clicking the 'Flags' button on the <o>CH-Client</o> module. This will prepend the username to the message. [username] [header] ([values]). This can be useful if you have many users sending messages with the same header.</p>
@@ -63,20 +63,20 @@
   <illustration><img src="images/03_Using Sender Flags.png" width="100%"/>Adding Sender usernames for messaging routing</illustration>
 
 <h2>Useful Links</h2>
-<p>As you know now, the <o>CH-Client module</o> is the intermediary to the server. The CH-Client module will output messages from the server from its first outlet. The CH-Client module also can receive data messages to be sent to the server through its first inlet.</p>
+<p>As you know now, the <o>CH-Client module</o> is the intermediary to the server. The CH-Client module will output messages from the server from its first outlet. The CH-Client module can also receive data messages sent to the server through its first inlet.</p>
 
-<illustration><img src="images/02_CH-Client_inlets_outlets.png" width="50%"/>The first inlet and outlet of the CH-Client module can receive and send messages ti and from the Server.</illustration>
+<illustration><img src="images/02_CH-Client_inlets_outlets.png" width="50%"/>The first inlet and outlet of the CH-Client module can receive and send messages to and from the Server.</illustration>
 
-<p>The <o>CH-Client</o> module also is sending data messages from the server through the <o>send</o> object with the 'fromServer' argument. The CH-Client module can receive data messages to the server with the <o>receive</o> object with the 'toServer' argument. See the <o>CH-Client</o> module for more details. </p>
+<p>The <o>CH-Client</o> module also is sending data messages from the server through the <o>send</o> object with the 'fromServer' argument. The CH-Client module can send data messages to the server with the <o>receive</o> object with the 'toServer' argument. See the <o>CH-Client</o> module for more details. </p>
 
 <illustration><img src="images/02_to_and_from_Server.png" width="50%"/>The send and receive objects with 'fromServer' and 'toServer' can be useful in complex patches.</illustration>
 
-<techdetail><p>If you have the Max Paackage installed, the pair of send and receives are included as a 'clipping': from <i>Edit Mode</i>, ctrl + click anywhere, and select 'Paste From' > Collab-Hub Modules > to_from_Server.maxpat.</p></techdetail>
+<techdetail><p>If you have the Max Package installed, the pair of send and receives are included as a 'clipping': from <i>Edit Mode</i>, ctrl + click anywhere, and select 'Paste From' > Collab-Hub Modules > to_from_Server.maxpat.</p></techdetail>
 
 <h2>Try Receiving Data</h2>
 <p>From the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a>, click WebEvent3 or maniplate WebSlider3 -- these two elements are Mode "push" and target "all", so these messages will be sent to all clients. More details on Push / Publish modes in the next tutorial. Incoming messages will arrive through the first outlet of the <o>CH-Client</o> module or from the <o>Receive</o> object with keyword 'fromServer'. Use the <o>route</o> object to send data through the appropriate outlet based on the header.</p>
 
-<techdetail><h2>I'm trying the Web Interface but not all messages are being received -- what gives?</h2><p>The Web Interface is demonstrating a few different Modes and Targets -- and they affect how messages are sent. The next tutorials will cover <b>publish</b> and <b>rooms</b> -- which affect how you can send and receive data. For right now, try using the elements that say 'push all'.</p></techdetail>
+<techdetail><h2>'I'm trying the Web Interface but not all messages are being received'</h2><p>The Web Interface is demonstrating a few different Modes and Targets -- and they affect how messages are sent. The next tutorials will cover <b>publish</b> and <b>rooms</b> -- which affect how you can send and receive data. For right now, try using the elements that say 'push all'.</p></techdetail>
 
 
 <h2>More Info</h2>

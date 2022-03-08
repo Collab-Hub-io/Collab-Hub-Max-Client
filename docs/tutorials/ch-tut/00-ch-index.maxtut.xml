@@ -7,7 +7,7 @@
 
 <h1>Collab-Hub: Getting Started</h1>
 
-<p>Collab-Hub is a server-based networking tool for sharing control data and events between creative applicationes - built off Node.Js and libraries we've written it work with Max, PD, Arduino, Web, JS libraries, and more. These modules are part of the Max client.</p>
+<p>Collab-Hub is a server-based networking tool for sharing control data and events between creative applications - built off Node.Js and libraries, we've written it work with Max, PD, Arduino, Web, JS libraries, and more. These modules are part of the Max client.</p>
 
 <p>
 Other clients for Collab-Hub can be found at <a href="https://www.collab-hub.io">http://www.collab-hub.io</a>.
