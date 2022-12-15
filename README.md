@@ -1,4 +1,4 @@
-# Collab-Hub Max Client 0.3.3
+# Collab-Hub Max Client 0.3.4
 
 <br/>
 
@@ -263,14 +263,22 @@ Users can initialize some settings at the time of connection by changing entries
 
     {
         "namespace": "hub",
-        "username": ""
+        "username": "",
+        "server": ""
     }
 
 - **namespace:** The default Collab-Hub collective namespace is "hub". This should not be changed unless you are provided with a namespace by the Collab-Hub developers. Contact us if you think you or your group may have a need for your own namespace.
 - **username:** By default, a random username is assigned in the format 'User000' if this entry is empty. You can have your username set to something else at the time of connection by entering it here (assuming that the username is not already in use by someone else). Usernames can always be changed after connection from within Max.
+- **server:** This is should only be changed for personal debugging purposes. At the moment, there are no other Collab-Hub servers (out in the wild).
 
 ---
 ## Changelog
+- #0.3.4
+  - Corrected Web Interface Link in Main Tutorial Page.
+  - Clippings 'CH-ToServer' object had a misspelling.
+  - Namespace still defaults to '/hub'. Changing namespace should now be done on the ```/javascript/config.json``` file, rather than the embedded ```CH-ClientScript.js```. Within the config, no leading slash needed.
+  - Upon connection, Collab-Hub and Server Related messages should appear in Max Console.
+
 - #0.3.3
   - Added more Max Package files
     - Add Max Topic Vignettes

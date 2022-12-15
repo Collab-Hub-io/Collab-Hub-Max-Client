@@ -1,17 +1,18 @@
 {
 	"name": "Collab-Hub",
 	"displayname": "Collab-Hub Max Client",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"author": "Nick Hwang, Eric Sheffield, Anthony T. Marasco",
 	"authors": [
 		"Nick Hwang",
-		"Eric Sheffield", 
+		"Eric Sheffield",
 		"Anthony T. Marasco"
 	],
-	"description": "Max Client for Collab-Hub.io-- a server-based collaborative tool meant to connect creative apps including Max, PD, Arduino, Unity, etc. Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. Visit Collab-Hub.io for more information for other clients.",
+	"description": "Max Client for Collab-Hub.io -- a server-based collaborative tool meant to connect creative apps including Max, PD, Arduino, Unity, etc. Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. Visit Collab-Hub.io for more information for other clients.",
 	"tags": [
 		"networking",
 		"remote collaboration",
+		"network musical performance",
 		"collaborative",
 		"remote",
 		"nodejs",
@@ -83,7 +84,7 @@
 			"tutorials/ch-tut/00-ch-index.maxtut.xml"
 		],
 		"javascript": [
-			"CH-ClientScript.js", 
+			"CH-ClientScript.js",
 			"CH-ClientInstanceManager.js",
 			"CH-Chat-JS.js"
 		],
@@ -91,16 +92,16 @@
 			"Collab-Hub Modules.maxpat"
 		],
 		"examples": [
-			"CH-Simple-Routing.maxpat", 
-			"CH-Controls-and-Events.maxpat", 
-			"CH-Drum-Demo.maxpat", 
+			"CH-Simple-Routing.maxpat",
+			"CH-Controls-and-Events.maxpat",
+			"CH-Drum-Demo.maxpat",
 			"CH-Push-Publish-Rooms.maxpat",
 			"CH-Sequence-Trader/CH-Sequencer-Trader.maxpat",
 			"Mapping-Strategies.maxpat"
 		],
 		"templates": [
 			"collab-hub-template.maxpat"
-		], 
+		],
 		"clippings": [
 			"to_from_Server.maxpat"
 		]
