@@ -32,13 +32,15 @@ Web, JS libraries, and more.
     <li>
       <openfilelink filename="CH-ClientTesting.maxhelp">CH-ClientTesting</openfilelink> - Connect to the Collab-Hub Server.</li>
     <li>
-      <openfilelink filename="Collab-Hub Modules.maxpat">Collab-Hub Modules All Together</openfilelink></li>
+      <openfilelink filename="Collab-Hub Modules.maxpat">Collab-Hub Modules All Together</openfilelink>
+    </li>
   </ul>
 
   <h2>Web Interface</h2>
   <ul>
     <li>
-      <a>http://CH-Server.heroku.com</a> - Collab-Hub Web Interface</li>
+      Collab-Hub Web Interface: <a href="https://CH-Server.herokuapp.com">https://CH-Server.herokuapp.com</a>
+    </li>
   </ul>
 
   <h2>Tutorials</h2>

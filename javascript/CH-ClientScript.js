@@ -3,13 +3,13 @@
 // the Max-based Collab-Hub (client).
 // Authors: Nick Hwang, Eric Sheffield
 // Contact: nickthwang@gmail.com
-// Edited: 03/02/2022 by Nick Hwang
+// Edited: 12/14/2022 by Nick Hwang
 // --------------------------------------------------------------------------
 
 const max = require("max-api"),
   io = require("socket.io-client"),
   config = require("./config.json"),
-  namespace = config.namespace || "hub",
+  namespace = config.namespace || "",
   server = config.server || "https://ch-server.herokuapp.com",
   username = config.username,
   socket = (() => {
@@ -18,11 +18,7 @@ const max = require("max-api"),
       return io.connect(`${server}/${namespace}`, {
         query: { username: username },
       });
-    }
-    // return io.connect(`http://localhost:3000/${namespace}`, {query: {username: username} } );
-    // return io.connect(`http://localhost:8123/`, {query: {username: username} } );
-    else return io.connect(`https://ch-server.herokuapp.com/${namespace}`);
-    // return io.connect(`http://localhost:3000/${namespace}`);
+    } else return io.connect(`${config.server}/${namespace}`);
   })();
 
 console.log(socket);
@@ -30,15 +26,15 @@ console.log(socket);
 let senderFlag = false,
   controlDetail = false,
   eventDetail = false,
-  roomDetail = false, 
-  _username = "", 
+  roomDetail = false,
+  _username = "",
   clients = [];
 
 const maxHandlers = {
   // General
 
   thisClient: (maxInstance) => {
-    if(!clients.contains(maxInstance)){
+    if (!clients.contains(maxInstance)) {
       clients.push(maxInstance);
       maxoutlet("clients", clients);
     }
@@ -47,12 +43,11 @@ const maxHandlers = {
   addUsername: (username) => {
     if (username === undefined) {
       maxErrorHandler("Username cannot be undefined.");
-    } 
-    else {
+    } else {
       // var replaceVals = /[^\w\d]/gi;
       // var replaceVals = /[ ]/gi;
-      var replaceVals = /[^A-Z0-9]+/ig;
-      username = username.replace(replaceVals, '_');
+      var replaceVals = /[^A-Z0-9]+/gi;
+      username = username.replace(replaceVals, "_");
       var outgoing = { username: username };
       socket.emit("addUsername", outgoing);
     }
@@ -379,5 +374,3 @@ socket.on("chat", (incoming) => {
   let message = incoming.chat;
   max.outlet("chat", `${sender}: ${message}`);
 });
-
-// --------------------

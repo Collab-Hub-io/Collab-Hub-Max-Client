@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
+			"minor" : 3,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1155.0, 767.0 ],
+		"rect" : [ 34.0, 62.0, 1351.0, 849.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,16 +40,57 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1398.5, 469.0, 216.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 522.0, 297.0, 216.0, 22.0 ],
+					"text" : "https://ch-server.herokuapp.com/touch/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1398.5, 543.0, 129.0, 35.0 ],
+					"text" : ";\rmax launchbrowser $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1431.0, 503.0, 278.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 522.0, 335.0, 278.0, 22.0 ],
+					"text" : "http://ch-server.herokuapp.com/touch/receiver.html"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-114",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 262.0, 367.5, 146.0, 51.0 ],
+					"patching_rect" : [ 262.0, 367.5, 150.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 264.0, 358.0, 146.0, 51.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 264.0, 358.0, 150.0, 37.0 ],
 					"text" : "These are intended for feedback and not input."
 				}
 
@@ -214,7 +255,7 @@
 					"patching_rect" : [ 739.0, 729.0, 777.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 11,
-					"presentation_rect" : [ 579.0, 411.0, 150.0, 154.0 ],
+					"presentation_rect" : [ 579.0, 411.0, 153.0, 154.0 ],
 					"text" : "The mobile phone interface automatically attempts to evenly distribute users into three groups, assigning users to three different rooms / groups. \n\nInstructions to users is randomly chosen and sent to user."
 				}
 
@@ -322,6 +363,8 @@
 , 			{
 				"box" : 				{
 					"autofit" : 1,
+					"data" : [ 6679, "png", "IBkSG0fBZn....PCIgDQRA..BfE..H.VHX....fulgI2....DLmPIQEBHf.B7g.YHB..Y3bRDEDU3wY6YGcbaisstFcxao2ati.wLPLC.TjHFBxQ.Hi.yPfJR.XFPEABLB1TQ.NObJ+zU9TU20uMPaNFUgWm0ZAr.3msVMMMMU...w7+atW...veZDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXOjbXu95q06u+djYMMMUqVsJxrRK4ZK89bot1d5ompiGOFYVUk8r1Ku7Rsa2tHyJsk7974meN1r992+dsc61Xyi+9R97Lok72NVpeuM87tW983zm0hFXc4xk574yIGI+gXZZJ57RdVqooIxb9UXIuOGFFhMqa2tEaV7OSxmmIsj+1A+YI8YM+IBA.fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HrGl6EvOye8W+Usc614dYbWabbrtd85buL9RIOarYylXypppNe9brYc61sXyh42R9cplll4dI7kVx+NviO9X7ueveOWtbo97yOm6kwWZwFXsc61ZXXXtWF201ueec3vg4dY7kNd73buD9oZaam6k.KTmNcZw9N0zzzbuD9Wmc61U62uetWF20Zaai9OpMI+IBA.fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PX2MAVqVs5t3ZXXXtuU+aQaaar6Y62uO5ZaZZZQdUU12CR54meN15pssM5ZK88rTOO666itOYdMLLL6+9wuqq6E2MAV..vuKBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HrGl6E.7mlCGNDaVu7xK0lMahLq111Hy4GRtOWx555hNuT22lllht1R97rooI94M3eaDXAgse+9XypooIZfUxez6dIvJ4yy862GadMMM0vvPjYUUUqVsJ1r555DXwcO+IBA.fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HrGl6E.L2FGGqymOGadMMMwl050qiMqwww550qwlWx84kKWpO+7yHy51saQedlz333buD.9MQfE28d6s2p2d6sXyaZZJ1rR5zoS0gCGhMuj6y111XQQu+96UaaajYAv+T9SDB..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvdXtW.+tz22O2KgeK1tc6buD9s33wi0sa2l6kw+pra2tpssctWFeIOO+6a850y8R3m5zoS04ymiLqmd5o53wiQl0R11saua9cp6E2MAVK0eXg+YtWBISZylM0lMal6kwWxyy+rb850550qQl0zzTj4rzsd8Z+N0eX7mHD..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvdXtW.+Liii0gCGl6kwWZZZpVsZ0haVom2vvPj47qvoSmpqWuFYVMMMUaaajYUUE8b6Ku7RsYylHyZXXnNe9bjYUUUcccwlUxmmO93i0tc6hLqpx97L4Yswww5s2dKxrpJ6yyzm0VpFFFhc9XI+aAKYiiiy8R3maJnlllopJWt9+6pooI4Qsnm0555ht1RdequuO15pqqK5ZKojOOSeVK48rjm0566WrOOSdVaI+sCW+Yck9rl+Dg..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..D1CIG11saSNN9CR5yFIm2lMahMqpppooI1rFGGqymOGadIWaIk944R9dVp01kKWhLmeH48rpxceaI+sC9yR5yFqllllhNQfXZaai8Ceccc0986iLqkrggg54meN17R9Ix862WGNbH17VptWNqA+ewehP..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..D1CIG1qu9Z896uGYVSSS0pUqhLqzRt1d5ompiGOFYVoc5zo5s2dKxrRuOSdV6kWdo1saWjYUUUO+7ywl0kKWhMqkrjOOe7wGq999HypprOO+3iOhMqzRdOaylMwl0kKWpu8suEade+6eu1tcar4kR58YxemJ8uGm7rVxucj92ohFXc4xk574yIG4e7llll6kvO033XMLLDYVo2mIOq0zzDYN+Pp6Y2SR+7rssMxrpJaf0RVx6YIc61snuSc61sXyJoz6y6EI+1Q5emxehP..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..B6gjCa2tcUaaajYMNNVu81aQlUUU000EaVoc3vgXyZZZpVsZUr4k591lMahLmeH4YsTy4GRdV6zoS00qWiMujRdtsssM1ygzm0RpooI94sTVpeGZZZJ56TCCC04ymiLqj6yO93iHy4Gd4kWVzuKbWXZgpuueppJ10RU58Yxqttt491yculllE6yyjm0566it1R5d4cp496M+rqllln6yjuSsjuVxuSkTxmmoOq4OQH..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BKZfUaaasZ0pHWO+7yIWZwVWqVsp1ueez0VR8880zzTjqpxceqssM59L4Ysk704ymidei40gCGVruSk56FSSSUWWWz0VRCCCQ2qK0qjmO1ue+r+sve10986icOaXXH18rp7+fE..Dm.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..B6gjC63wi0sa2hLqKWtTe6aeKxrppp999XyZylMwlUZu95q0+4+7ehLqlllX22Vudcj4v+bmNcpNe97buL9RIO29zSOUGOdLxrpJ62NRZI+N0tc6p111HyZIuOOc5T81auEYVoO295quVu+96QlUxeKHsSmNUGNbHxrR+LHZf01saSNtnR8x9RWpWnp5+8kp6k6a2Ctd8Zc8504dY7kRdtcZZJ1rp594aGIsYylE8+PzTFGGqgggHyJ841KWtD6eP0R92B1ueer8Y5mA9SDB..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXOjbXmNcptd8ZjY8wGeDYN+vgCGhMqlllpssM17R5kWdo1rYSr4k591zzTsZ0pHypppZaai8LXXXnNe9bjYw7abbL566Ik78fGe7wZ2tcQlUZIemZIuOS96.I+tcZCCCQempqqK1r1saWrmCweFLETSSyTU0e7Wcccwtm022Gcs022Gas000M62qu22mtb8ytZZZh8NPZIemZIuOWxVx+d78B+IBA.fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXqlllll6EwuCqVsZtWBeolllZXXXtWFveaK02oX9000U62uOxrFFFpme94HyJsj6y6IK0ucj92i8+fE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..B6gjC60Wesd+82iLqoooZ0pUQlUUU022GaVmNcpd6s2hMukpj6ymd5o53wiQlUZoedl7r1RVx8YxucrjOqsj87yOGaVu81a04ymiLqa2tEYN+Jb5zoX6yz+lWx4kdscuHZf0kKWhcXKsj+XvvvPrYsjMNNFauNMMEYN+JjbedOossM1rVudczYkbsweeiii0333buL9k650q00qWm6kAKT9SDB..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXOjbXa2tM43tKb61s574ywl2SO8Tsd85HyZylMUSSSjYk9rwkKWpO+7yXyK09rpJ5yykrj2yRd9H8YsjOOe7wGqMa1DYV2tcqd+82iLqpx97bbbrtd8Zr4sTsjedl72BRao9adwaXl3ustttoppE4Uee+be642hlllX2y555ht1l6y.+tttWj7dVxyZ888K1mmK4uQdu77bI+aA2K6S+IBA.fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXOjbXsss04ymSNR9a54medtWBeolllZXXXtWF+VLMMEaVK42oVsZUrY022WsssQl0vvPz2CR97Lo111E6ZaIK4YM3+K9evB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..g8Pxgsa2tpssMxrFGGq2d6sHyJslllX6y6Ea1rI57RdVyyx42oSmpymOGYVe7wGQlyuBCCCw1mO93i0tc6hLqkrz6yjeKJ4yyooopqqKxrpZ4tOuqLsP022OUUsHu555l6aObmnooY1OueuekTWWWr0USSSz0VR1m1m+tt566m6aO+T9SDB..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXOjbXWtbo97yOiLqwwwpooIxrpppymOGaVIc61s582eO17d5omp0qWGYViii00qWiLqoooZ0pUQlUUK28YUUzysa2tM1rVxR9sClea1rI16A2KuCb61sn+NUxu4NNNFYN+PxuQl52A9kXJnllloppHWMMMIWZwVWUUScccwVW888QWa888wVacccQWa2K6S96K42NRekTxyZo+FI+8sj+F4R95dg+Dg..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HrnAVCCC0zzTjqgggjKsEq111X2ylllp862WqVsJxUUUz018x9L05ZoesT0zzrXedd3vg491yuEIe+L8UxeaY+98wNm022GacUUU888wVacccQWa2K7+fE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..B6g4dA7yLNNVu81awlWWWWrYUUUGNbHxblllpUqVEYVUUUaaa011Fado1mokbel79UU4Oqw7J4yyggg574yQl033Xz2OuWN2d5zoXOCR986O93iHy4GRtOGFFhLm6NSKT888SUUwtRpqqK5ZK4Ueeu8I+qSSSSryFMMMy814mZI+N08x9z07ecuvehP..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..B6g4dA7yrd85pooYtWFeoMa1rXWaqWuN1rVx6ywww574yy8x3Kk7d1kKWpO+7yHy5wGer1rYSjYcOI84rTmOtc6V896uGYVKY+0e8W01sam6kwub2KOOqJ66TSSS0pUqhLq3m0lf+EpooYppZQdsT2mcccQWaIkbe1zzDcsk7rQxmA888K1yscccK1mmKUoed5Z9Oq4OQH..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..B6gjC60Wesd+82SNxEooooZ0pUKtYkddIm0SO8Tc73wHypppNd7Xc61sHy5zoS0au8VjYUUUO+7ywl0kKWhMqztW1mKUa2ts566iMujOO+3iOhMqzR96Tu7xK0tc6hLqkrz6yjm0992+dsc61HyZ850QlyODMv5xkK04ymSNR9CwzzTz4k5EpppZXXH1r9ULukp6k84R050qq111XyK4O5sjk72oZZZhLmktMa1D8rVRa2tcwt17mHD..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvdXtW.+LO93i0tc6l6kwcsggg574yy8x3Wt111ny6vgCwl0Ku7RsYylXyK4ZKok79rqqK1rRdVabbrd6s2hMuj6yk72N1saWrmCo+1QRIemJ89bodVKd2wTPMMMSUUQtZZZRtz3efttNOO+GH08rppo999XqqjOOSekbe122GcssTsj2m91weeoedl7cpkrkb2g+Dg..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..D1Cy8B32kymOGaVSSS0pUqVbypppd5omp0qWGadLutb4RryGiiiQlyuBo2mMMMQlUZiii00qWiMqk59LoO+7y6huee4xkHy4Wgjmaqphdtc61sKxYU0cTfUaa6buD9snuu+tYudO3ae6ay8R32hj6ylllZXXH17R5zoS0gCGhLqk79LoKWt3aZyrjmaq5+MLMkiGOFaVo4OQH..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..B6g4dA.+S75quVu+96Ql0Ku7Rsa2tHyppp566iMqjNc5T81auM2Kie4tb4R87yOGadIedta2tpssMxrVudcj47qPx84kKWpu8suEYVUU02+92qsa2FYV2KuSkVx2OmllpUqVEYVO8zS0wiGiLqpDXw+Rc4xk574yQlUSSSj47Co9gkzFFFl6kvuEe94mK185lMapMa1L2Kie4Vx6ysa2F6czk54rktk58sooonyyehP..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..B6g4dA.ysggg5vgCy8x3K8xKuTa1rIxrZaaiLmeENc5Tc850Hy5wGer1saWjYk1vvPc974HyZZZpVsZUjYUUUcccwlUx84Ge7Qj47qvR9cpTe23Wgjm0R9sizDXwcuymOG6GCRqooIZf0R8GDFFFh8QxMa1T62uOxrRaIGymNvZotOSZI+N0RVx2OS9siz7mHD..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..g8vbu.9cYZZZtWBrP000U62uetWFDx4ymqUqVM2KiuTWWmuEwWZXXnd94mm6kwWJ841jue122WssswlWR9evB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..g8vbu.9Ytb4R87yOO2KiuzzzTsZ0p4dY7kRt193iOhLmktSmNUmOedtWFeou+8uWa2tctWFeojueta2tZ+98Ql0kKWpu8suEYVUUUeeerYsYylXyZIuOS5omdpNd7Xr4c5zo5vgCQlUxu29e+u+2Hy4GR9sijmaumrXCr97yOqggg4dYvcfqWuVWudctWFeoa2tM2Kgepjue100UssswlWRK000sa2tK9F450qi9LX+98K1+AUIsc61E6Y26E9SDB..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXOjbXa2tM433OHoOabubVa850y8R3mpooI1rRtOWudcz01R0RdetYylXqMe63eFe6X9sZZZZZtWD..veR7mHD..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..gIvB..BSfE..Dl.K..HLAV..PXBr..fvDXA..g8+vixJBLAHFn9.....PRE4DQtJDXBB" ],
+					"embed" : 1,
 					"forceaspect" : 1,
 					"id" : "obj-99",
 					"maxclass" : "fpic",
@@ -329,7 +372,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 18.5, 179.0, 100.0, 100.0 ],
-					"pic" : "/Users/nickhwang/Downloads/qrcode_ch-server.herokuapp.com (1).png",
+					"pic" : "exported_qrcode_image_600 (7).png",
 					"presentation" : 1,
 					"presentation_rect" : [ 522.0, 77.5, 207.0, 207.0 ]
 				}
@@ -346,7 +389,7 @@
 					"patching_rect" : [ 966.0, 462.5, 277.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 53.5, 104.5, 194.0, 35.0 ],
+					"presentation_rect" : [ 53.5, 104.5, 195.0, 35.0 ],
 					"text" : "push all setInstructions \"Welcome, please explore the instrument\""
 				}
 
@@ -469,8 +512,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 900.0, 566.5, 284.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.5, 534.5, 284.0, 22.0 ],
-					"text" : "push all setInstructions \"Performance end. Thanks.\""
+					"presentation_rect" : [ 9.5, 534.5, 251.0, 22.0 ],
+					"text" : "push all setInstructions \"Performance ended.\""
 				}
 
 			}
@@ -943,7 +986,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 834.0, 624.5, 51.0, 102.0 ],
+					"patching_rect" : [ 834.0, 624.5, 53.0, 102.0 ],
 					"text" : "push Room2 setInstructions \"play a disjunct melody\""
 				}
 
@@ -957,7 +1000,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 658.0, 624.5, 51.0, 102.0 ],
-					"text" : "push Room1 setInstructions \"Play a lyrical melody\""
+					"text" : "push Room1 setInstructions \"imitate someone else\""
 				}
 
 			}
@@ -1597,6 +1640,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -1794,6 +1844,13 @@
 					"destination" : [ "obj-78", 1 ],
 					"order" : 1,
 					"source" : [ "obj-58", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-60", 0 ]
 				}
 
 			}
@@ -2060,10 +2117,24 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/GitHub/v-erses-max/media/for-bpatchers",
+				"patcherrelativepath" : "../../v-erses-max/media/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "CH-Client.maxpat",
 				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientInstanceManager.js",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -2074,23 +2145,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"name" : "CH-Controls-Title.png",
+				"bootpath" : "~/GitHub/v-erses-max/media/for-bpatchers",
+				"patcherrelativepath" : "../../v-erses-max/media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -2102,9 +2159,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Controls-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"name" : "CH-Events-Title.png",
+				"bootpath" : "~/GitHub/v-erses-max/media/for-bpatchers",
+				"patcherrelativepath" : "../../v-erses-max/media/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -2116,23 +2173,23 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"name" : "CH-Rooms-Title.png",
+				"bootpath" : "~/GitHub/v-erses-max/media/for-bpatchers",
+				"patcherrelativepath" : "../../v-erses-max/media/for-bpatchers",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Rooms.maxpat",
+				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
-				"patcherrelativepath" : "../media/img",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qrcode_ch-server.herokuapp.com (1).png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../Downloads",
+				"bootpath" : "~/GitHub/v-erses-max/media",
+				"patcherrelativepath" : "../../v-erses-max/media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
