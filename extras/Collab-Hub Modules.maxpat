@@ -2,44 +2,19 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 66.0, 62.0, 1369.0, 802.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
+		"rect" : [ -1318.0, 293.0, 1015.0, 753.0 ],
 		"default_fontname" : "Lato",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontface" : 0,
@@ -52,44 +27,152 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1369.0, 776.0 ],
-						"bglocked" : 0,
+						"rect" : [ -1318.0, 319.0, 1015.0, 727.0 ],
 						"openinpresentation" : 1,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
 						"default_fontname" : "Lato",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 1,
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-94",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "ch.events.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 616.0, 686.5, 580.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 601.333351254463196, 529.333349108695984, 580.0, 169.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-95",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "ch.controls.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 28.5, 686.5, 580.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 13.333333730697632, 529.333349108695984, 580.0, 169.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"extract" : 1,
+									"id" : "obj-8",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "ch.chat.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 364.125, 505.5, 590.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 342.666676878929138, 348.000010371208191, 590.0, 169.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-2",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "ch.rooms.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 967.0, 505.5, 388.0, 169.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 940.000028014183044, 348.000010371208191, 388.0, 169.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-1",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "ch.client.maxpat",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 28.5, 505.5, 321.3046875, 168.92578125 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 13.333333730697632, 348.000010371208191, 321.3046875, 168.92578125 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 423.125, 559.0, 51.0, 37.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 408.000012159347534, 402.666678667068481, 51.0, 37.0 ],
+									"text" : "pcontrol"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontface" : 0,
 									"fontsize" : 12.0,
@@ -200,7 +283,8 @@
 									"presentation" : 1,
 									"presentation_linecount" : 10,
 									"presentation_rect" : [ 17.5, 101.0, 683.0, 162.0 ],
-									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. "
+									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. ",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -235,126 +319,6 @@
 									"pic" : "CH-Title.png",
 									"presentation" : 1,
 									"presentation_rect" : [ 17.5, 16.5, 463.0, 64.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-94",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
-									"maxclass" : "bpatcher",
-									"name" : "CH-Events.maxpat",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 601.0, 671.5, 580.0, 169.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 601.0, 548.5, 580.0, 169.0 ],
-									"prototypename" : "CH-EVENTS",
-									"viewvisibility" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-95",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
-									"maxclass" : "bpatcher",
-									"name" : "CH-Controls.maxpat",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 13.5, 671.5, 580.0, 169.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 13.5, 548.5, 580.0, 169.0 ],
-									"prototypename" : "CH-CONTROLS",
-									"viewvisibility" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-8",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
-									"maxclass" : "bpatcher",
-									"name" : "CH-Chat.maxpat",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 348.125, 490.5, 590.75, 169.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 343.125, 367.5, 591.75, 169.0 ],
-									"prototypename" : "CH-CHAT",
-									"viewvisibility" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-2",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
-									"maxclass" : "bpatcher",
-									"name" : "CH-Rooms.maxpat",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 947.0, 490.5, 388.0, 169.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 942.0, 367.5, 388.0, 169.0 ],
-									"prototypename" : "CH-ROOMS",
-									"viewvisibility" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-1",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
-									"maxclass" : "bpatcher",
-									"name" : "CH-Client.maxpat",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 13.5, 490.5, 322.0, 169.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 13.5, 367.5, 322.0, 169.0 ],
-									"prototypename" : "CH-CLIENT",
-									"viewvisibility" : 1
 								}
 
 							}
@@ -477,11 +441,7 @@
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 128.0, 16.5, 55.0, 49.0 ],
 					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"fontname" : "Lato",
-						"globalpatchername" : "",
-						"tags" : ""
+						"fontname" : "Lato"
 					}
 ,
 					"text" : "p \"Getting Started\""
@@ -500,43 +460,18 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1369.0, 776.0 ],
-						"bglocked" : 0,
+						"rect" : [ 0.0, 26.0, 1015.0, 727.0 ],
 						"openinpresentation" : 1,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 1,
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-26",
@@ -832,11 +767,13 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 104.0, 622.0, 124.0 ],
+									"patching_rect" : [ 15.0, 104.0, 514.0, 124.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 7,
-									"presentation_rect" : [ 24.5, 110.0, 622.0, 124.0 ],
-									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. \n\nBuilt off Node.Js and libraries we’ve written it work with Max, PD, Arduino, Web, JS libraries, and more.\n\nThese modules are part of the Max client. "
+									"presentation_rect" : [ 32.0, 110.0, 514.0, 124.0 ],
+									"style" : "CH-Text",
+									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. \n\nBuilt off Node.Js and libraries we’ve written it work with Max, PD, Arduino, Web, JS libraries, and more.\n\nThese modules are part of the Max client. ",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -966,6 +903,11 @@
 								"multi" : 0
 							}
 , 							{
+								"name" : "CH-Text",
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
 								"name" : "blues",
 								"default" : 								{
 									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
@@ -1042,13 +984,6 @@
 					}
 ,
 					"patching_rect" : [ 9.5, 17.5, 69.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
 					"text" : "p Overview"
 				}
 
@@ -1065,43 +1000,19 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1369.0, 776.0 ],
-						"bglocked" : 0,
+						"rect" : [ 0.0, 26.0, 1015.0, 727.0 ],
 						"openinpresentation" : 1,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
 						"default_fontname" : "Lato",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 1,
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 0,
@@ -1226,7 +1137,8 @@
 									"presentation" : 1,
 									"presentation_linecount" : 10,
 									"presentation_rect" : [ 17.5, 101.0, 683.0, 162.0 ],
-									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. "
+									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. ",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1275,7 +1187,8 @@
 									"patching_rect" : [ 265.0, 287.5, 461.5, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 265.0, 282.5, 461.5, 21.0 ],
-									"text" : "PUSH - Pushed controls/events are automatically sent to the intended target(s)."
+									"text" : "PUSH - Pushed controls/events are automatically sent to the intended target(s).",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1292,7 +1205,8 @@
 									"presentation" : 1,
 									"presentation_linecount" : 4,
 									"presentation_rect" : [ 17.5, 282.5, 227.0, 64.0 ],
-									"text" : "PUBLISH - Published controls/events will be posted for other users to see. They can then choose to \"observe\" them to receive future transmissions."
+									"text" : "PUBLISH - Published controls/events will be posted for other users to see. They can then choose to \"observe\" them to receive future transmissions.",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1321,7 +1235,8 @@
 									"presentation" : 1,
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 529.0, 308.5, 125.0, 35.0 ],
-									"text" : "Push an event\nto everyone"
+									"text" : "Push an event\nto everyone",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1364,7 +1279,8 @@
 									"presentation" : 1,
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 372.0, 308.5, 125.0, 35.0 ],
-									"text" : "Push a control\nto a user/room"
+									"text" : "Push a control\nto a user/room",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1393,7 +1309,8 @@
 									"presentation" : 1,
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 265.0, 308.5, 105.0, 35.0 ],
-									"text" : "Push a control\nto everyone"
+									"text" : "Push a control\nto everyone",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1435,7 +1352,8 @@
 									"patching_rect" : [ 121.5, 353.5, 99.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 121.5, 348.5, 99.0, 21.0 ],
-									"text" : "Publish an event"
+									"text" : "Publish an event",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1448,7 +1366,8 @@
 									"patching_rect" : [ 17.5, 353.5, 102.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 17.5, 348.5, 102.0, 21.0 ],
-									"text" : "Publish a control"
+									"text" : "Publish a control",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1521,9 +1440,9 @@
 									"enablevscroll" : 0,
 									"id" : "obj-94",
 									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Events.maxpat",
+									"name" : "ch.events.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
@@ -1531,7 +1450,6 @@
 									"patching_rect" : [ 601.0, 671.5, 580.0, 169.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 601.0, 666.5, 580.0, 169.0 ],
-									"prototypename" : "CH-EVENTS",
 									"viewvisibility" : 1
 								}
 
@@ -1545,9 +1463,9 @@
 									"enablevscroll" : 0,
 									"id" : "obj-95",
 									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Controls.maxpat",
+									"name" : "ch.controls.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
@@ -1555,7 +1473,6 @@
 									"patching_rect" : [ 13.5, 671.5, 580.0, 169.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 13.5, 666.5, 580.0, 169.0 ],
-									"prototypename" : "CH-CONTROLS",
 									"viewvisibility" : 1
 								}
 
@@ -1567,19 +1484,19 @@
 									"clickthrough" : 0,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
+									"extract" : 1,
 									"id" : "obj-8",
 									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Chat.maxpat",
+									"name" : "ch.chat.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 349.125, 490.5, 590.75, 169.0 ],
+									"patching_rect" : [ 349.125, 490.5, 590.0, 169.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 342.125, 485.5, 591.75, 169.0 ],
-									"prototypename" : "CH-CHAT",
+									"presentation_rect" : [ 342.125, 485.5, 590.0, 169.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -1593,9 +1510,9 @@
 									"enablevscroll" : 0,
 									"id" : "obj-2",
 									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Rooms.maxpat",
+									"name" : "ch.rooms.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
@@ -1603,7 +1520,6 @@
 									"patching_rect" : [ 952.0, 490.5, 388.0, 169.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 939.0, 485.5, 388.0, 169.0 ],
-									"prototypename" : "CH-ROOMS",
 									"viewvisibility" : 1
 								}
 
@@ -1617,17 +1533,16 @@
 									"enablevscroll" : 0,
 									"id" : "obj-1",
 									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Client.maxpat",
-									"numinlets" : 1,
+									"name" : "ch.client.maxpat",
+									"numinlets" : 2,
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 13.5, 490.5, 322.0, 169.0 ],
+									"patching_rect" : [ 13.5, 490.5, 321.3046875, 168.92578125 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 13.5, 485.5, 322.0, 169.0 ],
-									"prototypename" : "CH-CLIENT",
+									"presentation_rect" : [ 13.5, 485.5, 321.3046875, 168.92578125 ],
 									"viewvisibility" : 1
 								}
 
@@ -1733,7 +1648,8 @@
 									"patching_rect" : [ 738.875, 286.0, 402.5, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 739.875, 282.5, 402.5, 21.0 ],
-									"text" : "INCOMING - Incoming data is also available from CH module outlets."
+									"text" : "INCOMING - Incoming data is also available from CH module outlets.",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1805,7 +1721,8 @@
 									"presentation" : 1,
 									"presentation_linecount" : 3,
 									"presentation_rect" : [ 838.875, 304.5, 307.0, 50.0 ],
-									"text" : "Enabling \"Flags\" in Client module prepends the sender's username to incoming controls/events (for enhanced routing)."
+									"text" : "Enabling \"Flags\" in Client module prepends the sender's username to incoming controls/events (for enhanced routing).",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1940,14 +1857,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"midpoints" : [ 538.5, 420.0, 358.625, 420.0 ],
-									"source" : [ "obj-43", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-43", 0 ],
 									"source" : [ "obj-45", 0 ]
 								}
@@ -2025,28 +1934,6 @@
 									"source" : [ "obj-84", 1 ]
 								}
 
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"midpoints" : [ 381.5, 434.0, 358.625, 434.0 ],
-									"source" : [ "obj-92", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-93", 0 ]
-								}
-
-							}
- ],
-						"boxgroups" : [ 							{
-								"boxes" : [ "obj-24", "obj-19" ]
-							}
-, 							{
-								"boxes" : [ "obj-9", "obj-31", "obj-83", "obj-52", "obj-33", "obj-21", "obj-23", "obj-82", "obj-47" ]
 							}
  ],
 						"styles" : [ 							{
@@ -2148,11 +2035,7 @@
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1657.0, 102.0, 53.0, 49.0 ],
 					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"fontname" : "Lato",
-						"globalpatchername" : "",
-						"tags" : ""
+						"fontname" : "Lato"
 					}
 ,
 					"text" : "p \"All Together\""
@@ -2171,43 +2054,18 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 66.0, 88.0, 1369.0, 776.0 ],
-						"bglocked" : 0,
+						"rect" : [ 0.0, 26.0, 1015.0, 727.0 ],
 						"openinpresentation" : 1,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 1,
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 0,
@@ -2689,13 +2547,6 @@
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1656.0, 140.0, 59.0, 49.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
 					"text" : "p Examples"
 				}
 
@@ -2704,114 +2555,114 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Chat-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Chat.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-ClientInstanceManager.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Controls.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-Diagram.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img",
 				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-Small-Logo-NoText.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img",
 				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img",
 				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "become-a-patron-button.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img",
 				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.chat.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.client.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.controls.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.events.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.rooms.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

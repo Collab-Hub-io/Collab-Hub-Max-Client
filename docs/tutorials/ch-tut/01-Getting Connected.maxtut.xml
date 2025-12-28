@@ -7,7 +7,7 @@
 <indexinfo category="Basics" title="Hello">Creating objects and connections</indexinfo>
 
 
-<next name="02-Sending Data">Sending Data</next>
+<next name="02-Sending Data" >Sending Data</next>
 <parent name="00-ch-index">Collab-Hub Tutorials</parent>
 
   <metadatalist>
@@ -40,8 +40,14 @@
 <p>The modules are aware of each other and will only allow one connection to the server at a time. A pop-up dialog window will warn you if you try to connect to the server while another module is already connected.</p>
 
 <illustration><img src="images/01d_CH-Client_Multiple_Connections.png"  width="40%" />The pop-up dialog warning of multiple connections, offering the option to connect with a different <o>CH-Client</o> module.</illustration>
-<techdetail>Because only one module can connect to the server at a time, we suggest you check your connection and messages using the <a href="http://ch-server.herokuapp.com">Collab-Hub Demo Interface</a>. You will be able to see your username on the user list, send and receive messages, and all other actions. See later tutorials for details.</techdetail>
-
+<techdetail>Because only one module can connect to the server at a time, we suggest you check your connection and messages using the <a href="https://server.collab-hub.io">Collab-Hub Demo Interface</a>. You will be able to see your username on the user list, send and receive messages, and all other actions. See later tutorials for details.</techdetail>
+<br />
+<h2>Changing the Server Address</h2>
+<p>By default, the <o>CH-Client</o> module connects to the Collab-Hub public server at <a href="https://server.collab-hub.io">https://server.collab-hub.io</a>. If you are running your own Collab-Hub server, you can change the server address by clicking on the <m>Server Address</m>. This will bring up a dialog window where you can input the new server address.</p>
+<p>After you have input the new server address, click on '<m>Close</m>'.</p>
+<p>To connect to the new server address, click on the <m>Connect</m> button. On the main Client window</p>
+<p>If you are currently connected to the server, you will need to disconnect before connecting to the new server address.</p>
+<illustration><img src="images/01e_CH-Client_Change_Server.png"  width="50%" />Dialog for Server Address input</illustration>
 
 <br />
 <h2>Disconnecting from the server</h2>

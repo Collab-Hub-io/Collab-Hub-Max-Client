@@ -20,7 +20,7 @@
   <h1>Sending and Receiving Data</h1>
 
   <h2>Understanding Data Routing</h2>
-<techdetail><p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p></techdetail>
+<techdetail><p>While following along, the <a href="https://server.collab-hub.io">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p></techdetail>
 
   <p>Sending and Receiving is the heart of Collab-Hub. There are three main components with routing Collab-Hub messages:</p>
   <ul>
@@ -114,7 +114,7 @@
 <techdetail><p>If you have the Max Package installed, the pair of send and receives are included as a 'clipping': from <i>Edit Mode</i>, ctrl + click anywhere, and select 'Paste From' > Collab-Hub Modules > to_from_Server.maxpat.</p></techdetail>
 
 <h2>Try Sending Data to the Server</h2>
-<p>From the tutorial patch, try sending values to the server. Click on the event <m>message boxes</m>, change the <m>number box</m> value, and move the XY <o>pictslider</o>. All the values should be sent to the server, and you should be able to see the those messages on the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a>. </p>
+<p>From the tutorial patch, try sending values to the server. Click on the event <m>message boxes</m>, change the <m>number box</m> value, and move the XY <o>pictslider</o>. All the values should be sent to the server, and you should be able to see the those messages on the <a href="https://server.collab-hub.io">Collab-Hub Web Interface</a>. </p>
 
 <p>You might have noticed that all the modes in the max patch are all 'push' mode. Push mode means that the data is sent to the target, and the target does not need to do anything to receive the data -- this will be the simplest way to check if the data is being sent to the right place. In a later tutorial, we will see how to use the 'publish' mode.</p>
 

@@ -2,43 +2,19 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"rect" : [ 59.0, 81.0, 1416.0, 773.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
+		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
+		"style" : "CH-Text",
 		"showontab" : 1,
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontface" : 1,
@@ -82,13 +58,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-87",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1436.0, 503.0, 218.0, 22.0 ],
+					"patching_rect" : [ 1436.0, 503.0, 218.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1393.0, 241.5, 218.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 1393.0, 241.5, 218.0, 37.0 ],
 					"text" : "https://discord.com/invite/NANZf5RuRV"
 				}
 
@@ -101,10 +79,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1436.0, 537.0, 129.0, 35.0 ],
+					"patching_rect" : [ 1436.0, 537.0, 129.0, 37.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1393.0, 275.5, 129.0, 35.0 ],
+					"presentation_rect" : [ 1393.0, 275.5, 129.0, 37.0 ],
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -128,13 +106,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-85",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1436.0, 376.0, 107.0, 22.0 ],
+					"patching_rect" : [ 1436.0, 376.0, 107.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1393.0, 114.5, 107.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 1393.0, 114.5, 107.0, 37.0 ],
 					"text" : "http://collab-hub.io"
 				}
 
@@ -147,10 +127,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1436.0, 410.0, 129.0, 35.0 ],
+					"patching_rect" : [ 1436.0, 410.0, 129.0, 37.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1393.0, 148.5, 129.0, 35.0 ],
+					"presentation_rect" : [ 1393.0, 148.5, 129.0, 37.0 ],
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -179,10 +159,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 46.5, 490.5, 300.0, 33.0 ],
+					"patching_rect" : [ 46.5, 490.5, 300.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 46.5, 490.5, 300.0, 33.0 ],
+					"presentation_rect" : [ 46.5, 490.5, 300.0, 35.0 ],
 					"text" : "There should only be one enabled CH-Client. Disable the rest."
 				}
 
@@ -195,10 +175,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 524.5, 417.0, 356.0, 60.0 ],
+					"patching_rect" : [ 525.0, 417.0, 368.0, 64.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 524.5, 417.0, 356.0, 60.0 ],
+					"presentation_rect" : [ 524.5, 417.0, 356.0, 64.0 ],
 					"text" : "Outgoing data (controls and events) all follow this structure:\npush/publish <destination> header [value] \nExample Event:\n          push all startPiece"
 				}
 
@@ -273,14 +253,14 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-75",
-					"linecount" : 15,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 613.5, 749.5, 160.0, 208.0 ],
+					"patching_rect" : [ 613.5, 749.5, 160.0, 194.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 15,
-					"presentation_rect" : [ 613.5, 749.5, 160.0, 208.0 ],
+					"presentation_linecount" : 13,
+					"presentation_rect" : [ 613.5, 749.5, 160.0, 194.0 ],
 					"text" : "Controls are data with a 'header'. Think: Key / Vaues.\n\nThe CH-Controls module shows 'Published' events. \nIn order for you to received a Published event, you must Observe that event. \n\nIf you do not want to publish or observe controls, you can easily just our 'PUSH' model. "
 				}
 
@@ -289,14 +269,14 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-74",
-					"linecount" : 16,
+					"linecount" : 15,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1408.0, 749.5, 160.0, 221.0 ],
+					"patching_rect" : [ 1408.0, 749.5, 160.0, 222.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 16,
-					"presentation_rect" : [ 1408.0, 749.5, 160.0, 221.0 ],
+					"presentation_linecount" : 15,
+					"presentation_rect" : [ 1408.0, 749.5, 160.0, 222.0 ],
 					"text" : "Events can be considered occurances with no attached data -- like named 'bangs' in Max.\n\nThe CH-Events module shows 'Published' events. \nIn order for you to received a Published event, you must Observe that event. \n\nIf you do not want to publish or observe controls, you can easily just our 'PUSH' model. "
 				}
 
@@ -305,30 +285,30 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-73",
-					"linecount" : 13,
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1233.0, 522.5, 158.0, 181.0 ],
+					"patching_rect" : [ 1233.0, 522.5, 158.0, 179.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 13,
-					"presentation_rect" : [ 1233.0, 522.5, 158.0, 181.0 ],
+					"presentation_linecount" : 12,
+					"presentation_rect" : [ 1233.0, 522.5, 158.0, 179.0 ],
 					"text" : "Users can create, join, and leave rooms. \n\nUsers can create and join any number of rooms. Once a room is created, any one can join or leave. \n\nData and Messages can be directed at Usersnames, Roomnames, or keyword 'all'."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 1,
 					"id" : "obj-60",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.5, 701.5, 155.0, 33.0 ],
+					"patching_rect" : [ 24.5, 701.5, 154.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 24.5, 701.5, 155.0, 33.0 ],
+					"presentation_rect" : [ 24.5, 701.5, 154.0, 35.0 ],
+					"style" : "CH-Text",
 					"text" : "Incoming chat messages post to the Max Console."
 				}
 
@@ -418,14 +398,14 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-53",
-					"linecount" : 11,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 730.0, 76.5, 504.0, 154.0 ],
+					"patching_rect" : [ 730.0, 76.5, 505.0, 150.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 11,
-					"presentation_rect" : [ 730.0, 76.5, 504.0, 154.0 ],
+					"presentation_linecount" : 10,
+					"presentation_rect" : [ 730.0, 76.5, 505.0, 150.0 ],
 					"text" : "1. Enable CH-Client by clicking clicking 'Disabled' which change the state to enabled. \n2. Click 'Connect' -- You'll see the button next to 'Connect' light up. An additional confirmation will be in the Max Console Window in the from a 'serverMessage'. If you see that, you're connected to Collab-Hub. \n3. You can now send data and trigger events to other connected clients. \n4. You can change your username by clicking on 'Change Username' on the CH-Client Module. \n5. Open our web test client on an internet browser: http://ch-server.herokuapp.com \n6. Send a chat message to the browser from Max by typing in the 'Simple Chat' window on CH-Client. Messages on the browser will appear in the upper-right. \nIncoming Chat messages to Max will appear in the Max Console window."
 				}
 
@@ -510,9 +490,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1683.0, 121.0, 73.0, 22.0 ],
+					"patching_rect" : [ 1683.0, 121.0, 73.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1683.0, 121.0, 73.0, 22.0 ],
+					"presentation_rect" : [ 1683.0, 121.0, 73.0, 23.0 ],
 					"text" : "s CH-clients"
 				}
 
@@ -526,43 +506,18 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1416.0, 747.0 ],
-						"bglocked" : 0,
+						"rect" : [ 59.0, 107.0, 1416.0, 747.0 ],
 						"openinpresentation" : 1,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 1,
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-15",
@@ -869,13 +824,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-										"angle" : 270,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -886,23 +841,23 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 										"color2" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "gradient"
 									}
 ,
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -911,9 +866,9 @@
 , 							{
 								"name" : "max6box",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -931,17 +886,17 @@
 , 							{
 								"name" : "max6message",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"autogradient" : 0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 										"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "gradient"
 									}
-
+,
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "max6box",
@@ -959,16 +914,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1683.0, 35.0, 70.0, 22.0 ],
+					"patching_rect" : [ 1683.0, 35.0, 70.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1683.0, 35.0, 70.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
+					"presentation_rect" : [ 1683.0, 35.0, 70.0, 23.0 ],
 					"text" : "p examples"
 				}
 
@@ -981,9 +929,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1033.875, 436.0, 50.0, 22.0 ],
+					"patching_rect" : [ 1033.875, 436.0, 50.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1033.875, 436.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 1033.875, 436.0, 50.0, 23.0 ]
 				}
 
 			}
@@ -1008,9 +956,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1033.875, 410.0, 123.0, 22.0 ],
+					"patching_rect" : [ 1033.875, 410.0, 123.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1033.875, 410.0, 123.0, 22.0 ],
+					"presentation_rect" : [ 1033.875, 410.0, 123.0, 23.0 ],
 					"text" : "route value2 bang2"
 				}
 
@@ -1023,10 +971,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 908.875, 294.5, 402.5, 20.0 ],
+					"patching_rect" : [ 908.875, 294.5, 402.5, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 908.875, 294.5, 402.5, 20.0 ],
-					"text" : "INCOMING - Incoming data is also available from CH module outlets."
+					"presentation_rect" : [ 908.875, 294.5, 402.5, 21.0 ],
+					"text" : "INCOMING - Incoming data is also available from CH module outlets.",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -1038,9 +987,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1158.875, 436.0, 50.0, 22.0 ],
+					"patching_rect" : [ 1158.875, 436.0, 50.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1158.875, 436.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 1158.875, 436.0, 50.0, 23.0 ]
 				}
 
 			}
@@ -1065,9 +1014,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1158.875, 410.0, 123.0, 22.0 ],
+					"patching_rect" : [ 1158.875, 410.0, 123.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1158.875, 410.0, 123.0, 22.0 ],
+					"presentation_rect" : [ 1158.875, 410.0, 123.0, 23.0 ],
 					"text" : "route value2 bang2"
 				}
 
@@ -1080,9 +1029,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 908.875, 436.0, 50.0, 22.0 ],
+					"patching_rect" : [ 908.875, 436.0, 50.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 908.875, 436.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 908.875, 436.0, 50.0, 23.0 ]
 				}
 
 			}
@@ -1094,10 +1043,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 613.5, 561.5, 156.0, 87.0 ],
+					"patching_rect" : [ 611.0, 525.5, 155.0, 93.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 613.5, 536.0, 156.0, 87.0 ],
+					"presentation_rect" : [ 613.5, 536.0, 156.0, 93.0 ],
 					"text" : "Type a chat message to a all, a specific user, or users in a room.\n\nIncoming chat messages post to the Max Console."
 				}
 
@@ -1108,26 +1057,27 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.5, 457.5, 85.0, 22.0 ],
+					"patching_rect" : [ 28.5, 457.5, 85.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 28.5, 457.5, 85.0, 22.0 ],
+					"presentation_rect" : [ 28.5, 457.5, 85.0, 23.0 ],
 					"text" : "s toCH-Server"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 1,
 					"id" : "obj-19",
 					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.5, 110.5, 637.5, 154.0 ],
+					"patching_rect" : [ 24.5, 110.5, 618.0, 165.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 11,
-					"presentation_rect" : [ 31.5, 121.0, 637.5, 154.0 ],
-					"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. "
+					"presentation_rect" : [ 31.5, 121.0, 618.0, 165.0 ],
+					"style" : "CH-Text",
+					"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. These modules are part of the Max client. \n\nBelow is the collection of all Collab-Hub Max Client Modules. Each serve a purpose for remote collaborative communication, but not every is necesary for every situation. \n\nCH-Client is the only necessary module for connection and start communicating -- all other modules receive information from CH-Client.\n\nThe rest of the modules help give you more information on other users, what types of data are being shared, and chat. ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -1173,11 +1123,12 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1007.875, 316.5, 303.5, 47.0 ],
+					"patching_rect" : [ 1007.875, 316.5, 307.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1007.875, 316.5, 303.5, 47.0 ],
-					"text" : "Enabling \"Flags\" in Client module prepends the sender's username to incoming controls/events (for enhanced routing)."
+					"presentation_rect" : [ 1007.875, 316.5, 307.0, 50.0 ],
+					"text" : "Enabling \"Flags\" in Client module prepends the sender's username to incoming controls/events (for enhanced routing).",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -1188,9 +1139,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1159.875, 386.0, 93.0, 22.0 ],
+					"patching_rect" : [ 1159.875, 386.0, 93.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1159.875, 386.0, 93.0, 22.0 ],
+					"presentation_rect" : [ 1159.875, 386.0, 93.0, 23.0 ],
 					"text" : "route username"
 				}
 
@@ -1216,9 +1167,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 908.875, 410.0, 123.0, 22.0 ],
+					"patching_rect" : [ 908.875, 410.0, 123.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 908.875, 410.0, 123.0, 22.0 ],
+					"presentation_rect" : [ 908.875, 410.0, 123.0, 23.0 ],
 					"text" : "route value1 bang1"
 				}
 
@@ -1230,9 +1181,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 908.875, 316.5, 97.0, 22.0 ],
+					"patching_rect" : [ 908.875, 316.5, 97.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 908.875, 316.5, 97.0, 22.0 ],
+					"presentation_rect" : [ 908.875, 316.5, 97.0, 23.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -1245,9 +1196,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 318.0, 294.5, 461.5, 20.0 ],
+					"patching_rect" : [ 318.0, 294.5, 461.5, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 318.0, 294.5, 461.5, 20.0 ],
+					"presentation_rect" : [ 318.0, 294.5, 461.5, 21.0 ],
 					"text" : "PUSH - Pushed controls/events are automatically sent to the intended target(s)."
 				}
 
@@ -1261,11 +1212,12 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.5, 294.5, 225.0, 60.0 ],
+					"patching_rect" : [ 28.5, 294.5, 227.0, 64.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 28.5, 294.5, 225.0, 60.0 ],
-					"text" : "PUBLISH - Published controls/events will be posted for other users to see. They can then choose to \"observe\" them to receive future transmissions."
+					"presentation_rect" : [ 28.5, 294.5, 227.0, 64.0 ],
+					"text" : "PUBLISH - Published controls/events will be posted for other users to see. They can then choose to \"observe\" them to receive future transmissions.",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -1290,10 +1242,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 582.0, 320.5, 125.0, 33.0 ],
+					"patching_rect" : [ 582.0, 320.5, 125.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 582.0, 320.5, 125.0, 33.0 ],
+					"presentation_rect" : [ 582.0, 320.5, 125.0, 35.0 ],
 					"text" : "Push an event\nto everyone"
 				}
 
@@ -1305,9 +1257,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 582.0, 381.5, 87.0, 22.0 ],
+					"patching_rect" : [ 582.0, 381.5, 87.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 381.5, 87.0, 22.0 ],
+					"presentation_rect" : [ 582.0, 381.5, 87.0, 23.0 ],
 					"text" : "push all bang2"
 				}
 
@@ -1320,9 +1272,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 425.0, 355.5, 50.0, 22.0 ],
+					"patching_rect" : [ 425.0, 355.5, 50.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 425.0, 355.5, 50.0, 22.0 ]
+					"presentation_rect" : [ 425.0, 355.5, 50.0, 23.0 ]
 				}
 
 			}
@@ -1333,10 +1285,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 425.0, 320.5, 125.0, 33.0 ],
+					"patching_rect" : [ 425.0, 320.5, 125.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 425.0, 320.5, 125.0, 33.0 ],
+					"presentation_rect" : [ 425.0, 320.5, 125.0, 35.0 ],
 					"text" : "Push a control\nto a user/room"
 				}
 
@@ -1352,10 +1304,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 378.875, 454.0, 150.0, 66.0 ],
+					"patching_rect" : [ 378.875, 454.0, 152.0, 69.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 378.875, 454.0, 150.0, 66.0 ],
+					"presentation_rect" : [ 378.875, 454.0, 152.0, 69.0 ],
 					"text" : "Outgoing data can go to any CH module inlet. (See in Edit view)"
 				}
 
@@ -1368,9 +1320,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 318.0, 355.5, 50.0, 22.0 ],
+					"patching_rect" : [ 318.0, 355.5, 50.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 318.0, 355.5, 50.0, 22.0 ]
+					"presentation_rect" : [ 318.0, 355.5, 50.0, 23.0 ]
 				}
 
 			}
@@ -1381,10 +1333,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 318.0, 320.5, 105.0, 33.0 ],
+					"patching_rect" : [ 318.0, 320.5, 105.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 318.0, 320.5, 105.0, 33.0 ],
+					"presentation_rect" : [ 318.0, 320.5, 105.0, 35.0 ],
 					"text" : "Push a control\nto everyone"
 				}
 
@@ -1410,9 +1362,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 132.5, 408.5, 83.0, 22.0 ],
+					"patching_rect" : [ 132.5, 408.5, 83.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.5, 408.5, 83.0, 22.0 ],
+					"presentation_rect" : [ 132.5, 408.5, 83.0, 23.0 ],
 					"text" : "publish bang1"
 				}
 
@@ -1423,10 +1375,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.5, 360.5, 99.0, 20.0 ],
+					"patching_rect" : [ 132.5, 360.5, 99.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.5, 360.5, 99.0, 20.0 ],
-					"text" : "Publish an event"
+					"presentation_rect" : [ 132.5, 360.5, 99.0, 21.0 ],
+					"text" : "Publish an event",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -1436,10 +1389,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.5, 360.5, 102.0, 20.0 ],
+					"patching_rect" : [ 28.5, 360.5, 102.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 28.5, 360.5, 102.0, 20.0 ],
-					"text" : "Publish a control"
+					"presentation_rect" : [ 28.5, 360.5, 102.0, 21.0 ],
+					"text" : "Publish a control",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -1453,9 +1407,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 28.5, 382.5, 50.0, 22.0 ],
+					"patching_rect" : [ 28.5, 382.5, 50.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 28.5, 382.5, 50.0, 22.0 ]
+					"presentation_rect" : [ 28.5, 382.5, 50.0, 23.0 ]
 				}
 
 			}
@@ -1466,9 +1420,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 408.5, 102.0, 22.0 ],
+					"patching_rect" : [ 28.5, 408.5, 102.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 28.5, 408.5, 102.0, 22.0 ],
+					"presentation_rect" : [ 28.5, 408.5, 102.0, 23.0 ],
 					"text" : "publish value1 $1"
 				}
 
@@ -1480,9 +1434,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 425.0, 381.5, 155.0, 22.0 ],
+					"patching_rect" : [ 425.0, 381.5, 155.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 425.0, 381.5, 155.0, 22.0 ],
+					"presentation_rect" : [ 425.0, 381.5, 155.0, 23.0 ],
 					"text" : "push (user|room) value2 $1"
 				}
 
@@ -1494,9 +1448,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 318.0, 381.5, 105.0, 22.0 ],
+					"patching_rect" : [ 318.0, 381.5, 105.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 318.0, 381.5, 105.0, 22.0 ],
+					"presentation_rect" : [ 318.0, 381.5, 105.0, 23.0 ],
 					"text" : "push all value2 $1"
 				}
 
@@ -1513,10 +1467,9 @@
 					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Events.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 819.0, 749.5, 580.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 819.0, 749.5, 580.0, 169.0 ],
@@ -1537,10 +1490,9 @@
 					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Controls.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 24.5, 749.5, 580.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.5, 749.5, 580.0, 169.0 ],
@@ -1561,10 +1513,9 @@
 					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Chat.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 362.5, 525.5, 240.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 362.5, 525.5, 240.0, 169.0 ],
@@ -1585,10 +1536,9 @@
 					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Rooms.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 835.0, 522.5, 388.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 835.0, 522.5, 388.0, 169.0 ],
@@ -1609,10 +1559,9 @@
 					"lockedsize" : 1,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 24.5, 525.5, 322.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.5, 525.5, 322.0, 169.0 ],
@@ -1694,9 +1643,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 695.0, 249.5, 150.0, 22.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 695.0, 249.5, 150.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 508.875, 139.0, 150.0, 22.0 ]
+					"presentation_rect" : [ 508.875, 139.0, 150.0, 23.0 ]
 				}
 
 			}
@@ -1754,14 +1704,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 591.5, 415.0, 372.0, 415.0 ],
-					"source" : [ "obj-43", 0 ]
 				}
 
 			}
@@ -1856,21 +1798,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 434.5, 429.0, 372.0, 429.0 ],
-					"source" : [ "obj-92", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-93", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-98", 0 ],
 					"source" : [ "obj-99", 0 ]
 				}
@@ -1878,87 +1805,129 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"name" : "CH-Chat-Title.png",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Chat.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../clippings/Collab-Hub Objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Chat-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Client.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../clippings/Collab-Hub Objects",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientInstanceManager.js",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Controls-Title.png",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../clippings/Collab-Hub Objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Controls-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"name" : "CH-Events-Title.png",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../clippings/Collab-Hub Objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"name" : "CH-Rooms-Title.png",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "CH-Rooms.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../clippings/Collab-Hub Objects",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img",
 				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.chat.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.client.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.controls.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.events.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.rooms.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
@@ -1966,24 +1935,18 @@
 		"boxgroups" : [ 			{
 				"boxes" : [ "obj-96", "obj-48", "obj-35", "obj-39", "obj-42", "obj-36", "obj-40", "obj-45", "obj-93", "obj-92", "obj-43" ]
 			}
-, 			{
-				"boxes" : [ "obj-9", "obj-31", "obj-83", "obj-52", "obj-33", "obj-21", "obj-23", "obj-82", "obj-47" ]
-			}
-, 			{
-				"boxes" : [ "obj-97", "obj-22", "obj-20", "obj-34", "obj-26", "obj-46", "obj-44", "obj-41", "obj-37", "obj-84", "obj-62", "obj-25", "obj-18", "obj-27" ]
-			}
  ],
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-						"angle" : 270,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -1992,25 +1955,30 @@
 				"multi" : 0
 			}
 , 			{
+				"name" : "CH-Text",
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "blues",
 				"default" : 				{
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 						"color2" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "gradient"
 					}
 ,
-					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2019,9 +1987,9 @@
 , 			{
 				"name" : "max6box",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ]
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2039,17 +2007,17 @@
 , 			{
 				"name" : "max6message",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"autogradient" : 0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 						"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "gradient"
 					}
-
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "max6box",
@@ -2064,7 +2032,8 @@
 				"parentstyle" : "",
 				"multi" : 0
 			}
- ]
+ ],
+		"stripecolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 	}
 
 }

@@ -21,7 +21,7 @@
 
   <h2>Push vs Publish</h2>
   <techdetail>
-    <p>While following along, the <a href="https://ch-server.herokuapp.com">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p>
+    <p>While following along, the <a href="https://server.collab-hub.io">Collab-Hub Web Interface</a> will help you understand your interaction with Collab-Hub. The Web Interface is acting as another user/client on the server, which can do all the same things the Max modules can do: send and receive data, change username, join and leave rooms, observe to published data, and send/receive chat. </p>
   </techdetail>
 
   <p>Push and Publish modes are the two ways to send your data messages with Collab-Hub. <ol><b>Push</b> sends the data message to the <b>target</b> (a user, a room, or all). The target user does not need to take extra actions other than 'route' for those incoming messages.</ol> 

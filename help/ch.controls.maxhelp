@@ -2,92 +2,74 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1061.0, 864.0 ],
-		"bglocked" : 0,
+		"rect" : [ 34.0, 62.0, 1397.0, 864.0 ],
 		"openinpresentation" : 1,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
 		"tags" : "collab-hub",
-		"style" : "",
-		"subpatcher_template" : "",
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
-		"assistshowspatchername" : 0,
-		"globalpatchername" : "CH-Events",
-		"title" : "CH-Events",
+		"globalpatchername" : "CH-Controls",
+		"title" : "CH-Controls",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-8",
+					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1061.0, 838.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 1,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
+						"rect" : [ 59.0, 81.0, 640.0, 480.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 1,
-						"assistshowspatchername" : 0,
+						"visible" : 1,
+						"boxes" : [  ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 377.0, 65.0, 34.0, 22.0 ],
+					"text" : "p ?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 81.0, 640.0, 480.0 ],
+						"openinpresentation" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"showontab" : 1,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Lato",
@@ -98,7 +80,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 791.0, 244.0, 283.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 668.25, 198.0, 283.0, 35.0 ],
+									"presentation_rect" : [ 682.25, 225.0, 283.0, 35.0 ],
 									"text" : "Deeper Concepts",
 									"textjustification" : 1
 								}
@@ -127,7 +109,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 778.0, 389.0, 262.0, 117.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 678.75, 381.0, 262.0, 117.0 ],
+									"presentation_rect" : [ 692.75, 408.0, 262.0, 117.0 ],
 									"tabs" : [ "Understand Controls and Events", "Understand Push, Publish, and Rooms" ]
 								}
 
@@ -144,7 +126,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 6,
 									"presentation_rect" : [ 10.0, 134.5, 606.0, 87.0 ],
-									"text" : "Events can be considered occurances with no attached data -- like named 'bangs' in Max.\n\nThe CH-Events module shows 'Published' events. \nIn order for you to receive a Published event, you must Observe that event. \n\nIf you do not want to publish or observe controls, you can easily just our 'PUSH' model. "
+									"text" : "Controls are data with a 'header'. Think: Key / Values.\n\nThe CH-Controls module shows 'Published' events. \nIn order for you to received a Published event, you must Observe that event. \n\nIf you do not want to publish or observe controls, you can easily just our 'PUSH' model. "
 								}
 
 							}
@@ -157,9 +139,9 @@
 									"enablevscroll" : 0,
 									"id" : "obj-94",
 									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Events.maxpat",
+									"name" : "ch.controls.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
@@ -167,7 +149,6 @@
 									"patching_rect" : [ 7.0, 487.333330869674683, 580.0, 169.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 9.0, 473.333330869674683, 580.0, 169.0 ],
-									"prototypename" : "CH-EVENTS",
 									"viewvisibility" : 1
 								}
 
@@ -218,7 +199,7 @@
 									"patching_rect" : [ 755.0, 272.5, 328.0, 127.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 8,
-									"presentation_rect" : [ 645.75, 245.0, 328.0, 127.0 ],
+									"presentation_rect" : [ 659.75, 272.0, 328.0, 127.0 ],
 									"text" : "There are two main modes of sending data to users: Push and Publish. Data messages needed to be formatted in a specific way that account for mode, destination, datatype, and possible value. \n\nSee CH-Push-Publish-Rooms.maxpat and CH-Controls-and-Events.maxpat for more information.\n\n"
 								}
 
@@ -226,14 +207,16 @@
 , 							{
 								"box" : 								{
 									"fontface" : 1,
+									"fontname" : "Lato",
+									"fontsize" : 13.0,
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 7.0, 280.0, 339.0, 20.0 ],
+									"patching_rect" : [ 7.0, 280.0, 570.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 9.0, 266.0, 339.0, 20.0 ],
-									"text" : "Disable this CH-Client module when moving to other tabs."
+									"presentation_rect" : [ 9.0, 266.0, 607.0, 22.0 ],
+									"text" : "Disconnect this CH-Client module when moving to other tabs."
 								}
 
 							}
@@ -248,14 +231,14 @@
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Client.maxpat",
-									"numinlets" : 1,
+									"name" : "ch.client.maxpat",
+									"numinlets" : 2,
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 7.0, 309.5, 320.0, 169.0 ],
+									"patching_rect" : [ 7.0, 309.5, 321.3046875, 168.92578125 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 9.0, 295.5, 320.0, 169.0 ],
+									"presentation_rect" : [ 9.0, 295.5, 321.3046875, 168.92578125 ],
 									"viewvisibility" : 1
 								}
 
@@ -266,7 +249,7 @@
 									"filename" : "helpdetails.js",
 									"id" : "obj-12",
 									"ignoreclick" : 1,
-									"jsarguments" : [ "CH-Events" ],
+									"jsarguments" : [ "CH-Controls" ],
 									"maxclass" : "jsui",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -291,7 +274,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 740.0, 258.5, 372.0, 417.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 634.5, 180.5, 350.5, 337.0 ],
+									"presentation_rect" : [ 648.5, 207.5, 350.5, 337.0 ],
 									"proportion" : 0.5
 								}
 
@@ -332,17 +315,116 @@
 								}
 
 							}
+ ],
+						"boxgroups" : [ 							{
+								"boxes" : [ "obj-19", "obj-21", "obj-18", "obj-25" ]
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"angle" : 270,
+										"autogradient" : 0,
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
+										"proportion" : 0.39,
+										"type" : "color"
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "blues",
+								"default" : 								{
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
+									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+									"bgfillcolor" : 									{
+										"angle" : 270.0,
+										"autogradient" : 0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color1" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+										"color2" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
+										"proportion" : 0.39,
+										"type" : "gradient"
+									}
+,
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "max6box",
+								"default" : 								{
+									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "max6inlet",
+								"default" : 								{
+									"color" : [ 0.423529, 0.372549, 0.27451, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "max6message",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"angle" : 270.0,
+										"autogradient" : 0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
+										"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+										"proportion" : 0.39,
+										"type" : "gradient"
+									}
+,
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"parentstyle" : "max6box",
+								"multi" : 0
+							}
+, 							{
+								"name" : "max6outlet",
+								"default" : 								{
+									"color" : [ 0.0, 0.454902, 0.498039, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobj001",
+								"default" : 								{
+									"fontname" : [ "Arial Bold" ],
+									"fontsize" : [ 10.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
 					"patching_rect" : [ 7.0, 10.0, 48.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
 					"text" : "p Basic"
 				}
 
@@ -356,44 +438,55 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1061.0, 838.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
+						"rect" : [ 0.0, 26.0, 1397.0, 838.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 1,
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 97.0, 569.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "slider",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 97.0, 532.0, 165.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-8",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 278.0, 532.0, 156.0, 37.0 ],
+									"text" : "Publish a Control\navailable to all users."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
 									"fontname" : "Arial Bold",
@@ -406,23 +499,10 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 290.0, 515.0, 20.0, 20.0 ],
+									"patching_rect" : [ 448.5, 532.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
-									"id" : "obj-8",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 124.5, 523.0, 156.0, 37.0 ],
-									"text" : "Publish an Event\navailable to all users."
 								}
 
 							}
@@ -439,22 +519,10 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 474.5, 652.5, 20.0, 20.0 ],
+									"patching_rect" : [ 448.5, 683.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-7",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 60.5, 515.0, 53.0, 53.0 ]
 								}
 
 							}
@@ -465,7 +533,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.5, 578.0, 165.0, 22.0 ],
+									"patching_rect" : [ 97.0, 604.0, 165.0, 22.0 ],
 									"text" : "publish all maxEvent42"
 								}
 
@@ -476,7 +544,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 60.5, 615.0, 85.0, 22.0 ],
+									"patching_rect" : [ 97.0, 641.0, 85.0, 22.0 ],
 									"text" : "s toCH-Server"
 								}
 
@@ -487,7 +555,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 335.5, 132.0, 188.0, 20.0 ],
+									"patching_rect" : [ 335.5, 141.0, 188.0, 20.0 ],
 									"text" : "Connect to Server. "
 								}
 
@@ -505,7 +573,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 448.5, 132.0, 20.0, 20.0 ],
+									"patching_rect" : [ 448.5, 141.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "0",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -519,8 +587,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 604.0, 314.333330869674683, 156.0, 33.0 ],
-									"text" : "Events that you publish will appear in the right side list. "
+									"patching_rect" : [ 604.0, 334.333330869674683, 168.0, 33.0 ],
+									"text" : "Controls that you publish will appear in the right side list. "
 								}
 
 							}
@@ -533,17 +601,16 @@
 									"enablevscroll" : 0,
 									"id" : "obj-94",
 									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Events.maxpat",
+									"name" : "ch.controls.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.0, 314.333330869674683, 580.0, 169.0 ],
+									"patching_rect" : [ 10.0, 334.333330869674683, 580.0, 169.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 849.0, 779.5, 580.0, 169.0 ],
-									"prototypename" : "CH-EVENTS",
 									"viewvisibility" : 1
 								}
 
@@ -584,7 +651,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 80.0, 154.0, 20.0 ],
-									"text" : "Publish Events"
+									"text" : "Publish Controls"
 								}
 
 							}
@@ -596,7 +663,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 10.0, 750.5, 24.0, 24.0 ]
+									"patching_rect" : [ 10.0, 777.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -608,20 +675,20 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 49.0, 750.5, 288.0, 35.0 ],
-									"text" : ";\rmax launchbrowser http://CH-Server.herokuapp.com"
+									"patching_rect" : [ 49.0, 777.5, 288.0, 35.0 ],
+									"text" : ";\rmax launchbrowser https://server.collab-hub.io"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-19",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 660.5, 519.0, 74.0 ],
-									"text" : "Load up our Web Test Page. http://CH-Server.herokuapp.com. \n\nScroll halfway down the page and find the section labeled 'Published Events'. The published event should listed. Click Observe. Retrigger the Event (Step #1) and check the web browser's 'Incoming Messages'."
+									"patching_rect" : [ 10.0, 697.5, 519.0, 60.0 ],
+									"text" : "Load up our Web Text Page. http://CH-Server.herokuapp.com. \nScroll halfway down the page and find the section labeled 'Published Events'. The published event should listed. Click Observe. Change a slider value (Step #1) and check the web browser's 'Incoming Messages'."
 								}
 
 							}
@@ -636,12 +703,12 @@
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Client.maxpat",
-									"numinlets" : 1,
+									"name" : "ch.client.maxpat",
+									"numinlets" : 2,
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 10.0, 132.0, 320.0, 169.0 ],
+									"patching_rect" : [ 10.0, 141.0, 321.3046875, 168.92578125 ],
 									"viewvisibility" : 1
 								}
 
@@ -656,6 +723,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-4", 0 ]
 								}
@@ -664,7 +738,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-7", 0 ]
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -673,13 +747,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-										"angle" : 270,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -690,23 +764,23 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
 									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 										"color2" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "gradient"
 									}
 ,
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -715,9 +789,9 @@
 , 							{
 								"name" : "max6box",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
 									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -735,17 +809,17 @@
 , 							{
 								"name" : "max6message",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"autogradient" : 0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 										"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "gradient"
 									}
-
+,
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "max6box",
@@ -763,8 +837,8 @@
 , 							{
 								"name" : "newobj001",
 								"default" : 								{
-									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"fontname" : [ "Arial Bold" ],
+									"fontsize" : [ 10.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -773,15 +847,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 71.0, 903.0, 106.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p \"Publish Events\""
+					"patching_rect" : [ 66.0, 49.0, 114.0, 22.0 ],
+					"text" : "p \"Publish Controls\""
 				}
 
 			}
@@ -805,64 +872,63 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 1061.0, 838.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
+						"rect" : [ 0.0, 26.0, 1397.0, 838.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
 						"showontab" : 1,
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-8",
+									"id" : "obj-1",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 654.0, 37.0, 475.0, 20.0 ],
-									"text" : "jweb instance of the webclient: http://CH-Server.herokuapp.com"
+									"patching_rect" : [ 614.0, 31.0, 475.0, 20.0 ],
+									"text" : "jweb instance of the webclient: https://server.collab-hub.io"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-1",
+									"disablefind" : 0,
+									"id" : "obj-9",
 									"maxclass" : "jweb",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 639.0, 64.0, 645.0, 452.0 ],
-									"rendermode" : 1,
-									"url" : "http://CH-Server.herokuapp.com"
+									"patching_rect" : [ 599.0, 58.0, 645.0, 452.0 ],
+									"rendermode" : 0,
+									"url" : "https://server.collab-hub.io"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "slider",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 31.0, 859.0, 165.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 31.0, 829.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -874,32 +940,30 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 111.0, 425.0, 33.0 ],
-									"text" : "When an Event is published and is available, you can observe that event. You observe events in Max with the CH-Events."
+									"text" : "When an Control is published and is available, you can observe that Control. You observe control in Max with the CH-Control."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"bubble" : 1,
 									"id" : "obj-3",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 599.0, 656.333330869674683, 298.0, 37.0 ],
+									"patching_rect" : [ 599.0, 631.333330869674683, 298.0, 33.0 ],
 									"text" : "Stop observing an event by selecting in in the middle umenu below the list of 'ObservedEvents'"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"bubble" : 1,
 									"id" : "obj-2",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 599.0, 585.333330869674683, 298.0, 64.0 ],
+									"patching_rect" : [ 599.0, 570.333330869674683, 298.0, 47.0 ],
 									"text" : "All observable events are listed in the 'AvailableEvents' list. \nToggle 'Details' to see for information on each event. "
 								}
 
@@ -917,7 +981,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 865.5, 20.0, 20.0 ],
+									"patching_rect" : [ 455.5, 913.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -931,20 +995,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 104.0, 860.5, 327.0, 47.0 ],
-									"text" : "Go back to the web browser and push the webEvent button again. Now that you're observing the event, you should receive all future occurances. "
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-32",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 31.0, 855.5, 57.0, 57.0 ]
+									"patching_rect" : [ 120.0, 900.0, 327.0, 47.0 ],
+									"text" : "Go back to the web browser and move the webSlider1 button again. Now that you're observing the Control you should receive all future occurances. "
 								}
 
 							}
@@ -955,8 +1007,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 31.0, 825.5, 99.0, 22.0 ],
-									"text" : "route webEvent1"
+									"patching_rect" : [ 31.0, 800.5, 99.0, 22.0 ],
+									"text" : "route webSlider1"
 								}
 
 							}
@@ -967,7 +1019,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 31.0, 796.5, 97.0, 22.0 ],
+									"patching_rect" : [ 31.0, 771.5, 97.0, 22.0 ],
 									"text" : "r fromCH-Server"
 								}
 
@@ -1019,8 +1071,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 451.0, 425.0, 47.0 ],
-									"text" : "On the browser, click the button cooresponding to 'event webEvent1'.\nThis is a 'publish all' event, which means it's a PUSH mode event, available to all users. "
+									"patching_rect" : [ 10.0, 451.0, 427.0, 47.0 ],
+									"text" : "On the browser, click the button cooresponding to 'control webSlider1'.\nThis is a 'publish all' Control, which means it's a PUSH mode Control available to all users. "
 								}
 
 							}
@@ -1053,9 +1105,9 @@
 									"enablevscroll" : 0,
 									"id" : "obj-94",
 									"lockeddragscroll" : 0,
-									"lockedsize" : 1,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Events.maxpat",
+									"name" : "ch.controls.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
@@ -1063,7 +1115,6 @@
 									"patching_rect" : [ 8.0, 524.333330869674683, 580.0, 169.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 834.0, 764.5, 580.0, 169.0 ],
-									"prototypename" : "CH-EVENTS",
 									"viewvisibility" : 1
 								}
 
@@ -1102,12 +1153,14 @@
 , 							{
 								"box" : 								{
 									"fontface" : 1,
+									"fontname" : "Lato",
+									"fontsize" : 13.0,
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 171.0, 560.0, 20.0 ],
-									"text" : "Disable this CH-Client module when moving to other tabs."
+									"patching_rect" : [ 10.0, 167.0, 570.0, 22.0 ],
+									"text" : "Disconnect this CH-Client module when moving to other tabs."
 								}
 
 							}
@@ -1119,7 +1172,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 79.999982476234436, 154.0, 20.0 ],
-									"text" : "Observe Events"
+									"text" : "Observe Controls"
 								}
 
 							}
@@ -1147,7 +1200,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 4,
 									"presentation_rect" : [ 1393.0, 148.5, 129.0, 62.0 ],
-									"text" : ";\rmax launchbrowser http://CH-Server.herokuapp.com"
+									"text" : ";\rmax launchbrowser https://server.collab-hub.io"
 								}
 
 							}
@@ -1171,7 +1224,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 8.0, 719.5, 439.0, 47.0 ],
-									"text" : "Observe that event by selecting it on the umenu next to \n\"Observe:\" A confirmation window should appear and the event should appear in the 'ObservedEvents' list."
+									"text" : "Observe that Control by selecting it on the umenu next to \n\"Observe:\" A confirmation window should appear and the Control should appear in the 'ObservedControls' list."
 								}
 
 							}
@@ -1206,12 +1259,12 @@
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "CH-Client.maxpat",
-									"numinlets" : 1,
+									"name" : "ch.client.maxpat",
+									"numinlets" : 2,
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 10.0, 193.0, 320.0, 169.0 ],
+									"patching_rect" : [ 10.0, 193.0, 321.3046875, 168.92578125 ],
 									"viewvisibility" : 1
 								}
 
@@ -1249,8 +1302,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-32", 0 ],
+									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -1259,13 +1319,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-										"angle" : 270,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -1276,23 +1336,23 @@
 , 							{
 								"name" : "blues",
 								"default" : 								{
-									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
 									"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 										"color2" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "gradient"
 									}
 ,
-									"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+									"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+									"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+									"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1301,9 +1361,9 @@
 , 							{
 								"name" : "max6box",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
 									"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-									"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1321,17 +1381,17 @@
 , 							{
 								"name" : "max6message",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"autogradient" : 0,
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 										"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 										"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "gradient"
 									}
-
+,
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "max6box",
@@ -1349,8 +1409,8 @@
 , 							{
 								"name" : "newobj001",
 								"default" : 								{
-									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"fontname" : [ "Arial Bold" ],
+									"fontsize" : [ 10.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1359,63 +1419,63 @@
  ]
 					}
 ,
-					"patching_rect" : [ 72.0, 865.0, 113.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p \"Observe Events\""
+					"patching_rect" : [ 211.0, 49.0, 120.0, 22.0 ],
+					"text" : "p \"Observe Controls\""
 				}
 
 			}
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "helpname.js",
-				"bootpath" : "C74:/help/resources",
-				"type" : "TEXT",
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"name" : "CH-ClientInstanceManager.js",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CH-Controls-Title.png",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"name" : "ch.client.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
-				"type" : "PNG",
+				"name" : "ch.controls.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "helpdetails.js",
+				"bootpath" : "C74:/help/resources",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "helpname.js",
 				"bootpath" : "C74:/help/resources",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -1426,13 +1486,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-						"angle" : 270,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -1443,23 +1503,23 @@
 , 			{
 				"name" : "blues",
 				"default" : 				{
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
 					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 						"color2" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "gradient"
 					}
 ,
-					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1468,9 +1528,9 @@
 , 			{
 				"name" : "max6box",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
-					"accentcolor" : [ 0.8, 0.839216, 0.709804, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1488,17 +1548,17 @@
 , 			{
 				"name" : "max6message",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"autogradient" : 0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 						"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "gradient"
 					}
-
+,
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "max6box",
@@ -1516,8 +1576,8 @@
 , 			{
 				"name" : "newobj001",
 				"default" : 				{
-					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial Bold" ]
+					"fontname" : [ "Arial Bold" ],
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"parentstyle" : "",

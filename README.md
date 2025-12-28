@@ -1,4 +1,4 @@
-# Collab-Hub Max Client 0.3.4
+# Collab-Hub Max Client 0.3.6
 
 <br/>
 
@@ -14,21 +14,21 @@ The Collab-Hub Max Client is a tool designed to facilitate communication with th
 
 The Max Client package consists of a set of modules (built as abstractions that run inside bpatchers) that can be used in different combinations depending on your needs.
 
-The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/nodeformax/api/) and [Socket.IO](https://socket.io).
+The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/nodeformax/api/).
 
 <br/>
 
 ---
 
 ## Getting Started
+
 0. This current version is intended as a Max Package. If you've downloaded this package from Max Package Manager, you can skip all remaining steps.
 1. If you DID NOT download this package from the Max Package Manager, please take the following steps to manually add this as a Max Package. This will ensure all the available refpages, docs, and templates are available to you.
 2. Download the Collab-Hub-Max-Client folder from GitHub using the green Code button near the top of this page. Either choose "Download ZIP" or, if you're comfortable using git, you can clone the repo.
 3. Move this entire folder into your **~/Documents/Max 8/Packages folder**. IF you are using Git to clone this repo, you can create an 'alias' and place that alias folder in the Max Packages folder.
-4. Start using Collab-Hub by opening *Collab-Hub Modules.maxpat* from **Extras > Collab-Hub Modules** from the top menu bar.
+4. Start using Collab-Hub by opening _Collab-Hub Modules.maxpat_ from **Extras > Collab-Hub Modules** from the top menu bar.
 
-   ``` If you have a previous version of this repository within Max's file structure / file preferences, Max might accidentally open the incorrect / older version of a module. Please remove references to older Collab-Hub Client, as these will be the most up-to-date and stable. ```
-
+   `If you have a previous version of this repository within Max's file structure / file preferences, Max might accidentally open the incorrect / older version of a module. Please remove references to older Collab-Hub Client, as these will be the most up-to-date and stable.`
 
 DEMO VIDEO COMING SOON
 
@@ -40,7 +40,7 @@ DEMO VIDEO COMING SOON
 
 ## Modules
 
-Each of the modules is designed to implement a specific function or group of related functions of Collab-Hub. They can be mixed and matched as needed. Each module has an inlet and outlet that can be used to send and receive messages to/from the server. Alternatively, outgoing messages can be connected to a *send toCH-Server* object, while incoming messages can be intercepted with a *receive fromCH-Server* object.
+Each of the modules is designed to implement a specific function or group of related functions of Collab-Hub. They can be mixed and matched as needed. Each module has an inlet and outlet that can be used to send and receive messages to/from the server. Alternatively, outgoing messages can be connected to a _send toCH-Server_ object, while incoming messages can be intercepted with a _receive fromCH-Server_ object.
 
 <br/>
 
@@ -124,12 +124,15 @@ The **CH-Events** module provides a way to see and manage your event headers and
 ## Message Formats
 
 ### Outgoing data
+
 All outgoing control and event communications between users on Collab-Hub operate in the following modes:
+
 - **Publish** - Published controls/events are automatically registered to the server but will only be sent to users that choose to "observe" them. Their availability is advertised in the AvailableControls and AvailableEvents displays in the CH-Controls and CH-Events modules, respectively.
 - **Push** - Pushed controls/events are sent directly to the intended targets. They are not advertised in AvailableControls or AvailableEvents.
 
 You may decide to use these two modes in the following example scenarios:
-- If you have a Max patch that generates a lot of control data (e.g. using several LFOs) and you want to have an impromptu jam with some friends over the internet, you would **publish** those controls so that other users can selectively receive and map that data *à la minute*.
+
+- If you have a Max patch that generates a lot of control data (e.g. using several LFOs) and you want to have an impromptu jam with some friends over the internet, you would **publish** those controls so that other users can selectively receive and map that data _à la minute_.
 - If you are composing a piece with Max for laptop ensemble that has a known set of parameters and/or performers, you probably want to **push** controls and events since they will likely be routed and mapped the same way for each performance.
 
 The max client expects to receive outgoing control data in the following format:
@@ -153,7 +156,8 @@ For **pushed and published** controls/events, the target should be a username, r
 <br/>
 
 ### Incoming data
-Incoming controls/events will be in this format (for controls):  
+
+Incoming controls/events will be in this format (for controls):
 
     header value(s)
 
@@ -161,7 +165,7 @@ Incoming controls/events will be in this format (for controls):
 
     header
 
-Optionally, if the *Flags* button is enabled in the **CH-Client** module in the receiver's patch, the sender's username will be prepended to all incoming controls and events:  
+Optionally, if the _Flags_ button is enabled in the **CH-Client** module in the receiver's patch, the sender's username will be prepended to all incoming controls and events:
 
     sender header value(s)
 
@@ -169,7 +173,7 @@ Optionally, if the *Flags* button is enabled in the **CH-Client** module in the 
 
     sender header
 
-This makes it easy in Max to route incoming data (e.g. using the *route* or *select* objects) by header and/or the sender's username.
+This makes it easy in Max to route incoming data (e.g. using the _route_ or _select_ objects) by header and/or the sender's username.
 
 <br/>
 
@@ -177,7 +181,7 @@ This makes it easy in Max to route incoming data (e.g. using the *route* or *sel
 
 ## Other Commands
 
-Much of the functionality below is built into dropdown menus, buttons, and toggles of the modules. However, you can also implement them manually in your patch if you prefer by sending the following commands to any module inlet or a *send toCH-Server* object.
+Much of the functionality below is built into dropdown menus, buttons, and toggles of the modules. However, you can also implement them manually in your patch if you prefer by sending the following commands to any module inlet or a _send toCH-Server_ object.
 
 Change username:
 
@@ -251,7 +255,7 @@ Leave a room:
 
 ### The Client Script
 
-The file called 'CH-ClientScript.js' is the client script that loads in the *node.script* object inside the CH-Client module. This script is all that is really needed to communicate with the Collab-Hub server from within Max. Experienced users may wish to build their patches around just a *node.script* object running 'CH-ClientScript.js', mitigating the need for the provided modules.
+The file called 'CH-ClientScript.js' is the client script that loads in the _node.script_ object inside the CH-Client module. This script is all that is really needed to communicate with the Collab-Hub server from within Max. Experienced users may wish to build their patches around just a _node.script_ object running 'CH-ClientScript.js', mitigating the need for the provided modules.
 
 <img src="./media/img/for-readme/Script-Cap.png" alt="Node Script" height="120
 "/>
@@ -259,7 +263,8 @@ The file called 'CH-ClientScript.js' is the client script that loads in the *nod
 <br/>
 
 ### Initialization with config.json
-Users can initialize some settings at the time of connection by changing entries in the 'config.json' file.  
+
+Users can initialize some settings at the time of connection by changing entries in the 'config.json' file.
 
     {
         "namespace": "hub",
@@ -272,14 +277,31 @@ Users can initialize some settings at the time of connection by changing entries
 - **server:** This is should only be changed for personal debugging purposes. At the moment, there are no other Collab-Hub servers (out in the wild).
 
 ---
+
 ## Changelog
+
+- #0.3.6
+
+  - CH-Client now has interface to change server url.
+  - Moved Default Server to http://server.collab-hub.io, was previously https://ch-server.herokuapp.com
+  - Ability to add alternate server locations, anticipating 0.4.0 release of localized servers for RaspberryPis.
+  - Moved Web Interface to http://server.collab-hub.io
+  - Max Help should load for core Objects: Client, Chat, Rooms, Controls, Events
+  - Add Max Snippet and Paste-From grouping for fast startup
+
+- #0.3.5
+
+  - Mostly cosmetic adjustments. Color mode from Max 8 to Max 9 made some text hard to reaad.
+
 - #0.3.4
+
   - Corrected Web Interface Link in Main Tutorial Page.
   - Clippings 'CH-ToServer' object had a misspelling.
-  - Namespace still defaults to '/hub'. Changing namespace should now be done on the ```/javascript/config.json``` file, rather than the embedded ```CH-ClientScript.js```. Within the config, no leading slash needed.
+  - Namespace still defaults to '/hub'. Changing namespace should now be done on the `/javascript/config.json` file, rather than the embedded `CH-ClientScript.js`. Within the config, no leading slash needed.
   - Upon connection, Collab-Hub and Server Related messages should appear in Max Console.
 
 - #0.3.3
+
   - Added more Max Package files
     - Add Max Topic Vignettes
     - Max Tutorials (Getting Started)
@@ -305,5 +327,5 @@ Users can initialize some settings at the time of connection by changing entries
     - Module will not receive command / attribute changes unless connected
       - Can still change username prior to connecting
   - Publish Mode requires 'target' value when manually sending messageType
-      - Previously, 'all' was default and unchangeable
-      - Push Mode messages must have a target of 'all', username, or roomname to publish and Events and Controls
+    - Previously, 'all' was default and unchangeable
+    - Push Mode messages must have a target of 'all', username, or roomname to publish and Events and Controls

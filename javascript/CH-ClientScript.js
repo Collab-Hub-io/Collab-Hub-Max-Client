@@ -8,19 +8,68 @@
 
 const max = require("max-api"),
   io = require("socket.io-client"),
-  config = require("./config.json"),
-  namespace = config.namespace || "",
-  server = config.server || "https://ch-server.herokuapp.com",
-  username = config.username,
-  socket = (() => {
-    if (username != undefined) {
-      // maxoutlet("serveradd", `${server}/${namespace}`);
-      return io.connect(`${server}/${namespace}`, {
-        query: { username: username },
-      });
-    } else return io.connect(`${config.server}/${namespace}`);
-  })();
+  rawConfig = require("./config.json");
 
+const namespace =
+  typeof rawConfig.namespace === "string" && rawConfig.namespace.trim() !== ""
+    ? rawConfig.namespace.trim().replace(/^\/+/, "") // strip leading slashes
+    : "hub";
+
+let server =
+  typeof rawConfig.server === "string" && rawConfig.server.trim() !== ""
+    ? rawConfig.server.trim()
+    : "http://localhost:3000";
+
+// Ensure server has protocol
+if (!/^https?:\/\//i.test(server)) {
+  server = "http://" + server;
+}
+
+const username =
+  typeof rawConfig.username === "string" ? rawConfig.username.trim() : "";
+const socket = (() => {
+  const baseUrl = `${server}/${namespace}`;
+  let finalUsername = username;
+
+  if (!finalUsername || finalUsername.length === 0) {
+    finalUsername = "CH-Max-Client_" + Math.floor(Math.random() * 1000);
+    console.log(
+      `No username specified in config.json; using generated username: ${finalUsername}`
+    );
+  } else {
+    console.log(`Connecting with username: ${finalUsername} to ${baseUrl}`);
+  }
+
+  try {
+    const s = io.connect(baseUrl, {
+      query: { username: finalUsername },
+      transports: ["websocket"],
+      reconnection: true,
+      reconnectionAttempts: Infinity,
+      reconnectionDelay: 1000,
+      reconnectionDelayMax: 5000,
+    });
+
+    s.on("connect_error", (err) => {
+      console.log("Socket connect_error:", err.message || err);
+      max.outlet("error", "connect_error: " + (err.message || err));
+    });
+
+    s.on("reconnect_failed", () => {
+      console.log("Socket reconnect_failed");
+      max.outlet("error", "reconnect_failed");
+    });
+
+    return s;
+  } catch (err) {
+    console.log("Error creating socket:", err.message || err);
+    max.outlet("error", "socket_init_error: " + (err.message || err));
+    throw err;
+  }
+})();
+
+// inside CH-ClientScript.js
+// const socket = io("https://ch-server.herokuapp.com/hub");
 console.log(socket);
 
 let senderFlag = false,
@@ -40,17 +89,23 @@ const maxHandlers = {
     }
   },
 
-  addUsername: (username) => {
-    if (username === undefined) {
-      maxErrorHandler("Username cannot be undefined.");
-    } else {
-      // var replaceVals = /[^\w\d]/gi;
-      // var replaceVals = /[ ]/gi;
-      var replaceVals = /[^A-Z0-9]+/gi;
-      username = username.replace(replaceVals, "_");
-      var outgoing = { username: username };
-      socket.emit("addUsername", outgoing);
+  addUsername: (name) => {
+    if (name === undefined || name === null) {
+      maxErrorHandler("Username cannot be undefined or null.");
+      return;
     }
+
+    let cleaned = String(name);
+    const replaceVals = /[^A-Z0-9]+/gi;
+    cleaned = cleaned.replace(replaceVals, "_").trim();
+
+    if (!cleaned) {
+      maxErrorHandler("Username cannot be empty/blank after cleaning.");
+      return;
+    }
+
+    const outgoing = { username: cleaned };
+    socket.emit("addUsername", outgoing);
   },
 
   sender: (bool) => {
@@ -112,11 +167,26 @@ const maxHandlers = {
   // Chat broadcast
 
   chat: (...args) => {
-    let outgoing = {
-      target: args[0],
-      chat: args.slice(1),
-    };
-    socket.emit("chat", outgoing);
+    try {
+      if (!args || args.length < 2) {
+        maxErrorHandler("Chat requires at least a target and a message.");
+        return;
+      }
+
+      const target = String(args[0]).trim() || "all";
+      const message = args.slice(1).map(String).join(" ");
+
+      console.log(`chat message to ${target}: ${message}`);
+
+      const outgoing = {
+        target,
+        chat: message,
+      };
+
+      socket.emit("chat", outgoing);
+    } catch (err) {
+      maxErrorHandler("Chat error: " + (err.message || err));
+    }
   },
 
   // Control management
@@ -215,7 +285,8 @@ socket.on("connect", () => {
 });
 
 // This function is only useful if the disconnect comes from the server
-socket.on("disconnect", () => {
+socket.on("disconnect", (reason) => {
+  console.log("Socket disconnected:", reason);
   max.outlet("connected", 0);
 });
 

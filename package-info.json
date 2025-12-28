@@ -1,111 +1,111 @@
 {
-	"name": "Collab-Hub",
-	"displayname": "Collab-Hub Max Client",
-	"version": "0.3.4",
-	"author": "Nick Hwang, Eric Sheffield, Anthony T. Marasco",
-	"authors": [
-		"Nick Hwang",
-		"Eric Sheffield",
-		"Anthony T. Marasco"
-	],
-	"description": "Max Client for Collab-Hub.io -- a server-based collaborative tool meant to connect creative apps including Max, PD, Arduino, Unity, etc. Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. Visit Collab-Hub.io for more information for other clients.",
-	"tags": [
-		"networking",
-		"remote collaboration",
-		"network musical performance",
-		"collaborative",
-		"remote",
-		"nodejs",
-		"PD",
-		"Arduino",
-		"OSC"
-	],
-	"website": "https://www.collab-hub.io",
-	"extends": "",
-	"extensible": 0,
-	"max_version_min": "8.0",
-	"max_version_max": "none",
-	"os": {
-		"macintosh": {
-			"min_version": "8.0",
-			"platform": [
-				"x64",
-				"aarch64"
-			]
-		},
-		"windows": {
-			"min_version": "8.0",
-			"platform": [
-				"x64"
-			]
-		}
-	},
-	"homepatcher": "Collab-Hub Modules.maxpat",
-	"package_extra": {
-		"reverse_domain": "io.collab-hub",
-		"copyright": "Copyright © 2020-2022, Nick Hwang. All rights reserved."
-	},
-	"filelist": {
-		"externals": [],
-		"patchers": [
-			"CH-Client.maxpat",
-			"CH-ClientTesting.maxpat",
-			"CH-Controls.maxpat",
-			"CH-Events.maxpat",
-			"CH-Rooms.maxpat",
-			"CH-Chat.maxpat"
-		],
-		"help": [
-			"CH-Client.maxhelp",
-			"CH-ClientTesting.maxhelp",
-			"CH-Controls.maxhelp",
-			"CH-Events.maxhelp",
-			"CH-Rooms.maxhelp",
-			"CH-Chat.maxhelp"
-		],
-		"media": [
-			"img/CH-Title.png",
-			"img/CH-Diagram.png",
-			"img/CH-Diagram-transparent.png",
-			"img/Max-Logo.png",
-			"img/Collab-Hub-Style.jpg",
-			"img/CH-Title.png",
-			"img/CH-Small-Logo-NoText.png"
-		],
-		"docs": [
-			"CH-Client.maxref.xml",
-			"CH-ClientTesting.maxref.xml",
-			"CH-Controls.maxref.xml",
-			"CH-Events.maxref.xml",
-			"CH-Rooms.maxref.xml",
-			"CH-Chat.maxref.xml",
-			"Collab-Hub Modules.maxref.xml",
-			"topics/Collab-Hub_topic.maxvig.xml",
-			"tutorials/ch-tut/00-ch-index.maxtut.xml"
-		],
-		"javascript": [
-			"CH-ClientScript.js",
-			"CH-ClientInstanceManager.js",
-			"CH-Chat-JS.js"
-		],
-		"extras": [
-			"Collab-Hub Modules.maxpat"
-		],
-		"examples": [
-			"CH-Simple-Routing.maxpat",
-			"CH-Controls-and-Events.maxpat",
-			"CH-Drum-Demo.maxpat",
-			"CH-Push-Publish-Rooms.maxpat",
-			"CH-Sequence-Trader/CH-Sequencer-Trader.maxpat",
-			"Mapping-Strategies.maxpat"
-		],
-		"templates": [
-			"collab-hub-template.maxpat"
-		],
-		"clippings": [
-			"to_from_Server.maxpat"
-		]
-	},
-	"c74install": 1,
-	"installdate": 3716758452
+  "name": "Collab-Hub",
+  "displayname": "Collab-Hub Max Client",
+  "version": "0.3.6",
+  "author": "Nick Hwang, Eric Sheffield, Anthony T. Marasco",
+  "authors": ["Nick Hwang", "Eric Sheffield", "Anthony T. Marasco"],
+  "description": "Max Client for Collab-Hub.io -- a server-based collaborative tool meant to connect creative apps including Max, PD, Arduino, Unity, etc. Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. Visit Collab-Hub.io for more information for other clients.",
+  "tags": [
+    "networking",
+    "remote collaboration",
+    "network musical performance",
+    "collaborative",
+    "remote",
+    "nodejs",
+    "PD",
+    "Arduino",
+    "OSC"
+  ],
+  "website": "https://www.collab-hub.io",
+  "extends": "",
+  "extensible": 0,
+  "max_version_min": "8.0",
+  "max_version_max": "none",
+  "os": {
+    "macintosh": {
+      "min_version": "8.0",
+      "platform": ["x64", "aarch64"]
+    },
+    "windows": {
+      "min_version": "8.0",
+      "platform": ["x64"]
+    }
+  },
+  "homepatcher": "Collab-Hub Modules.maxpat",
+  "package_extra": {
+    "reverse_domain": "io.collab-hub",
+    "copyright": "Copyright © 2020-2025, Nick Hwang. All rights reserved."
+  },
+  "filelist": {
+    "externals": [],
+    "patchers": [
+      "cc.client.maxpat",
+      "cc.clienttesting.maxpat",
+      "cc.controls.maxpat",
+      "cc.events.maxpat",
+      "cc.rooms.maxpat",
+      "cc.chat.maxpat"
+    ],
+    "help": [
+      "CH-Client.maxhelp",
+      "CH-ClientTesting.maxhelp",
+      "CH-Controls.maxhelp",
+      "CH-Events.maxhelp",
+      "CH-Rooms.maxhelp",
+      "CH-Chat.maxhelp"
+    ],
+    "media": [
+      "img/CH-Title.png",
+      "img/CH-Diagram.png",
+      "img/CH-Diagram-transparent.png",
+      "img/Max-Logo.png",
+      "img/Collab-Hub-Style.jpg",
+      "img/CH-Title.png",
+      "img/CH-Small-Logo-NoText.png",
+      "media/img/for-bpatchers/CH-Chat-Title.png",
+      "media/img/for-bpatchers/CH-Client-Title.png",
+      "media/img/for-bpatchers/CH-Controls-Title.png",
+      "media/img/for-bpatchers/CH-Events-Title.png",
+      "media/img/for-bpatchers/CH-Rooms-Title.png",
+      "media/img/for-bpatchers/CH-Titles.svg"
+    ],
+    "docs": [
+      "CH-Client.maxref.xml",
+      "CH-ClientTesting.maxref.xml",
+      "CH-Controls.maxref.xml",
+      "CH-Events.maxref.xml",
+      "CH-Rooms.maxref.xml",
+      "CH-Chat.maxref.xml",
+      "Collab-Hub Modules.maxref.xml",
+      "topics/Collab-Hub_topic.maxvig.xml",
+      "tutorials/ch-tut/00-ch-index.maxtut.xml"
+    ],
+    "javascript": [
+      "CH-ClientScript.js",
+      "CH-ClientInstanceManager.js",
+      "CH-Chat-JS.js",
+      "config.json"
+    ],
+    "extras": ["Collab-Hub Modules.maxpat"],
+    "examples": [
+      "CH-Simple-Routing.maxpat",
+      "CH-Controls-and-Events.maxpat",
+      "CH-Drum-Demo.maxpat",
+      "CH-Push-Publish-Rooms.maxpat",
+      "CH-Sequence-Trader/CH-Sequencer-Trader.maxpat",
+      "Mapping-Strategies.maxpat"
+    ],
+    "templates": ["collab-hub-template.maxpat"],
+    "clippings": [
+      "to_from_Server.maxpat",
+      "Collab-Hub Objects/CH-Client.maxpat",
+      "Collab-Hub Objects/CH-Chat.maxpat",
+      "Collab-Hub Objects/CH-Controls.maxpat",
+      "Collab-Hub Objects/CH-Events.maxpat",
+      "Collab-Hub Objects/CH-Rooms.maxpat",
+      "Collab-Hub Objects/CH-Chat.maxpat"
+    ]
+  },
+  "c74install": 1,
+  "installdate": 3716758452
 }

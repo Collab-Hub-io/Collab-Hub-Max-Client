@@ -2,42 +2,17 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 91.0, 67.0, 1365.0, 864.0 ],
-		"bglocked" : 0,
+		"rect" : [ -1331.0, 293.0, 1284.0, 753.0 ],
 		"openinpresentation" : 1,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-91",
@@ -252,8 +227,8 @@
 					"id" : "obj-110",
 					"maxclass" : "preset",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "preset", "int", "preset", "int", "" ],
 					"patching_rect" : [ 664.833333333333485, 714.000006914138794, 76.166666666666515, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 681.666664123535156, 706.333358526229858, 76.166666666666515, 35.0 ],
@@ -325,6 +300,7 @@
 , 			{
 				"box" : 				{
 					"addpoints" : [ 0.0, 0.560000092188517, 0, 12.550531914893616, 0.213333425521851, 0, 69.188829787234027, 1.0, 0, 120.999999999999943, 0.0, 0 ],
+					"classic_curve" : 1,
 					"domain" : 121.0,
 					"id" : "obj-99",
 					"maxclass" : "function",
@@ -476,15 +452,14 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "CH-Client.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"name" : "ch.client.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1712.583332777023315, 161.5, 322.0, 169.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1712.583332777023315, 161.5, 321.3046875, 168.92578125 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.249948143959045, 76.166668117046356, 322.0, 169.0 ],
-					"prototypename" : "CH-CLIENT",
+					"presentation_rect" : [ 12.249948143959045, 76.166668117046356, 321.3046875, 168.92578125 ],
 					"viewvisibility" : 1
 				}
 
@@ -883,6 +858,7 @@
 							"parameter_longname" : "mc.live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -919,7 +895,8 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 1125.666661620140076, 460.666670918464661, 189.0, 33.0 ],
-					"text" : "Resonance Filter, unlock for values"
+					"text" : "Resonance Filter, unlock for values",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -932,7 +909,8 @@
 					"patching_rect" : [ 1329.0, 304.0, 62.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 978.666661620140076, 460.666670918464661, 42.0, 20.0 ],
-					"text" : "Env. "
+					"text" : "Env. ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -947,7 +925,8 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 681.666664123535156, 460.666670918464661, 189.0, 33.0 ],
-					"text" : "Resonance Filter, unlock for values"
+					"text" : "Resonance Filter, unlock for values",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -960,7 +939,8 @@
 					"patching_rect" : [ 792.0, 304.0, 58.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 539.666664123535156, 460.666670918464661, 42.0, 20.0 ],
-					"text" : "Env. "
+					"text" : "Env. ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -975,7 +955,8 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 231.00000011920929, 460.666670918464661, 189.0, 33.0 ],
-					"text" : "Resonance Filter, unlock for values"
+					"text" : "Resonance Filter, unlock for values",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -988,7 +969,8 @@
 					"patching_rect" : [ 244.5, 304.0, 51.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 89.00000011920929, 460.666670918464661, 42.0, 20.0 ],
-					"text" : "Env. "
+					"text" : "Env. ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -1047,6 +1029,7 @@
 							"parameter_longname" : "live.gain~[4]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.gain~[1]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -1087,6 +1070,7 @@
 , 			{
 				"box" : 				{
 					"addpoints" : [ 0.0, 1.0, 0, 12.872340425531908, 0.053333333333333, 0, 120.999999999999801, 0.0, 0 ],
+					"classic_curve" : 1,
 					"domain" : 121.0,
 					"id" : "obj-56",
 					"maxclass" : "function",
@@ -1127,6 +1111,7 @@
 , 			{
 				"box" : 				{
 					"addpoints" : [ 0.0, 0.746666666666667, 0, 5.79255319148935, 0.08, 0, 30.893617021276597, 0.0, 0, 120.999999999999801, 0.0, 0 ],
+					"classic_curve" : 1,
 					"domain" : 121.0,
 					"id" : "obj-59",
 					"maxclass" : "function",
@@ -1257,6 +1242,7 @@
 							"parameter_longname" : "live.gain~[3]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.gain~[1]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -1297,6 +1283,7 @@
 , 			{
 				"box" : 				{
 					"addpoints" : [ 0.0, 0.933333333333333, 0, 5.14893617021277, 0.106666666666667, 0, 120.999999999999801, 0.0, 0 ],
+					"classic_curve" : 1,
 					"domain" : 121.0,
 					"id" : "obj-36",
 					"maxclass" : "function",
@@ -1337,6 +1324,7 @@
 , 			{
 				"box" : 				{
 					"addpoints" : [ 0.0, 0.746666666666667, 0, 6.436170212765954, 0.146666666666667, 0, 65.648936170212735, 0.04, 0, 120.999999999999801, 0.0, 0 ],
+					"classic_curve" : 1,
 					"domain" : 121.0,
 					"id" : "obj-39",
 					"maxclass" : "function",
@@ -1528,6 +1516,7 @@
 							"parameter_longname" : "live.gain~[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.gain~[1]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -1568,6 +1557,7 @@
 , 			{
 				"box" : 				{
 					"addpoints" : [ 0.0, 0.986666666666667, 0, 6.436170212765954, 0.053333333333333, 0, 120.999999999999801, 0.0, 0 ],
+					"classic_curve" : 1,
 					"domain" : 121.0,
 					"id" : "obj-17",
 					"maxclass" : "function",
@@ -1608,6 +1598,7 @@
 , 			{
 				"box" : 				{
 					"addpoints" : [ 0.0, 1.0, 0, 5.14893617021277, 0.16, 0, 65.648936170212735, 0.0, 0, 120.999999999999801, 0.0, 0 ],
+					"classic_curve" : 1,
 					"domain" : 121.0,
 					"id" : "obj-12",
 					"maxclass" : "function",
@@ -2505,6 +2496,12 @@
 			"obj-29" : [ "live.gain~[3]", "live.gain~[1]", 0 ],
 			"obj-53" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
 			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
 
 			}
 ,
@@ -2512,24 +2509,31 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
+				"name" : "CH-Client-Title.png",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"name" : "CH-ClientInstanceManager.js",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
-				"type" : "PNG",
+				"name" : "CH-ClientScript.js",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.client.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
@@ -2538,13 +2542,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-						"angle" : 270,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -2556,22 +2560,22 @@
 				"name" : "blues",
 				"default" : 				{
 					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
-					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 						"color2" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "gradient"
 					}
 ,
-					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ]
+					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
+					"elementcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"patchlinecolor" : [ 0.495624, 0.529709, 0.636972, 0.9 ],
+					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

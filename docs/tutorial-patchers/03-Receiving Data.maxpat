@@ -2,42 +2,16 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"rect" : [ 237.0, 90.0, 1299.0, 885.0 ],
-		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontface" : 1,
@@ -49,6 +23,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 342.166669249534607, 165.0, 262.0, 38.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 342.166669249534607, 165.0, 262.0, 38.0 ],
 					"text" : "If you want to filter by username, use the Sender Flags"
 				}
 
@@ -64,6 +41,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.5, 459.000009953975677, 265.0, 53.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 693.5, 459.000009953975677, 265.0, 53.0 ],
 					"text" : "This is a clipping!\nRight-click (in Edit Mode) and 'Paste From' > 'Collab-Hub' > to_from_Server.maxpat"
 				}
 
@@ -78,6 +58,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 674.499996781349182, 268.999990046024323, 154.999996960163116, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 674.499996781349182, 268.999990046024323, 154.999996960163116, 39.0 ],
 					"text" : "Route for username"
 				}
 
@@ -90,6 +72,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 561.333358526229858, 217.0, 97.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 561.333358526229858, 217.0, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -102,6 +86,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 561.333358526229858, 331.5, 99.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 561.333358526229858, 331.5, 99.0, 22.0 ],
 					"text" : "46"
 				}
 
@@ -114,6 +100,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 561.333358526229858, 288.999990940093994, 99.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 561.333358526229858, 288.999990940093994, 99.0, 22.0 ],
 					"text" : "route webSlider3"
 				}
 
@@ -126,6 +114,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 561.333358526229858, 251.999990940093994, 89.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 561.333358526229858, 251.999990940093994, 89.0, 22.0 ],
 					"text" : "route WebUser"
 				}
 
@@ -141,6 +131,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 369.000019371509552, 313.66665655374527, 155.0, 66.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 369.000019371509552, 313.66665655374527, 155.0, 66.0 ],
 					"text" : "Notice Sender's username is added to the front of the message list"
 				}
 
@@ -159,6 +152,8 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 652.499996781349182, 251.999990940093994, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 652.499996781349182, 251.999990940093994, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "3",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -179,6 +174,8 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 347.000019371509552, 331.5, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 347.000019371509552, 331.5, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -199,6 +196,8 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 480.666683673858643, 208.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 480.666683673858643, 208.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "1",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -214,6 +213,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 342.166669249534607, 217.0, 148.333330750465393, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 342.166669249534607, 217.0, 148.333330750465393, 24.0 ],
 					"text" : "Activate Sender Flag"
 				}
 
@@ -226,6 +227,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 343.666694939136505, 288.999990940093994, 163.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 343.666694939136505, 288.999990940093994, 163.0, 22.0 ],
 					"text" : "WebUser webSlider3 46"
 				}
 
@@ -238,6 +241,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 343.666694939136505, 246.999990940093994, 97.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 343.666694939136505, 246.999990940093994, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -252,6 +257,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 413.333334624767303, 584.5, 114.333330750465393, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 413.333334624767303, 584.5, 114.333330750465393, 39.0 ],
 					"text" : "route by headers"
 				}
 
@@ -266,6 +273,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 715.000019371509552, 659.66665655374527, 154.999996960163116, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 715.000019371509552, 659.66665655374527, 154.999996960163116, 39.0 ],
 					"text" : "Messages fom the server "
 				}
 
@@ -280,6 +289,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 715.000019371509552, 535.0, 148.333330750465393, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 715.000019371509552, 535.0, 148.333330750465393, 39.0 ],
 					"text" : "Messages to the Server"
 				}
 
@@ -292,6 +303,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 715.000019371509552, 627.499990046024323, 97.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 715.000019371509552, 627.499990046024323, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -303,6 +316,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 715.000019371509552, 583.499990940093994, 85.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 715.000019371509552, 583.499990940093994, 85.0, 22.0 ],
 					"text" : "s toCH-Server"
 				}
 
@@ -331,6 +346,8 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 620.0, 16.5, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 620.0, 16.5, 100.0, 20.0 ],
 					"text" : "Tutorials"
 				}
 
@@ -345,6 +362,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.5, 91.000009953975677, 262.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 17.5, 91.000009953975677, 262.0, 22.0 ],
 					"text" : "Receiving Data Tutorial Patch"
 				}
 
@@ -360,6 +379,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.000007808208466, 535.0, 172.0, 38.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 29.000007808208466, 535.0, 172.0, 38.0 ],
 					"text" : "Receive Event and Control Messages from the Server"
 				}
 
@@ -373,7 +395,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 575.000019371509552, 677.0, 50.0, 22.0 ]
+					"patching_rect" : [ 575.000019371509552, 677.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 575.000019371509552, 677.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -386,7 +410,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 507.83337789773941, 677.0, 50.0, 22.0 ]
+					"patching_rect" : [ 507.83337789773941, 677.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 507.83337789773941, 677.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -399,7 +425,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 440.833359956741333, 677.0, 50.0, 22.0 ]
+					"patching_rect" : [ 440.833359956741333, 677.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 440.833359956741333, 677.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -412,7 +440,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 374.000019371509552, 677.0, 50.0, 22.0 ]
+					"patching_rect" : [ 374.000019371509552, 677.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 374.000019371509552, 677.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -424,7 +454,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 259.000019371509552, 677.0, 24.0, 24.0 ]
+					"patching_rect" : [ 259.000019371509552, 677.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 259.000019371509552, 677.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -436,7 +468,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 192.000019371509552, 677.0, 24.0, 24.0 ]
+					"patching_rect" : [ 192.000019371509552, 677.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 192.000019371509552, 677.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -448,7 +482,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 125.000019371509552, 677.0, 24.0, 24.0 ]
+					"patching_rect" : [ 125.000019371509552, 677.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 125.000019371509552, 677.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -460,7 +496,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 58.0, 677.0, 24.0, 24.0 ]
+					"patching_rect" : [ 58.0, 677.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 58.0, 677.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -472,6 +510,8 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 58.000019371509552, 632.0, 287.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 58.000019371509552, 632.0, 287.0, 22.0 ],
 					"text" : "route webEvent1 webEvent2 webEvent4 webEvent4"
 				}
 
@@ -484,6 +524,8 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 374.000019371509552, 632.0, 287.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 374.000019371509552, 632.0, 287.0, 22.0 ],
 					"text" : "route webSlider1 webSlider2 webSlider3 webSlider4"
 				}
 
@@ -496,6 +538,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.5, 138.000009953975677, 123.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 179.5, 138.000009953975677, 123.0, 22.0 ],
 					"text" : "push all startSection1"
 				}
 
@@ -510,6 +554,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.5, 138.000009953975677, 148.333330750465393, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 17.5, 138.000009953975677, 148.333330750465393, 39.0 ],
 					"text" : "Messages to the Server"
 				}
 
@@ -524,6 +570,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.5, 359.666666507720947, 154.999996960163116, 39.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 17.5, 359.666666507720947, 154.999996960163116, 39.0 ],
 					"text" : "Messages fom the server "
 				}
 
@@ -537,6 +585,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 179.500005066394806, 376.666666507720947, 95.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 179.500005066394806, 376.666666507720947, 95.0, 35.0 ],
 					"text" : "WebUser webSlider3 46"
 				}
 
@@ -549,6 +600,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 58.000019371509552, 584.5, 97.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 58.000019371509552, 584.5, 97.0, 22.0 ],
 					"text" : "r fromCH-Server"
 				}
 
@@ -562,15 +615,16 @@
 					"enablevscroll" : 0,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 1,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "CH-Client.maxpat",
-					"numinlets" : 1,
+					"name" : "ch.client.maxpat",
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 9.5, 182.5, 322.0, 169.0 ],
-					"prototypename" : "CH-CLIENT",
+					"patching_rect" : [ 9.5, 182.5, 321.3046875, 168.92578125 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 9.5, 182.5, 321.3046875, 168.92578125 ],
 					"viewvisibility" : 1
 				}
 
@@ -587,7 +641,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 17.5, 16.5, 463.0, 64.0 ],
-					"pic" : "CH-Title.png"
+					"pic" : "CH-Title.png",
+					"presentation" : 1,
+					"presentation_rect" : [ 17.5, 16.5, 463.0, 64.0 ]
 				}
 
 			}
@@ -604,6 +660,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 693.5, 522.66665655374527, 262.0, 199.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 693.5, 522.66665655374527, 262.0, 199.0 ],
 					"proportion" : 0.5
 				}
 
@@ -621,28 +679,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.5, 522.500000059604645, 672.0, 197.166656494140625 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 14.5, 522.500000059604645, 672.0, 197.166656494140625 ],
 					"proportion" : 0.5
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"midpoints" : [ 19.0, 355.083333194255829, 265.000005066394806, 355.083333194255829 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 189.0, 170.750004976987839, 19.0, 170.750004976987839 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-16", 0 ]
@@ -754,37 +798,37 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
 				"patcherrelativepath" : "../../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
-				"patcherrelativepath" : "../../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CH-ClientInstanceManager.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/media/img",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img",
 				"patcherrelativepath" : "../../media/img",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.client.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../../patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
@@ -793,13 +837,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-						"angle" : 270,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -813,13 +857,13 @@
 					"accentcolor" : [ 0.691232, 0.993878, 0.999509, 1.0 ],
 					"bgcolor" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.0, 0.078431, 0.321569, 1.0 ],
 						"color2" : [ 0.240323, 0.247547, 0.573641, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "gradient"
 					}
 ,
 					"color" : [ 0.897845, 0.934085, 0.993504, 1.0 ],
@@ -856,13 +900,13 @@
 				"name" : "max6message",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"autogradient" : 0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 						"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "gradient"
 					}
 ,
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]

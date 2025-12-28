@@ -1,5 +1,5 @@
 {
-    "namespace": "hub",
-    "username": "",
-    "server": ""
+	"namespace" : "hub",
+	"username" : "",
+	"server" : "https://server.collab-hub.io"
 }

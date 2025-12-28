@@ -2,42 +2,17 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 62.0, 1351.0, 849.0 ],
-		"bglocked" : 0,
 		"openinpresentation" : 1,
-		"default_fontsize" : 12.0,
-		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 0,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
-		"tallnewobj" : 0,
-		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
-		"description" : "",
-		"digest" : "",
-		"tags" : "",
-		"style" : "",
-		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-60",
@@ -47,8 +22,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1398.5, 469.0, 216.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 522.0, 297.0, 216.0, 22.0 ],
-					"text" : "https://ch-server.herokuapp.com/touch/"
+					"presentation_rect" : [ 522.0, 297.0, 181.0, 22.0 ],
+					"text" : "https://server.collab-hub.io/touch"
 				}
 
 			}
@@ -75,7 +50,7 @@
 					"patching_rect" : [ 1431.0, 503.0, 278.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 522.0, 335.0, 278.0, 22.0 ],
-					"text" : "http://ch-server.herokuapp.com/touch/receiver.html"
+					"text" : "https://server.collab-hub.io/touch/receiver.html"
 				}
 
 			}
@@ -475,7 +450,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 475.0, 384.0, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "4"
 				}
 
 			}
@@ -987,20 +962,20 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 834.0, 624.5, 53.0, 102.0 ],
-					"text" : "push Room2 setInstructions \"play a disjunct melody\""
+					"text" : "push Room2 setInstructions \"imitate someone else\""
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-54",
-					"linecount" : 7,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 658.0, 624.5, 51.0, 102.0 ],
-					"text" : "push Room1 setInstructions \"imitate someone else\""
+					"patching_rect" : [ 658.0, 624.5, 51.0, 89.0 ],
+					"text" : "push Room1 setInstructions \"just listen\""
 				}
 
 			}
@@ -1013,7 +988,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 467.0, 624.5, 51.0, 102.0 ],
-					"text" : "push Room0 setInstructions \"listen and react\""
+					"text" : "push Room0 setInstructions \"Play a lyrical melody\""
 				}
 
 			}
@@ -2118,78 +2093,78 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/GitHub/v-erses-max/media/for-bpatchers",
-				"patcherrelativepath" : "../../v-erses-max/media/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientInstanceManager.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/javascript",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls-Title.png",
-				"bootpath" : "~/GitHub/v-erses-max/media/for-bpatchers",
-				"patcherrelativepath" : "../../v-erses-max/media/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/GitHub/v-erses-max/media/for-bpatchers",
-				"patcherrelativepath" : "../../v-erses-max/media/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/GitHub/v-erses-max/media/for-bpatchers",
-				"patcherrelativepath" : "../../v-erses-max/media/for-bpatchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
+				"patcherrelativepath" : "../media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/GitHub/Collab-Hub-Client-SH/patchers",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/GitHub/v-erses-max/media",
-				"patcherrelativepath" : "../../v-erses-max/media",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img",
+				"patcherrelativepath" : "../media/img",
 				"type" : "PNG",
 				"implicit" : 1
 			}

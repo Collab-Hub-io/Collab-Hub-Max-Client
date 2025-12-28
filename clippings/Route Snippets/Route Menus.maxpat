@@ -4,15 +4,55 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 136.0, 1023.0, 193.0 ],
+		"rect" : [ 34.0, 136.0, 1262.0, 777.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 398.0, 402.0, 88.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 293.0, 97.0, 88.0, 20.0 ],
+					"text" : "Output "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 966.0, 402.0, 88.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 788.0, 97.0, 88.0, 20.0 ],
+					"text" : "Output "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Lato",
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 32.0, 473.0, 692.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 34.0, 164.0, 692.0, 21.0 ],
+					"text" : "** Make sure you have CH-Client object connected."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
@@ -24,7 +64,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -44,7 +84,7 @@
 										"appversion" : 										{
 											"major" : 9,
 											"minor" : 0,
-											"revision" : 2,
+											"revision" : 9,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -175,15 +215,10 @@
 												}
 
 											}
- ],
-										"originid" : "pat-24"
+ ]
 									}
 ,
 									"patching_rect" : [ 168.0, 301.0, 54.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"globalpatchername" : ""
-									}
-,
 									"text" : "p concat"
 								}
 
@@ -397,15 +432,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-22"
+ ]
 					}
 ,
 					"patching_rect" : [ 511.0, 210.0, 55.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p routing"
 				}
 
@@ -439,7 +469,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -459,7 +489,7 @@
 										"appversion" : 										{
 											"major" : 9,
 											"minor" : 0,
-											"revision" : 2,
+											"revision" : 9,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -590,15 +620,10 @@
 												}
 
 											}
- ],
-										"originid" : "pat-20"
+ ]
 									}
 ,
 									"patching_rect" : [ 168.0, 301.0, 54.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"globalpatchername" : ""
-									}
-,
 									"text" : "p concat"
 								}
 
@@ -812,15 +837,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-18"
+ ]
 					}
 ,
 					"patching_rect" : [ 1081.0, 212.0, 55.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p routing"
 				}
 
@@ -850,6 +870,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 32.0, 438.0, 692.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 34.0, 129.0, 692.0, 21.0 ],
 					"text" : "*** When the umenu receives a new list, it does not auto-output an item by default. User selection is needed to output an item."
 				}
 
@@ -915,7 +937,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 699.0, 401.0, 251.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.0, 123.0, 251.0, 22.0 ],
+					"presentation_rect" : [ 525.0, 96.0, 251.0, 22.0 ],
 					"text" : "push s maxUserSlider 0"
 				}
 
@@ -1013,7 +1035,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 132.0, 401.0, 251.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.0, 123.0, 251.0, 22.0 ],
+					"presentation_rect" : [ 34.0, 96.0, 251.0, 22.0 ],
 					"text" : "push s maxUserSlider 0"
 				}
 
@@ -1315,7 +1337,6 @@
 
 			}
  ],
-		"originid" : "pat-4",
 		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{

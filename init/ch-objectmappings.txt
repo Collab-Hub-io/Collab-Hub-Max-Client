@@ -1,0 +1,5 @@
+max objectfile  CH-Chat ch.chat.maxpat;
+max objectfile  CH-Client ch.client.maxpat;
+max objectfile  CH-Rooms ch.rooms.maxpat;
+max objectfile  CH-Controls ch.control.maxpat;
+max objectfile  CH-Events ch.events.maxpat;
