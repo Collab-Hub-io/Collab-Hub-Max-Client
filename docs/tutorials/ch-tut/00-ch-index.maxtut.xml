@@ -3,7 +3,7 @@
 <?xml-stylesheet href="./_c74_tut.xsl" type="text/xsl"?>
 
 <chapter name="Collab-Hub Tutorials: Getting Started">
-<next name="01-Getting Connected">Getting Connected</next>
+<next name="01-Getting Connected" link="01-Getting Connected">Getting Connected</next>
 
 <h1>Collab-Hub: Getting Started</h1>
 

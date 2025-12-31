@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="./media/img/CH-Title.png" alt="Collab-Hub Logo" height="50"/> &nbsp; &nbsp; <img src="./media/img/Max-Logo.png" alt="Max Logo" height="50"/>
+<img src="media/img/CH-Title.png" alt="Collab-Hub Logo" height="50"/> &nbsp; &nbsp; <img src="media/img/Max-Logo.png" alt="Max Logo" height="50"/>
 
 <br/>
 
@@ -32,7 +32,7 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 
 DEMO VIDEO COMING SOON
 
-<img src="./media/img/for-readme/Demo-Cap.png" alt="Demo Patch" height="400">
+<img src="media/img/for-readme/Demo-Cap.png" alt="Demo Patch" height="400">
 
 <br/>
 
@@ -56,7 +56,7 @@ The **CH-Client** module is the bare minimum needed to connect to Collab-Hub. It
 - **Simple Chat:** As the name implies, this is a text box for sending chat messages to all other users.
 - **Users Display:** This window displays the usernames of all connected users.
 
-<img src="./media/img/for-readme/Client-Cap.png" alt="CH-Client module" height="169"/>
+<img src="media/img/for-readme/Client-Cap.png" alt="CH-Client module" height="169"/>
 
 <br/>
 
@@ -68,7 +68,7 @@ The **CH-Chat** module provides extended chat functionality. Incoming chat messa
 - **user:** Chat messages are sent to one specific user (dropdown menu with usernames is provided below the text box).
 - **room:** Chat messages are sent to users in a room (dropdown menu with room names is provided below the text box).
 
-<img src="./media/img/for-readme/Chat-Cap.png" alt="CH-Chat module" height="169"/>
+<img src="media/img/for-readme/Chat-Cap.png" alt="CH-Chat module" height="169"/>
 
 <br/>
 
@@ -83,7 +83,7 @@ The **CH-Rooms** module provides the ability to create, join, and leave rooms on
 - **Leave:** Select a room name from the dropdown menu to leave a room that you are currently in.
 - **MyRooms:** A display that lists all of the rooms that you are currently in.
 
-<img src="./media/img/for-readme/Rooms-Cap.jpeg" alt="CH-Rooms module" height="169"/>
+<img src="media/img/for-readme/Rooms-Cap.jpeg" alt="CH-Rooms module" height="169"/>
 
 <br/>
 
@@ -99,7 +99,7 @@ The **CH-Controls** module provides a way to see and manage your control headers
 - **ObservedControls:** A display that lists the controls you are currently observing.
 - **Stop:** Choose an available control header from the dropdown menu to stop observing (you will no longer receive this control data).
 
-<img src="./media/img/for-readme/Controls-Cap.jpeg" alt="CH-Controls module" height="169"/>
+<img src="media/img/for-readme/Controls-Cap.jpeg" alt="CH-Controls module" height="169"/>
 
 <br/>
 
@@ -257,7 +257,7 @@ Leave a room:
 
 The file called 'CH-ClientScript.js' is the client script that loads in the _node.script_ object inside the CH-Client module. This script is all that is really needed to communicate with the Collab-Hub server from within Max. Experienced users may wish to build their patches around just a _node.script_ object running 'CH-ClientScript.js', mitigating the need for the provided modules.
 
-<img src="./media/img/for-readme/Script-Cap.png" alt="Node Script" height="120
+<img src="media/img/for-readme/Script-Cap.png" alt="Node Script" height="120
 "/>
 
 <br/>

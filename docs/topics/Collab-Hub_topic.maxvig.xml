@@ -18,17 +18,17 @@ written it work with Max, PD, Arduino, Web, JS libraries, and more. These module
   <h2>Collab-Hub Max Modules</h2>
   <ul>
     <li>
-      <openfilelink filename="CH-Client.maxhelp">CH-Client</openfilelink> - Connect to the Collab-Hub Server.</li>
+      <openfilelink filename="ch.client.maxhelp">CH-Client</openfilelink> - Connect to the Collab-Hub Server.</li>
     <li>
-      <openfilelink filename="CH-Chat.maxhelp">CH-Chat</openfilelink> - Chat with other users.</li>
+      <openfilelink filename="ch.chat.maxhelp">CH-Chat</openfilelink> - Chat with other users.</li>
     <li>
-      <openfilelink filename="CH-Events.maxhelp">CH-Events</openfilelink> - Observe Event data.</li>
+      <openfilelink filename="ch.events.maxhelp">CH-Events</openfilelink> - Observe Event data.</li>
     <li>
-      <openfilelink filename="CH-Controls.maxhelp">CH-Controls</openfilelink> - Observe Control data.</li>
+      <openfilelink filename="ch.controls.maxhelp">CH-Controls</openfilelink> - Observe Control data.</li>
     <li>
-      <openfilelink filename="CH-Rooms.maxhelp">CH-Rooms</openfilelink> - Create, Join, and Leave Rooms on the server.</li>
+      <openfilelink filename="ch.rooms.maxhelp">CH-Rooms</openfilelink> - Create, Join, and Leave Rooms on the server.</li>
     <li>
-      <openfilelink filename="CH-ClientTesting.maxhelp">CH-ClientTesting</openfilelink> - Connect to the Collab-Hub Server.</li>
+      <openfilelink filename="ch.clienttesting.maxhelp">CH-ClientTesting</openfilelink> - Connect to the Collab-Hub Server.</li>
     <li>
       <openfilelink filename="Collab-Hub Modules.maxpat">Collab-Hub Modules All Together</openfilelink>
     </li>

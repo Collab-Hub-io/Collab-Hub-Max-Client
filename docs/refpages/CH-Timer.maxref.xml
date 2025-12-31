@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
 
-<c74object name="Collab-Hub Modules">
+<c74object name="CH-Timer">
+
 	<digest>
-		The Collection of Collab-Hub Modules.
+		Timer Module for Collab-Hub.
 	</digest>
 	
 	<description>
+Coordinate time between users in performance. The CH-Timer module allows users to synchronize time-based events across all connected clients. This is useful for collaborative performances where timing is critical.
+	This module uses the jweb object to display a timer interface within Max. Users can start, stop, and reset the timer, and the current time will be broadcast to all connected clients.
+	This is running an instance of the CH-Timer web app hosted on Collab-Hub servers at https://server.collab-hub.io/timer.html.
 	</description>
 	
 	<!--METADATA-->
@@ -14,30 +18,27 @@
 		<metadata name="author">Nick Hwang, Eric Sheffield, and Anthony T. Marasco</metadata>
 		<metadata name="tag">Collab-Hub</metadata>
 		<metadata name="tag">Networking</metadata>
-		<metadata name="tag">Chat</metadata>
+		<metadata name="tag">Client</metadata>
 	</metadatalist>
 	
-	<!--INLETS-->
+	<!-- INLETS
 	<inletlist>
 		<inlet id="0" type="anythin">
 			<digest>All Collab-Hub components have one inlet which can be used to send messages to the Server. Please see CH-Client for available messages.</digest>
 		</inlet>
-	</inletlist>
+	</inletlist> -->
 
-	<!--OUTLETS-->
+	<!-- OUTLETS
 	<outletlist>
-		<outlet id="0" type="signal">
-			<digest>Audio signal: Left channel output.</digest>
+		<outlet id="0" type="anything">
+			<digest>Incoming data messages.</digest>
 		</outlet>
-		<outlet id="1" type="signal">
-			<digest>Audio signal: Right channel output.</digest>
-		</outlet>
-	</outletlist>
+	</outletlist> -->
 	
-	<!--ARGUMENTS-->
-	<!-- <objarglist>
-		<objarg name="pan-position" optional="1" type="float">
-			<digest>Initial panning position, default is 0.</digest>
+	<!-- ARGUMENTS
+	<objarglist>
+		<objarg name="enabled" optional="0" type="int (0/1)">
+			<digest>Enable or disable the Client Module</digest>
 		</objarg>
 	</objarglist> -->
 	
@@ -79,12 +80,10 @@
 	 -->
 	<!--SEEALSO-->
 	<seealsolist>
-		<seealso name="CH-Client"/>
+		<seealso name="CH-Chat"/>
 		<seealso name="CH-Controls"/>
 		<seealso name="CH-Events"/>
 		<seealso name="CH-Rooms"/>
-		<seealso name="CH-Chat"/>
-		<seealso name="CH-Timer"/>
 	</seealsolist>
 	
 </c74object>

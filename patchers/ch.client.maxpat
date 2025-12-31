@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1345.0, 233.0, 416.0, 616.0 ],
+		"rect" : [ 758.0, 182.0, 391.0, 204.0 ],
 		"openrect" : [ 0.0, 0.0, 321.3046875, 168.92578125 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
@@ -2232,7 +2232,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 166.0, 571.0, 55.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 222.608688354492188, 4.057970881462097, 74.492751181125641, 17.971013903617859 ],
+					"presentation_rect" : [ 163.15789595246315, 4.0, 133.84210404753685, 18.0 ],
 					"style" : "velvet",
 					"text" : "Connect",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -3370,7 +3370,7 @@
 					"bblend" : 100,
 					"bgcolor" : [ 0.184312760829926, 0.184312760829926, 0.184312760829926, 1.0 ],
 					"coldef" : [ [ 0, 14, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"cols" : 1,
+					"cols" : 2,
 					"colwidth" : 200,
 					"fblend" : 100,
 					"fgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -3389,7 +3389,7 @@
 					"precision" : 4,
 					"rowhead" : 1,
 					"rowheight" : 21,
-					"rows" : 1,
+					"rows" : 54,
 					"savemode" : 1,
 					"sccolor" : [ 0.329411764705882, 0.329411764705882, 0.329411764705882, 1.0 ],
 					"selsync" : 0,
@@ -3618,8 +3618,6 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1449.0, 74.0, 110.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 110.308257460594177, 4.245194435119629, 110.30043089389801, 17.596566796302795 ],
 					"style" : "velvet",
 					"text" : "Show all Clients",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -4455,8 +4453,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -4610,7 +4606,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1149.0, 1269.0, 50.0, 22.0 ],
-					"text" : "499"
+					"text" : "372"
 				}
 
 			}

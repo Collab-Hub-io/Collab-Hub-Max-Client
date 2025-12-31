@@ -21,16 +21,18 @@
   "extensible": 0,
   "max_version_min": "8.0",
   "max_version_max": "none",
-  "os": {
-    "macintosh": {
-      "min_version": "8.0",
-      "platform": ["x64", "aarch64"]
-    },
-    "windows": {
-      "min_version": "8.0",
-      "platform": ["x64"]
-    }
-  },
+"os" : { 
+    "macintosh" : { 
+    	"min_version" : "10.15.x", 
+    	"platform" : [ "x64", "aarch64" ] 
+	} 
+, 
+    "windows" : { 
+    	"min_version" : "8", 
+    	"platform" : [ "x64" ] 
+	} 
+
+}
   "homepatcher": "Collab-Hub Modules.maxpat",
   "package_extra": {
     "reverse_domain": "io.collab-hub",
@@ -44,7 +46,8 @@
       "cc.controls.maxpat",
       "cc.events.maxpat",
       "cc.rooms.maxpat",
-      "cc.chat.maxpat"
+      "cc.chat.maxpat",
+      "cc.timer.maxpat"
     ],
     "help": [
       "CH-Client.maxhelp",
@@ -103,7 +106,8 @@
       "Collab-Hub Objects/CH-Controls.maxpat",
       "Collab-Hub Objects/CH-Events.maxpat",
       "Collab-Hub Objects/CH-Rooms.maxpat",
-      "Collab-Hub Objects/CH-Chat.maxpat"
+      "Collab-Hub Objects/CH-Chat.maxpat",
+      "Collab-Hub Objects/CH-Timer.maxpat"
     ]
   },
   "c74install": 1,

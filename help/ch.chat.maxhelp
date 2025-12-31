@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1428.0, 913.0 ],
+		"rect" : [ 34.0, 91.0, 967.0, 753.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"showrootpatcherontab" : 0,
@@ -32,7 +32,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1428.0, 887.0 ],
+						"rect" : [ 0.0, 26.0, 967.0, 727.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [  ],
@@ -61,7 +61,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 88.0, 1428.0, 887.0 ],
+						"rect" : [ 34.0, 117.0, 967.0, 727.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -70,7 +70,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 713.0, 516.0, 20.0 ],
+									"patching_rect" : [ 10.0, 601.0, 516.0, 20.0 ],
 									"text" : "For specifics about creating, joining, and leaving rooms, please refer to the CH-Rooms module."
 								}
 
@@ -88,7 +88,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 786.0, 575.5, 20.0, 20.0 ],
+									"patching_rect" : [ 786.0, 463.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "5",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -104,7 +104,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 601.0, 536.0, 191.0, 51.0 ],
+									"patching_rect" : [ 601.0, 424.0, 191.0, 51.0 ],
 									"text" : "Incoming Chat messages will appear here. Latest message appearing at the top."
 								}
 
@@ -122,7 +122,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 474.0, 614.5, 20.0, 20.0 ],
+									"patching_rect" : [ 474.0, 502.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -138,7 +138,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 310.0, 609.5, 173.0, 37.0 ],
+									"patching_rect" : [ 310.0, 497.0, 173.0, 37.0 ],
 									"text" : "Type message and hit <return>"
 								}
 
@@ -152,7 +152,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 92.0, 609.5, 179.0, 79.0 ],
+									"patching_rect" : [ 92.0, 497.0, 179.0, 79.0 ],
 									"text" : "If sending to a user or room, specific options appear as a umenu when 'user' or 'room' is selected (2)."
 								}
 
@@ -170,7 +170,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 273.0, 630.5, 20.0, 20.0 ],
+									"patching_rect" : [ 273.0, 518.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -186,7 +186,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 92.0, 364.0, 191.0, 52.0 ],
+									"patching_rect" : [ 92.0, 252.0, 191.0, 52.0 ],
 									"text" : "Select chat destination (all, user or room)"
 								}
 
@@ -204,7 +204,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 291.5, 364.0, 20.0, 20.0 ],
+									"patching_rect" : [ 292.0, 252.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -224,7 +224,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 485.0, 192.0, 20.0, 20.0 ],
+									"patching_rect" : [ 485.0, 80.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -240,7 +240,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 342.0, 192.0, 141.0, 131.0 ],
+									"patching_rect" : [ 342.0, 80.0, 141.0, 131.0 ],
 									"text" : "Connect to Server.\n\nOnce connected, Max Console will print \"You're in Namespace...\"\n\nYou can change your Username also. "
 								}
 
@@ -262,7 +262,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.0, 418.0, 590.0, 169.0 ],
+									"patching_rect" : [ 10.0, 306.0, 590.0, 169.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -283,7 +283,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 10.0, 192.0, 321.3046875, 168.92578125 ],
+									"patching_rect" : [ 10.0, 80.0, 321.3046875, 168.92578125 ],
 									"viewvisibility" : 1
 								}
 
@@ -291,7 +291,7 @@
 , 							{
 								"box" : 								{
 									"border" : 0,
-									"filename" : "helpdetails.js",
+									"filename" : "helpname.js",
 									"id" : "obj-12",
 									"ignoreclick" : 1,
 									"jsarguments" : [ "CH-Chat" ],
@@ -300,7 +300,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 10.0, 10.0, 605.0, 169.0 ]
+									"patching_rect" : [ 10.0, 10.0, 191.143997192382812, 57.599853515625 ]
 								}
 
 							}
@@ -369,7 +369,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "helpdetails.js",
+				"name" : "helpname.js",
 				"bootpath" : "C74:/help/resources",
 				"type" : "TEXT",
 				"implicit" : 1
