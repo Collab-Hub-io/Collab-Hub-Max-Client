@@ -287,6 +287,7 @@ Users can initialize some settings at the time of connection by changing entries
   - Ability to add alternate server locations, anticipating 0.4.0 release of localized servers for RaspberryPis.
   - Moved Web Interface to http://server.collab-hub.io
   - Max Help should load for core Objects: Client, Chat, Rooms, Controls, Events
+  - New module: ch.timer!
   - Add Max Snippet and Paste-From grouping for fast startup
 
 - #0.3.5
