@@ -284,8 +284,8 @@ Users can initialize some settings at the time of connection by changing entries
 
   - CH-Client now has interface to change server url.
   - Moved Default Server to http://server.collab-hub.io, was previously https://ch-server.herokuapp.com
-  - Ability to add alternate server locations, anticipating 0.4.0 release of localized servers for RaspberryPis.
-  - Moved Web Interface to http://server.collab-hub.io
+  - Ability to add change server locations, anticipating 0.4.0 release of localized servers for RaspberryPis.
+  - Moved Web Interface to http://server.collab-hub.io, should look different
   - Max Help should load for core Objects: Client, Chat, Rooms, Controls, Events
   - New module: ch.timer!
   - Add Max Snippet and Paste-From grouping for fast startup
