@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 286.0, 134.0, 874.0, 803.0 ],
+		"rect" : [ 40.0, 134.0, 1313.0, 891.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
 		"showrootpatcherontab" : 0,
@@ -32,7 +32,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 874.0, 777.0 ],
+						"rect" : [ 0.0, 26.0, 1313.0, 865.0 ],
 						"openinpresentation" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
@@ -45,10 +45,10 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 595.0, 170.0, 172.0, 225.0 ],
+									"patching_rect" : [ 595.0, 170.0, 176.0, 225.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 16,
-									"presentation_rect" : [ 589.0, 235.0, 172.0, 225.0 ],
+									"presentation_rect" : [ 589.0, 235.0, 176.0, 225.0 ],
 									"text" : "Join a room. \n\nHide different part of the interface to reduce distractions during performance.\n\nClick Normal View to Change into Phone View -- this reduces distractions even more and enlarges the text size. \n\nIf you join a timer room with the time already started, you will sync up. "
 								}
 
@@ -166,7 +166,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 874.0, 777.0 ],
+						"rect" : [ 0.0, 26.0, 1313.0, 865.0 ],
 						"openinpresentation" : 1,
 						"default_fontname" : "Lato",
 						"gridsize" : [ 15.0, 15.0 ],
@@ -599,11 +599,219 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 286.0, 160.0, 874.0, 777.0 ],
+						"rect" : [ 40.0, 160.0, 1313.0, 865.0 ],
 						"openinpresentation" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-52",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 114.0, 793.0, 150.0, 47.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 84.0, 224.0, 325.0, 20.0 ],
+									"text" : "CH-Client Module that connects Max to Collab-Hub server."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 63.0, 699.0, 150.0, 74.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 100.0, 748.0, 309.0, 33.0 ],
+									"text" : "From the Web Interface (scroll down) click on \nwebEvent3 or webSlider3, and see the values come in. "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-50",
+									"linecount" : 6,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 64.0, 220.0, 150.0, 87.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 84.0, 274.0, 339.0, 33.0 ],
+									"text" : "Click the button, slide the slider, send a chat message, and look at the \"Incoming Messages\" window of the Web Interface"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-49",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 393.0, 376.0, 150.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 357.0, 398.0, 59.0, 47.0 ],
+									"text" : "Connect to the server"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
+									"id" : "obj-30",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 562.0, 557.0, 20.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 55.0, 274.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "2",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
+									"id" : "obj-29",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 562.0, 522.0, 20.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 335.0, 425.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "1",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"fontname" : "Arial Bold",
+									"hint" : "",
+									"id" : "obj-23",
+									"ignoreclick" : 1,
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 562.0, 605.0, 20.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 70.0, 752.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "3",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-47",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 601.0, 797.0, 150.0, 60.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 600.0, 224.0, 234.0, 33.0 ],
+									"text" : "jweb instance of Collab-Hub Web Interface at http://server.collab-hub.io"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-45",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "ch.simple-send-and-receive.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 472.0, 287.0, 354.0, 426.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 55.0, 310.0, 354.0, 426.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"disablefind" : 0,
+									"id" : "obj-38",
+									"maxclass" : "jweb",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 913.0, 390.0, 361.0, 195.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 480.0, 264.0, 460.0, 516.0 ],
+									"rendermode" : 0,
+									"url" : "https://server.collab-hub.io"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-34",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 937.0, 700.0, 217.0, 22.0 ],
+									"text" : "https://github.com/collab-Hub-io"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"fontsize" : 18.0,
+									"id" : "obj-33",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 937.0, 604.0, 337.0, 84.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 977.0, 278.5, 274.0, 65.0 ],
+									"text" : "Other Client Libraries for PD, P5JS, ESP32, etc.",
+									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ],
+									"truncate" : 0
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-26",
 									"linecount" : 2,
@@ -613,7 +821,7 @@
 									"patching_rect" : [ 840.0, 144.0, 150.0, 33.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 907.5, 64.0, 99.0, 33.0 ],
+									"presentation_rect" : [ 803.0, 58.5, 99.0, 33.0 ],
 									"text" : "Help Keep Our Servers Live"
 								}
 
@@ -638,9 +846,9 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "bang", "bang", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 847.0, 739.0, 373.0, 121.0 ],
+									"patching_rect" : [ 901.0, 754.0, 373.0, 121.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 870.0, 17.0, 174.0, 90.0 ]
+									"presentation_rect" : [ 766.0, 11.5, 174.0, 90.0 ]
 								}
 
 							}
@@ -651,7 +859,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 847.0, 882.0, 217.0, 22.0 ],
+									"patching_rect" : [ 901.0, 897.0, 217.0, 22.0 ],
 									"text" : "https://www.patreon.com/collab_hub_io"
 								}
 
@@ -664,10 +872,10 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 852.0, 739.0, 364.0, 114.0 ],
+									"patching_rect" : [ 906.0, 754.0, 364.0, 114.0 ],
 									"pic" : "become-a-patron-button.png",
 									"presentation" : 1,
-									"presentation_rect" : [ 874.0, 17.0, 166.0, 53.0 ]
+									"presentation_rect" : [ 770.0, 11.5, 166.0, 53.0 ]
 								}
 
 							}
@@ -698,7 +906,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 46.0, 433.0, 337.0, 84.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 18.0, 338.0, 274.0, 52.0 ],
+									"presentation_rect" : [ 977.0, 64.5, 274.0, 52.0 ],
 									"text" : "Getting Started Tutorials",
 									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ],
 									"truncate" : 0
@@ -716,7 +924,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 700.0, 70.0, 220.0, 71.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 17.5, 569.0, 463.0, 28.0 ],
+									"presentation_rect" : [ 33.0, 805.0, 463.0, 28.0 ],
 									"text" : "Authors: Nick Hwang, Eric Sheffield, Anthony T. Marasco"
 								}
 
@@ -733,7 +941,7 @@
 									"patching_rect" : [ 1132.0, 70.0, 100.0, 87.711864406779654 ],
 									"pic" : "CH-Small-Logo-NoText.png",
 									"presentation" : 1,
-									"presentation_rect" : [ 322.0, 301.0, 87.0, 76.309322033898312 ]
+									"presentation_rect" : [ 989.0, 368.0, 68.0, 59.644067796610166 ]
 								}
 
 							}
@@ -746,17 +954,17 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 646.0, 241.989847715736005, 628.0, 351.297461928934013 ],
+									"patching_rect" : [ 1024.0, 241.0, 250.0, 139.847715736040612 ],
 									"pic" : "CH-Diagram.png",
 									"presentation" : 1,
-									"presentation_rect" : [ 306.0, 290.0, 470.0, 262.913705583756325 ]
+									"presentation_rect" : [ 976.0, 352.5, 275.5, 154.112182741116754 ]
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"fontname" : "Lato",
-									"fontsize" : 18.0,
+									"fontsize" : 16.0,
 									"id" : "obj-14",
 									"maxclass" : "textbutton",
 									"numinlets" : 1,
@@ -765,7 +973,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 489.0, 754.0, 337.0, 84.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 18.0, 488.0, 274.0, 65.0 ],
+									"presentation_rect" : [ 977.0, 214.5, 274.0, 65.0 ],
 									"text" : "Questions: nickthwang@gmail.com",
 									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ],
 									"truncate" : 0
@@ -820,7 +1028,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 135.0, 754.0, 337.0, 84.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 18.0, 440.0, 274.0, 46.0 ],
+									"presentation_rect" : [ 977.0, 166.5, 274.0, 46.0 ],
 									"text" : "Join Our Discord Server",
 									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ]
 								}
@@ -851,7 +1059,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 46.0, 587.0, 337.0, 84.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 18.0, 392.0, 274.0, 46.0 ],
+									"presentation_rect" : [ 977.0, 118.5, 274.0, 46.0 ],
 									"text" : "Visit https://collab-hub.io",
 									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ]
 								}
@@ -869,7 +1077,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 46.0, 282.0, 337.0, 84.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 18.0, 290.0, 274.0, 46.0 ],
+									"presentation_rect" : [ 977.0, 16.5, 274.0, 46.0 ],
 									"text" : "Open Documentation",
 									"textoncolor" : [ 0.6, 0.8, 0.6, 1.0 ]
 								}
@@ -896,16 +1104,16 @@
 									"fontname" : "Lato",
 									"fontsize" : 14.0,
 									"id" : "obj-19",
-									"linecount" : 9,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 104.0, 514.0, 158.0 ],
+									"patching_rect" : [ 15.0, 104.0, 514.0, 107.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 7,
-									"presentation_rect" : [ 32.0, 110.0, 715.0, 124.0 ],
+									"presentation_linecount" : 4,
+									"presentation_rect" : [ 33.0, 118.5, 889.0, 74.0 ],
 									"style" : "CH-Text",
-									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. \n\nBuilt off Node.Js and libraries we’ve written it work with Max, PD, Arduino, Web, JS libraries, IoT devices, and more.\n\nThese modules are part of the Max client. \n\nWe recently relocated our default server location: https://server.collab-hub.io",
+									"text" : "Collab-Hub is a server-based networking tool for sharing control data and events between creative applications. \n\nBuilt off Node.Js and libraries we’ve written it work with Max, PD, Arduino, Web, JS libraries, IoT devices, and more. These modules are part of the Max client. We recently relocated our default server location: https://server.collab-hub.io",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -939,7 +1147,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 646.0, 10.0, 628.0, 218.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 18.0, 95.0, 749.0, 154.0 ],
+									"presentation_rect" : [ 19.0, 103.5, 921.0, 103.0 ],
 									"proportion" : 0.5
 								}
 
@@ -969,7 +1177,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"midpoints" : [ 856.5, 909.5, 55.5, 909.5 ],
+									"midpoints" : [ 910.5, 909.5, 55.5, 909.5 ],
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -992,6 +1200,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"source" : [ "obj-33", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-34", 0 ]
 								}
 
 							}
@@ -1141,7 +1363,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 874.0, 777.0 ],
+						"rect" : [ 0.0, 26.0, 1313.0, 865.0 ],
 						"openinpresentation" : 1,
 						"default_fontname" : "Lato",
 						"gridsize" : [ 15.0, 15.0 ],
@@ -2195,7 +2417,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 874.0, 777.0 ],
+						"rect" : [ 0.0, 26.0, 1313.0, 865.0 ],
 						"openinpresentation" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
@@ -2793,6 +3015,13 @@
 			}
 , 			{
 				"name" : "ch.rooms.maxpat",
+				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.simple-send-and-receive.maxpat",
 				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",

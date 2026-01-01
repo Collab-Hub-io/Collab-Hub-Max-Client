@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 72.0, 91.0, 1608.0, 753.0 ],
+		"rect" : [ 72.0, 91.0, 1220.0, 753.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
 		"showrootpatcherontab" : 0,
@@ -21,7 +21,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 760.800011336803436, 150.0, 21.0 ],
+					"patching_rect" : [ 13.5, 931.0, 150.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 760.800011336803436, 150.0, 21.0 ]
 				}
@@ -33,15 +33,13 @@
 					"fontname" : "Lato",
 					"fontsize" : 13.0,
 					"id" : "obj-4",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 80.800001204013824, 550.0, 38.0 ],
+					"patching_rect" : [ 10.0, 80.800001204013824, 550.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 80.800001204013824, 550.0, 38.0 ],
-					"text" : "This is running the web version of the Collab-Hub Timer with the jweb object. You can resize this window."
+					"presentation_rect" : [ 10.0, 80.800001204013824, 550.0, 22.0 ],
+					"text" : "This is a jweb instance of the Web Client at https://server.collab-hub.io"
 				}
 
 			}
@@ -54,7 +52,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 576.800008594989777, 157.0, 22.0 ],
+					"patching_rect" : [ 13.5, 547.0, 157.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 576.800008594989777, 157.0, 22.0 ],
 					"text" : "Test with CH-Web client"
@@ -69,7 +67,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 9.0, 659.0, 24.0, 24.0 ],
+					"patching_rect" : [ 13.5, 630.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 704.0, 24.0, 24.0 ]
 				}
@@ -83,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 655.0, 314.0, 37.0 ],
+					"patching_rect" : [ 53.5, 626.0, 314.0, 37.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 50.0, 700.0, 314.0, 37.0 ],
@@ -100,28 +98,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 607.0, 553.0, 38.0 ],
+					"patching_rect" : [ 13.5, 579.0, 553.0, 38.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 10.0, 652.800009727478027, 553.0, 38.0 ],
 					"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. https://server.collab-hub.io/timer.html"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Lato",
-					"fontsize" : 13.0,
-					"id" : "obj-5",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 496.800007402896881, 551.0, 69.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 10.0, 496.800007402896881, 551.0, 69.0 ],
-					"text" : "This was especially made for performers on mobile phones.\nThe CH-Timer connects to the server, into a room, others can simply connect this object. Or on their browsers. This object is different in that does not directly connect with the Collab-Hub Max modules."
 				}
 
 			}
@@ -134,7 +115,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 595.0, 170.0, 182.0, 241.0 ],
+					"patching_rect" : [ 807.0, 134.0, 182.0, 241.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 16,
 					"presentation_rect" : [ 706.000010371208191, 220.800003290176392, 182.0, 241.0 ],
@@ -148,13 +129,13 @@
 					"filename" : "helpname.js",
 					"id" : "obj-12",
 					"ignoreclick" : 1,
-					"jsarguments" : [ "CH-Timer" ],
+					"jsarguments" : [ "CH-Web" ],
 					"maxclass" : "jsui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 10.0, 10.0, 210.775985717773438, 57.599853515625 ],
+					"patching_rect" : [ 10.0, 10.0, 189.968002319335938, 57.599853515625 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 10.0, 210.775985717773438, 57.599853515625 ]
 				}
@@ -162,17 +143,17 @@
 			}
 , 			{
 				"box" : 				{
-					"disablefind" : 1,
+					"disablefind" : 0,
 					"id" : "obj-1",
 					"maxclass" : "jweb",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 9.5, 136.0, 552.0, 347.0 ],
+					"patching_rect" : [ 10.0, 123.0, 754.0, 408.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 560.0, 362.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 775.0, 573.0 ],
 					"rendermode" : 0,
-					"url" : "http://server.collab-hub.io/timer.html"
+					"url" : "https://server.collab-hub.io"
 				}
 
 			}
