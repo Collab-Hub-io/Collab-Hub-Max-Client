@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 271.0, 75.0, 1246.0, 804.0 ],
+		"rect" : [ 58.0, 108.0, 1079.0, 821.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
 		"showrootpatcherontab" : 0,
@@ -32,7 +32,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1246.0, 778.0 ],
+						"rect" : [ 0.0, 26.0, 1079.0, 795.0 ],
 						"gridsize" : [ 5.0, 5.0 ],
 						"gridsnaponopen" : 2,
 						"objectsnaponopen" : 0,
@@ -73,7 +73,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1246.0, 778.0 ],
+						"rect" : [ 0.0, 26.0, 1079.0, 795.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -237,7 +237,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 22.0, 492.5, 570.0, 22.0 ],
+									"patching_rect" : [ 29.5, 493.0, 570.0, 22.0 ],
 									"text" : "Disconnect this CH-Client module when moving to other tabs."
 								}
 
@@ -258,7 +258,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 22.0, 312.0, 321.3046875, 168.92578125 ],
+									"patching_rect" : [ 29.5, 311.0, 321.3046875, 168.92578125 ],
 									"viewvisibility" : 1
 								}
 
@@ -298,6 +298,13 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
@@ -314,6 +321,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
 									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -451,7 +465,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1246.0, 778.0 ],
+						"rect" : [ 58.0, 134.0, 1079.0, 795.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -463,7 +477,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 23.0, 525.5, 553.0, 38.0 ],
+									"patching_rect" : [ 23.0, 454.0, 553.0, 38.0 ],
 									"text" : "Having more than one CH-Client in a project can cause problems. Testing with another machine works, but using our CH-Web Client is an easy way to test all functionality."
 								}
 
@@ -481,7 +495,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 332.0, 218.0, 20.0, 20.0 ],
+									"patching_rect" : [ 332.0, 146.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -494,11 +508,12 @@
 									"fontname" : "Lato",
 									"fontsize" : 13.0,
 									"id" : "obj-4",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 183.5, 550.0, 22.0 ],
-									"text" : "Having multiple CH-Clients connected the Server may cause problems."
+									"patching_rect" : [ 10.0, 85.0, 550.0, 38.0 ],
+									"text" : "This is the essential module for using Collab-Hub within Max. All other modules route their messages through the CH-Client Module."
 								}
 
 							}
@@ -511,7 +526,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 23.0, 497.0, 157.0, 22.0 ],
+									"patching_rect" : [ 23.0, 425.0, 157.0, 22.0 ],
 									"text" : "Test with CH-Web client"
 								}
 
@@ -525,7 +540,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 23.0, 661.5, 513.0, 38.0 ],
+									"patching_rect" : [ 23.0, 590.0, 513.0, 38.0 ],
 									"text" : "In the next tabs, you'll be able to send and receive data between Max and the Demo Web Interface."
 								}
 
@@ -543,7 +558,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 547.0, 613.5, 20.0, 20.0 ],
+									"patching_rect" : [ 547.0, 542.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -563,7 +578,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 547.0, 579.0, 20.0, 20.0 ],
+									"patching_rect" : [ 547.0, 507.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -578,7 +593,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 23.0, 617.5, 24.0, 24.0 ]
+									"patching_rect" : [ 27.0, 547.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -590,7 +605,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 62.0, 613.5, 294.0, 35.0 ],
+									"patching_rect" : [ 62.0, 542.0, 294.0, 35.0 ],
 									"text" : ";\rmax launchbrowser https://server.collab-hub.io"
 								}
 
@@ -604,7 +619,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 23.0, 572.5, 553.0, 38.0 ],
+									"patching_rect" : [ 23.0, 501.0, 553.0, 38.0 ],
 									"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. http://CH-Server.herokuapp.com"
 								}
 
@@ -618,7 +633,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 398.5, 550.0, 69.0 ],
+									"patching_rect" : [ 10.0, 327.0, 550.0, 69.0 ],
 									"text" : "The CH-Client Module connects tot CH-Server. \nAll other CH Modules receive data from CH-Client. \n\nOnce connected to the Collab-Hub server, sending and receiving data and chat is possible."
 								}
 
@@ -636,7 +651,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 547.0, 661.5, 20.0, 20.0 ],
+									"patching_rect" : [ 547.0, 590.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -652,7 +667,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 365.0, 210.0, 195.0, 158.0 ],
+									"patching_rect" : [ 365.0, 138.0, 195.0, 158.0 ],
 									"text" : "Connect to Server by click 'Connect'\n\nOnce connected, Max Console will print \"You're in Namespace...\"\n\nOnce connected, you can change your Username (by Clicking on the 'Username:\" button) or Disconnect."
 								}
 
@@ -673,7 +688,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 10.0, 214.0, 321.3046875, 168.92578125 ],
+									"patching_rect" : [ 10.0, 142.0, 321.3046875, 168.92578125 ],
 									"viewvisibility" : 1
 								}
 
@@ -681,7 +696,7 @@
 , 							{
 								"box" : 								{
 									"border" : 0,
-									"filename" : "helpdetails.js",
+									"filename" : "helpname.js",
 									"id" : "obj-12",
 									"ignoreclick" : 1,
 									"jsarguments" : [ "CH-Client" ],
@@ -690,7 +705,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 10.0, 10.0, 605.0, 169.0 ]
+									"patching_rect" : [ 10.0, 10.0, 215.45599365234375, 57.599853515625 ]
 								}
 
 							}
@@ -706,7 +721,7 @@
 									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 482.5, 605.0, 241.0 ],
+									"patching_rect" : [ 10.0, 411.0, 605.0, 241.0 ],
 									"proportion" : 0.5
 								}
 
@@ -846,7 +861,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 271.0, 101.0, 1246.0, 778.0 ],
+						"rect" : [ 0.0, 26.0, 1079.0, 795.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -1761,7 +1776,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1246.0, 778.0 ],
+						"rect" : [ 0.0, 26.0, 1079.0, 795.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -1983,12 +1998,12 @@
 								"box" : 								{
 									"fontface" : 1,
 									"fontname" : "Lato",
-									"fontsize" : 13.0,
+									"fontsize" : 18.0,
 									"id" : "obj-41",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 80.0, 158.0, 22.0 ],
+									"patching_rect" : [ 10.0, 80.0, 212.0, 28.0 ],
 									"text" : "Send Data"
 								}
 
@@ -2381,12 +2396,6 @@
 				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "helpdetails.js",
-				"bootpath" : "C74:/help/resources",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

@@ -9,6 +9,7 @@
 	
 	<description>
 	Users can create, join, and leave rooms. Rooms may be used to share data (Controls and Events).
+	<illustration><img src="images/CH-Rooms-Module.png" /></illustration>
 	</description>
 	
 	<!--METADATA-->

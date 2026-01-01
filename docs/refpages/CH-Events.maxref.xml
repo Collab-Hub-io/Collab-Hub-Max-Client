@@ -10,7 +10,7 @@
 	<description>
 		One method of sharing data is through Publishing and Observing Events.
 		When an Event is published and is available, you can observe that Event. You observe Events in Max with the CH-Events module.
-
+<illustration><img src="images/CH-Events-Module.png" /></illustration>
 	</description>
 	
 	<!--METADATA-->

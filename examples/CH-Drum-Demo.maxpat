@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1331.0, 293.0, 1284.0, 753.0 ],
+		"rect" : [ 134.0, 134.0, 1717.0, 753.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -37,19 +37,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 559.833333333333485, 182.0, 335.0, 49.0 ],
 					"text" : ";\rmax launch_browser https://ch-server.herokuapp.com/drum-demo.html"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-46",
-					"linecount" : 8,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1786.0, 621.0, 50.0, 116.0 ],
-					"text" : "observedEventsUmenu dictionary u248003441"
 				}
 
 			}
@@ -425,19 +412,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 957.799975574016571, 83.16665780544281, 196.0, 20.0 ],
 					"text" : "Receive from collaborator"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1712.583332777023315, 136.0, 436.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 12.249948143959045, 50.666668117046356, 436.0, 20.0 ],
-					"text" : "Disable this CH-Client BPatcher if you already have an instance elsewhere"
 				}
 
 			}
@@ -1878,15 +1852,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
-					"order" : 1,
-					"source" : [ "obj-107", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 1 ],
-					"order" : 0,
 					"source" : [ "obj-107", 0 ]
 				}
 
@@ -2495,16 +2460,6 @@
 			"obj-25" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
 			"obj-29" : [ "live.gain~[3]", "live.gain~[1]", 0 ],
 			"obj-53" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,

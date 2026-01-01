@@ -9,6 +9,7 @@
 	
 	<description>
 	When using Collab-Hub, only one instance of the CH-Client module is needed. If you have more than one instance of the CH-Client module, disable all but one of them.
+	<illustration><img src="images/CH-Client-Module.png" /></illustration>
 	</description>
 	
 	<!--METADATA-->
@@ -41,7 +42,28 @@
 	</objarglist>
 	
 	<!--MESSAGES-->
-	<!-- <methodlist>
+	<methodlist>
+		<method name="enable">
+			<arglist>
+				<arg name="0/1" optional="1" type="int (0/1)" />
+			</arglist>
+			<digest>
+				Enable or disable the Client Module
+			</digest>
+			<description>
+				Enables (1) or disables (0) the Client Module. When disabled, the Client Module will not connect to the Collab-Hub Server and will not send or receive any data.
+			</description>
+		</method>
+		<method name="connect">
+			<arglist />
+			<digest>
+				Connect to the Collab-Hub Server
+			</digest>
+			<description>
+				Establishes a connection to the Collab-Hub Server using the specified server address and port.
+			</description>
+		</method>
+<!-- 		
 		<method name="push">
 			<arglist>
 				<arg name="destination" optional="0" type="symbol (all, username, roomname)" />
@@ -73,15 +95,17 @@
 			<description>
 				Retrieves basic information about the object author and when the object was last updated. Date can be used to identify different versions of the objects in circulation.
 			</description>
-		</method>
+		</method> -->
 	</methodlist>
-	 -->
+	
 	<!--SEEALSO-->
 	<seealsolist>
 		<seealso name="CH-Chat"/>
 		<seealso name="CH-Controls"/>
 		<seealso name="CH-Events"/>
 		<seealso name="CH-Rooms"/>
+		<seealso name="CH-ClientTesting"/>
+		<seealso name="CH-Timer"/>
 	</seealsolist>
 	
 </c74object>

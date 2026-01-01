@@ -10,7 +10,9 @@
 	<description>
 		One method of sharing data is through Publishing and Observing Controls.
 		When a Control is published and is available, you can observe that Control. You observe Controls in Max with the CH-Control module.
+	<illustration><img src="images/CH-Controls-Module.png" /></illustration>
 	</description>
+	
 	
 	<!--METADATA-->
 	<metadatalist>

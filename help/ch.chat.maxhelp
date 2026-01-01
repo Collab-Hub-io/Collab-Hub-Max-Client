@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 91.0, 967.0, 753.0 ],
+		"rect" : [ 34.0, 91.0, 937.0, 739.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"showrootpatcherontab" : 0,
@@ -32,7 +32,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 967.0, 727.0 ],
+						"rect" : [ 0.0, 26.0, 937.0, 713.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [  ],
@@ -61,7 +61,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 117.0, 967.0, 727.0 ],
+						"rect" : [ 34.0, 117.0, 937.0, 713.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -122,7 +122,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 474.0, 502.0, 20.0, 20.0 ],
+									"patching_rect" : [ 17.143997192382812, 484.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -132,13 +132,14 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
-									"bubblepoint" : 0.0,
+									"bubblepoint" : 0.46,
+									"bubbleside" : 0,
 									"id" : "obj-24",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 310.0, 497.0, 173.0, 37.0 ],
+									"patching_rect" : [ 17.143997192382812, 492.0, 173.0, 52.0 ],
 									"text" : "Type message and hit <return>"
 								}
 
@@ -146,13 +147,14 @@
 , 							{
 								"box" : 								{
 									"bubble" : 1,
+									"bubblepoint" : 0.1,
 									"bubbleside" : 0,
 									"id" : "obj-22",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 92.0, 497.0, 179.0, 79.0 ],
+									"patching_rect" : [ 200.0, 484.0, 179.0, 79.0 ],
 									"text" : "If sending to a user or room, specific options appear as a umenu when 'user' or 'room' is selected (2)."
 								}
 
@@ -170,7 +172,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 273.0, 518.0, 20.0, 20.0 ],
+									"patching_rect" : [ 374.0, 492.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -224,7 +226,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 485.0, 80.0, 20.0, 20.0 ],
+									"patching_rect" : [ 530.0, 70.0, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -236,11 +238,11 @@
 									"bubble" : 1,
 									"bubblepoint" : 0.2,
 									"id" : "obj-15",
-									"linecount" : 9,
+									"linecount" : 8,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 342.0, 80.0, 141.0, 131.0 ],
+									"patching_rect" : [ 342.0, 80.0, 202.0, 118.0 ],
 									"text" : "Connect to Server.\n\nOnce connected, Max Console will print \"You're in Namespace...\"\n\nYou can change your Username also. "
 								}
 

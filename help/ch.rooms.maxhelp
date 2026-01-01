@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 206.0, 173.0, 950.0, 801.0 ],
+		"rect" : [ 206.0, 173.0, 1515.0, 801.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"tags" : "collab-hub",
@@ -35,7 +35,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 950.0, 775.0 ],
+						"rect" : [ 0.0, 26.0, 1515.0, 775.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [  ],
@@ -64,7 +64,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 950.0, 775.0 ],
+						"rect" : [ 0.0, 26.0, 1515.0, 775.0 ],
 						"openinpresentation" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
@@ -340,7 +340,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 206.0, 199.0, 950.0, 775.0 ],
+						"rect" : [ 206.0, 199.0, 1515.0, 775.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -509,7 +509,7 @@
 									"bgfillcolor_proportion" : 0.5,
 									"bgfillcolor_type" : "color",
 									"id" : "obj-78",
-									"items" : [ "User000", ",", "CH-Max-Client_962" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -861,7 +861,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 84.5, 342.0, 368.0, 33.0 ],
-									"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. http://CH-Server.herokuapp.com"
+									"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. https://server.collab-hub.io"
 								}
 
 							}
@@ -1235,7 +1235,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 950.0, 775.0 ],
+						"rect" : [ 0.0, 26.0, 1515.0, 775.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -1566,7 +1566,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 83.5, 373.0, 368.0, 33.0 ],
-									"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. http://CH-Server.herokuapp.com"
+									"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. https://server.collab-hub.io"
 								}
 
 							}

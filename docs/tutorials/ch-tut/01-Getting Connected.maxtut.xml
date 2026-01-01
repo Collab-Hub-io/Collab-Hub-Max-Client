@@ -47,7 +47,7 @@
 <p>After you have input the new server address, click on '<m>Close</m>'.</p>
 <p>To connect to the new server address, click on the <m>Connect</m> button. On the main Client window</p>
 <p>If you are currently connected to the server, you will need to disconnect before connecting to the new server address.</p>
-<illustration><img src="images/01e_CH-Client_Change_Server.png"  width="50%" />Dialog for Server Address input</illustration>
+<illustration><img src="images/01e_CH-Client-Servers.png"  width="50%" />Dialog for Server Address input</illustration>
 
 <br />
 <h2>Disconnecting from the server</h2>

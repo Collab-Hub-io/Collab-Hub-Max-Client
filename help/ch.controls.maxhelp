@@ -880,7 +880,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1397.0, 838.0 ],
+						"rect" : [ 34.0, 88.0, 1397.0, 838.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{
@@ -889,7 +889,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 614.0, 31.0, 475.0, 20.0 ],
+									"patching_rect" : [ 697.0, 19.0, 475.0, 20.0 ],
 									"text" : "jweb instance of the webclient: https://server.collab-hub.io"
 								}
 
@@ -902,7 +902,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 599.0, 58.0, 645.0, 452.0 ],
+									"patching_rect" : [ 682.0, 46.0, 645.0, 452.0 ],
 									"rendermode" : 0,
 									"url" : "https://server.collab-hub.io"
 								}
@@ -1072,7 +1072,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 10.0, 451.0, 427.0, 47.0 ],
-									"text" : "On the browser, click the button cooresponding to 'control webSlider1'.\nThis is a 'publish all' Control, which means it's a PUSH mode Control available to all users. "
+									"text" : "On the browser, click the button cooresponding to 'control webSlider1'.\nThis is a 'publish all' Control, which means it's a PUBLISH mode Control that other users have to observe first before they can receive future messages."
 								}
 
 							}
@@ -1089,7 +1089,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 455.5, 379.5, 20.0, 20.0 ],
+									"patching_rect" : [ 14.0, 379.5, 20.0, 20.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1207,12 +1207,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-19",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 83.5, 373.0, 368.0, 33.0 ],
-									"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. http://CH-Server.herokuapp.com"
+									"patching_rect" : [ 53.0, 379.5, 368.0, 20.0 ],
+									"text" : "Connect to the Collab-Hub Server and load up our Web Text Page. "
 								}
 
 							}

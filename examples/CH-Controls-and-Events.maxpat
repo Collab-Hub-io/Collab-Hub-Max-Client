@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1308.0, 293.0, 1018.0, 753.0 ],
+		"rect" : [ 414.0, 129.0, 1018.0, 753.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
@@ -31,11 +31,10 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 81.0, 640.0, 480.0 ],
+						"rect" : [ 0.0, 26.0, 1018.0, 727.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"style" : "CH-Text",
 						"showontab" : 1,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Lato",
@@ -287,7 +286,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1018.0, 727.0 ],
+						"rect" : [ 414.0, 155.0, 1018.0, 727.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"style" : "CH-Text",
 						"showontab" : 1,
@@ -341,12 +340,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-57",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 267.0, 62.0, 37.0 ],
+									"patching_rect" : [ 138.0, 267.0, 69.0, 23.0 ],
 									"text" : "stopMetro"
 								}
 
@@ -354,12 +352,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-56",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.0, 267.0, 63.0, 37.0 ],
+									"patching_rect" : [ 60.0, 267.0, 70.0, 23.0 ],
 									"text" : "startMetro"
 								}
 
@@ -437,7 +434,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 452.0, 244.0, 291.0, 37.0 ],
-									"text" : ";\rmax launchbrowser https://ch-server.herokuapp.com/"
+									"text" : ";\rmax launchbrowser https://server.collab-hub.io"
 								}
 
 							}
@@ -581,7 +578,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1308.0, 319.0, 1018.0, 727.0 ],
+						"rect" : [ 0.0, 26.0, 1018.0, 727.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"showontab" : 1,
 						"boxes" : [ 							{

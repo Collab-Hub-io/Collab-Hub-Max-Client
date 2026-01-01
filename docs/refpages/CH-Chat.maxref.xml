@@ -8,6 +8,8 @@
 	
 	<description>
 	Send chat messages to other clients. Messages can be sent to specific destinations of a username, a roomname, or keyword 'all'. Chat messages will appear in the right-side panel.
+		<illustration><img src="images/CH-Chat-Module.png" /></illustration>
+
 	</description>
 	
 	<!--METADATA-->
@@ -17,7 +19,7 @@
 		<metadata name="tag">Networking</metadata>
 		<metadata name="tag">Chat</metadata>
 	</metadatalist>
-	
+
 	<!--INLETS-->
 	<inletlist>
 		<inlet id="0" type="anythin">
@@ -77,11 +79,12 @@
 	 -->
 	<!--SEEALSO-->
 	<seealsolist>
-		<seealso name="CH-Client"/>
+		<seealso name="CH-Chat"/>
 		<seealso name="CH-Controls"/>
 		<seealso name="CH-Events"/>
 		<seealso name="CH-Rooms"/>
-		<seealso name="CH-Chat"/>
+		<seealso name="CH-ClientTesting"/>
+		<seealso name="CH-Timer"/>
 	</seealsolist>
 	
 </c74object>

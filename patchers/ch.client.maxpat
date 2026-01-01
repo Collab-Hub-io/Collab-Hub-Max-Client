@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 758.0, 182.0, 391.0, 204.0 ],
+		"rect" : [ 591.0, 171.0, 1154.0, 751.0 ],
 		"openrect" : [ 0.0, 0.0, 321.3046875, 168.92578125 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
@@ -2234,7 +2234,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 163.15789595246315, 4.0, 133.84210404753685, 18.0 ],
 					"style" : "velvet",
-					"text" : "Connect",
+					"text" : "Disconnect",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "Disconnect",
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -4453,6 +4453,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -4606,7 +4608,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1149.0, 1269.0, 50.0, 22.0 ],
-					"text" : "372"
+					"text" : "499"
 				}
 
 			}

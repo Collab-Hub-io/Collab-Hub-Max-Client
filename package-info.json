@@ -21,23 +21,22 @@
   "extensible": 0,
   "max_version_min": "8.0",
   "max_version_max": "none",
-"os" : { 
-    "macintosh" : { 
-    	"min_version" : "10.15.x", 
-    	"platform" : [ "x64", "aarch64" ] 
-	} 
-, 
-    "windows" : { 
-    	"min_version" : "8", 
-    	"platform" : [ "x64" ] 
-	} 
-
-}
+  "os": {
+    "macintosh": {
+      "min_version": "8.0",
+      "platform": ["x64", "aarch64"]
+    },
+    "windows": {
+      "min_version": "8.0",
+      "platform": ["x64"]
+    }
+  },
   "homepatcher": "Collab-Hub Modules.maxpat",
   "package_extra": {
     "reverse_domain": "io.collab-hub",
     "copyright": "Copyright © 2020-2025, Nick Hwang. All rights reserved."
   },
+  "toolbar_icon": "ch-icon.svg",
   "filelist": {
     "externals": [],
     "patchers": [
