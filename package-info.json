@@ -1,6 +1,6 @@
 {
   "name": "Collab-Hub",
-  "displayname": "Collab-Hub Max Client",
+  "displayname": "Collab-Hub",
   "version": "0.3.6",
   "author": "Nick Hwang, Eric Sheffield, Anthony T. Marasco",
   "authors": ["Nick Hwang", "Eric Sheffield", "Anthony T. Marasco"],
@@ -23,11 +23,11 @@
   "max_version_max": "none",
   "os": {
     "macintosh": {
-      "min_version": "8.0",
+      "min_version": "10.15.x",
       "platform": ["x64", "aarch64"]
     },
     "windows": {
-      "min_version": "8.0",
+      "min_version": "8",
       "platform": ["x64"]
     }
   },
