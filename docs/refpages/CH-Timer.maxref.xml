@@ -84,6 +84,8 @@ Coordinate time between users in performance. The CH-Timer module allows users t
 		<seealso name="CH-Controls"/>
 		<seealso name="CH-Events"/>
 		<seealso name="CH-Rooms"/>
+		<seealso name="CH-ClientTesting"/>
+		<seealso name="CH-Timer"/>
 	</seealsolist>
 	
 </c74object>

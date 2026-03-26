@@ -34,7 +34,7 @@ const socket = (() => {
   if (!finalUsername || finalUsername.length === 0) {
     finalUsername = "CH-Max-Client_" + Math.floor(Math.random() * 1000);
     console.log(
-      `No username specified in config.json; using generated username: ${finalUsername}`
+      `No username specified in config.json; using generated username: ${finalUsername}`,
     );
   } else {
     console.log(`Connecting with username: ${finalUsername} to ${baseUrl}`);
@@ -80,7 +80,7 @@ let senderFlag = false,
   clients = [];
 
 const maxHandlers = {
-  // General
+  // Messages from Max to CH-Server
 
   thisClient: (maxInstance) => {
     if (!clients.contains(maxInstance)) {
@@ -156,7 +156,7 @@ const maxHandlers = {
     if (args.length > 2) {
       outgoing.target = args[0];
       outgoing.header = args[1];
-      (outgoing.values = args.slice(2)), socket.emit("control", outgoing);
+      ((outgoing.values = args.slice(2)), socket.emit("control", outgoing));
     } else {
       outgoing.target = args[0];
       outgoing.header = args[1];
@@ -263,7 +263,7 @@ const maxHandlers = {
           "\n" +
           "~ Manual chat messages should be preceded by 'chat' and followed by user/room name or 'all.'" +
           "\n" +
-          "~ Other data retrieval options include: getUsers, observeControl, joinRoom, etc."
+          "~ Other data retrieval options include: getUsers, observeControl, joinRoom, etc.",
       );
     }
   },
@@ -319,6 +319,19 @@ socket.on("otherUsers", (data) => {
   let otherUsersUmenu = { items: otherUsers };
   max.outlet("otherUsersView", otherUsersView);
   max.outlet("otherUsersUmenu", otherUsersUmenu);
+});
+
+socket.on("allRoomDetails", (data) => {
+  max.outlet("allRoomDetails", data);
+  let roomsDetails = data.rooms;
+  let rooms = Object.keys(roomsDetails);
+  let allRoomsView;
+  if (roomDetail) {
+    allRoomsView = { Rooms: roomsDetails };
+  } else allRoomsView = { Rooms: rooms };
+  let allRoomsUmenu = { items: rooms };
+  max.outlet("allRoomsView", allRoomsView);
+  max.outlet("allRoomsUmenu", allRoomsUmenu);
 });
 
 socket.on("availableControls", (data) => {

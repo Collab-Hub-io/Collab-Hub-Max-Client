@@ -81,6 +81,8 @@
 		<seealso name="CH-Controls"/>
 		<seealso name="CH-Events"/>
 		<seealso name="CH-Rooms"/>
+		<seealso name="CH-ClientTesting"/>
+		<seealso name="CH-Timer"/>
 	</seealsolist>
 	
 </c74object>

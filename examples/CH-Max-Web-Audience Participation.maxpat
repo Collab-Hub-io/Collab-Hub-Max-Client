@@ -10,10 +10,40 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 62.0, 1351.0, 849.0 ],
+		"rect" : [ 397.0, 91.0, 942.0, 753.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 648.5, 346.0, 195.0, 22.0 ],
+					"text" : "push all setPerformanceSection $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autofit" : 1,
+					"data" : [ 9529, "png", "IBkSG0fBZn....PCIgDQRA..A....D..HX.....WxgpY....DLmPIQEBHf.B7g.YHB..f.PRDEDU3wY6ctGUTcc8GeyygwgWBNHfifhZQzjHwGfYUKlpRvnn0kjFinlRzkEqZfzDIYkDZsJlXDiIh0lRzpn1RztBZpRhqJwzFLXD0UDLlhRjQP.eAnNCumAFle+gq9a8a86rOj6w4Nfly9yZc9muYy9bt263t8d12yd6hc61sCDDDRIt1eu.HHH5+fB.PPHwPA.HHjXn..DDRLT..BBIFJ..AgDCE.ffPhgB.PPHwPA.HHjXn..DDRLT..BBIFJ..AgDCE.ffPhgB.PPHwPA.HHjXb3..t3hKOTL1yd1iJb6BfMu4Mi5+UrhUfZ+G8QeDp8yYNyQn4s7xKG0OiXDi.09FarQT68xKuD9ZlGiXDiPnmAm3DmPH+unEsHT+7ge3GJje1vF1.peRO8zQseO6YO86+dUoCGE5+G.DDRLT..BBIFJ..AgDCE.ffPhgB.PPHw3tyxw0We8fO93iyx8bYIKYIvQNxQTr8u1q8ZPt4lKidlYlIjQFYvnmd5oColZpL5d5omhsP4vIO4IgYMqYwnO1wNVvrYyL5W8pWE7yO+XzCHf.Ps2pUqn1e+Pqs1JpdIkTB7nO5ixnqSmNT6WvBV.7O+m+SF8+3e7OB+4+7elQWMyjgHL24NW3u9W+q84yaKszBXvfAmhucZA.7wGe.e80Wmk64hGd3gP12YmcBM2byL5VrXA0dO8zSU6erigMa1PWOczQGn2O0oSGp8ZznA0dKVrfZuZhNc5D5Ye6s2N5Zxc2cue42P7vCO73Ap0iZ.8J.DDRLT..BBIFJ..AgDCE.ffPhwosIf7XRSZRvMu4McX+je94CwEWbNreV25VG5t8uicrCXnCcnL5qXEq.dy27MUr+m27lGTWc0wnqUqVwVnbHrvBC0+lLYBc82asBRiFMhtAmiabiCtyctiisPA.dlm4YfSe5Syn+tu66hta+qcsqEdsW60Tr+ey27MQOSFomd5PJojBit2d6sh8cuwINwIfEsnE4v9I3fCFN6YOqJrhTN84A.t4MuITe806v9g2tzKJ96u+f+96Oitc61QWmXoVq2X.CX.v.Fv.tuWe+P3t6tilhHMZzH784gLjg.ZzngQ2M2b69d88+kFarQz0jNc5PuF5ryNE5ZnkVZAU2Ge7wolRZKVrnJ+lt+.5U.HHjXn..DDRLT..BBIFJ..AgDSe9l.9vBokVZPxImLidfAFnP94y9rOCMKCO4S9jvG7Ae.i9Dm3DgJpnBF8pqtZXLiYLJddsYyFptmd5ITd4ki9eKlXhA5pqtXz4kAficrigloggO7giZ+9129f1aucFcLe...Ymc1PlYlIi95V25f+9e+ui92fQt4lKrsssMF8krjk.u9q+5J1O+XDJ..GzqWOnWudG1OlMaFt3EuHiNuR40.Fv.fnhJJFcKVrf5GQwEWbA0+..PkUVoPYWYjibjPDQDghsO7vCWw1Bv8xJwPFxPXzwxZSuQSM0D58N0HczOrC8J.DDRLT..BBIFJ..AgDCE.ffPhQ52Dv2+8eeg1Q4Eu3ECqd0qVw1mPBI.kVZoL5htQV7XHCYHvAO3AYzMYxDLyYNSg70INwI50yJv+eRKszflZpIglCQX8qe8vS8TOkhse6ae6n2K38LH3fC1gVe+X.oO.PM0TC5ATgGhd.jBLv.EN0ghfFMZfXiMVF8FarQg8ULwDiP1ewKdQ3JW4JBOOJEQCtTas0B0VasL5wGe7n2iHnWAffPpgB.PPHwPA.HHjXn..DDRL84aBX94mupTLOF+3GuJrZ.XkqbkPhIlHi9d26dg7yOeE6mO6y9LHmbxQUVSXDTPAAEUTQL5lLYBcmx0pUKp81rYSncVG..93O9iQ6k.6cu6E5niNTredkW4UfKbgKnX6em24cP6pyh9IQme94itQuyadyCV4JWoP9BiwO9widuVTvJFKNa5yC.nFkwK0jHiLRHxHijQWzVYc80WO74e9mqVKKFhN5ng3iOdF8qbkq.O6y9rL550qGN7gOLitEKVfm9oeZglaqVshpOkoLEg7y.G3.Ex9KbgKHT.CdTc0UCUWc0L57NSDhRfAFH5ylGFfdE.BBIFJ..AgDCE.ffPhgB.PPHw3z1DvkrjkHbi5TM.6a9t2X26d2vQO5QYzerG6wfBJn.F8KdwKBOyy7LL5ibjiD09RJoDXqacqL5SXBS.sZzTQEU.+9e+uWoKeUkCbfC.t6N6OIdoW5kPybye5O8mfAO3Aynul0rFnlZpgQegKbgPZokFi9F23Fgu4a9Fz4EaiF2wN1A5ttujkrD3W7K9EL5G7fGD1+92OitnTZokh9r2YCVUZR0vtCB.vCEi7xKOz0eZokFp8YkUVn1mc1YiZepolJp84me9n1mXhIhZewEWLp8QGczn1aznQT60qWOp8c1YmbuG0Ymch92nWudT6MZzHp8QGczn1WbwEiZehIlHp84me9n1mZpohZe1YmMp8YkUVn1mVZogZed4kW+9uWU5vQgdE.BBIFJ..AgDCE.ffPhgB.PPHw3hc6BTBXP.6a09AQlxTlBLxQNRF8Se5Si9skWSM0.W8pWkQenCcnnkB6qe8qCW9xWlQOnfBB8SN0fACvLlwLXzOwINAL0oNUF8.BH.XtyctL5szRKnUAGu7xK34dtmiQ2UWcE9Y+reFiN..7Ue0WA8zSOL5G3.G.5ryNYzSJojPa5lSXBS.sy69zO8Sil0fie7ii1bMu3EuHzPCMvnOpQMJHzPCkQ+JW4JncJ4vCObXXCaXL5QEUTnEJjpppJnjRJgQ+AQv55wBgCuMh+HkLyLSzccMiLx.09byMWT6SN4jEZd4kE.0ZnQiFtysFMZTk4nrxJSnqYdjbxIi5+byMWT6yHiLPsOyLyTUVO+XD5U.HHjXn..DDRLT..BBIFJ..AgDSedAAYsqcsfISlXzei23MP2g32+8eezuqbQI4jSFcGeOzgNDTbwEyny6LE7u9W+KH8zSmQ2We8Esh.0ZqshZOOzpUqSsxB4latI7eya8VuE5t5yCrF5I..rsssMvnQiL5+5e8uFF6XGqvqKkRQEUDzbyMqX6iM1XQ6Lz7nxJqDsSOOrgML329a+sJ1OlLYBV6ZWKitWd4EroMsIE6GgnudWGMXv.5N0VQEUfZerwFqpryzhdV.DcH5YAf2Ht3hSstUKL7xBPCMzfp3+3hKNT+WXgEhZuZkE.QGojRJBccUTQEg5mXiMVg7Sc0UGpe70WeExOh.8J.DDRLT..BBIFJ..AgDCE.ffPhwgyBvu6286P0yLyLQqy4qYMqAZokVXz2+92OZmocVyZVn0s+8rm8ftixKbgKDFyXFCidM0TC5Zk2t8O8oOc3IexmjQujRJAN1wNF5eiHDYjQBKdwKlQumd5AccFRHgnJ0vda1rA+g+ve.8+VlYlIptNc5b34E..V1xVFZ4y9rm8rn0s+u8a+VT+bjibDzyNfNc5frxJKF8u7K+R3K9huPwqyxJqLzmAicriE87UnV3me9gt9cp8K.GcWDAN6jpYylExOQEUTn9ozRKE093iOdT6KnfBPsOkTRQncB9gkJBjnb+TQfb1vqh.I5PzJBjnijRJIT+qVYAn+.5U.HHjXn..DDRLT..BBIFJ..AgDiCmEfLxHCT8byMWvEWbQw941291n5+s+1eCsQcx67Ab3CeX3JW4JL5e228cn1OsoMMXBSXBL51rYC17l2Lid6s2N50rVsZQsurxJCcdMZzHp8Xqc..ngFZ.0d+82eX4Ke4L5czQGv1291Yzsa2N2mY4jSNnOyV8pWMnUqVF8ctychdtN3wy8bOGLzgNTEaehIlHZ0TpnhJBN+4Ouh8yC6X0pUtmODdOKULNqcWzWe8UU14Um8HmbxAc8qVUDHm8HhHh.c8zPCMfZ+8SEAh2YAHhHhPn05CZ8E.QG8WYAvrYybWSNJzq.PPHwPA.HHjXn..DDRLT..BBIFGNK.e3G9gn5VsZUH+rfEr.ve+8mQ+S9jOAs1vO6YOavfACJ1+e4W9kPkUVIi9IO4IQ+VqcyM2fTSMUF8IO4Ii5+nhJJT6qpppP+NzCO7vgYNyYpjkduhd85Exda1rw8Y1RW5RQ6K.XY..f6UkkZrwFYzO3AOHzTSMwnejibDzdvvXFyXPqhP0VasnqULe.v8NWGX1aylMzmMe228cvIO4IQ8kZPCMz.260h.u0upfitKhfJsa1hVQfJpnhDZcpVmE.QQzyBfZAur.zaC05r.vq6.yaHZEARzAu9BPN4jiSMK.p0fpHPDDDNEn..DDRLT..BBIFJ..AgDiCmE.d0O8O9i+Xnqt5xQcuv7Ue0Wg1gXqt5pQseBSXBPjQFIi9i7HOhpu15KwKu7RnZaO.76Y.G5PGBs6.yi6d26hpOiYLCHnfBhQupppB9nO5iXzCMzPQuFNyYNCTUUUo30inDQDQflsmIMoIgZevAGL55rolZBJpnhXz8yO+fYO6Yq30iWd4khsUXbV6tnnmE.0JK.IkTRBMu7NK.pE8WYAPMQud8pxtY6rOK.7FhlE.Q6K.7nzRKE0+QEUTph+UCnWAffPhgB.PPHwPA.HHjXn..DDRLNbV.9zO8SQ06t6tQ0mwLlA5tZxq6yNkoLEzu2ciFMBVrXgQOzPCEsOBvigO7gipWYkUBW9xWlQeDiXDnUoFQ4V25Vbu2oF3omdBO0S8TL58zSOvQO5QExWScpSUnr.vi.BH.grurxJC70WeYz8yO+D5Yrqt5J5851ZqMT+DXfAhZeHgDBZ0ipolZBs+RzPCMf5+ANvAJzyd2c2cU4bifhitKhff6Dbc0UmZr4kB2W.DEQqHP7PztCrZMzqWO55o25K.7FpU2AlGh1W.30cf4AuJBTZokFp84kWdn1qVUDnJpnBgtdoyB.AAgSAJ..AgDCE.ffPhgB.PPHw3vYAfG+ze5OE8aKu7xKmasuGiG+webvGe7Qw1WQEUHbUxACWc0UHt3hiQOhHh.09abiafl0fKcoKgZe.AD.54MvrYyn07du81aX7ie7+PK6+WzoSGZ+TvlManWW.buNeLVEA5Tm5TnUqoXhIFg9N0O+4OOX1rYF8PBIDz0zktzkPqFT7n5pqF8bfzSO8f5+QLhQf5mAO3AiZud85QumVe80iZuACFPsuwFaD0dKVrf1kjcp3n6hHvYmK40cfMXvfP6.pncGX0ZHZEARz9Bfyt6.ql8E.dCiFMJzZJt3hC0OhVQf3kEfLxHCT64cV.DkBJn.T+Ge7wiZunmEf5pqNJK.DDD8cPA.HHjXn..DDRLT..BBIFmVV.DkQO5QitixCX.CPH+L7gObvO+7ygWO1saGJu7xYzCJnffPCMTF8.CLPH5niVw9mW1D71auQ8SXgEF55gG7pJOOLQ3gGN58h1aucz6Et6t6n1GRHg3TVe+WZokVPWOW6ZWCc8DZnghZ+st0sP8uMa139rWjeyghitKhfJkE.dUDHd7vxYAPsnrxJSUxtwCSYAfGh1cfUK3kE.dC05r.zaCGE5U.HHjXn..DDRLT..BBIFJ..AgDiCmE.d6lsqtJVrk5pqNztz6PFxPP04wst0sD5rFvCd6htISlTE+KJMzPCn2q6t6tgZqsVFc2byMH7vCmQ2SO8zor99+R80WOZ2glWUE5l27lBcOs4laFU+1291n9we+8W3pQjHnUqVzLMLnAMHz0C14U.f6kEivBKLUe80q3vainf7vxYA3AsAuyBfQiFQsmWEAp2PsxBfncGXm83AsyB.ugACFTk0oHPuB.AgDCE.ffPhgB.PPHwPA.HHjXbZmEflZpIvtc6L596u+n0y+6bm6.1rYiQ2jISPiM1HitVsZEpx+zRKsHTssWmNcBeNDvnyN6DZokVTr8d3gGnUeGe7wGz6C24N2A0O8zSOn12af87Bf6cNGvxpCumM93iOnOaLYxDZGi1O+7CM6DM2byn+VQTZu8149aHd8iBQvpUqn9u0VaUneixKSE1saGZpolP+u4vU+Jm0tKxq6.yqu.DUTQIzNlxq6.yiTRIEg7unUDHdHZeAHt3hC0Op0YA39Yvqu.DQDQfZeYkUFp8pUEARsF75K.7PsNK.hhYyl4NGNJzq.PPHwPA.HHjXn..DDRLT..BBIFGNK.71kV6b1QYqVsh923gGdf9M+a0pUt9Bit5pKzZauqt5Jp+6t6tQy9fZgat4F571SO8fti38zSOn2e5pqtP8ic61Q+t66MD4rU7emaQdlwydrmK8Ft6t6BuVE0+hfnOKEEdOKsZ0py69fitKhfJsir7pHPwFarBkEfjRJIT6yKu7PsOszRyolE.dTXgEJz8GQOK.7F8VEAhG50qG0Wp0YAPzJBzCZHZ2AlGTeAfffnOEJ..AgDCE.ffPhgB.PPHwPA.HHjXb3z.JxAro2PsJUU6e+6GMcS7R4yV1xVfryNaF8MrgMf1nRd4W9kg29seaF8ctycBu3K9hJdcNyYNSgt24hKtnXaA3dkip5qudFcqVsJTK8F.9o5kGm9zmFM0syXFy.JojRXzm+7mO5gMZu6cuvBVvBT779Fuwa.u268dJ19UspUAaYKaQw1KJm4LmA8d8nG8nQazGCYHCA82DszRKbel4n+6OGN.fyLOs2O3gGdHj8t6t6bCNf8C+t6taTa4k+ddXylMm58NWbwEt9WMNgc8F7BlyqNQxKG5h98Yzc2cKz0FumkpE1saGc8v661f2yLKVr3zdlQuB.AgDCE.ffPhgB.PPHwPA.HHjXb3MALnfBBU2nQifO93Ci93F23fabiavnWRIk.+jexOQwy6u7W9KcpM4hW7EeQngFZfQe26d2nWyczQGn9Y9ye9Pt4lKidwEWLpedhm3IfCe3CeerhUFZznA85B..LXvfvGrHQ3vG9vBcnY70WeQ0yHiLf8t28xn+Juxqfds8du26Auy67NJdd2+92Ojd5oynmXhIB6d26lQepScpny64N24fYNyYxn+8e+2i9rOjPBAN+4OOitO93C2mYNJNb..d0cNrz.Av8pgcX+MhtiulMaVH6EEWbwEz5slqt5pP0ZOu7xKT+3kWdg5GSlLI1B89.d0QNQS0nnfUqCuenkVZA8dmqt5J50lNc5Dx+VrXA0+75HQd5omnyKuqWa1rg5edYsg2uEUCnWAffPhgB.PPHwPA.HHjXn..DDRLtXm2t0oP30Vmm27lGzVaswnWas0h9IXVQEU.QEUTL5SdxSFN8oOMi9d26dgoLkon304q9puJbvCdPEae.AD.5l3X1rY31291J1Od6s2n636jm7jgrxJKF8u8a+V3UdkWQw9OzPCEcGwc0UWggMrgwna0pUz6y..P0UWsPkesvBKLzOi5BKrPXLiYLL5KbgKDNyYNih8OOZpolP2Pt.CLPvO+7iQ2jISnMPE+7yOHv.CjQOgDR.VyZVCitNc5fAO3Aq30oEKVfqcsqwnWUUUAIjPBL52OsGbiFMJj8LyoC8WC.ZOqG..t5UuJ2cMUMHjPBg6biAVJI6MtyctC2ttiHzZqsBs1ZqL5iYLiAc8We80yMnJOD49fc61E1+7n1ZqEUmWpDu90utpM2Xb6aeagBNa1rYzrI0QGcHz8TdnQiFT+v665u6t61od+AC5U.HHjXn..DDRLT..BBIFJ..AgDiSq8fqVru8sOn81amQeDiXDn1ul0rF3K9hufQeYKaYnee2Ymc1v92+9YzW4JWIr7kubEuNKnfBf25sdKEaunDYjQBG3.GfQm24g3t28tvzl1zXz8vCOfxJqLgl6oMsoA28t2Un+FL10t1E5FhpVr0stUzLhviEtvEBu5q9pL57ZS2ewW7EnYGfGO5i9nv9129XzG9vGtPOCZqs1DJiWhvC7A.D4.BA..0TSMnkaIu81aH5nilQm22XcHgDBp87.KUkpIZ0pUn0S2c2M58AMZzHje.P7NnCOF4HGop3Gdv6fowC850Kz8BSlLgdOkG79198xKuDZdclYSidE.BBIFJ..AgDCE.ffPhgB.PPHwzmuIfETPAna7V3gGNp8+leyuApnhJXz2xV1BLwINQF80u90CokVZL5QFYjBsN20t1E74e9mqX6mzjlDTbwEyne7iebzu4+u9q+ZXpScpL5pUgNwe+8Gc8XylMz4s2Xu6cunEUiEtvEBW+5WmQeYKaYf2d6Mi91111fwMtwo34MqrxBN9wOthsOgDR.8ZlGm5TmRn6EM0TSn5SbhSDs+BH5med+A84A.hM1XACFLnX6KqrxP2gcdokB6Pnb+PM0TCTSM0nX6iJpnf3hKNFcrlyA.26rFbhSbh62k2OHd3gGnqGKVrH77xKnMulUw4N24P0EM31ktzkDZslXhIhdMyixKubU4Yv.G3.EZdePB5U.HHjXn..DDRLT..BBIFJ..AgDSe9l.9BuvKft4QevG7AvPG5PYz2xV1B5F983O9ii5+MtwMBe8W+0Jd87e9O+GT8Eu3EKTmoshJp.lyblCi9HG4HgBKrPE6GdvqF4yCylMCKdwKlQGqyI+e4PG5PnMW0UtxUh1EZyJqrDZc8HOxifpu90ud3rm8rL579d4W0pVEZ81mWkNhGyYNyAsfcb7iebHmbxQw9o7xKG8YejQFI7tu66pX+b6aeaHkTRgQ2CO7PU9MDJ1cR3qu9ZG.PwiJpnBUYdSJojDZd4MxJqrDZdyM2bQ8SxImrpbcIJMzPCBeM2Ymch5K850iZuQiFUk0ZhIlnPqybyMWUYd4Qd4kmp7anXiMVgl25pqNT+3qu95jtRsamdE.BBIFJ..AgDCE.ffPhgB.PPHw3zxBve4u7WDpSvt0stUzpEy5V25DpPRjd5oCye9ymQeG6XGB8chyiO8S+TzJHTXgEFje94yniUa96KvWe8Ec8zc2cC+pe0uRHekat4hlEfMtwMhVsld629s4d1NTC10t1E5mv6BW3BgDSLQE6micrigVwdLXv.58NQwjISvhVzhXzCMzPgMu4MynGP.AfNuXYlQ0vos8hBRTQEE5NfVZokpJ9OkTRQUxBP1YmMp8olZppx5zYSmc1ovYAfGQDQDn9orxJSH+HZV.3MxN6rEZdyImbP8SJojhP9gGkVZon9OpnhRU7uZ.8J.DDRLT..BBIFJ..AgDCE.ffPhwgyBvJVwJP025V2J527+q+5uN521+Mu4MQ8yl1zlPK2yomd5ne626XG6.sfTLpQMJH2byEcNv3F23FnWam+7mG09u5q9JT6iIlXfktzkp348gI1vF1.ZIqlWAeYKaYKvku7kYzuvEt.p8KcoKEhIlXT7545W+5nOCl0rlEL24NWE6mScpSw820XDUTQg1yI3wMu4MQ8+.G3.gMtwMpX+nJ3n6hHvYGYMa1Lp8FLXPU1w2hJpHT+y6r.jWd4Iz0UlYloprN6uNK.7PMyBfnDWbwIz8t7yOeg7eFYjApexLyLQsmWV.DcDe7wi5edYAf2vfACBeO0QgdE.BBIFJ..AgDCE.ffPhgB.PPHw7.SyAcMqYMn61+1291gZqsVE6mkrjk.wFarL5X8P...3HG4HPIkTBitNc5fryNaF8u7K+R3nG8nJd8viKdwKB4kWdJ19PCMT3kdoWRw12VasAqacqiQ2lMaJ1G+ProMsI31291J19DRHAzuU+7xKO3hW7hN75Y1yd1nku71auczt.rVsZQeFKJhddOBJnfP6xv8zSOnqydCGd86n6hHnRYAfWEAJ1XiUnr.HJokVZn9WzyB.uAur.TXgEJjehN5nE55RMqHP7f2YAf2n3hKF0O7NK.hlE.djUVYg5+zRKMUw+7PzyB.uJBTuMbTnWAffPhgB.PPHwPA.HHjXn..DDRLNsr.r4MuYPiFML5uvK7Bfc61YzKnfB.WbwEF8DRHAH93imQ+Tm5TnMMTdLm4LGg5Ls73Idhm.xLyLYzO24NmpjcfvBKL34e9mmQ2EWbA1vF1.i9.G3.gUspUwnOfAL.z0oMa1398luwMtQvc2Y+IwK+xuLLfAL.F8Uu5UC24N2gQem6bmvst0sXz2291GZk7Y7ie7PzQGMi9ku7kQul4wzm9zgm3IdBEa+YO6YEx+hBuFCKO70WeQel4TwQ2EQPvcsrt5pC0OhVQfhO93EZd4cV.DMK.7Pz9B.ur.DWbwgZeYkUFp8QDQDBsN6syB.uQCMzfPyQzQGsP9uvBKD0OImbxB4GdUDHdYAn+ZPUDHBBhGHfB.PPHwPA.HHjXn..DDRLNbV.RKszDxdu81aT8krjkfVUfBN3fQsedyadB0MXEsywxiu4a9F3jm7jL5XZ..PkUVIrsssMFcdckXQo4laF0+Z0pEV9xWtpLGhRxImLDWbwwnevCdP3ZW6ZJ1OIjPBvfFzfXz+2+6+M2pHjHDczQitNEkZqsV3e7O9GL5AGbvvy9rOKpNFs1Zqvt28tEZtE8e+wP+8tP1eiy9r.H5Pzr.vanWudT+zWjE.dvqh.wKK.7H0TSUUxBfZcV.JpnhP8uZ0cf6sgiB8J.DDRLT..BBIFJ..AgDCE.ffPhwgyBvd1ydTgkgymoLkof1kgiM1XgTRIEFcdmafG4QdDT64Q0UWMZWIdnCcnvzm9zYz82e+Qum1ZqshNuszRKvAO3AU75o234e9mGb0U1+2D9jO4S.O8zSF8jRJIvGe7gQ+HG4HnmQfwO9wCQDQDL5UVYkPSM0jhWmAFXfn2K5ryNQu2g0mH5MppppPqRTgGd3vO+m+yUreZrwFE5eeXwhEzqqt5pKUoaEihitKhvC.ea0JYHZeAPsH+7yGc8jXhIhZewEWLp87pHPFMZT0xB.uJBjd85Qs2nQin1y6r.HZEAh2H2byE0O75K.7F7xBPd4kGp8IkTRn1yKK.hN30W.La1LkE.BBB0GJ..AgDCE.ffPhgB.PPHw3zpHPyctyE7vCObVtmKkVZoB88le9yednppphQericrvnG8nYz+9u+6E56P+rm8rJ119Bb0UWgjRJIz+aG4HGAMK.wGe7fEKVXgr732...AjmDQAQUz0oSGpel9zmNLhQLBF8JpnBnwFajQ+F23Fn9IlXhAF5PGJi9vG9vQsWsH7vCG8dzjm7jcpyaGczAZFc5pqt39LygwQ2EQfytSxqu.3rQztCb+0YAn+JK.8FZznA0WN6yB.ugZ0cf4Mb1mE.0Z3qu9pJqSLnWAffPhgB.PPHwPA.HHjXn..DDRL84cG3SbhSftixhx3G+3g.CLPUXEgiQiFgO+y+bFcqVsh1mBpu95Q6vsAGbvvi9nOJitACFP8unU5FsZ0htdzpUKp+c0UWQOCB2OTRIk.czQGL5SdxSF8LBLwINQzdEAOZpolPuFhJpn.CFLvnOpQMJz6EW4JWALZzHids0VKp+EEdm0.+7yOHlXhwg8umd5I20I10qP3n6hHHXV.30cfEcvq6.qVYAf2HiLx.0OpUeAf2Ps5NvZzng6einYAfW2AtrxJSn0JO30W.3cV.3Q+UeAPzJBDOnyB.AAgSAJ..AgDCE.ffPhgB.PPHwzmmEfGzXXCaXPrwFKid80WO5YJ3F23Fnck31ZqMT+f8MwCv85puX12RKs.UTQEJYoC.bupHS4kWNidqs1Jp+wprO+WhIlX.qVsxn6rOSGUVYkfISlXz82e+QuFZqs1PeFDVXgAgDRHNk0H..DP.A.iZTihQ2rYyvktzkXzas0VQWmZ0pEdrG6wT775latgdePUvQ2EQ3g7r.viLyLSgVOolZphdqCk9yyBfnnVYAfWEAh2YAPs5K.hNTqJBD0cfIHHdf.J..AgDCE.ffPhgB.PPHwH8YA3V25Vn0vdd0o9.CLPHnfBhQ2Ku7B8r.HJW8pWEUuyN6D0+0UWcN7b9e4RW5Rfc61Ur8c0UWB4+qd0qBs2d6L5s1Zqn1e8qeczqYrLF...MzPCn1iUEh.3d6p+fG7fYzMa1Lb8qecF8latYT+Was0h5eQo6t6Ft7kurP+MNbWu1Q2EQ3g7r.3rOK.8WC0rh.I5fWV.Dsh.4rGh1W.TqAur.PcGXBBh9Tn..DDRLT..BBIFJ..AgDSedV.BN3fUE+HRkko2ve+8Gs5xvC+7yOUYd8xKufAMnAoX6sZ0JzPCMnJysnDRHg.t4laJ196d26B0We8L57pDTAFXffVsZYzuyctCZVC72e+Au81aEudZt4lglatYEaunnQiFPud8L57dl0c2cid+4l27lNk0WuhitKh.mcm7gk9BfZgnYAfWeAfGkUVY8aYAPz9B.utCLuQgEVHpeb1UDH0JK.wGe7n9ozRK0olMAU3e9RYAffPlgB.PPHwPA.HHjXn..DDRLNsr.zRKs3rbcuhnee5pEd3gGfu95KidWc0EZsyWsvUWcEcGwEYWx+gn0VaEMqKd6s2ncSXc5zgduns1ZCrYyFidGczA5tz6t6ti5GdUnHKVrfloA61si5Gu7xKT+H5yxt6taz0emc1IpeDE61s6792SN5tHBN4c4TsFN6r.vi7yOemZV.hHhHTs0pnmE.iFMJj+6u5NvYlYlB4GdTPAEHz5m5K.DDDOPCE.ffPhgB.PPHwPA.HHjXn..DDRLtX2t.0.JBBheTA8+C.BBIFJ..AgDCE.ffPhgB.PPHwPA.HHjXn..DDRLT..BBIFJ..AgDCE.ffPhgB.PPHwPA.HHjXn..DDRLT..BBIFJ..AgDCE.ffPh4+AfF8JWN16HZM.....PRE4DQtJDXBB" ],
+					"embed" : 1,
+					"forceaspect" : 1,
+					"id" : "obj-59",
+					"maxclass" : "fpic",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 1132.0, 328.0, 100.0, 100.0 ],
+					"pic" : "/Users/nickhwang/Downloads/qrcode-2.png",
+					"presentation" : 1,
+					"presentation_rect" : [ 513.0, 63.0, 199.0, 199.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "message",
@@ -347,9 +377,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 18.5, 179.0, 100.0, 100.0 ],
-					"pic" : "exported_qrcode_image_600 (7).png",
-					"presentation" : 1,
-					"presentation_rect" : [ 522.0, 77.5, 207.0, 207.0 ]
+					"pic" : "exported_qrcode_image_600 (7).png"
 				}
 
 			}
@@ -450,7 +478,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 475.0, 384.0, 50.0, 22.0 ],
-					"text" : "4"
+					"text" : "0"
 				}
 
 			}
@@ -541,7 +569,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 807.0, 215.0, 29.5, 22.0 ],
+					"patching_rect" : [ 795.5, 202.0, 29.5, 22.0 ],
 					"text" : "t b i"
 				}
 
@@ -608,7 +636,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 771.0, 280.5, 50.0, 22.0 ],
+					"patching_rect" : [ 756.0, 282.5, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 53.5, 389.5, 50.0, 22.0 ]
 				}
@@ -621,7 +649,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 771.0, 247.5, 69.0, 22.0 ],
+					"patching_rect" : [ 756.0, 246.0, 69.0, 22.0 ],
 					"text" : "counter 0 5"
 				}
 
@@ -811,7 +839,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 703.0, 54.0, 24.0, 24.0 ]
+					"patching_rect" : [ 703.0, 54.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 754.0, 16.050755939524841, 24.0, 24.0 ]
 				}
 
 			}
@@ -962,33 +992,33 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 834.0, 624.5, 53.0, 102.0 ],
-					"text" : "push Room2 setInstructions \"imitate someone else\""
+					"text" : "push Room2 setInstructions \"Play a lyrical melody\""
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-54",
-					"linecount" : 6,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 658.0, 624.5, 51.0, 89.0 ],
-					"text" : "push Room1 setInstructions \"just listen\""
+					"patching_rect" : [ 658.0, 624.5, 51.0, 102.0 ],
+					"text" : "push Room1 setInstructions \"imitate someone else\""
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-53",
-					"linecount" : 7,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 467.0, 624.5, 51.0, 102.0 ],
-					"text" : "push Room0 setInstructions \"Play a lyrical melody\""
+					"patching_rect" : [ 467.0, 624.5, 51.0, 89.0 ],
+					"text" : "push Room0 setInstructions \"just listen\""
 				}
 
 			}
@@ -1364,10 +1394,9 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Events.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 1333.5, 631.5, 580.0, 169.0 ],
 					"prototypename" : "CH-EVENTS",
 					"viewvisibility" : 1
@@ -1386,10 +1415,9 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Controls.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 19.0, 795.5, 580.0, 169.0 ],
 					"prototypename" : "CH-CONTROLS",
 					"viewvisibility" : 1
@@ -1419,10 +1447,9 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Rooms.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 601.0, 795.5, 388.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 341.0, 587.5, 388.0, 169.0 ],
@@ -1443,10 +1470,9 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "CH-Client.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 19.0, 624.5, 322.0, 169.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.5, 587.5, 322.0, 169.0 ],
@@ -1567,7 +1593,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"midpoints" : [ 830.5, 236.0, 848.0, 236.0, 848.0, 43.0, 765.5, 43.0 ],
+					"midpoints" : [ 815.5, 236.0, 848.0, 236.0, 848.0, 43.0, 765.5, 43.0 ],
 					"order" : 1,
 					"source" : [ "obj-14", 3 ]
 				}
@@ -1610,6 +1636,13 @@
 					"destination" : [ "obj-8", 0 ],
 					"order" : 1,
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1745,7 +1778,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 3 ],
+					"destination" : [ "obj-14", 2 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -1986,6 +2019,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-80", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"midpoints" : [ 878.0, 119.25 ],
 					"order" : 1,
@@ -2093,78 +2133,113 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CH-Client-Title.png",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/media/img/for-bpatchers",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Client.maxpat",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/clippings/Collab-Hub Objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientInstanceManager.js",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
-				"patcherrelativepath" : "../javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/javascript",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-ClientScript.js",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/javascript",
-				"patcherrelativepath" : "../javascript",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/javascript",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls-Title.png",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/media/img/for-bpatchers",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Controls.maxpat",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/clippings/Collab-Hub Objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events-Title.png",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/media/img/for-bpatchers",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Events.maxpat",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/clippings/Collab-Hub Objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms-Title.png",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img/for-bpatchers",
-				"patcherrelativepath" : "../media/img/for-bpatchers",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/media/img/for-bpatchers",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/media/img/for-bpatchers",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Rooms.maxpat",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/clippings/Collab-Hub Objects",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/clippings/Collab-Hub Objects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CH-Title.png",
-				"bootpath" : "~/Documents/GitHub/Collab-Hub-Max-Client/media/img",
-				"patcherrelativepath" : "../media/img",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/media/img",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/media/img",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.client.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/patchers",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.controls.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/patchers",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.events.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/patchers",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ch.rooms.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/Collab-Hub/patchers",
+				"patcherrelativepath" : "../../../Max 9/Packages/Collab-Hub/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "qrcode-2.png",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../../../Downloads",
 				"type" : "PNG",
 				"implicit" : 1
 			}
