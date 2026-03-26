@@ -1,7 +1,7 @@
 {
   "name": "Collab-Hub",
   "displayname": "Collab-Hub",
-  "version": "0.3.7",
+  "version": "0.3.9",
   "author": "Nick Hwang, Eric Sheffield, Anthony T. Marasco",
   "authors": ["Nick Hwang", "Eric Sheffield", "Anthony T. Marasco"],
   "description": "Max Client for Collab-Hub.io -- a server-based collaborative tool meant to connect creative apps including Max, PD, Arduino, Unity, etc. Contains modules to use Collab-Hub with Max, implemented with  Node4Max: Chat, Rooms, Observe, etc. Visit Collab-Hub.io for more information for other clients.",
