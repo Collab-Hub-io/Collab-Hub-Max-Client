@@ -6,7 +6,9 @@
 // Edited: 12/14/2022 by Nick Hwang
 // --------------------------------------------------------------------------
 
-const max = require("max-api"),
+const http = require("http"),
+  https = require("https"),
+  max = require("max-api"),
   io = require("socket.io-client"),
   rawConfig = require("./config.json");
 
@@ -27,9 +29,218 @@ if (!/^https?:\/\//i.test(server)) {
 
 const username =
   typeof rawConfig.username === "string" ? rawConfig.username.trim() : "";
+const password =
+  typeof rawConfig.password === "string" ? rawConfig.password : "";
+const passwordAuthEnabled = username.length > 0 && password.length > 0;
+
+let socketUsername = username;
+let authState = {
+  accessToken: "",
+  refreshToken: "",
+  username,
+  mode: "",
+};
+
+const AUTH_ERROR_PATTERN = /(token|auth|credential)/i;
+
+const emitAuthStatus = (status, detail) => {
+  console.log(`[auth] ${status}: ${detail}`);
+  max.outlet("authStatus", status, detail);
+};
+
+const requestJson = (urlString, method, body) =>
+  new Promise((resolve, reject) => {
+    const parsed = new URL(urlString);
+    const payload = body ? JSON.stringify(body) : "";
+    const transport = parsed.protocol === "https:" ? https : http;
+
+    const req = transport.request(
+      {
+        protocol: parsed.protocol,
+        hostname: parsed.hostname,
+        port: parsed.port || undefined,
+        path: `${parsed.pathname}${parsed.search}`,
+        method,
+        headers: {
+          "Content-Type": "application/json",
+          "Content-Length": Buffer.byteLength(payload),
+        },
+      },
+      (res) => {
+        let responseText = "";
+
+        res.setEncoding("utf8");
+        res.on("data", (chunk) => {
+          responseText += chunk;
+        });
+        res.on("end", () => {
+          let responseBody = {};
+          if (responseText.trim().length > 0) {
+            try {
+              responseBody = JSON.parse(responseText);
+            } catch (_err) {
+              responseBody = { raw: responseText };
+            }
+          }
+
+          resolve({
+            ok: (res.statusCode || 500) >= 200 && (res.statusCode || 500) < 300,
+            status: res.statusCode || 500,
+            payload: responseBody,
+          });
+        });
+      },
+    );
+
+    req.on("error", reject);
+    if (payload.length > 0) {
+      req.write(payload);
+    }
+    req.end();
+  });
+
+const loginWithConfiguredCredentials = async () => {
+  if (!passwordAuthEnabled) {
+    return null;
+  }
+
+  const result = await requestJson(`${server}/api/v1/auth/login`, "POST", {
+    username,
+    password,
+  });
+
+  if (
+    !result.ok ||
+    !result.payload.accessToken ||
+    !result.payload.refreshToken
+  ) {
+    const message =
+      result.payload.error || `Login failed with status ${result.status}.`;
+    throw new Error(message);
+  }
+
+  authState = {
+    accessToken: result.payload.accessToken,
+    refreshToken: result.payload.refreshToken,
+    username,
+    mode: "password",
+  };
+  socketUsername = username;
+  emitAuthStatus("login_ok", username);
+  return authState;
+};
+
+const createGuestSession = async () => {
+  const payload = {};
+  if (username.length > 0) {
+    payload.username = username;
+  }
+
+  const result = await requestJson(
+    `${server}/api/v1/auth/guest`,
+    "POST",
+    payload,
+  );
+
+  if (!result.ok) {
+    if (result.status === 404) {
+      emitAuthStatus(
+        "guest_unavailable",
+        "Server does not support guest auth.",
+      );
+      return null;
+    }
+
+    const message =
+      result.payload.error ||
+      `Guest login failed with status ${result.status}.`;
+    throw new Error(message);
+  }
+
+  if (!result.payload.accessToken || !result.payload.refreshToken) {
+    throw new Error("Guest login did not return session tokens.");
+  }
+
+  authState = {
+    accessToken: result.payload.accessToken,
+    refreshToken: result.payload.refreshToken,
+    username: result.payload.username || username || "guest",
+    mode: "guest",
+  };
+  socketUsername = authState.username;
+  emitAuthStatus("guest_ok", authState.username);
+  return authState;
+};
+
+const establishInitialSession = async () => {
+  if (passwordAuthEnabled) {
+    return loginWithConfiguredCredentials();
+  }
+
+  return createGuestSession();
+};
+
+const refreshSocketSession = async () => {
+  if (!authState.refreshToken) {
+    return false;
+  }
+
+  const result = await requestJson(`${server}/api/v1/auth/refresh`, "POST", {
+    refreshToken: authState.refreshToken,
+  });
+
+  if (
+    !result.ok ||
+    !result.payload.accessToken ||
+    !result.payload.refreshToken
+  ) {
+    return false;
+  }
+
+  authState = {
+    accessToken: result.payload.accessToken,
+    refreshToken: result.payload.refreshToken,
+    username: authState.username,
+    mode: authState.mode,
+  };
+  emitAuthStatus(
+    authState.mode === "guest" ? "refresh_guest_ok" : "refresh_ok",
+    authState.username,
+  );
+  return true;
+};
+
+const applySocketAuth = (socket) => {
+  socket.io.opts.query = { username: socketUsername };
+  socket.auth = authState.accessToken ? { token: authState.accessToken } : {};
+};
+
+const bootstrapSocketConnection = async (socket) => {
+  try {
+    if (!authState.accessToken) {
+      await establishInitialSession();
+    }
+  } catch (err) {
+    const message = err && err.message ? err.message : String(err);
+    emitAuthStatus("login_failed", message);
+    max.outlet("error", `login_failed: ${message}`);
+  }
+
+  if (!authState.accessToken) {
+    emitAuthStatus(
+      "anonymous_fallback",
+      socketUsername ||
+        "No credentials supplied; using anonymous socket connection.",
+    );
+  }
+
+  applySocketAuth(socket);
+  socket.connect();
+};
+
 const socket = (() => {
   const baseUrl = `${server}/${namespace}`;
-  let finalUsername = username;
+  let finalUsername = socketUsername;
 
   if (!finalUsername || finalUsername.length === 0) {
     finalUsername = "CH-Max-Client_" + Math.floor(Math.random() * 1000);
@@ -48,11 +259,49 @@ const socket = (() => {
       reconnectionAttempts: Infinity,
       reconnectionDelay: 1000,
       reconnectionDelayMax: 5000,
+      autoConnect: false,
     });
 
-    s.on("connect_error", (err) => {
+    let authRecoveryInFlight = false;
+
+    s.on("connect_error", async (err) => {
       console.log("Socket connect_error:", err.message || err);
       max.outlet("error", "connect_error: " + (err.message || err));
+
+      if (
+        !AUTH_ERROR_PATTERN.test(String(err && err.message ? err.message : err))
+      ) {
+        return;
+      }
+
+      if (authRecoveryInFlight) {
+        return;
+      }
+
+      authRecoveryInFlight = true;
+      try {
+        const refreshed = await refreshSocketSession();
+        if (!refreshed) {
+          await establishInitialSession();
+        }
+        if (!authState.accessToken) {
+          emitAuthStatus(
+            "auth_missing",
+            passwordAuthEnabled
+              ? "Password login failed. Check javascript/config.json credentials."
+              : "Guest auth unavailable; falling back only works on unauthenticated servers.",
+          );
+        }
+        applySocketAuth(s);
+        s.connect();
+      } catch (authErr) {
+        const message =
+          authErr && authErr.message ? authErr.message : String(authErr);
+        emitAuthStatus("auth_recovery_failed", message);
+        max.outlet("error", "auth_recovery_failed: " + message);
+      } finally {
+        authRecoveryInFlight = false;
+      }
     });
 
     s.on("reconnect_failed", () => {
@@ -458,3 +707,5 @@ socket.on("chat", (incoming) => {
   let message = incoming.chat;
   max.outlet("chat", `${sender}: ${message}`);
 });
+
+bootstrapSocketConnection(socket);

@@ -32,6 +32,34 @@ The Collab-Hub Max Client is based on [NodeForMax](https://docs.cycling74.com/no
 
 DEMO VIDEO COMING SOON
 
+### Passwordless And Authenticated Server Test
+
+The Max client now defaults to passwordless guest login when `password` is blank. Set startup options in [javascript/config.json](javascript/config.json):
+
+```json
+{
+  "namespace": "hub",
+  "username": "optional_guest_name",
+  "password": "",
+  "server": "http://localhost:3001"
+}
+```
+
+With a blank `password`, the Max client will:
+
+1. Request a guest session through `/api/v1/auth/guest`
+2. Attach the returned access token to the Socket.IO connection
+3. Refresh the session automatically if the socket token expires
+4. Use a server-generated guest name if `username` is blank
+
+If you set both `username` and `password`, the Max client will instead:
+
+1. Log in through `/api/v1/auth/login`
+2. Attach the returned access token to the Socket.IO connection
+3. Refresh the session automatically if the socket token expires
+
+If the client connects to an older server that does not support `/api/v1/auth/guest`, it falls back to the older unauthenticated socket behavior.
+
 <img src="media/img/for-readme/Demo-Cap.png" alt="Demo Patch" height="400">
 
 <br/>
@@ -281,7 +309,6 @@ Users can initialize some settings at the time of connection by changing entries
 ## Changelog
 
 - #0.3.6
-
   - CH-Client now has interface to change server url.
   - Moved Default Server to http://server.collab-hub.io, was previously https://ch-server.herokuapp.com
   - Ability to add change server locations, anticipating 0.4.0 release of localized servers for RaspberryPis.
@@ -291,18 +318,15 @@ Users can initialize some settings at the time of connection by changing entries
   - Add Max Snippet and Paste-From grouping for fast startup
 
 - #0.3.5
-
   - Mostly cosmetic adjustments. Color mode from Max 8 to Max 9 made some text hard to reaad.
 
 - #0.3.4
-
   - Corrected Web Interface Link in Main Tutorial Page.
   - Clippings 'CH-ToServer' object had a misspelling.
   - Namespace still defaults to '/hub'. Changing namespace should now be done on the `/javascript/config.json` file, rather than the embedded `CH-ClientScript.js`. Within the config, no leading slash needed.
   - Upon connection, Collab-Hub and Server Related messages should appear in Max Console.
 
 - #0.3.3
-
   - Added more Max Package files
     - Add Max Topic Vignettes
     - Max Tutorials (Getting Started)
